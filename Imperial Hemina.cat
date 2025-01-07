@@ -55,7 +55,7 @@
         <categoryLink id="5209-1530-46bd-26f5" name="Imperial Hemina" hidden="false" targetId="1117-20a0-a34d-68bd" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="dd91-6a13-e7e1-16d4" name="+2 Assault Bays" publicationId="3942-1ba6-967b-c9ed" page="62" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="dd91-6a13-e7e1-16d4" name="+2 Assault Bays" publicationId="3942-1ba6-967b-c9ed" page="62" hidden="false" collective="false" import="true" type="upgrade" sortIndex="4">
           <constraints>
             <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bf22-d73e-e425-e0f7" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df21-d035-ec22-997a" type="max"/>
@@ -84,25 +84,25 @@
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="5343-0667-3070-14ef" name="Disruptor Cannon" hidden="false" collective="false" import="true" targetId="48ed-edd2-a6ac-a720" type="selectionEntry">
+        <entryLink id="5343-0667-3070-14ef" name="Disruptor Cannon" hidden="false" collective="false" import="true" targetId="48ed-edd2-a6ac-a720" type="selectionEntry" sortIndex="2">
           <constraints>
             <constraint field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="238c-3343-36bc-efe7" type="max"/>
             <constraint field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c43a-6a17-ef0a-2ca8" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="ab70-13f9-a568-041c" name="Particle Laser" hidden="false" collective="false" import="true" targetId="44f1-16a6-a351-ba77" type="selectionEntry">
+        <entryLink id="ab70-13f9-a568-041c" name="Particle Laser" hidden="false" collective="false" import="true" targetId="44f1-16a6-a351-ba77" type="selectionEntry" sortIndex="3">
           <constraints>
             <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e2e-d195-4c86-ad8f" type="max"/>
             <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="48e8-7627-5803-afa4" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="f149-77e8-8f9c-4441" name="Strike Craft" hidden="false" collective="false" import="true" targetId="d2a5-4e87-5237-35d0" type="selectionEntryGroup">
+        <entryLink id="f149-77e8-8f9c-4441" name="Strike Craft" hidden="false" collective="false" import="true" targetId="d2a5-4e87-5237-35d0" type="selectionEntryGroup" sortIndex="5">
           <constraints>
             <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8dcd-446a-67cd-6cce" type="max"/>
             <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="906e-e459-e102-2a6d" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="9fa3-3c3b-c6dd-7363" name="Commander" hidden="false" collective="false" import="true" targetId="df1f-937a-7be9-2333" type="selectionEntry">
+        <entryLink id="9fa3-3c3b-c6dd-7363" name="Commander" hidden="false" collective="false" import="true" targetId="df1f-937a-7be9-2333" type="selectionEntry" sortIndex="1">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="97bf-a5ba-ef7a-d58b" type="max"/>
             <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8231-7f0d-39fc-9132" type="min"/>
@@ -200,6 +200,13 @@
             <characteristic name="Assault bay" typeId="5064-520e-c582-fc1a"/>
             <characteristic name="Traits" typeId="7875-4af0-5837-6dcb">ADS</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="append" value="2" field="7875-4af0-5837-6dcb">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="a541-a97d-67d6-eee3" childId="584f-b9f3-238d-189b" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <infoLinks>
@@ -235,6 +242,17 @@
       <costs>
         <cost name="Points" typeId="dd57-09ff-340f-8e48" value="21"/>
       </costs>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="+1 ADS" hidden="false" id="1719-a975-4ca2-086b" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="62cc-2c9b-4996-2dbb" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="60f1-80c4-ca03-acd9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <costs>
+            <cost name="Points" typeId="dd57-09ff-340f-8e48" value="3"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry id="a658-033f-bc4f-7b4d" name="Cruiser" publicationId="3942-1ba6-967b-c9ed" page="62" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
@@ -571,7 +589,7 @@
         <cost name="Hidden Thrust" typeId="a69d-b0f6-7ef9-5d17" value="3"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b648-e884-4c46-7d17" name="Carrier (Heavy)" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="b648-e884-4c46-7d17" name="Carrier (Heavy)" hidden="false" collective="false" import="true" type="unit" publicationId="3942-1ba6-967b-c9ed">
       <modifiers>
         <modifier type="add" field="category" value="b5b8-5ac8-4c77-cbb0">
           <conditionGroups>
@@ -855,7 +873,7 @@
         <cost name="Points" typeId="dd57-09ff-340f-8e48" value="48"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5fb3-1fb5-91aa-bd44" name="Vibro Cannon" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="5fb3-1fb5-91aa-bd44" name="Vibro Cannon" hidden="false" collective="false" import="true" type="upgrade" publicationId="3942-1ba6-967b-c9ed">
       <profiles>
         <profile id="6952-d46e-11dd-683b" name="Vibro Cannon" publicationId="3942-1ba6-967b-c9ed" page="64" hidden="false" typeId="0faa-34ea-a9b8-dccb" typeName="Weapon Stats">
           <characteristics>
@@ -872,7 +890,7 @@
         <cost name="Points" typeId="dd57-09ff-340f-8e48" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="3e0e-7589-24f1-d7ea" name="Reformed Light Carrier" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="3e0e-7589-24f1-d7ea" name="Reformed Light Carrier" hidden="false" collective="false" import="true" type="unit" publicationId="3942-1ba6-967b-c9ed">
       <modifiers>
         <modifier type="add" field="category" value="b5b8-5ac8-4c77-cbb0">
           <conditionGroups>
@@ -973,7 +991,7 @@
         <cost name="Points" typeId="dd57-09ff-340f-8e48" value="52"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="47fa-ea5f-cf86-5960" name="Reformed Heavy Cruiser" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="47fa-ea5f-cf86-5960" name="Reformed Heavy Cruiser" hidden="false" collective="false" import="true" type="upgrade" publicationId="3942-1ba6-967b-c9ed">
       <modifiers>
         <modifier type="add" field="category" value="b5b8-5ac8-4c77-cbb0">
           <conditionGroups>
@@ -1003,6 +1021,7 @@
       </infoLinks>
       <categoryLinks>
         <categoryLink id="1e8a-8c24-1b8d-6e58" name="Capital" hidden="false" targetId="ddf0-e667-c5bb-bfd0" primary="true"/>
+        <categoryLink targetId="1117-20a0-a34d-68bd" id="c75b-9ad0-ddf0-ef15" primary="false" name="Imperial Hemina"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="8874-95e8-e707-3454" name="Commander" hidden="false" collective="false" import="true" targetId="df1f-937a-7be9-2333" type="selectionEntry">
@@ -1040,7 +1059,7 @@
         <cost name="Points" typeId="dd57-09ff-340f-8e48" value="58"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="71e0-844b-b7a3-561d" name="Reformed Battleship (Heavy)" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="71e0-844b-b7a3-561d" name="Reformed Battleship (Heavy)" hidden="false" collective="false" import="true" type="unit" publicationId="3942-1ba6-967b-c9ed">
       <modifiers>
         <modifier type="add" field="category" value="b5b8-5ac8-4c77-cbb0">
           <conditions>
@@ -1075,6 +1094,7 @@
       <categoryLinks>
         <categoryLink id="94fd-cfac-e363-2c32" name="Capital" hidden="false" targetId="ddf0-e667-c5bb-bfd0" primary="true"/>
         <categoryLink id="aa13-8a94-a58f-aeb7" name="Heavy" hidden="false" targetId="99a8-81d3-ead9-288b" primary="false"/>
+        <categoryLink targetId="1117-20a0-a34d-68bd" id="f4c2-a7a9-28d8-2021" primary="false" name="Imperial Hemina"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="1e73-3336-1dc7-1222" name="Armoured Reactor Core" publicationId="3942-1ba6-967b-c9ed" page="62" hidden="false" collective="false" import="true" type="upgrade">
@@ -1132,7 +1152,7 @@
         <cost name="Points" typeId="dd57-09ff-340f-8e48" value="76"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c73f-2619-9f66-5664" name="Heavy Destroyer" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="c73f-2619-9f66-5664" name="Heavy Destroyer" hidden="false" collective="false" import="true" type="unit" publicationId="3942-1ba6-967b-c9ed">
       <profiles>
         <profile id="b5ac-eee7-6ef9-b5d2" name="Heavy Destroyer" hidden="false" typeId="fd62-daee-6b9c-c612" typeName="Ship Stats">
           <modifiers>
@@ -1163,6 +1183,7 @@
       </infoLinks>
       <categoryLinks>
         <categoryLink id="7814-c2f1-15c5-13c2" name="support" hidden="false" targetId="ff8c-6404-d96c-d06e" primary="true"/>
+        <categoryLink targetId="1117-20a0-a34d-68bd" id="c984-d40b-73f5-d78c" primary="false" name="Imperial Hemina"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="acfd-7e8a-b7fa-15a2" name="+1 Assault Bay" hidden="false" collective="false" import="true" type="upgrade">
@@ -1233,6 +1254,7 @@
       </infoLinks>
       <categoryLinks>
         <categoryLink id="0c18-bdae-d202-a096" name="support" hidden="false" targetId="ff8c-6404-d96c-d06e" primary="true"/>
+        <categoryLink targetId="1117-20a0-a34d-68bd" id="6395-33ad-34d8-01c7" primary="false" name="Imperial Hemina"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="584f-b9f3-238d-189b" name="+1 ADS" hidden="false" collective="false" import="true" type="upgrade">
@@ -1291,6 +1313,7 @@
       </profiles>
       <categoryLinks>
         <categoryLink id="ae11-e137-9831-c696" name="support" hidden="false" targetId="ff8c-6404-d96c-d06e" primary="true"/>
+        <categoryLink targetId="1117-20a0-a34d-68bd" id="e51a-cfcd-4165-8720" primary="false" name="Imperial Hemina"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="a856-0e17-235e-e9b9" name="Photon Torpedo (ord)" hidden="false" collective="false" import="true" targetId="6735-8692-ee9a-f3f6" type="selectionEntry">
@@ -1354,6 +1377,7 @@
       </infoLinks>
       <categoryLinks>
         <categoryLink id="14b1-4a79-b6be-0abc" name="support" hidden="false" targetId="ff8c-6404-d96c-d06e" primary="true"/>
+        <categoryLink targetId="1117-20a0-a34d-68bd" id="bb72-619b-eb78-e1c6" primary="false" name="Imperial Hemina"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="8f51-b4b8-26a3-ee11" name="Particle Laser" hidden="false" collective="false" import="true" targetId="44f1-16a6-a351-ba77" type="selectionEntry">
@@ -1385,7 +1409,7 @@
         <cost name="Points" typeId="dd57-09ff-340f-8e48" value="30"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="15e5-c8cc-039a-c66c" name="Corvette" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="15e5-c8cc-039a-c66c" name="Corvette" hidden="false" collective="false" import="true" type="unit" publicationId="3942-1ba6-967b-c9ed">
       <modifiers>
         <modifier type="add" field="category" value="b5b8-5ac8-4c77-cbb0">
           <conditionGroups>
@@ -1417,6 +1441,7 @@
       </infoLinks>
       <categoryLinks>
         <categoryLink id="0afa-c440-588a-33a5" name="Escort" hidden="false" targetId="9cb1-f70a-60f2-5d11" primary="true"/>
+        <categoryLink targetId="1117-20a0-a34d-68bd" id="e708-fab6-e6f6-517a" primary="false" name="Imperial Hemina"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="1fe1-522d-d36f-ac62" name="Commander" hidden="false" collective="false" import="true" targetId="df1f-937a-7be9-2333" type="selectionEntry">
@@ -1443,7 +1468,7 @@
         <cost name="Points" typeId="dd57-09ff-340f-8e48" value="20"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1d63-334f-95cd-b7f4" name="Reformed Guardian Ships" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="1d63-334f-95cd-b7f4" name="Reformed Guardian Ships" hidden="false" collective="false" import="true" type="unit" publicationId="3942-1ba6-967b-c9ed">
       <modifiers>
         <modifier type="add" field="category" value="b5b8-5ac8-4c77-cbb0">
           <conditionGroups>
@@ -1474,6 +1499,7 @@
       </infoLinks>
       <categoryLinks>
         <categoryLink id="7b9b-0b50-f0b7-d9a9" name="Escort" hidden="false" targetId="9cb1-f70a-60f2-5d11" primary="true"/>
+        <categoryLink targetId="1117-20a0-a34d-68bd" id="f65a-c10c-56a6-eb15" primary="false" name="Imperial Hemina"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="4eea-3241-9194-106f" name="Disruptor Cannon" hidden="false" collective="false" import="true" targetId="48ed-edd2-a6ac-a720" type="selectionEntry">
@@ -1661,22 +1687,22 @@
     </selectionEntryGroup>
     <selectionEntryGroup id="35d8-7348-7bb0-6b11" name="Imperial Hemina Commander" hidden="false" collective="false" import="true">
       <selectionEntries>
-        <selectionEntry id="77e3-84d5-4802-c86c" name="Prefect Lupinus" publicationId="3942-1ba6-967b-c9ed" page="59" hidden="false" collective="false" import="true" type="unit">
+        <selectionEntry id="77e3-84d5-4802-c86c" name="Prefect Braccius" publicationId="3942-1ba6-967b-c9ed" page="59" hidden="false" collective="false" import="true" type="unit">
           <profiles>
-            <profile id="9218-61a4-ed61-bc11" name="Prefect Lupinus" hidden="false" typeId="f8e8-01a8-098b-ca12" typeName="Commander stats">
+            <profile name="Prefect Braccius" typeId="f8e8-01a8-098b-ca12" typeName="Commander stats" hidden="false" id="33f0-df58-a9a9-73e8">
               <characteristics>
-                <characteristic name="Commander Quality" typeId="388a-86b2-03af-20ad">Inspiring 3</characteristic>
-                <characteristic name="Rank" typeId="16de-0568-dfa7-27a1">Commander</characteristic>
-                <characteristic name="Ship" typeId="f3f9-27da-95ec-1253">Any Reformed Ship</characteristic>
+                <characteristic name="Commander Quality" typeId="388a-86b2-03af-20ad">Legendary 4</characteristic>
+                <characteristic name="Rank" typeId="16de-0568-dfa7-27a1">Admiral or commander</characteristic>
+                <characteristic name="Ship" typeId="f3f9-27da-95ec-1253">any</characteristic>
                 <characteristic name="Skill" typeId="8cfd-31fa-dd72-6e30">+2</characteristic>
                 <characteristic name="Morale Bonus" typeId="26e9-24ca-fa72-16d3">+2</characteristic>
-                <characteristic name="Command Capacity" typeId="9a9d-6b65-579c-ca2c">8</characteristic>
+                <characteristic name="Command Capacity" typeId="9a9d-6b65-579c-ca2c">12</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <rules>
-            <rule id="008d-eaba-a062-1385" name="Vibro Cannon Specialist [Prefect Lupinus]" publicationId="3942-1ba6-967b-c9ed" page="59" hidden="false">
-              <description>Vibro Cannons in this battlegroup are +1 to hit.</description>
+            <rule name="Carpe Diem! [Prefect Bruccius]" id="c679-25cb-04c1-e917" hidden="false">
+              <description>When this battlegroup destroys the last capital ship in an enemy battlegroup or causes an enemy battlegroup to rout, you may immediately activate this battlegroup again.</description>
             </rule>
           </rules>
           <costs>
@@ -1762,22 +1788,22 @@ units get +1 to rolls</description>
     </selectionEntryGroup>
     <selectionEntryGroup id="167e-94c1-d160-de1e" name="Prefect Lupinus [Reformed Only]" hidden="false" collective="false" import="true">
       <selectionEntries>
-        <selectionEntry id="981c-6ba0-616a-f073" name="Prefect Braccius" publicationId="3942-1ba6-967b-c9ed" page="59" hidden="false" collective="false" import="true" type="unit">
+        <selectionEntry id="981c-6ba0-616a-f073" name="Prefect Lupinus" publicationId="3942-1ba6-967b-c9ed" page="59" hidden="false" collective="false" import="true" type="unit">
           <profiles>
-            <profile id="33f0-df58-a9a9-73e8" name="Prefect Braccius" hidden="false" typeId="f8e8-01a8-098b-ca12" typeName="Commander stats">
+            <profile name="Prefect Lupinus" typeId="f8e8-01a8-098b-ca12" typeName="Commander stats" hidden="false" id="9218-61a4-ed61-bc11">
               <characteristics>
-                <characteristic name="Commander Quality" typeId="388a-86b2-03af-20ad">Legendary 4</characteristic>
-                <characteristic name="Rank" typeId="16de-0568-dfa7-27a1">Admiral or commander</characteristic>
-                <characteristic name="Ship" typeId="f3f9-27da-95ec-1253">any</characteristic>
+                <characteristic name="Commander Quality" typeId="388a-86b2-03af-20ad">Inspiring 3</characteristic>
+                <characteristic name="Rank" typeId="16de-0568-dfa7-27a1">Commander</characteristic>
+                <characteristic name="Ship" typeId="f3f9-27da-95ec-1253">Any Reformed Ship</characteristic>
                 <characteristic name="Skill" typeId="8cfd-31fa-dd72-6e30">+2</characteristic>
                 <characteristic name="Morale Bonus" typeId="26e9-24ca-fa72-16d3">+2</characteristic>
-                <characteristic name="Command Capacity" typeId="9a9d-6b65-579c-ca2c">12</characteristic>
+                <characteristic name="Command Capacity" typeId="9a9d-6b65-579c-ca2c">8</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <rules>
-            <rule id="c679-25cb-04c1-e917" name="Carpe Diem! [Prefect Bruccius]" hidden="false">
-              <description>When this battlegroup destroys the last capital ship in an enemy battlegroup or causes an enemy battlegroup to rout, you may immediately activate this battlegroup again.</description>
+            <rule name="Vibro Cannon Specialist [Prefect Lupinus]" id="008d-eaba-a062-1385" hidden="false" publicationId="3942-1ba6-967b-c9ed" page="59">
+              <description>Vibro Cannons in this battlegroup are +1 to hit.</description>
             </rule>
           </rules>
           <costs>

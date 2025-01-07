@@ -1195,15 +1195,6 @@
       <profiles>
         <profile id="b5ac-eee7-6ef9-b5d2" name="Heavy Destroyer" hidden="false" typeId="fd62-daee-6b9c-c612" typeName="Ship Stats">
           <modifiers>
-            <modifier type="add" field="category" value="b5b8-5ac8-4c77-cbb0">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="df1f-937a-7be9-2333" type="equalTo"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
             <modifier type="set" field="5064-520e-c582-fc1a" value="1"/>
           </modifiers>
           <characteristics>
@@ -1267,6 +1258,17 @@
       <costs>
         <cost name="Points" typeId="dd57-09ff-340f-8e48" value="36"/>
       </costs>
+      <modifiers>
+        <modifier type="add" value="b5b8-5ac8-4c77-cbb0" field="category">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="self" childId="df1f-937a-7be9-2333" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="9b9d-999c-9ec2-b167" name="Reformed Destroyer" publicationId="3942-1ba6-967b-c9ed" page="63" hidden="false" collective="false" import="true" type="unit">
       <profiles>
@@ -1669,7 +1671,24 @@
             <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="3c93-0fa5-f53f-8c87-max"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Commander" hidden="false" id="04f6-638b-2015-71c0" collective="false" targetId="df1f-937a-7be9-2333" type="selectionEntry">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8b25-44b0-f80b-c213" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="812c-3a46-f69f-e023" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
+      <modifiers>
+        <modifier type="add" value="b5b8-5ac8-4c77-cbb0" field="category">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="self" childId="df1f-937a-7be9-2333" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Gravity Bombs" hidden="false" id="1f90-d3b8-7066-916e" publicationId="3942-1ba6-967b-c9ed" page="65">
       <profiles>
@@ -1759,7 +1778,36 @@
             <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="b508-6f3d-62a0-8952"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Commander" hidden="false" id="39f1-5745-b913-94ab" collective="false" targetId="df1f-937a-7be9-2333" type="selectionEntry">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3801-9764-649c-c8b4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="ad68-e50f-fafd-d4cc" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Prefect Lupinus [Reformed Only]" hidden="false" id="fe6d-0757-a680-e44d" collective="false" targetId="167e-94c1-d160-de1e" type="selectionEntryGroup">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3131-f61f-e0ff-25ed" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Imperial Hemina Commander" hidden="false" id="34ab-5d55-7ff5-d9a1" collective="false" targetId="35d8-7348-7bb0-6b11" type="selectionEntryGroup">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0b8b-2039-b0a0-2cde" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </entryLink>
       </entryLinks>
+      <modifiers>
+        <modifier type="add" value="b5b8-5ac8-4c77-cbb0" field="category">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="self" childId="df1f-937a-7be9-2333" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Protector" hidden="false" id="8c32-9609-c7b1-26de" publicationId="3942-1ba6-967b-c9ed" page="65">
       <profiles>
@@ -1788,6 +1836,24 @@
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="434f-4c96-3f24-8da8"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Commander" hidden="false" id="d89c-cb0b-a72e-79ae" collective="false" targetId="df1f-937a-7be9-2333" type="selectionEntry">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="860f-df8b-f4f9-d7ce" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="da4a-c042-41c3-70ad" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Prefect Lupinus [Reformed Only]" hidden="false" id="2f12-f6e9-a8fb-3235" collective="false" targetId="167e-94c1-d160-de1e" type="selectionEntryGroup">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5eba-1711-9de7-a1bf" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Imperial Hemina Commander" hidden="false" id="4079-08e7-394c-e6e6" collective="false" targetId="35d8-7348-7bb0-6b11" type="selectionEntryGroup">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="36d6-ddf2-6ed7-771a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </entryLink>
       </entryLinks>
       <infoLinks>
         <infoLink name="ADS X" id="c6af-19bc-ceb2-cefd" hidden="false" type="rule" targetId="7b47-f592-16a4-f8f4"/>
@@ -1801,6 +1867,17 @@
         <categoryLink targetId="c773-1620-0702-d575" id="08e7-b506-f487-cf72" primary="false" name="Auxiliary"/>
         <categoryLink targetId="9cb1-f70a-60f2-5d11" id="0f99-610c-97bb-bbec" primary="true" name="Escort"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="add" value="b5b8-5ac8-4c77-cbb0" field="category">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="self" childId="df1f-937a-7be9-2333" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>

@@ -6,7 +6,6 @@
   </publications>
   <costTypes>
     <costType id="dd57-09ff-340f-8e48" name="Points" defaultCostLimit="-1" hidden="false"/>
-    <costType name="Hidden Thrust" id="a69d-b0f6-7ef9-5d17" defaultCostLimit="-1" hidden="true"/>
   </costTypes>
   <profileTypes>
     <profileType id="fd62-daee-6b9c-c612" name="Ship Stats">
@@ -73,6 +72,9 @@
     </categoryEntry>
     <categoryEntry id="b5b8-5ac8-4c77-cbb0" name="Commander" hidden="false"/>
     <categoryEntry name="Vanguard" id="2605-3576-ce62-d271" hidden="false"/>
+    <categoryEntry name="not vanguard eligible" id="f40f-3734-00a7-9824" hidden="true">
+      <comment>This one is meant to be given to all ships that are not eligible to make a vanguard</comment>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="2baf-20ef-c40f-8aa8" name="Combat Group" hidden="false">
@@ -82,6 +84,12 @@
         </rule>
       </rules>
       <categoryLinks>
+        <categoryLink name="Vanguard" hidden="false" id="e4a3-00ba-4031-1d52" targetId="2605-3576-ce62-d271" type="category">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="9b81-9fb3-52b1-c55d"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="56f6-2870-d2ea-ad4d"/>
+          </constraints>
+        </categoryLink>
         <categoryLink id="eaac-0780-ae0c-c7c1" name="Capital" hidden="false" targetId="ddf0-e667-c5bb-bfd0" primary="false">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="25ae-9204-849c-8ddc" type="min"/>
@@ -133,6 +141,12 @@
         </rule>
       </rules>
       <categoryLinks>
+        <categoryLink name="Vanguard" hidden="false" id="bc15-9796-8331-25c2" targetId="2605-3576-ce62-d271">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="6520-aefe-49e7-9b77"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0875-4422-42d7-c20c"/>
+          </constraints>
+        </categoryLink>
         <categoryLink id="b964-cffa-77db-6917" name="support" hidden="false" targetId="ff8c-6404-d96c-d06e" primary="false">
           <constraints>
             <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f972-0f7e-efa9-c063" type="min"/>
@@ -172,6 +186,12 @@
         </rule>
       </rules>
       <categoryLinks>
+        <categoryLink name="Vanguard" hidden="false" id="51bb-6994-45a7-1e21" targetId="2605-3576-ce62-d271">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="6ec6-0bac-318e-3cdb"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="80b6-9742-6ce7-cf9e"/>
+          </constraints>
+        </categoryLink>
         <categoryLink id="6f57-d6f3-fcbc-67d9" name="Capital" hidden="false" targetId="ddf0-e667-c5bb-bfd0" primary="false">
           <constraints>
             <constraint field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a340-c81b-766e-6747" type="max"/>
@@ -211,6 +231,12 @@
         </rule>
       </rules>
       <categoryLinks>
+        <categoryLink name="Vanguard" hidden="false" id="ad9d-7362-d2e4-4fd5" targetId="2605-3576-ce62-d271">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="7e54-ff6f-9033-96fd"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="022d-553f-0f90-34bd"/>
+          </constraints>
+        </categoryLink>
         <categoryLink id="e9bf-5a52-5652-d41e" name="Commander" hidden="false" targetId="b5b8-5ac8-4c77-cbb0" primary="false">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="09ca-8b29-e1e6-1d09" type="max"/>
@@ -232,6 +258,12 @@
         </rule>
       </rules>
       <categoryLinks>
+        <categoryLink name="Vanguard" hidden="false" id="3777-4dce-2cfb-dc97" targetId="2605-3576-ce62-d271">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="e660-0f50-9e48-b04a"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d0bc-3a72-6943-6409"/>
+          </constraints>
+        </categoryLink>
         <categoryLink id="7f9b-f93b-3f43-9f3b" name="Escort" hidden="false" targetId="9cb1-f70a-60f2-5d11" primary="false">
           <constraints>
             <constraint field="selections" scope="parent" value="7" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="86cd-93c8-1931-f17e" type="max"/>
@@ -253,6 +285,12 @@
         </rule>
       </rules>
       <categoryLinks>
+        <categoryLink name="Vanguard" hidden="false" id="93e5-5c1c-b5f8-b1e7" targetId="2605-3576-ce62-d271">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="7a44-e796-33ce-c075"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4255-37cd-bce0-0843"/>
+          </constraints>
+        </categoryLink>
         <categoryLink id="5295-f9e3-4773-dacf" name="Capital" hidden="false" targetId="ddf0-e667-c5bb-bfd0" primary="false">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="091d-6890-d23d-7465" type="max"/>
@@ -285,6 +323,14 @@
           <description>Modifier: This Battlegroup never makes any morale checks.</description>
         </rule>
       </rules>
+      <categoryLinks>
+        <categoryLink name="Vanguard" hidden="false" id="e9d9-e87a-bc3f-4f12" targetId="2605-3576-ce62-d271">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="b271-7a42-5e6a-4f02"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0a49-c782-f76c-4410"/>
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
     </forceEntry>
   </forceEntries>
   <sharedSelectionEntries>
@@ -293,7 +339,6 @@
         <entryLink id="85bf-d78b-48f2-75f7" name="Commander" hidden="false" collective="false" import="true" targetId="f514-1193-a474-711f" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Vanguard" hidden="false" id="9a6f-dc35-eb1b-ec7b" subType="unit-group"/>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="f514-1193-a474-711f" name="Commander" hidden="false" collective="false" import="true" defaultSelectionEntryId="72a1-5827-9cf9-5f9d">
@@ -624,4 +669,23 @@ In addition, the presence of a scout ship in a battlegroup allows the battlegrou
       <description>Weapons with this trait target the closest enemy ship within the targeted battlegroup. If that ship is destroyed, then the attacks target the next closest ship.</description>
     </rule>
   </sharedRules>
+  <selectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Vanguard" hidden="false" id="e449-525a-6485-abf6">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="f40f-3734-00a7-9824" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="2605-3576-ce62-d271" id="ea4d-402b-2021-2966" primary="true" name="Vanguard"/>
+      </categoryLinks>
+      <rules>
+        <rule name="Vanguard" id="9203-3277-6409-f498" hidden="false" publicationId="c478-850b-f9ae-9c10" page="6">
+          <description>If all ships in a group are thrust 4 or above, they may be upgraded to a vanguard group.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+  </selectionEntries>
 </gameSystem>

@@ -19,6 +19,10 @@
     <entryLink id="2678-52e7-eb47-91ba" name="Reformed Mine Layer" hidden="false" collective="false" import="true" targetId="2e3f-2443-b877-3aed" type="selectionEntry"/>
     <entryLink id="699b-9238-7705-bc32" name="Corvette" hidden="false" collective="false" import="true" targetId="15e5-c8cc-039a-c66c" type="selectionEntry"/>
     <entryLink id="a087-f4b8-a289-673d" name="Reformed Guardian Ships" hidden="false" collective="false" import="true" targetId="1d63-334f-95cd-b7f4" type="selectionEntry"/>
+    <entryLink import="true" name="Assault Carrier" hidden="false" id="8827-6734-611e-7f8c" type="selectionEntry" targetId="78f0-d625-8aca-bfe9"/>
+    <entryLink import="true" name="Heavy Cruiser" hidden="false" id="2540-fe0a-616e-ba52" type="selectionEntry" targetId="b648-2125-8c66-e93d"/>
+    <entryLink import="true" name="Ravager" hidden="false" id="b215-2c07-e702-bffa" type="selectionEntry" targetId="7fda-c618-f538-aea5"/>
+    <entryLink import="true" name="Protector" hidden="false" id="fc0b-0898-b1aa-05f2" type="selectionEntry" targetId="8c32-9609-c7b1-26de"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="e7f4-f372-0837-5d16" name="Light Cruiser" publicationId="3942-1ba6-967b-c9ed" page="62" hidden="false" collective="false" import="true" type="unit">
@@ -282,6 +286,7 @@
       <categoryLinks>
         <categoryLink id="2270-68c0-a60c-3ddd" name="Capital" hidden="false" targetId="ddf0-e667-c5bb-bfd0" primary="true"/>
         <categoryLink id="f416-3c80-6fa4-7416" name="Imperial Hemina" hidden="false" targetId="1117-20a0-a34d-68bd" primary="false"/>
+        <categoryLink targetId="f40f-3734-00a7-9824" id="3862-99b1-5499-2256" primary="false" name="not vanguard eligible"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="8b63-7aab-c106-aba1" name="+2 Assault Bays" publicationId="3942-1ba6-967b-c9ed" page="62" hidden="false" collective="false" import="true" type="upgrade">
@@ -448,6 +453,7 @@
         <categoryLink id="bce0-e7e7-7525-64b4" name="Capital" hidden="false" targetId="ddf0-e667-c5bb-bfd0" primary="true"/>
         <categoryLink id="bbd0-cf17-0086-5f1a" name="Imperial Hemina" hidden="false" targetId="1117-20a0-a34d-68bd" primary="false"/>
         <categoryLink id="093d-ebbb-a8a2-3228" name="Heavy" hidden="false" targetId="99a8-81d3-ead9-288b" primary="false"/>
+        <categoryLink targetId="f40f-3734-00a7-9824" id="fb3d-3665-80ed-0819" primary="false" name="not vanguard eligible"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="4fd2-5692-e330-db60" name="Armoured Reactor Core" publicationId="3942-1ba6-967b-c9ed" page="62" hidden="false" collective="false" import="true" type="upgrade">
@@ -518,6 +524,11 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="remove" value="f40f-3734-00a7-9824" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="self" childId="1138-4ed1-02dc-6973" shared="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <profiles>
         <profile id="eef5-c192-5002-1650" name="Battle Cruiser" hidden="false" typeId="fd62-daee-6b9c-c612" typeName="Ship Stats">
@@ -545,6 +556,7 @@
       <categoryLinks>
         <categoryLink id="d0d0-c80f-7668-1f1a" name="Capital" hidden="false" targetId="ddf0-e667-c5bb-bfd0" primary="true"/>
         <categoryLink id="df99-9da0-c809-a5b7" name="Imperial Hemina" hidden="false" targetId="1117-20a0-a34d-68bd" primary="false"/>
+        <categoryLink targetId="f40f-3734-00a7-9824" id="b90b-daf5-68be-e6c1" primary="false" name="not vanguard eligible"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="1138-4ed1-02dc-6973" name="+1 Max Thrust" hidden="false" collective="false" import="true" type="upgrade">
@@ -630,6 +642,7 @@
         <categoryLink id="cdcf-8bcc-1167-6d09" name="Capital" hidden="false" targetId="ddf0-e667-c5bb-bfd0" primary="true"/>
         <categoryLink id="bdb8-5c9a-6e0a-9a28" name="Heavy" hidden="false" targetId="99a8-81d3-ead9-288b" primary="false"/>
         <categoryLink id="4605-c85f-f6e0-460b" name="Imperial Hemina" hidden="false" targetId="1117-20a0-a34d-68bd" primary="false"/>
+        <categoryLink targetId="f40f-3734-00a7-9824" id="6798-8bda-f3bc-b030" primary="false" name="not vanguard eligible"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="bb69-2355-5965-090d" name="Flag Bridge" publicationId="3942-1ba6-967b-c9ed" page="62" hidden="false" collective="false" import="true" type="upgrade">
@@ -744,6 +757,7 @@
         <categoryLink id="bb3c-843c-d13d-d7e4" name="Capital" hidden="false" targetId="ddf0-e667-c5bb-bfd0" primary="true"/>
         <categoryLink id="a8a1-5ce3-037f-c101" name="Imperial Hemina" hidden="false" targetId="1117-20a0-a34d-68bd" primary="false"/>
         <categoryLink id="c945-f630-1516-fe6b" name="Heavy" hidden="false" targetId="99a8-81d3-ead9-288b" primary="false"/>
+        <categoryLink targetId="f40f-3734-00a7-9824" id="5361-bcd2-d9c8-bfaf" primary="false" name="not vanguard eligible"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="61d3-3a6e-f984-0dca" name="Armoured Reactor Core" hidden="false" collective="false" import="true" type="upgrade">
@@ -813,6 +827,11 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="remove" value="f40f-3734-00a7-9824" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="self" childId="92eb-9b52-6e27-a418" shared="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <profiles>
         <profile id="b381-cd3a-1325-c98f" name="Reformed Cruiser" hidden="false" typeId="fd62-daee-6b9c-c612" typeName="Ship Stats">
@@ -830,6 +849,7 @@
       <categoryLinks>
         <categoryLink id="ecd3-24b8-ea3f-cd05" name="Capital" hidden="false" targetId="ddf0-e667-c5bb-bfd0" primary="true"/>
         <categoryLink id="15cc-5a95-332c-c31c" name="Imperial Hemina" hidden="false" targetId="1117-20a0-a34d-68bd" primary="false"/>
+        <categoryLink targetId="f40f-3734-00a7-9824" id="1c75-4712-aa77-018c" primary="false" name="not vanguard eligible"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="b884-bfc4-15c5-7656" name="Disruptor Cannon" hidden="false" collective="false" import="true" targetId="48ed-edd2-a6ac-a720" type="selectionEntry">
@@ -872,6 +892,17 @@
       <costs>
         <cost name="Points" typeId="dd57-09ff-340f-8e48" value="48"/>
       </costs>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="+1 Max Thrust" hidden="false" id="92eb-9b52-6e27-a418" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="00d4-3ec9-7adb-422b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="e371-e595-f512-2efe" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <costs>
+            <cost name="Points" typeId="dd57-09ff-340f-8e48" value="5"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry id="5fb3-1fb5-91aa-bd44" name="Vibro Cannon" hidden="false" collective="false" import="true" type="upgrade" publicationId="3942-1ba6-967b-c9ed">
       <profiles>
@@ -900,6 +931,11 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="remove" value="f40f-3734-00a7-9824" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="self" childId="7756-0ad1-3fd7-46ac" shared="true"/>
+          </conditions>
         </modifier>
       </modifiers>
       <profiles>
@@ -934,6 +970,7 @@
       <categoryLinks>
         <categoryLink id="c58e-1d78-ab39-0dfd" name="Capital" hidden="false" targetId="ddf0-e667-c5bb-bfd0" primary="true"/>
         <categoryLink id="6ab8-5d4c-0bbd-3b9a" name="Imperial Hemina" hidden="false" targetId="1117-20a0-a34d-68bd" primary="false"/>
+        <categoryLink targetId="b5b8-5ac8-4c77-cbb0" id="a394-2135-f983-ef7d" primary="false" name="Commander"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="3fdb-2c77-d331-0214" name="+4 Strike Bay" hidden="false" collective="false" import="true" type="upgrade">
@@ -1022,6 +1059,7 @@
       <categoryLinks>
         <categoryLink id="1e8a-8c24-1b8d-6e58" name="Capital" hidden="false" targetId="ddf0-e667-c5bb-bfd0" primary="true"/>
         <categoryLink targetId="1117-20a0-a34d-68bd" id="c75b-9ad0-ddf0-ef15" primary="false" name="Imperial Hemina"/>
+        <categoryLink targetId="f40f-3734-00a7-9824" id="6dbf-b16e-0f21-1a72" primary="false" name="not vanguard eligible"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="8874-95e8-e707-3454" name="Commander" hidden="false" collective="false" import="true" targetId="df1f-937a-7be9-2333" type="selectionEntry">
@@ -1095,6 +1133,7 @@
         <categoryLink id="94fd-cfac-e363-2c32" name="Capital" hidden="false" targetId="ddf0-e667-c5bb-bfd0" primary="true"/>
         <categoryLink id="aa13-8a94-a58f-aeb7" name="Heavy" hidden="false" targetId="99a8-81d3-ead9-288b" primary="false"/>
         <categoryLink targetId="1117-20a0-a34d-68bd" id="f4c2-a7a9-28d8-2021" primary="false" name="Imperial Hemina"/>
+        <categoryLink targetId="f40f-3734-00a7-9824" id="8b5a-9193-260e-7dc7" primary="false" name="not vanguard eligible"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="1e73-3336-1dc7-1222" name="Armoured Reactor Core" publicationId="3942-1ba6-967b-c9ed" page="62" hidden="false" collective="false" import="true" type="upgrade">
@@ -1184,6 +1223,7 @@
       <categoryLinks>
         <categoryLink id="7814-c2f1-15c5-13c2" name="support" hidden="false" targetId="ff8c-6404-d96c-d06e" primary="true"/>
         <categoryLink targetId="1117-20a0-a34d-68bd" id="c984-d40b-73f5-d78c" primary="false" name="Imperial Hemina"/>
+        <categoryLink targetId="f40f-3734-00a7-9824" id="c647-ebaa-5e37-d56c" primary="false" name="not vanguard eligible"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="acfd-7e8a-b7fa-15a2" name="+1 Assault Bay" hidden="false" collective="false" import="true" type="upgrade">
@@ -1526,6 +1566,242 @@
         <cost name="Points" typeId="dd57-09ff-340f-8e48" value="26"/>
       </costs>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Assault Carrier" hidden="false" id="78f0-d625-8aca-bfe9" publicationId="3942-1ba6-967b-c9ed" page="65">
+      <costs>
+        <cost name="Points" typeId="dd57-09ff-340f-8e48" value="65"/>
+        <cost name="Hidden Thrust" typeId="a69d-b0f6-7ef9-5d17" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="ddf0-e667-c5bb-bfd0" id="03d9-01f2-e81d-b442" primary="true" name="Capital"/>
+        <categoryLink targetId="1117-20a0-a34d-68bd" id="4a5a-8fa4-7b5c-5dae" primary="false" name="Imperial Hemina"/>
+        <categoryLink targetId="c773-1620-0702-d575" id="c052-9ffb-b05c-8a58" primary="false" name="Auxiliary"/>
+        <categoryLink targetId="f40f-3734-00a7-9824" id="2c7b-ab6f-e7c7-2424" primary="false" name="not vanguard eligible"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="add" value="b5b8-5ac8-4c77-cbb0" field="category">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="self" childId="df1f-937a-7be9-2333" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="1954-b773-40de-da45" collective="false" targetId="df1f-937a-7be9-2333" type="selectionEntry">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9672-22d7-03b5-3ab0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="cbff-8c94-7616-ca8c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Imperial Hemina Commander" hidden="false" id="d609-6bb1-fae1-4064" collective="false" targetId="35d8-7348-7bb0-6b11" type="selectionEntryGroup">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f3fe-5898-71db-b9d9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </entryLink>
+        <entryLink import="true" name="Particle Laser" hidden="false" id="10c6-3da3-bae2-d2f1" type="selectionEntry" targetId="44f1-16a6-a351-ba77">
+          <constraints>
+            <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="ad37-59a7-2e90-bfa3-min"/>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="ad37-59a7-2e90-bfa3-max"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Sluggish" hidden="false" id="52a9-a90f-473a-6b14" type="rule" targetId="8a4f-3958-18fe-0838"/>
+        <entryLink import="true" name="CQB Companies" hidden="false" id="8dc8-e88a-0876-a838" type="selectionEntryGroup" targetId="b910-5484-9fb7-15ea">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="8279-07b3-fd6d-0a5f"/>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="c374-0825-69e9-9156"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <profiles>
+        <profile name="Assault Carrier" typeId="fd62-daee-6b9c-c612" typeName="Ship Stats" hidden="false" id="a112-cb96-8d2b-7687">
+          <characteristics>
+            <characteristic name="Shield Strength" typeId="face-6a39-0cf0-eebe">6</characteristic>
+            <characteristic name="Max Thrust" typeId="0351-9250-0a32-4131">3</characteristic>
+            <characteristic name="Hull Points" typeId="b78c-8434-3b73-3728">4</characteristic>
+            <characteristic name="Crew Size" typeId="ba69-5c5c-fbb2-ee8f">7</characteristic>
+            <characteristic name="Strike Bay" typeId="6951-636f-b7cf-dff3"/>
+            <characteristic name="Assault bay" typeId="5064-520e-c582-fc1a">4</characteristic>
+            <characteristic name="Traits" typeId="7875-4af0-5837-6dcb">Krotan, Launch 4, Sluggish</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Launch X" id="a315-37d9-b472-1a09" hidden="false" targetId="0158-e952-527e-8955" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Heavy Cruiser" hidden="false" id="b648-2125-8c66-e93d" publicationId="3942-1ba6-967b-c9ed" page="65">
+      <costs>
+        <cost name="Points" typeId="dd57-09ff-340f-8e48" value="53"/>
+        <cost name="Hidden Thrust" typeId="a69d-b0f6-7ef9-5d17" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="c773-1620-0702-d575" id="2bd6-5708-c6a2-5991" primary="false" name="Auxiliary"/>
+        <categoryLink targetId="ddf0-e667-c5bb-bfd0" id="a709-c025-0faa-40d0" primary="true" name="Capital"/>
+        <categoryLink targetId="1117-20a0-a34d-68bd" id="de8b-5818-f84d-e29e" primary="false" name="Imperial Hemina"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Heavy Cruiser" typeId="fd62-daee-6b9c-c612" typeName="Ship Stats" hidden="false" id="a26e-e6e2-bc14-69dd">
+          <characteristics>
+            <characteristic name="Shield Strength" typeId="face-6a39-0cf0-eebe">7</characteristic>
+            <characteristic name="Max Thrust" typeId="0351-9250-0a32-4131">3</characteristic>
+            <characteristic name="Hull Points" typeId="b78c-8434-3b73-3728">4</characteristic>
+            <characteristic name="Crew Size" typeId="ba69-5c5c-fbb2-ee8f">3</characteristic>
+            <characteristic name="Strike Bay" typeId="6951-636f-b7cf-dff3"/>
+            <characteristic name="Assault bay" typeId="5064-520e-c582-fc1a"/>
+            <characteristic name="Traits" typeId="7875-4af0-5837-6dcb">Vespa</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Gravity Bombs" hidden="false" id="c5d1-952d-9285-408f" type="selectionEntry" targetId="1f90-d3b8-7066-916e">
+          <constraints>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="622f-aff7-06e9-d156-min"/>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="622f-aff7-06e9-d156-max"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Fusion Cannons" hidden="false" id="8983-48bf-55b5-04a0" type="selectionEntry" targetId="f1de-af0e-b26e-2d94">
+          <constraints>
+            <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="3c93-0fa5-f53f-8c87-min"/>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="3c93-0fa5-f53f-8c87-max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Gravity Bombs" hidden="false" id="1f90-d3b8-7066-916e" publicationId="3942-1ba6-967b-c9ed" page="65">
+      <profiles>
+        <profile name="Gravity Bombs" typeId="0faa-34ea-a9b8-dccb" typeName="Weapon Stats" hidden="false" id="0e1b-58fd-c36e-7953">
+          <characteristics>
+            <characteristic name="Range" typeId="70bd-05d7-583c-390d">6&quot;-16&quot;</characteristic>
+            <characteristic name="Roll to hit" typeId="a5ba-9b41-500b-6c52">2+</characteristic>
+            <characteristic name="Shield Damage" typeId="90c8-0f37-d9b7-e2e1">1</characteristic>
+            <characteristic name="Hull Damage" typeId="9dc6-3082-ba5b-4c5a">1</characteristic>
+            <characteristic name="Fire Points" typeId="d0d5-25ad-92ff-bf0c">Front</characteristic>
+            <characteristic name="Traits" typeId="69fd-d140-d640-f992">Dumb fire, Gravity Distortion</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Gravity Distortion" id="8c30-cb84-9d34-8211" hidden="false" publicationId="3942-1ba6-967b-c9ed" page="65">
+          <description>All Gravity Bombs in a battlegroup must target the same enemy group. Battlegroups hit by this weapon can either have their max thrust reduced by 2 next activation or have 1 crew die (after damage) on the cheapest ship in the battlegroup (by total points) as their crew is splattered against the walls. - Player receiving shots decides.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Dumb fire" id="c13a-0650-a54b-7188" hidden="false" type="rule" targetId="92d6-9731-df3b-d262"/>
+        <infoLink name="Ordanence" id="193b-fd0a-c722-c1bc" hidden="false" type="rule" targetId="a8c2-e70e-c16c-301d"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Fusion Cannons" hidden="false" id="f1de-af0e-b26e-2d94" publicationId="3942-1ba6-967b-c9ed" page="65">
+      <profiles>
+        <profile name="Fusion Cannons" typeId="0faa-34ea-a9b8-dccb" typeName="Weapon Stats" hidden="false" id="1701-8687-9a73-e0e6">
+          <characteristics>
+            <characteristic name="Range" typeId="70bd-05d7-583c-390d">8&quot;</characteristic>
+            <characteristic name="Roll to hit" typeId="a5ba-9b41-500b-6c52">4+</characteristic>
+            <characteristic name="Shield Damage" typeId="90c8-0f37-d9b7-e2e1">1</characteristic>
+            <characteristic name="Hull Damage" typeId="9dc6-3082-ba5b-4c5a">1</characteristic>
+            <characteristic name="Fire Points" typeId="d0d5-25ad-92ff-bf0c">Front / Side</characteristic>
+            <characteristic name="Traits" typeId="69fd-d140-d640-f992"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Ravager" hidden="false" id="7fda-c618-f538-aea5" publicationId="3942-1ba6-967b-c9ed" page="65">
+      <profiles>
+        <profile name="Ravager" typeId="fd62-daee-6b9c-c612" typeName="Ship Stats" hidden="false" id="1c62-e494-a460-2fe4">
+          <characteristics>
+            <characteristic name="Shield Strength" typeId="face-6a39-0cf0-eebe">2</characteristic>
+            <characteristic name="Max Thrust" typeId="0351-9250-0a32-4131">4</characteristic>
+            <characteristic name="Hull Points" typeId="b78c-8434-3b73-3728">2</characteristic>
+            <characteristic name="Crew Size" typeId="ba69-5c5c-fbb2-ee8f">1</characteristic>
+            <characteristic name="Strike Bay" typeId="6951-636f-b7cf-dff3"/>
+            <characteristic name="Assault bay" typeId="5064-520e-c582-fc1a"/>
+            <characteristic name="Traits" typeId="7875-4af0-5837-6dcb">Krotan, ADS</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="append" value="2" field="7875-4af0-5837-6dcb" arg="ADS">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="7fda-c618-f538-aea5" childId="584f-b9f3-238d-189b" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="+1ADS" hidden="false" id="b043-f6bc-f754-18fa">
+          <costs>
+            <cost name="Points" typeId="dd57-09ff-340f-8e48" value="3"/>
+            <cost name="Hidden Thrust" typeId="a69d-b0f6-7ef9-5d17" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="1d04-5984-98ef-14dc"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c464-7743-8d70-9d63"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Points" typeId="dd57-09ff-340f-8e48" value="22"/>
+        <cost name="Hidden Thrust" typeId="a69d-b0f6-7ef9-5d17" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="c773-1620-0702-d575" id="9fe8-7c35-09df-a41f" primary="false" name="Auxiliary"/>
+        <categoryLink targetId="9cb1-f70a-60f2-5d11" id="0bd2-20cb-dbae-bc80" primary="true" name="Escort"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="ADS X" id="fbdf-4569-a88a-92aa" hidden="false" type="rule" targetId="7b47-f592-16a4-f8f4"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Particle Laser" hidden="false" id="e4e1-8e53-5f49-f2ed" type="selectionEntry" targetId="44f1-16a6-a351-ba77">
+          <constraints>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="e456-7114-b4b2-d13b"/>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="b508-6f3d-62a0-8952"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Protector" hidden="false" id="8c32-9609-c7b1-26de" publicationId="3942-1ba6-967b-c9ed" page="65">
+      <profiles>
+        <profile name="Vespa" typeId="fd62-daee-6b9c-c612" typeName="Ship Stats" hidden="false" id="a8e8-8742-a283-8100">
+          <characteristics>
+            <characteristic name="Shield Strength" typeId="face-6a39-0cf0-eebe">2</characteristic>
+            <characteristic name="Max Thrust" typeId="0351-9250-0a32-4131">5</characteristic>
+            <characteristic name="Hull Points" typeId="b78c-8434-3b73-3728">2</characteristic>
+            <characteristic name="Crew Size" typeId="ba69-5c5c-fbb2-ee8f">1</characteristic>
+            <characteristic name="Strike Bay" typeId="6951-636f-b7cf-dff3"/>
+            <characteristic name="Assault bay" typeId="5064-520e-c582-fc1a"/>
+            <characteristic name="Traits" typeId="7875-4af0-5837-6dcb">Vespa, Aegis, Vespa</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Gravity Bombs" hidden="false" id="96fb-0fbb-b6d0-2498" type="selectionEntry" targetId="1f90-d3b8-7066-916e">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="062b-27dd-26b7-2a82"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="19c5-c796-2322-bf49"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Fusion Cannons" hidden="false" id="c185-c0b5-f868-7f25" type="selectionEntry" targetId="f1de-af0e-b26e-2d94">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="6657-8b4f-bb98-df4b"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="434f-4c96-3f24-8da8"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="ADS X" id="c6af-19bc-ceb2-cefd" hidden="false" type="rule" targetId="7b47-f592-16a4-f8f4"/>
+        <infoLink name="Aegis" id="bb86-fc3d-f00a-a43b" hidden="false" type="rule" targetId="c1f8-d8c6-a1b8-d7c3"/>
+      </infoLinks>
+      <costs>
+        <cost name="Points" typeId="dd57-09ff-340f-8e48" value="22"/>
+        <cost name="Hidden Thrust" typeId="a69d-b0f6-7ef9-5d17" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="c773-1620-0702-d575" id="08e7-b506-f487-cf72" primary="false" name="Auxiliary"/>
+        <categoryLink targetId="9cb1-f70a-60f2-5d11" id="0f99-610c-97bb-bbec" primary="true" name="Escort"/>
+      </categoryLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="d2a5-4e87-5237-35d0" name="Strike Craft" publicationId="3942-1ba6-967b-c9ed" page="64" hidden="false" collective="false" import="true">
@@ -1858,4 +2134,7 @@ This must be done before the Heavy cruiser has fired this activation.</descripti
       </characteristics>
     </profile>
   </sharedProfiles>
+  <categoryEntries>
+    <categoryEntry name="Auxiliary" id="c773-1620-0702-d575" hidden="false"/>
+  </categoryEntries>
 </catalogue>

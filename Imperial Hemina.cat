@@ -105,7 +105,7 @@
         <entryLink id="9fa3-3c3b-c6dd-7363" name="Commander" hidden="false" collective="false" import="true" targetId="df1f-937a-7be9-2333" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="97bf-a5ba-ef7a-d58b" type="max"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8231-7f0d-39fc-9132" type="min"/>
+            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8231-7f0d-39fc-9132" type="min"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -394,7 +394,7 @@
         <entryLink id="2ed0-58e7-c531-f24c" name="Commander" hidden="false" collective="false" import="true" targetId="df1f-937a-7be9-2333" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a13-5da5-ebea-df9e" type="max"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e465-0803-276e-d938" type="min"/>
+            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e465-0803-276e-d938" type="min"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -1252,7 +1252,6 @@
             <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f081-f774-6192-bd9e" type="min"/>
           </constraints>
           <entryLinks>
-            <entryLink id="0b1d-9c9d-e956-5658" name="Commander" hidden="false" collective="false" import="true" targetId="f514-1193-a474-711f" type="selectionEntryGroup"/>
             <entryLink id="d690-950e-571f-7700" name="Prefect Lupinus [Reformed Only]" hidden="false" collective="false" import="true" targetId="167e-94c1-d160-de1e" type="selectionEntryGroup">
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="be40-57ea-f56a-b473" type="max"/>

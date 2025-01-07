@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="8ee7-a3b6-0307-7e64" name="Grand Fleet Admiral" revision="1" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="8ee7-a3b6-0307-7e64" name="Grand Fleet Admiral" revision="2" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <publications>
     <publication id="c478-850b-f9ae-9c10" name="Grand Fleet Admiral Core Rules V2.27" shortName="GFA V2.27"/>
     <publication id="3942-1ba6-967b-c9ed" name="GFA Factions 2.27"/>
   </publications>
   <costTypes>
-    <costType id="dd57-09ff-340f-8e48" name="Points" defaultCostLimit="-1.0" hidden="false"/>
+    <costType id="dd57-09ff-340f-8e48" name="Points" defaultCostLimit="-1" hidden="false"/>
+    <costType name="Hidden Thrust" id="a69d-b0f6-7ef9-5d17" defaultCostLimit="-1" hidden="true"/>
   </costTypes>
   <profileTypes>
     <profileType id="fd62-daee-6b9c-c612" name="Ship Stats">
@@ -71,6 +72,7 @@
       </infoLinks>
     </categoryEntry>
     <categoryEntry id="b5b8-5ac8-4c77-cbb0" name="Commander" hidden="false"/>
+    <categoryEntry name="Vanguard" id="2605-3576-ce62-d271" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="2baf-20ef-c40f-8aa8" name="Combat Group" hidden="false">
@@ -82,44 +84,44 @@
       <categoryLinks>
         <categoryLink id="eaac-0780-ae0c-c7c1" name="Capital" hidden="false" targetId="ddf0-e667-c5bb-bfd0" primary="false">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="25ae-9204-849c-8ddc" type="min"/>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="57c2-c730-0da2-2868" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="25ae-9204-849c-8ddc" type="min"/>
+            <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="57c2-c730-0da2-2868" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="19ab-0e3d-100c-f794" name="Escort" hidden="false" targetId="9cb1-f70a-60f2-5d11" primary="false">
           <modifiers>
-            <modifier type="increment" field="f2e3-fa25-9ab1-2ea8" value="2.0">
+            <modifier type="increment" field="f2e3-fa25-9ab1-2ea8" value="2">
               <repeats>
-                <repeat field="selections" scope="2baf-20ef-c40f-8aa8" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ddf0-e667-c5bb-bfd0" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="2baf-20ef-c40f-8aa8" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ddf0-e667-c5bb-bfd0" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f2e3-fa25-9ab1-2ea8" type="min"/>
+            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f2e3-fa25-9ab1-2ea8" type="min"/>
           </constraints>
         </categoryLink>
         <categoryLink id="d5fa-9878-62aa-0199" name="support" hidden="false" targetId="ff8c-6404-d96c-d06e" primary="false">
           <modifiers>
-            <modifier type="increment" field="96b4-beb5-7b47-3add" value="1.0">
+            <modifier type="increment" field="96b4-beb5-7b47-3add" value="1">
               <repeats>
-                <repeat field="selections" scope="2baf-20ef-c40f-8aa8" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ddf0-e667-c5bb-bfd0" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="2baf-20ef-c40f-8aa8" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ddf0-e667-c5bb-bfd0" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="96b4-beb5-7b47-3add" type="max"/>
+            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="96b4-beb5-7b47-3add" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="9244-a3bc-42fc-aa4b" name="Heavy" hidden="false" targetId="99a8-81d3-ead9-288b" primary="false">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="abf0-c32a-6547-bd6c" type="max"/>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1d23-3d2b-b8ca-7e1c" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="abf0-c32a-6547-bd6c" type="max"/>
+            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1d23-3d2b-b8ca-7e1c" type="min"/>
           </constraints>
         </categoryLink>
         <categoryLink id="6fa3-5eed-adb9-658e" name="Commander" hidden="false" targetId="b5b8-5ac8-4c77-cbb0" primary="false">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ccbe-2018-27c2-58c5" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1a47-f691-df15-cd6a" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ccbe-2018-27c2-58c5" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1a47-f691-df15-cd6a" type="min"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
@@ -133,32 +135,32 @@
       <categoryLinks>
         <categoryLink id="b964-cffa-77db-6917" name="support" hidden="false" targetId="ff8c-6404-d96c-d06e" primary="false">
           <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f972-0f7e-efa9-c063" type="min"/>
-            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d392-2cac-84b3-ff32" type="max"/>
+            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f972-0f7e-efa9-c063" type="min"/>
+            <constraint field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d392-2cac-84b3-ff32" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="2885-3a0e-d7b4-8a9a" name="Escort" hidden="false" targetId="9cb1-f70a-60f2-5d11" primary="false">
           <modifiers>
-            <modifier type="increment" field="7259-c14b-0d24-3602" value="1.0">
+            <modifier type="increment" field="7259-c14b-0d24-3602" value="1">
               <repeats>
-                <repeat field="selections" scope="2baf-20ef-c40f-8aa8" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ff8c-6404-d96c-d06e" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="2baf-20ef-c40f-8aa8" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ff8c-6404-d96c-d06e" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7259-c14b-0d24-3602" type="min"/>
+            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7259-c14b-0d24-3602" type="min"/>
           </constraints>
         </categoryLink>
         <categoryLink id="75a2-df6e-44c0-5ef9" name="Heavy" hidden="false" targetId="99a8-81d3-ead9-288b" primary="false">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fc75-0232-514c-261a" type="max"/>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d8b9-4667-97f7-9d04" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fc75-0232-514c-261a" type="max"/>
+            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d8b9-4667-97f7-9d04" type="min"/>
           </constraints>
         </categoryLink>
         <categoryLink id="e8a4-9c84-a959-6645" name="Commander" hidden="false" targetId="b5b8-5ac8-4c77-cbb0" primary="false">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="612a-bb4c-396d-baa3" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="526b-b0eb-59c8-1e68" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="612a-bb4c-396d-baa3" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="526b-b0eb-59c8-1e68" type="min"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
@@ -172,33 +174,32 @@
       <categoryLinks>
         <categoryLink id="6f57-d6f3-fcbc-67d9" name="Capital" hidden="false" targetId="ddf0-e667-c5bb-bfd0" primary="false">
           <constraints>
-            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a340-c81b-766e-6747" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab06-ad81-2b8f-d2c8" type="min"/>
+            <constraint field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a340-c81b-766e-6747" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab06-ad81-2b8f-d2c8" type="min"/>
           </constraints>
         </categoryLink>
         <categoryLink id="5bc9-4e4e-bc29-1d27" name="Escort" hidden="false" targetId="9cb1-f70a-60f2-5d11" primary="false">
           <modifiers>
-            <modifier type="increment" field="0ef5-e2fe-cc5e-a8ce" value="1.0">
+            <modifier type="increment" field="0ef5-e2fe-cc5e-a8ce" value="1">
               <repeats>
-                <repeat field="selections" scope="9622-50e0-3a97-6e3f" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ddf0-e667-c5bb-bfd0" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="9622-50e0-3a97-6e3f" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ddf0-e667-c5bb-bfd0" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0ef5-e2fe-cc5e-a8ce" type="min"/>
+            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0ef5-e2fe-cc5e-a8ce" type="min"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="3077-c23a-b3cb-347b" name="support" hidden="false" targetId="ff8c-6404-d96c-d06e" primary="false"/>
         <categoryLink id="9e78-7381-8d10-7f25" name="Heavy" hidden="false" targetId="99a8-81d3-ead9-288b" primary="false">
           <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b067-f12a-fd68-709e" type="max"/>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e54f-cdac-5c39-3aeb" type="min"/>
+            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b067-f12a-fd68-709e" type="max"/>
+            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e54f-cdac-5c39-3aeb" type="min"/>
           </constraints>
         </categoryLink>
         <categoryLink id="f991-6603-8558-3a9d" name="Commander" hidden="false" targetId="b5b8-5ac8-4c77-cbb0" primary="false">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="68fb-8665-3ab5-af0c" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8611-6968-e43b-0e14" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="68fb-8665-3ab5-af0c" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8611-6968-e43b-0e14" type="min"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
@@ -212,14 +213,14 @@
       <categoryLinks>
         <categoryLink id="e9bf-5a52-5652-d41e" name="Commander" hidden="false" targetId="b5b8-5ac8-4c77-cbb0" primary="false">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="09ca-8b29-e1e6-1d09" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="486a-3790-fc0f-4ec8" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="09ca-8b29-e1e6-1d09" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="486a-3790-fc0f-4ec8" type="min"/>
           </constraints>
         </categoryLink>
         <categoryLink id="2f27-371b-90cc-8b0c" name="Escort" hidden="false" targetId="9cb1-f70a-60f2-5d11" primary="false">
           <constraints>
-            <constraint field="selections" scope="parent" value="7.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bd65-72cc-4d84-1a62" type="max"/>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c6f1-d8ce-11c2-28a5" type="min"/>
+            <constraint field="selections" scope="parent" value="7" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bd65-72cc-4d84-1a62" type="max"/>
+            <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c6f1-d8ce-11c2-28a5" type="min"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
@@ -233,14 +234,14 @@
       <categoryLinks>
         <categoryLink id="7f9b-f93b-3f43-9f3b" name="Escort" hidden="false" targetId="9cb1-f70a-60f2-5d11" primary="false">
           <constraints>
-            <constraint field="selections" scope="parent" value="7.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="86cd-93c8-1931-f17e" type="max"/>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9d1a-5bd5-ad19-72e5" type="min"/>
+            <constraint field="selections" scope="parent" value="7" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="86cd-93c8-1931-f17e" type="max"/>
+            <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9d1a-5bd5-ad19-72e5" type="min"/>
           </constraints>
         </categoryLink>
         <categoryLink id="aba2-baae-f43c-fb95" name="Commander" hidden="false" targetId="b5b8-5ac8-4c77-cbb0" primary="false">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b1b4-eedf-e0db-87ac" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fa97-73ad-8e07-6cfe" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b1b4-eedf-e0db-87ac" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fa97-73ad-8e07-6cfe" type="min"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
@@ -254,26 +255,26 @@
       <categoryLinks>
         <categoryLink id="5295-f9e3-4773-dacf" name="Capital" hidden="false" targetId="ddf0-e667-c5bb-bfd0" primary="false">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="091d-6890-d23d-7465" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ee32-2027-14ff-bb37" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="091d-6890-d23d-7465" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ee32-2027-14ff-bb37" type="min"/>
           </constraints>
         </categoryLink>
         <categoryLink id="2472-a8e7-7030-605e" name="Commander" hidden="false" targetId="b5b8-5ac8-4c77-cbb0" primary="false">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a4d3-ccd9-04fa-a5d0" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8991-913d-bd35-bc3d" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a4d3-ccd9-04fa-a5d0" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8991-913d-bd35-bc3d" type="min"/>
           </constraints>
         </categoryLink>
         <categoryLink id="be2a-c067-f058-ee28" name="Escort" hidden="false" targetId="9cb1-f70a-60f2-5d11" primary="false">
           <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab4f-ba0d-2729-dee4" type="min"/>
-            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5e8b-fa91-bbd1-36ff" type="max"/>
+            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab4f-ba0d-2729-dee4" type="min"/>
+            <constraint field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5e8b-fa91-bbd1-36ff" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="fd10-f711-780d-97c1" name="support" hidden="false" targetId="ff8c-6404-d96c-d06e" primary="false">
           <constraints>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3e72-9218-0813-ad0e" type="max"/>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a308-b5fb-9c11-8443" type="min"/>
+            <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3e72-9218-0813-ad0e" type="max"/>
+            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a308-b5fb-9c11-8443" type="min"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
@@ -292,12 +293,13 @@
         <entryLink id="85bf-d78b-48f2-75f7" name="Commander" hidden="false" collective="false" import="true" targetId="f514-1193-a474-711f" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Vanguard" hidden="false" id="9a6f-dc35-eb1b-ec7b" subType="unit-group"/>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="f514-1193-a474-711f" name="Commander" hidden="false" collective="false" import="true" defaultSelectionEntryId="72a1-5827-9cf9-5f9d">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="41c0-b126-74b7-589e" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1703-2288-b830-7dac" type="min"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="41c0-b126-74b7-589e" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1703-2288-b830-7dac" type="min"/>
       </constraints>
       <selectionEntries>
         <selectionEntry id="72a1-5827-9cf9-5f9d" name="Commander [Poor]" hidden="false" collective="false" import="true" type="unit">
@@ -328,7 +330,7 @@
             </profile>
           </profiles>
           <costs>
-            <cost name="Points" typeId="dd57-09ff-340f-8e48" value="8.0"/>
+            <cost name="Points" typeId="dd57-09ff-340f-8e48" value="8"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="221b-ca2c-0c6a-34a5" name="Faction Commander [ if available ]" hidden="false" collective="false" import="true" type="unit"/>
@@ -346,7 +348,7 @@
             </profile>
           </profiles>
           <costs>
-            <cost name="Points" typeId="dd57-09ff-340f-8e48" value="16.0"/>
+            <cost name="Points" typeId="dd57-09ff-340f-8e48" value="16"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="5793-e526-abf7-9335" name="Commander [legendary]" hidden="false" collective="false" import="true" type="upgrade">
@@ -363,7 +365,7 @@
             </profile>
           </profiles>
           <costs>
-            <cost name="Points" typeId="dd57-09ff-340f-8e48" value="30.0"/>
+            <cost name="Points" typeId="dd57-09ff-340f-8e48" value="30"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -425,7 +427,7 @@
       <description>When critically damaged, a ship with this trait can still move up to thrust 3 instead of 2.</description>
     </rule>
     <rule id="176a-d5d0-cea3-82d6" name="Assault pods" publicationId="c478-850b-f9ae-9c10" page="26" hidden="false">
-      <description>A radical boarding method, this ship has boarding missiles allowing it to board a ship under power at short range. If this ship is within 6” of an enemy ship, it may launch any/all CQB companies within the ship at enemy ships or objectives. The enemy ships will still get ADS Saves as if they had been attacked by dropships, however at a -2 to their roll. Those CQB company tokens then become dropship squadron tokens when leaving those initial targets. </description>
+      <description>A radical boarding method, this ship has boarding missiles allowing it to board a ship under power at short range. If this ship is within 6” of an enemy ship, it may launch any/all CQB companies within the ship at enemy ships or objectives. The enemy ships will still get ADS Saves as if they had been attacked by dropships, however at a -2 to their roll. Those CQB company tokens then become dropship squadron tokens when leaving those initial targets.</description>
     </rule>
     <rule id="788f-b887-0575-b3b6" name="Auto Repair" publicationId="c478-850b-f9ae-9c10" page="26" hidden="false">
       <description>This ship may repair damage and shoot in the same turn.</description>
@@ -437,7 +439,7 @@
       <description>Ship is equipped with advanced launch tubes for its strike craft. Strike craft launched from this ship may be placed within 6” inches of the carrier when launched instead of the usual 2”.</description>
     </rule>
     <rule id="20ad-12c9-817e-ef20" name="Cargo" publicationId="c478-850b-f9ae-9c10" page="26" hidden="false">
-      <description>This ship can carry cargo. Any scenario requiring the moving of cargo or an objective involving cargo may use this ship to carry that objective. </description>
+      <description>This ship can carry cargo. Any scenario requiring the moving of cargo or an objective involving cargo may use this ship to carry that objective.</description>
     </rule>
     <rule id="1b1b-b907-076f-db7e" name="Character" publicationId="c478-850b-f9ae-9c10" page="26" hidden="false">
       <description>Ship is attached to a named character and cannot be taken without this character. You must look at the faction’s ‘Character’ page to find the character who uses this ship.</description>
@@ -538,7 +540,7 @@ In addition, the presence of a scout ship in a battlegroup allows the battlegrou
       <description>These strike craft don’t need to be taken within ship slots, and instead are purchased alongside battlegroups without taking a slot.</description>
     </rule>
     <rule id="799a-6215-8d3a-9f4c" name="Shielded Carapce X" publicationId="c478-850b-f9ae-9c10" page="28" hidden="false">
-      <description>X+ save to all incoming damage from the front 180 degrees. </description>
+      <description>X+ save to all incoming damage from the front 180 degrees.</description>
     </rule>
     <rule id="f798-bf0a-b8c0-117a" name="Shield Charger" publicationId="c478-850b-f9ae-9c10" page="28" hidden="false">
       <description>During turn clean up this ship’s shield auto-restores X points of shielding equal to the battlegroup’s Speed value.</description>
@@ -553,7 +555,7 @@ In addition, the presence of a scout ship in a battlegroup allows the battlegrou
       <description>Ship may only rotate twice during an activation (including any special actions/EW/etc.).</description>
     </rule>
     <rule id="bda1-dd8e-11d9-8a18" name="Squadron" publicationId="c478-850b-f9ae-9c10" page="28" hidden="false">
-      <description>These ships work in small formations of 3 within the battlegroup and use triple bases. This trait is just visual and has no in game impact. The base of 3 ships acts as a single ship. </description>
+      <description>These ships work in small formations of 3 within the battlegroup and use triple bases. This trait is just visual and has no in game impact. The base of 3 ships acts as a single ship.</description>
     </rule>
     <rule id="c8f1-88b8-18a5-6104" name="Station" publicationId="c478-850b-f9ae-9c10" page="28" hidden="false">
       <description>This ship is a large station. It may use any battlegroup type, but no other ships may be included in its battlegroup during list building.</description>
@@ -568,10 +570,10 @@ In addition, the presence of a scout ship in a battlegroup allows the battlegrou
       <description>Some ships are singular in size or design, requiring an entire fleet to support them. Only one Super Heavy ship may be deployed in a fleet. Noted as [SH] on stat blocks.</description>
     </rule>
     <rule id="e5d9-7d88-d0fe-9fe4" name="Terror" publicationId="c478-850b-f9ae-9c10" page="29" hidden="false">
-      <description> Something about this ship fills the enemy with unspeakable dread. Enemy ships within 4” of this ship suffer -2 to morale rolls. Anyone trying to board this ship is at -1 CQB unless they cause Terror themselves.</description>
+      <description>Something about this ship fills the enemy with unspeakable dread. Enemy ships within 4” of this ship suffer -2 to morale rolls. Anyone trying to board this ship is at -1 CQB unless they cause Terror themselves.</description>
     </rule>
     <rule id="a719-8142-079c-1853" name="Volatile" publicationId="c478-850b-f9ae-9c10" page="29" hidden="false">
-      <description>Something about the nature of this ship is extremely volatile. Perhaps it carries fuel, or some technology that is highly unstable. When this ship is destroyed it explodes! Any ship within 3” of this ship takes (D10/2)-1 damage (0-4 damage). Rolled for each ship in range. </description>
+      <description>Something about the nature of this ship is extremely volatile. Perhaps it carries fuel, or some technology that is highly unstable. When this ship is destroyed it explodes! Any ship within 3” of this ship takes (D10/2)-1 damage (0-4 damage). Rolled for each ship in range.</description>
     </rule>
     <rule id="d147-bb26-890a-d665" name="Biological X" publicationId="c478-850b-f9ae-9c10" page="29" hidden="false">
       <description>This weapon also does damage to Crew. A ship with no shields loses X crew on hits of 6+ from this weapon. Crewless ships are destroyed.</description>

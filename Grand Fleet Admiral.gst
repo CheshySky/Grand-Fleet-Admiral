@@ -345,7 +345,7 @@
     <selectionEntryGroup id="f514-1193-a474-711f" name="Commander" hidden="false" collective="false" import="true" defaultSelectionEntryId="72a1-5827-9cf9-5f9d">
       <constraints>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="41c0-b126-74b7-589e" type="max"/>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1703-2288-b830-7dac" type="min"/>
+        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1703-2288-b830-7dac" type="min"/>
       </constraints>
       <selectionEntries>
         <selectionEntry id="72a1-5827-9cf9-5f9d" name="Commander [Poor]" hidden="false" collective="false" import="true" type="unit">

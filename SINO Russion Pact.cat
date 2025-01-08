@@ -38,7 +38,12 @@
             <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="69da-bb6c-4f27-9332"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Commander" hidden="false" id="ca2c-340a-d3b3-0859" type="selectionEntryGroup" targetId="f514-1193-a474-711f"/>
+        <entryLink import="true" name="Commander" hidden="false" id="10f9-91fb-6baa-3b70" type="selectionEntry" targetId="df1f-937a-7be9-2333">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="333a-91d0-c777-3c32"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="afe5-b4b0-88af-0cee"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="+2 Assault Bays" hidden="false" id="0b89-f531-bcb7-2583" publicationId="3942-1ba6-967b-c9ed" page="62" collective="false">
@@ -252,7 +257,12 @@
             <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="8d18-539f-be11-d885"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Commander" hidden="false" id="e4e7-7550-5db2-c13f" type="selectionEntryGroup" targetId="f514-1193-a474-711f"/>
+        <entryLink import="true" name="Commander" hidden="false" id="f088-cbc0-da3b-c39d" type="selectionEntry" targetId="df1f-937a-7be9-2333">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="11eb-bc7e-ebc1-cbcf"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="97b7-8e31-99b9-48d5"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <categoryLinks>
         <categoryLink targetId="b034-e255-5fb8-51b1" id="008d-5026-3318-5b67" primary="false" name="SINO Russian Pact"/>
@@ -320,11 +330,24 @@
             <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="7a3a-2b6a-ef95-5f95"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Commander" hidden="false" id="1f0f-4df9-bd32-c230" type="selectionEntry" targetId="df1f-937a-7be9-2333">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="6313-b361-c52d-f91a"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cd75-5443-83bc-f0ea"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <categoryLinks>
         <categoryLink targetId="b034-e255-5fb8-51b1" id="c60f-a0f3-b0d9-a529" primary="false" name="SINO Russian Pact"/>
         <categoryLink targetId="ddf0-e667-c5bb-bfd0" id="334b-f3d8-000c-98fe" primary="true" name="Capital"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="add" value="b5b8-5ac8-4c77-cbb0" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="self" childId="df1f-937a-7be9-2333" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Battle Cruiser T3" hidden="false" id="cbd8-e188-82eb-daec" publicationId="3942-1ba6-967b-c9ed" page="19">
       <costs>
@@ -365,7 +388,12 @@
             <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="277c-d549-6fb6-0ee9"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Commander" hidden="false" id="8ce0-9d45-8506-5550" type="selectionEntryGroup" targetId="f514-1193-a474-711f"/>
+        <entryLink import="true" name="Commander" hidden="false" id="27e9-91d4-2ec9-9bd5" type="selectionEntry" targetId="df1f-937a-7be9-2333">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="9811-73be-324a-8441"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="518b-c9e9-38dc-6ee4"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <categoryLinks>
         <categoryLink targetId="ddf0-e667-c5bb-bfd0" id="c95d-c8ef-97ae-dace" primary="true" name="Capital"/>
@@ -419,7 +447,6 @@
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink import="true" name="Commander" hidden="false" id="a4fc-0543-ab65-5f10" type="selectionEntryGroup" targetId="f514-1193-a474-711f"/>
         <entryLink import="true" name="Missile Pod" hidden="false" id="c81a-ff4e-bd2a-e8de" type="selectionEntry" targetId="dd91-3a71-fd82-e67e">
           <constraints>
             <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="b173-fead-cd2b-3746"/>
@@ -436,6 +463,12 @@
           <constraints>
             <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="880a-7af7-6270-5668"/>
             <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="f605-425f-4825-2298"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Commander" hidden="false" id="ce6a-e225-7737-faf1" type="selectionEntry" targetId="df1f-937a-7be9-2333">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="5bd0-2840-8202-8150"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ad1d-f5fa-7c40-fc14"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -495,7 +528,6 @@
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="88d5-43f1-8130-696a"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Commander" hidden="false" id="69af-a2ae-5832-9606" type="selectionEntryGroup" targetId="f514-1193-a474-711f"/>
         <entryLink import="true" name="Strike Craft" hidden="false" id="dabc-1deb-ddc8-179c" type="selectionEntryGroup" targetId="435b-832a-ba77-5ac2">
           <constraints>
             <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="9950-0250-82eb-2399"/>
@@ -506,6 +538,12 @@
           <constraints>
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="b2bd-5d05-c3d6-9e3a"/>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="31a6-6f35-75b1-ca7e"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Commander" hidden="false" id="a075-aaea-88e8-9883" type="selectionEntry" targetId="df1f-937a-7be9-2333">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="bacb-92c9-48d9-7168"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2cfb-5e40-0bb1-1f9a"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -596,7 +634,12 @@
             <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="cff0-67e1-ce24-ff27"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Commander" hidden="false" id="7d77-72f0-c5e6-e85d" type="selectionEntryGroup" targetId="f514-1193-a474-711f"/>
+        <entryLink import="true" name="Commander" hidden="false" id="99d9-7a45-b13d-1d3c" type="selectionEntry" targetId="df1f-937a-7be9-2333">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="fa09-3726-5072-22c8"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="05ae-df80-9e35-61f0"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <modifiers>
         <modifier type="add" value="b5b8-5ac8-4c77-cbb0" field="category">
@@ -638,7 +681,6 @@
             <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="e1e5-bca1-a6c0-ac93"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Commander" hidden="false" id="b371-a35f-0229-953b" type="selectionEntryGroup" targetId="f514-1193-a474-711f"/>
         <entryLink import="true" name="Strike Craft" hidden="false" id="e448-d062-2457-8dd6" type="selectionEntryGroup" targetId="435b-832a-ba77-5ac2">
           <constraints>
             <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="9f27-b87f-2ab7-c245"/>
@@ -649,6 +691,12 @@
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cb6e-0610-3d60-651f"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a66f-26ff-5e85-1f80"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Commander" hidden="false" id="88a7-66da-78e0-e761" type="selectionEntry" targetId="df1f-937a-7be9-2333">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="0316-4784-d5da-bc07"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f178-ff8a-9fd9-aaf9"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -697,7 +745,6 @@
         </profile>
       </profiles>
       <entryLinks>
-        <entryLink import="true" name="Commander" hidden="false" id="7b8e-a413-3aab-a5df" type="selectionEntryGroup" targetId="f514-1193-a474-711f"/>
         <entryLink import="true" name="Super Mac Cannon" hidden="false" id="bd5b-a7b2-d05e-362c" type="selectionEntry" targetId="fc1b-4127-a15a-b74e">
           <constraints>
             <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="3e03-4bc4-8c51-7740"/>
@@ -708,6 +755,12 @@
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="187a-3726-31e1-6c2a"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4b80-60d4-4892-7f6c"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Commander" hidden="false" id="f0fc-5c19-60ca-ff42" type="selectionEntry" targetId="df1f-937a-7be9-2333">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="7652-142e-6a8e-3458"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="322b-1c73-44b4-ded4"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -764,7 +817,6 @@
             <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="3749-8784-766f-0a71"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Commander" hidden="false" id="c713-b49b-03dc-348d" type="selectionEntryGroup" targetId="f514-1193-a474-711f"/>
         <entryLink import="true" name="Strike Craft" hidden="false" id="f5e0-99b8-fa34-5cfe" type="selectionEntryGroup" targetId="435b-832a-ba77-5ac2">
           <constraints>
             <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="93b0-d82c-a866-1c70"/>
@@ -775,6 +827,12 @@
           <constraints>
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="48ef-9e6d-e04a-2d26"/>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="58a8-3c18-191a-008f"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Commander" hidden="false" id="382a-5c04-2e7b-5ee2" type="selectionEntry" targetId="df1f-937a-7be9-2333">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="2016-8020-5b88-9924"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ede1-e988-2fc5-695f"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -829,7 +887,6 @@
         <infoLink name="ADS X" id="6a8a-43e1-e3df-8ff8" hidden="false" type="rule" targetId="7b47-f592-16a4-f8f4"/>
       </infoLinks>
       <entryLinks>
-        <entryLink import="true" name="Commander" hidden="false" id="bc27-49cf-b250-6f36" type="selectionEntryGroup" targetId="f514-1193-a474-711f"/>
         <entryLink import="true" name="Missile Pod" hidden="false" id="3385-f8ff-2346-74b6" type="selectionEntry" targetId="dd91-3a71-fd82-e67e">
           <constraints>
             <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="dbf9-4199-6f0f-3c5e"/>
@@ -846,6 +903,12 @@
           <constraints>
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="fe89-d7b3-e0f2-ed28"/>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="a51a-ea88-b742-be88"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Commander" hidden="false" id="38ec-d692-5243-ee37" type="selectionEntry" targetId="df1f-937a-7be9-2333">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="473c-9b3e-38b8-9c16"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f8ca-6c5c-f7a8-dd47"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -879,7 +942,6 @@
         </profile>
       </profiles>
       <entryLinks>
-        <entryLink import="true" name="Commander" hidden="false" id="e190-8b5c-badf-0536" type="selectionEntryGroup" targetId="f514-1193-a474-711f"/>
         <entryLink import="true" name="Missile Pod" hidden="false" id="0f83-f486-ba8e-3232" type="selectionEntry" targetId="dd91-3a71-fd82-e67e">
           <constraints>
             <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="b3f0-fe5a-2e3d-4f74"/>
@@ -896,6 +958,12 @@
           <constraints>
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="f0aa-46f3-cf4f-b3df"/>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="f885-123a-e6e0-945b"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Commander" hidden="false" id="f711-c1ab-f1bc-ac44" type="selectionEntry" targetId="df1f-937a-7be9-2333">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="ddd0-58d9-8fa5-0616"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9382-dec1-4324-128a"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -929,7 +997,6 @@
         </profile>
       </profiles>
       <entryLinks>
-        <entryLink import="true" name="Commander" hidden="false" id="8f5b-3cab-9221-5d6b" type="selectionEntryGroup" targetId="f514-1193-a474-711f"/>
         <entryLink import="true" name="Missile Pod" hidden="false" id="7a3e-00b9-99b0-2cf7" type="selectionEntry" targetId="dd91-3a71-fd82-e67e">
           <constraints>
             <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="1467-9881-d136-06b8"/>
@@ -940,6 +1007,12 @@
           <constraints>
             <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="f1e4-bf22-f928-43fa"/>
             <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="83e5-6479-10a5-68a3"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Commander" hidden="false" id="1797-8dfb-292e-ad59" type="selectionEntry" targetId="df1f-937a-7be9-2333">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="df3a-280f-2126-7723"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="428d-9b01-e222-94b6"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -969,7 +1042,6 @@
         </profile>
       </profiles>
       <entryLinks>
-        <entryLink import="true" name="Commander" hidden="false" id="25c4-2347-3c70-a175" type="selectionEntryGroup" targetId="f514-1193-a474-711f"/>
         <entryLink import="true" name="Torpedo" hidden="false" id="1cb6-2b8f-cd45-eb4d" type="selectionEntry" targetId="b277-a7ac-b1b0-0b11">
           <constraints>
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="9b9b-158f-d943-5728"/>
@@ -980,6 +1052,12 @@
           <constraints>
             <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="0bb4-2c5a-23f9-2796"/>
             <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="3a2b-1507-605a-400d"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Commander" hidden="false" id="b858-e2be-3acf-7bbf" type="selectionEntry" targetId="df1f-937a-7be9-2333">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="83d3-438a-4e6d-b6d4"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="abba-6108-620a-49ed"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -1013,11 +1091,16 @@
         </profile>
       </profiles>
       <entryLinks>
-        <entryLink import="true" name="Commander" hidden="false" id="db13-ef52-fefc-112d" type="selectionEntryGroup" targetId="f514-1193-a474-711f"/>
         <entryLink import="true" name="Missile Pod" hidden="false" id="4f67-178a-59d4-28b4" type="selectionEntry" targetId="dd91-3a71-fd82-e67e">
           <constraints>
             <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="c8fb-5578-efb7-1922"/>
             <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="f138-8fae-5886-0ee0"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Commander" hidden="false" id="0551-40cf-1a02-13c4" type="selectionEntry" targetId="df1f-937a-7be9-2333">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="365e-f2dc-8a4e-2c50"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cdc4-49ac-f0b0-586b"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -1054,11 +1137,16 @@
         <infoLink name="Mine Layer X" id="2fff-3ca1-ccf8-ea39" hidden="false" type="rule" targetId="ac76-33b1-4ca8-67a3"/>
       </infoLinks>
       <entryLinks>
-        <entryLink import="true" name="Commander" hidden="false" id="a15d-76c1-2fba-6c6e" type="selectionEntryGroup" targetId="f514-1193-a474-711f"/>
         <entryLink import="true" name="Missile Pod" hidden="false" id="3a1f-2ede-d1dd-9427" type="selectionEntry" targetId="dd91-3a71-fd82-e67e">
           <constraints>
             <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="886f-bd96-cf64-5560"/>
             <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="675e-f4b6-94a0-1a7d"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Commander" hidden="false" id="658a-d022-6076-721b" type="selectionEntry" targetId="df1f-937a-7be9-2333">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="ae9c-f407-cdf0-2e6f"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b081-4071-eaf0-08bf"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -1099,7 +1187,6 @@
         </profile>
       </profiles>
       <entryLinks>
-        <entryLink import="true" name="Commander" hidden="false" id="09ca-cf4d-3248-f4bb" type="selectionEntryGroup" targetId="f514-1193-a474-711f"/>
         <entryLink import="true" name="Missile Pod" hidden="false" id="456a-5786-829f-d0d0" type="selectionEntry" targetId="dd91-3a71-fd82-e67e">
           <constraints>
             <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="55d0-af1d-de84-5f98"/>
@@ -1110,6 +1197,12 @@
           <constraints>
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="43ba-7d30-046d-29fd"/>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="b483-c244-ffbe-0e2a"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Commander" hidden="false" id="c870-20fb-352d-5d45" type="selectionEntry" targetId="df1f-937a-7be9-2333">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="69bf-936e-8b2b-9e85"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a882-dbd4-3c55-256a"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -1157,7 +1250,6 @@
         </profile>
       </profiles>
       <entryLinks>
-        <entryLink import="true" name="Commander" hidden="false" id="0a66-49a7-cc37-6fa9" type="selectionEntryGroup" targetId="f514-1193-a474-711f"/>
         <entryLink import="true" name="Missile Pod" hidden="false" id="42ee-5dca-7bec-5f68" type="selectionEntry" targetId="dd91-3a71-fd82-e67e">
           <constraints>
             <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="5f1f-fd5b-2442-bdd1"/>
@@ -1168,6 +1260,12 @@
           <constraints>
             <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="0ed9-d43e-931c-e90b"/>
             <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="7ad2-abd5-32a6-46c7"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Commander" hidden="false" id="400e-89a6-2e3b-9ad8" type="selectionEntry" targetId="df1f-937a-7be9-2333">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="79ac-9019-e8bd-3179"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c0b0-494f-bb35-7c8f"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -1226,7 +1324,6 @@
         <infoLink name="ADS X" id="5325-4a45-3c02-9a2c" hidden="false" type="rule" targetId="7b47-f592-16a4-f8f4"/>
       </infoLinks>
       <entryLinks>
-        <entryLink import="true" name="Commander" hidden="false" id="5da4-09e2-0fe1-71f7" type="selectionEntryGroup" targetId="f514-1193-a474-711f"/>
         <entryLink import="true" name="Missile Pod" hidden="false" id="104a-b522-b36b-4b40" type="selectionEntry" targetId="dd91-3a71-fd82-e67e">
           <constraints>
             <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="7583-58e6-2f52-b915"/>
@@ -1237,6 +1334,12 @@
           <constraints>
             <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="21e8-e692-ba50-e274"/>
             <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="14c4-b422-c780-8595"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Commander" hidden="false" id="1209-af56-c9b9-1f32" type="selectionEntry" targetId="df1f-937a-7be9-2333">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="70f2-430e-1e53-96b1"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a84d-9d82-41ed-9cf5"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -1270,11 +1373,16 @@
         </profile>
       </profiles>
       <entryLinks>
-        <entryLink import="true" name="Commander" hidden="false" id="d247-5224-e487-ef1e" type="selectionEntryGroup" targetId="f514-1193-a474-711f"/>
         <entryLink import="true" name="Missile Pod" hidden="false" id="9013-1b53-aacc-6041" type="selectionEntry" targetId="dd91-3a71-fd82-e67e">
           <constraints>
             <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="fcbe-8ed8-75eb-05ab"/>
             <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="7692-3279-d140-8192"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Commander" hidden="false" id="168e-2236-d06b-376f" type="selectionEntry" targetId="df1f-937a-7be9-2333">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="4440-2642-6efc-5409"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7ec7-099f-0754-d29a"/>
           </constraints>
         </entryLink>
       </entryLinks>

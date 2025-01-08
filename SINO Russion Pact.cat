@@ -1,0 +1,1481 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="5bd5-6746-9e8b-ad68" name="SINO Russian Pact" gameSystemId="8ee7-a3b6-0307-7e64" gameSystemRevision="2" revision="1" authorName="Alicia (Chesh)" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <sharedSelectionEntries>
+    <selectionEntry type="unit" import="true" name="Light Cruiser" hidden="false" id="fc98-db21-0155-9949" publicationId="3942-1ba6-967b-c9ed" page="19">
+      <profiles>
+        <profile name="Light Cruiser" typeId="fd62-daee-6b9c-c612" typeName="Ship Stats" hidden="false" id="a4da-d8f9-b1fa-4f0d">
+          <characteristics>
+            <characteristic name="Shield Strength" typeId="face-6a39-0cf0-eebe">5</characteristic>
+            <characteristic name="Max Thrust" typeId="0351-9250-0a32-4131">4</characteristic>
+            <characteristic name="Hull Points" typeId="b78c-8434-3b73-3728">3</characteristic>
+            <characteristic name="Crew Size" typeId="ba69-5c5c-fbb2-ee8f">4</characteristic>
+            <characteristic name="Strike Bay" typeId="6951-636f-b7cf-dff3"/>
+            <characteristic name="Assault bay" typeId="5064-520e-c582-fc1a"/>
+            <characteristic name="Traits" typeId="7875-4af0-5837-6dcb"/>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="2" field="6951-636f-b7cf-dff3">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="fc98-db21-0155-9949" childId="0b89-f531-bcb7-2583" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Points" typeId="dd57-09ff-340f-8e48" value="38"/>
+      </costs>
+      <entryLinks>
+        <entryLink import="true" name="Missile Pod" hidden="false" id="fccf-d5d2-318f-1ee6" type="selectionEntry" targetId="dd91-3a71-fd82-e67e">
+          <constraints>
+            <constraint type="min" value="8" field="selections" scope="parent" shared="true" id="f9a4-6ea5-6c2c-e587"/>
+            <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="8379-0dbc-f815-e7a0"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Gun Battery" hidden="false" id="e663-11fd-3b44-6d6c" type="selectionEntry" targetId="83bc-492a-2006-778d">
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="d09f-ad84-e8ac-6e9f"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="69da-bb6c-4f27-9332"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Commander" hidden="false" id="ca2c-340a-d3b3-0859" type="selectionEntryGroup" targetId="f514-1193-a474-711f"/>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="+2 Assault Bays" hidden="false" id="0b89-f531-bcb7-2583" publicationId="3942-1ba6-967b-c9ed" page="62" collective="false">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="5837-c52f-af1f-9f5f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d877-fd83-f2b7-503d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="CQB Companies" hidden="false" id="133f-4d7c-8ec8-0fb9" collective="false" targetId="2dd3-4a75-8ce2-8eb1" type="selectionEntryGroup">
+              <modifiers>
+                <modifier type="set" value="2" field="1e9a-cfda-aeef-21fa">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="parent" childId="any" shared="true" roundUp="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="5929-21f9-9115-755a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="1e9a-cfda-aeef-21fa" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="Points" typeId="dd57-09ff-340f-8e48" value="3"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <infoLinks>
+        <infoLink name="ADS X" id="4223-64a7-1599-1208" hidden="false" type="rule" targetId="7b47-f592-16a4-f8f4"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="ddf0-e667-c5bb-bfd0" id="29c5-b671-7044-5617" primary="true" name="Capital"/>
+        <categoryLink targetId="b034-e255-5fb8-51b1" id="9d0a-8aa5-246e-8f82" primary="false" name="SINO Russian Pact"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="add" value="b5b8-5ac8-4c77-cbb0" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="self" childId="df1f-937a-7be9-2333" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Missile Pod" hidden="false" id="dd91-3a71-fd82-e67e" publicationId="3942-1ba6-967b-c9ed" page="21">
+      <profiles>
+        <profile name="Missile Pod" typeId="0faa-34ea-a9b8-dccb" typeName="Weapon Stats" hidden="false" id="7c1b-7c72-b106-a36d">
+          <characteristics>
+            <characteristic name="Range" typeId="70bd-05d7-583c-390d">8&quot;</characteristic>
+            <characteristic name="Roll to hit" typeId="a5ba-9b41-500b-6c52">6+</characteristic>
+            <characteristic name="Shield Damage" typeId="90c8-0f37-d9b7-e2e1">1</characteristic>
+            <characteristic name="Hull Damage" typeId="9dc6-3082-ba5b-4c5a">1</characteristic>
+            <characteristic name="Fire Points" typeId="d0d5-25ad-92ff-bf0c">All</characteristic>
+            <characteristic name="Traits" typeId="69fd-d140-d640-f992">Target Lock</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Target Lock" id="48d6-ddd1-abc3-68bf" hidden="false" type="rule" targetId="1d62-343c-1246-9699"/>
+        <infoLink name="Ordanence" id="4c70-4a60-ff7d-0285" hidden="false" type="rule" targetId="a8c2-e70e-c16c-301d"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Gun Battery" hidden="false" id="83bc-492a-2006-778d" publicationId="3942-1ba6-967b-c9ed" page="21">
+      <profiles>
+        <profile name="Gun Battery" typeId="0faa-34ea-a9b8-dccb" typeName="Weapon Stats" hidden="false" id="1bd4-69c2-3b9b-46ac">
+          <characteristics>
+            <characteristic name="Range" typeId="70bd-05d7-583c-390d">8&quot;</characteristic>
+            <characteristic name="Roll to hit" typeId="a5ba-9b41-500b-6c52">3+</characteristic>
+            <characteristic name="Shield Damage" typeId="90c8-0f37-d9b7-e2e1">1</characteristic>
+            <characteristic name="Hull Damage" typeId="9dc6-3082-ba5b-4c5a">1</characteristic>
+            <characteristic name="Fire Points" typeId="d0d5-25ad-92ff-bf0c">Side</characteristic>
+            <characteristic name="Traits" typeId="69fd-d140-d640-f992"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Mac Cannons" hidden="false" id="9f8c-88e8-8338-6364" publicationId="3942-1ba6-967b-c9ed" page="21">
+      <profiles>
+        <profile name="Mac Cannons" typeId="0faa-34ea-a9b8-dccb" typeName="Weapon Stats" hidden="false" id="0d30-849e-182b-16fd">
+          <characteristics>
+            <characteristic name="Range" typeId="70bd-05d7-583c-390d">12&quot;</characteristic>
+            <characteristic name="Roll to hit" typeId="a5ba-9b41-500b-6c52">4+</characteristic>
+            <characteristic name="Shield Damage" typeId="90c8-0f37-d9b7-e2e1">1</characteristic>
+            <characteristic name="Hull Damage" typeId="9dc6-3082-ba5b-4c5a">1</characteristic>
+            <characteristic name="Fire Points" typeId="d0d5-25ad-92ff-bf0c">Front</characteristic>
+            <characteristic name="Traits" typeId="69fd-d140-d640-f992">Hypervelocity</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Hyper-Velocity" id="219f-4f3f-a014-416a" hidden="false" type="rule" targetId="8559-664a-55d0-d527"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Super Mac Cannon" hidden="false" id="fc1b-4127-a15a-b74e" publicationId="3942-1ba6-967b-c9ed" page="21">
+      <profiles>
+        <profile name="Super Mac Cannon" typeId="0faa-34ea-a9b8-dccb" typeName="Weapon Stats" hidden="false" id="fa2e-0e71-ee54-f7c1" publicationId="3942-1ba6-967b-c9ed" page="21">
+          <characteristics>
+            <characteristic name="Range" typeId="70bd-05d7-583c-390d">18&quot;</characteristic>
+            <characteristic name="Roll to hit" typeId="a5ba-9b41-500b-6c52">4+</characteristic>
+            <characteristic name="Shield Damage" typeId="90c8-0f37-d9b7-e2e1">3</characteristic>
+            <characteristic name="Hull Damage" typeId="9dc6-3082-ba5b-4c5a">2</characteristic>
+            <characteristic name="Fire Points" typeId="d0d5-25ad-92ff-bf0c">Front</characteristic>
+            <characteristic name="Traits" typeId="69fd-d140-d640-f992">Hypervelocity, Shield skipping 6+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Torpedo" hidden="false" id="b277-a7ac-b1b0-0b11" publicationId="3942-1ba6-967b-c9ed" page="21">
+      <profiles>
+        <profile name="Torpedo" typeId="0faa-34ea-a9b8-dccb" typeName="Weapon Stats" hidden="false" id="8435-e05c-228b-5d16">
+          <characteristics>
+            <characteristic name="Range" typeId="70bd-05d7-583c-390d">8&quot;-24&quot;</characteristic>
+            <characteristic name="Roll to hit" typeId="a5ba-9b41-500b-6c52">2+</characteristic>
+            <characteristic name="Shield Damage" typeId="90c8-0f37-d9b7-e2e1">1</characteristic>
+            <characteristic name="Hull Damage" typeId="9dc6-3082-ba5b-4c5a">1</characteristic>
+            <characteristic name="Fire Points" typeId="d0d5-25ad-92ff-bf0c">Front</characteristic>
+            <characteristic name="Traits" typeId="69fd-d140-d640-f992">Shield skipping 6+, Dumb fire</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Shield Skipping X" id="5ce9-1f6a-1b14-fe1f" hidden="false" type="rule" targetId="0fe7-9a92-6258-9885"/>
+        <infoLink name="Dumb fire" id="0790-961a-57a8-496e" hidden="false" type="rule" targetId="92d6-9731-df3b-d262"/>
+        <infoLink name="Ordanence" id="e646-8a94-28b7-f490" hidden="false" type="rule" targetId="a8c2-e70e-c16c-301d"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Dropship" hidden="false" id="c916-aa7b-f49d-b983" collective="false">
+      <profiles>
+        <profile name="Dropship" typeId="8562-1ee2-d80c-e753" typeName="Strike Craft Stats" hidden="false" id="bb73-c98f-2640-5c41" publicationId="3942-1ba6-967b-c9ed" page="64">
+          <characteristics>
+            <characteristic name="Speed" typeId="b7a0-b9fb-4295-87bf">9&quot;</characteristic>
+            <characteristic name="Anti SC" typeId="a1d2-240a-d9fa-1712">8+</characteristic>
+            <characteristic name="Anti-Ship" typeId="bc6e-037f-58a9-1faf">8+</characteristic>
+            <characteristic name="Attack against ships" typeId="f633-6e0a-1576-0f9c">1</characteristic>
+            <characteristic name="Save" typeId="d415-0e55-c4dd-d7b7">9+</characteristic>
+            <characteristic name="Traits" typeId="3875-2795-81d2-a053"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink name="Strike Craft" hidden="false" id="40c5-43a9-1297-0bd2" targetId="1d5d-ac3c-0f9e-8382" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="dd57-09ff-340f-8e48" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Cruiser" hidden="false" id="7a02-e614-d234-e834" publicationId="3942-1ba6-967b-c9ed" page="19">
+      <costs>
+        <cost name="Points" typeId="dd57-09ff-340f-8e48" value="47"/>
+      </costs>
+      <profiles>
+        <profile name="Cruiser" typeId="fd62-daee-6b9c-c612" typeName="Ship Stats" hidden="false" id="7491-f2cd-4d3a-8ba0">
+          <characteristics>
+            <characteristic name="Shield Strength" typeId="face-6a39-0cf0-eebe">6</characteristic>
+            <characteristic name="Max Thrust" typeId="0351-9250-0a32-4131">3</characteristic>
+            <characteristic name="Hull Points" typeId="b78c-8434-3b73-3728">3</characteristic>
+            <characteristic name="Crew Size" typeId="ba69-5c5c-fbb2-ee8f">4</characteristic>
+            <characteristic name="Strike Bay" typeId="6951-636f-b7cf-dff3"/>
+            <characteristic name="Assault bay" typeId="5064-520e-c582-fc1a"/>
+            <characteristic name="Traits" typeId="7875-4af0-5837-6dcb"/>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="2" field="6951-636f-b7cf-dff3">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="7a02-e614-d234-e834" childId="09b6-c57a-c778-44ef" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="+2 Assault Bays" hidden="false" id="09b6-c57a-c778-44ef" publicationId="3942-1ba6-967b-c9ed" page="62" collective="false">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="d64a-b88e-9566-7e4a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d6f6-5297-ff48-db94" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="CQB Companies" hidden="false" id="1700-4c06-9261-2c31" collective="false" targetId="2dd3-4a75-8ce2-8eb1" type="selectionEntryGroup">
+              <modifiers>
+                <modifier type="set" value="2" field="ba50-de3b-bcb5-bf3a">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="parent" childId="any" shared="true" roundUp="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="1f7b-e303-3260-62ed" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="ba50-de3b-bcb5-bf3a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="Points" typeId="dd57-09ff-340f-8e48" value="3"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Missile Pod" hidden="false" id="5d07-0cb1-05cc-0e70" type="selectionEntry" targetId="dd91-3a71-fd82-e67e">
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="fb1c-f7ff-900b-a6f1"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="e383-511f-d116-0679"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Gun Battery" hidden="false" id="1ed5-be74-789a-924e" type="selectionEntry" targetId="83bc-492a-2006-778d">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="6a78-1a2c-bf06-f02f"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="fb8d-2d2b-63b4-f315"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Mac Cannons" hidden="false" id="faaa-3dca-9fce-cfa0" type="selectionEntry" targetId="9f8c-88e8-8338-6364">
+          <constraints>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="648f-5d27-b0ed-a32a"/>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="8d18-539f-be11-d885"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Commander" hidden="false" id="e4e7-7550-5db2-c13f" type="selectionEntryGroup" targetId="f514-1193-a474-711f"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="b034-e255-5fb8-51b1" id="008d-5026-3318-5b67" primary="false" name="SINO Russian Pact"/>
+        <categoryLink targetId="ddf0-e667-c5bb-bfd0" id="9638-c366-3c4f-1600" primary="true" name="Capital"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="add" value="b5b8-5ac8-4c77-cbb0" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="self" childId="df1f-937a-7be9-2333" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Battle Cruiser" hidden="false" id="2031-8e52-1089-42a6" publicationId="3942-1ba6-967b-c9ed" page="19">
+      <costs>
+        <cost name="Points" typeId="dd57-09ff-340f-8e48" value="50"/>
+      </costs>
+      <profiles>
+        <profile name="Battle Cruiser" typeId="fd62-daee-6b9c-c612" typeName="Ship Stats" hidden="false" id="c459-9726-ad34-1bdb">
+          <characteristics>
+            <characteristic name="Shield Strength" typeId="face-6a39-0cf0-eebe">6</characteristic>
+            <characteristic name="Max Thrust" typeId="0351-9250-0a32-4131">3</characteristic>
+            <characteristic name="Hull Points" typeId="b78c-8434-3b73-3728">3</characteristic>
+            <characteristic name="Crew Size" typeId="ba69-5c5c-fbb2-ee8f">4</characteristic>
+            <characteristic name="Strike Bay" typeId="6951-636f-b7cf-dff3"/>
+            <characteristic name="Assault bay" typeId="5064-520e-c582-fc1a"/>
+            <characteristic name="Traits" typeId="7875-4af0-5837-6dcb"/>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="4" field="0351-9250-0a32-4131">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="2031-8e52-1089-42a6" childId="5f7f-1b06-3883-7fd2" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="+1 Max Thrust" hidden="false" id="5f7f-1b06-3883-7fd2" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7b87-be4d-5a85-e867" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="1880-ee9f-6eb9-c35d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <costs>
+            <cost name="Points" typeId="dd57-09ff-340f-8e48" value="5"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Missile Pod" hidden="false" id="1385-0a2c-c6b1-10da" type="selectionEntry" targetId="dd91-3a71-fd82-e67e">
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="f92a-bcd3-a68d-9a32"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="6bf7-eb4e-7ea5-c855"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Gun Battery" hidden="false" id="5305-f01c-f552-19f9" type="selectionEntry" targetId="83bc-492a-2006-778d">
+          <constraints>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="65b1-eb32-661e-da6e"/>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="aa48-d411-0a1c-acfc"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Mac Cannons" hidden="false" id="7d61-d32d-0a63-0790" type="selectionEntry" targetId="9f8c-88e8-8338-6364">
+          <constraints>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="1dfe-a73e-048a-fb00"/>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="7a3a-2b6a-ef95-5f95"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="b034-e255-5fb8-51b1" id="c60f-a0f3-b0d9-a529" primary="false" name="SINO Russian Pact"/>
+        <categoryLink targetId="ddf0-e667-c5bb-bfd0" id="334b-f3d8-000c-98fe" primary="true" name="Capital"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Battle Cruiser T3" hidden="false" id="cbd8-e188-82eb-daec" publicationId="3942-1ba6-967b-c9ed" page="19">
+      <costs>
+        <cost name="Points" typeId="dd57-09ff-340f-8e48" value="62"/>
+      </costs>
+      <profiles>
+        <profile name="Battle Cruiser T3" typeId="fd62-daee-6b9c-c612" typeName="Ship Stats" hidden="false" id="9f88-191b-fa88-d7e9">
+          <characteristics>
+            <characteristic name="Shield Strength" typeId="face-6a39-0cf0-eebe">7</characteristic>
+            <characteristic name="Max Thrust" typeId="0351-9250-0a32-4131">4</characteristic>
+            <characteristic name="Hull Points" typeId="b78c-8434-3b73-3728">4</characteristic>
+            <characteristic name="Crew Size" typeId="ba69-5c5c-fbb2-ee8f">4</characteristic>
+            <characteristic name="Strike Bay" typeId="6951-636f-b7cf-dff3"/>
+            <characteristic name="Assault bay" typeId="5064-520e-c582-fc1a"/>
+            <characteristic name="Traits" typeId="7875-4af0-5837-6dcb">Countermeasures 1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Countermeasures" id="1ce6-01f7-b835-deb8" hidden="false" type="rule" targetId="be09-53a7-167a-19ad"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Missile Pod" hidden="false" id="4dcb-3ded-f678-7df5" type="selectionEntry" targetId="dd91-3a71-fd82-e67e">
+          <constraints>
+            <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="a651-291d-98f4-f45e"/>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="0d59-f3f6-5bb8-06ec"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Gun Battery" hidden="false" id="76e4-f843-cb2c-170e" type="selectionEntry" targetId="83bc-492a-2006-778d">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="f485-7f0b-bad8-7e5e"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="d4aa-6f78-81fb-af6e"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Mac Cannons" hidden="false" id="28eb-0984-4701-5d48" type="selectionEntry" targetId="9f8c-88e8-8338-6364">
+          <constraints>
+            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="18c7-9761-82e2-d18d"/>
+            <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="277c-d549-6fb6-0ee9"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Commander" hidden="false" id="8ce0-9d45-8506-5550" type="selectionEntryGroup" targetId="f514-1193-a474-711f"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="ddf0-e667-c5bb-bfd0" id="c95d-c8ef-97ae-dace" primary="true" name="Capital"/>
+        <categoryLink targetId="b034-e255-5fb8-51b1" id="ce7b-e677-74ea-4bd4" primary="false" name="SINO Russian Pact"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="add" value="b5b8-5ac8-4c77-cbb0" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="self" childId="df1f-937a-7be9-2333" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Battleship (Heavy)" hidden="false" id="ab0a-c9da-8412-59cb" publicationId="3942-1ba6-967b-c9ed" page="19">
+      <costs>
+        <cost name="Points" typeId="dd57-09ff-340f-8e48" value="60"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="ddf0-e667-c5bb-bfd0" id="4afe-98e1-21a8-5c57" primary="true" name="Capital"/>
+        <categoryLink targetId="b034-e255-5fb8-51b1" id="43c6-1d05-98e5-b39f" primary="false" name="SINO Russian Pact"/>
+        <categoryLink targetId="99a8-81d3-ead9-288b" id="dcc9-3b32-d6c2-d9a6" primary="false" name="Heavy"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Battleship (Heavy)" typeId="fd62-daee-6b9c-c612" typeName="Ship Stats" hidden="false" id="b198-ab2e-845a-d661">
+          <characteristics>
+            <characteristic name="Shield Strength" typeId="face-6a39-0cf0-eebe">7</characteristic>
+            <characteristic name="Max Thrust" typeId="0351-9250-0a32-4131">3</characteristic>
+            <characteristic name="Hull Points" typeId="b78c-8434-3b73-3728">4</characteristic>
+            <characteristic name="Crew Size" typeId="ba69-5c5c-fbb2-ee8f">4</characteristic>
+            <characteristic name="Strike Bay" typeId="6951-636f-b7cf-dff3"/>
+            <characteristic name="Assault bay" typeId="5064-520e-c582-fc1a"/>
+            <characteristic name="Traits" typeId="7875-4af0-5837-6dcb">Sluggish</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Sluggish" id="bc74-279f-30a8-bde8" hidden="false" type="rule" targetId="8a4f-3958-18fe-0838"/>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Armoured Reactor Core" hidden="false" id="f1eb-5030-8896-5d33" publicationId="3942-1ba6-967b-c9ed" page="62" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cc0b-e34d-6322-c7a7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="4371-1bc4-108b-88cc" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Armoured Reactor Core" id="2c2f-2bd4-9470-69cf" hidden="false" targetId="e597-6ea8-a851-86e8" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Points" typeId="dd57-09ff-340f-8e48" value="3"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="a4fc-0543-ab65-5f10" type="selectionEntryGroup" targetId="f514-1193-a474-711f"/>
+        <entryLink import="true" name="Missile Pod" hidden="false" id="c81a-ff4e-bd2a-e8de" type="selectionEntry" targetId="dd91-3a71-fd82-e67e">
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="b173-fead-cd2b-3746"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="6370-8a30-b921-cd8b"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Gun Battery" hidden="false" id="9f6c-338e-c897-9742" type="selectionEntry" targetId="83bc-492a-2006-778d">
+          <constraints>
+            <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="a622-d07e-c13d-ae3a"/>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="626f-76e2-eaac-559f"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Mac Cannons" hidden="false" id="08ef-94b7-e857-8214" type="selectionEntry" targetId="9f8c-88e8-8338-6364">
+          <constraints>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="880a-7af7-6270-5668"/>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="f605-425f-4825-2298"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <modifiers>
+        <modifier type="add" value="b5b8-5ac8-4c77-cbb0" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="self" childId="df1f-937a-7be9-2333" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Carrier (Heavy)" hidden="false" id="44f7-2ff2-51df-7459" publicationId="3942-1ba6-967b-c9ed" page="19">
+      <costs>
+        <cost name="Points" typeId="dd57-09ff-340f-8e48" value="60"/>
+      </costs>
+      <profiles>
+        <profile name="Carrier (Heavy)" typeId="fd62-daee-6b9c-c612" typeName="Ship Stats" hidden="false" id="2161-8397-ba12-cfcd">
+          <characteristics>
+            <characteristic name="Shield Strength" typeId="face-6a39-0cf0-eebe">7</characteristic>
+            <characteristic name="Max Thrust" typeId="0351-9250-0a32-4131">3</characteristic>
+            <characteristic name="Hull Points" typeId="b78c-8434-3b73-3728">3</characteristic>
+            <characteristic name="Crew Size" typeId="ba69-5c5c-fbb2-ee8f">6</characteristic>
+            <characteristic name="Strike Bay" typeId="6951-636f-b7cf-dff3">6</characteristic>
+            <characteristic name="Assault bay" typeId="5064-520e-c582-fc1a">2</characteristic>
+            <characteristic name="Traits" typeId="7875-4af0-5837-6dcb">Strike Support 1, Launch 3, Sluggish</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="6" field="6951-636f-b7cf-dff3">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="44f7-2ff2-51df-7459" childId="b03d-8a35-9ea1-1896" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="+4 Strike Bays" hidden="false" id="b03d-8a35-9ea1-1896">
+          <costs>
+            <cost name="Points" typeId="dd57-09ff-340f-8e48" value="3"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6d24-63fa-2cba-b1bc"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f189-7d11-9342-98fa"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Missile Pod" hidden="false" id="cb8c-1add-1e6f-2c4a" type="selectionEntry" targetId="dd91-3a71-fd82-e67e">
+          <constraints>
+            <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="5409-3eab-b2d2-e33c"/>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="5784-29f1-a34d-f80c"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Gun Battery" hidden="false" id="1342-ef62-f0ad-141c" type="selectionEntry" targetId="83bc-492a-2006-778d">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="103c-4936-cb4d-6307"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="88d5-43f1-8130-696a"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Commander" hidden="false" id="69af-a2ae-5832-9606" type="selectionEntryGroup" targetId="f514-1193-a474-711f"/>
+        <entryLink import="true" name="Strike Craft" hidden="false" id="dabc-1deb-ddc8-179c" type="selectionEntryGroup" targetId="435b-832a-ba77-5ac2">
+          <constraints>
+            <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="9950-0250-82eb-2399"/>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="b053-2a9b-4822-0618"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="CQB Companies" hidden="false" id="8957-9f1b-0507-0509" type="selectionEntryGroup" targetId="2dd3-4a75-8ce2-8eb1">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="b2bd-5d05-c3d6-9e3a"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="31a6-6f35-75b1-ca7e"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="Strike Support X" id="5624-5612-b87e-aa16" hidden="false" type="rule" targetId="97b1-7581-93a1-af45"/>
+        <infoLink name="Launch X" id="042b-af28-70eb-8ad4" hidden="false" type="rule" targetId="0158-e952-527e-8955"/>
+        <infoLink name="Sluggish" id="e82e-e3b2-1393-36eb" hidden="false" type="rule" targetId="8a4f-3958-18fe-0838"/>
+      </infoLinks>
+      <modifiers>
+        <modifier type="add" value="b5b8-5ac8-4c77-cbb0" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="self" childId="df1f-937a-7be9-2333" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="ddf0-e667-c5bb-bfd0" id="3ea4-28b4-2dfd-02ab" primary="true" name="Capital"/>
+        <categoryLink targetId="99a8-81d3-ead9-288b" id="e2b9-2536-25da-2f3a" primary="false" name="Heavy"/>
+        <categoryLink targetId="b034-e255-5fb8-51b1" id="9602-339c-4a5a-bb09" primary="false" name="SINO Russian Pact"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Super Carrier (Heavy)" hidden="false" id="139e-9e11-7679-fb5f">
+      <costs>
+        <cost name="Points" typeId="dd57-09ff-340f-8e48" value="120"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="99a8-81d3-ead9-288b" id="fe20-c854-5e36-6e7f" primary="false" name="Heavy"/>
+        <categoryLink targetId="ddf0-e667-c5bb-bfd0" id="adda-2df0-200d-977d" primary="true" name="Capital"/>
+        <categoryLink targetId="b034-e255-5fb8-51b1" id="b040-1057-563e-e51e" primary="false" name="SINO Russian Pact"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Armoured Reactor Core" hidden="false" id="a4eb-a4ba-2928-8207" publicationId="3942-1ba6-967b-c9ed" page="62" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2fa6-411c-a04f-6e96" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="befa-749c-194b-cd4a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Armoured Reactor Core" id="b379-4054-95cf-2fc2" hidden="false" targetId="e597-6ea8-a851-86e8" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Points" typeId="dd57-09ff-340f-8e48" value="3"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <profiles>
+        <profile name="Super Carrier (Heavy)" typeId="fd62-daee-6b9c-c612" typeName="Ship Stats" hidden="false" id="6b54-6476-2109-3d49">
+          <characteristics>
+            <characteristic name="Shield Strength" typeId="face-6a39-0cf0-eebe">7</characteristic>
+            <characteristic name="Max Thrust" typeId="0351-9250-0a32-4131">3</characteristic>
+            <characteristic name="Hull Points" typeId="b78c-8434-3b73-3728">5</characteristic>
+            <characteristic name="Crew Size" typeId="ba69-5c5c-fbb2-ee8f">7</characteristic>
+            <characteristic name="Strike Bay" typeId="6951-636f-b7cf-dff3">9</characteristic>
+            <characteristic name="Assault bay" typeId="5064-520e-c582-fc1a">3</characteristic>
+            <characteristic name="Traits" typeId="7875-4af0-5837-6dcb">Strike Support 2, Fleet Repair Shop, Flag Bridge, Launch 5, Catapults, Sluggish</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Strike Support X" id="f129-224c-2980-0fc3" hidden="false" type="rule" targetId="97b1-7581-93a1-af45"/>
+        <infoLink name="Fleet Repair Shop" id="019b-4194-68b2-ceb5" hidden="false" type="rule" targetId="a168-0e58-484d-dbdb"/>
+        <infoLink name="Flag Bridge" id="3acc-ceb7-0a7b-244b" hidden="false" type="rule" targetId="deb6-b945-6a96-0eb7"/>
+        <infoLink name="Launch X" id="5808-d3ab-776c-4900" hidden="false" type="rule" targetId="0158-e952-527e-8955"/>
+        <infoLink name="Catapults" id="b6bd-db8f-b394-0ef2" hidden="false" type="rule" targetId="21f1-960d-2c7b-3dbb"/>
+        <infoLink name="Sluggish" id="8670-e1ce-e4f5-f2c3" hidden="false" type="rule" targetId="8a4f-3958-18fe-0838"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Missile Pod" hidden="false" id="1ab2-09d0-1288-d99f" type="selectionEntry" targetId="dd91-3a71-fd82-e67e">
+          <constraints>
+            <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="4318-e9ee-d107-b7c9"/>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="289b-3827-049d-5e1e"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Gun Battery" hidden="false" id="17d1-608b-a816-cf49" type="selectionEntry" targetId="83bc-492a-2006-778d">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="02d8-3f1e-3dc4-172c"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="119f-97a5-82b6-f19c"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Strike Craft" hidden="false" id="8ded-777d-0dd1-5470" type="selectionEntryGroup" targetId="435b-832a-ba77-5ac2">
+          <constraints>
+            <constraint type="min" value="9" field="selections" scope="parent" shared="true" id="a83b-2366-2172-ef2d"/>
+            <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="ea7a-154e-878c-96ee"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="CQB Companies" hidden="false" id="4208-2a8a-8784-1a28" type="selectionEntryGroup" targetId="2dd3-4a75-8ce2-8eb1">
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="e55f-e161-3916-7915"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="cff0-67e1-ce24-ff27"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Commander" hidden="false" id="7d77-72f0-c5e6-e85d" type="selectionEntryGroup" targetId="f514-1193-a474-711f"/>
+      </entryLinks>
+      <modifiers>
+        <modifier type="add" value="b5b8-5ac8-4c77-cbb0" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="self" childId="df1f-937a-7be9-2333" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Light Carrier T3" hidden="false" id="668d-1640-3703-5d3b">
+      <costs>
+        <cost name="Points" typeId="dd57-09ff-340f-8e48" value="42"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="ddf0-e667-c5bb-bfd0" id="0109-adce-514e-c665" primary="true" name="Capital"/>
+        <categoryLink targetId="b034-e255-5fb8-51b1" id="2eb4-7aa3-1317-9cdf" primary="false" name="SINO Russian Pact"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Light Carrier T3" typeId="fd62-daee-6b9c-c612" typeName="Ship Stats" hidden="false" id="81f1-ce8d-c584-3a7a">
+          <characteristics>
+            <characteristic name="Shield Strength" typeId="face-6a39-0cf0-eebe">6</characteristic>
+            <characteristic name="Max Thrust" typeId="0351-9250-0a32-4131">4</characteristic>
+            <characteristic name="Hull Points" typeId="b78c-8434-3b73-3728">3</characteristic>
+            <characteristic name="Crew Size" typeId="ba69-5c5c-fbb2-ee8f">6</characteristic>
+            <characteristic name="Strike Bay" typeId="6951-636f-b7cf-dff3">4</characteristic>
+            <characteristic name="Assault bay" typeId="5064-520e-c582-fc1a">1</characteristic>
+            <characteristic name="Traits" typeId="7875-4af0-5837-6dcb">Strike Support 1, Launch 2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Strike Support X" id="5ea6-8711-18f9-de17" hidden="false" type="rule" targetId="97b1-7581-93a1-af45"/>
+        <infoLink name="Launch X" id="5b79-2723-7e2e-8c44" hidden="false" type="rule" targetId="0158-e952-527e-8955"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Missile Pod" hidden="false" id="fa9e-fb63-2b93-2571" type="selectionEntry" targetId="dd91-3a71-fd82-e67e">
+          <constraints>
+            <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="5c41-1651-c08b-714c"/>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="e1e5-bca1-a6c0-ac93"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Commander" hidden="false" id="b371-a35f-0229-953b" type="selectionEntryGroup" targetId="f514-1193-a474-711f"/>
+        <entryLink import="true" name="Strike Craft" hidden="false" id="e448-d062-2457-8dd6" type="selectionEntryGroup" targetId="435b-832a-ba77-5ac2">
+          <constraints>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="9f27-b87f-2ab7-c245"/>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="f3a4-4746-fe4c-846b"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="CQB Companies" hidden="false" id="e84f-e79a-8211-d3c1" type="selectionEntryGroup" targetId="2dd3-4a75-8ce2-8eb1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cb6e-0610-3d60-651f"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a66f-26ff-5e85-1f80"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <modifiers>
+        <modifier type="add" value="b5b8-5ac8-4c77-cbb0" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="self" childId="df1f-937a-7be9-2333" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Red Dragon Battleship T3" hidden="false" id="78c2-a13e-dd1c-ae3d" publicationId="3942-1ba6-967b-c9ed" page="19">
+      <costs>
+        <cost name="Points" typeId="dd57-09ff-340f-8e48" value="92"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="ddf0-e667-c5bb-bfd0" id="d3e9-be09-2188-3c7d" primary="true" name="Capital"/>
+        <categoryLink targetId="b034-e255-5fb8-51b1" id="0eab-2d08-d546-82f2" primary="false" name="SINO Russian Pact"/>
+        <categoryLink targetId="99a8-81d3-ead9-288b" id="f99e-ac03-e394-3463" primary="false" name="Heavy"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Armoured Reactor Core" hidden="false" id="7970-f45f-8af0-f05a" publicationId="3942-1ba6-967b-c9ed" page="62" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7537-14a4-c841-4174" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="0d44-2051-d19b-7879" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Armoured Reactor Core" id="5999-2ee2-63f0-f6a2" hidden="false" targetId="e597-6ea8-a851-86e8" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Points" typeId="dd57-09ff-340f-8e48" value="3"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <profiles>
+        <profile name="Red Dragon Battleship T3" typeId="fd62-daee-6b9c-c612" typeName="Ship Stats" hidden="false" id="ba52-c807-23e7-10f1">
+          <characteristics>
+            <characteristic name="Shield Strength" typeId="face-6a39-0cf0-eebe">8</characteristic>
+            <characteristic name="Max Thrust" typeId="0351-9250-0a32-4131">3</characteristic>
+            <characteristic name="Hull Points" typeId="b78c-8434-3b73-3728">5</characteristic>
+            <characteristic name="Crew Size" typeId="ba69-5c5c-fbb2-ee8f">6</characteristic>
+            <characteristic name="Strike Bay" typeId="6951-636f-b7cf-dff3">1</characteristic>
+            <characteristic name="Assault bay" typeId="5064-520e-c582-fc1a"/>
+            <characteristic name="Traits" typeId="7875-4af0-5837-6dcb">EW1, Sluggish, Countermeasures 1, Launch 1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="7b8e-a413-3aab-a5df" type="selectionEntryGroup" targetId="f514-1193-a474-711f"/>
+        <entryLink import="true" name="Super Mac Cannon" hidden="false" id="bd5b-a7b2-d05e-362c" type="selectionEntry" targetId="fc1b-4127-a15a-b74e">
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="3e03-4bc4-8c51-7740"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="36ff-d315-769a-2771"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Strike Craft" hidden="false" id="cbd4-aca4-1729-11db" type="selectionEntryGroup" targetId="435b-832a-ba77-5ac2">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="187a-3726-31e1-6c2a"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4b80-60d4-4892-7f6c"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <modifiers>
+        <modifier type="add" value="b5b8-5ac8-4c77-cbb0" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="self" childId="df1f-937a-7be9-2333" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Sluggish" id="5d7d-629a-c50c-00c6" hidden="false" type="rule" targetId="8a4f-3958-18fe-0838"/>
+        <infoLink name="Countermeasures" id="82df-7dfd-6ee2-9083" hidden="false" type="rule" targetId="be09-53a7-167a-19ad"/>
+        <infoLink name="Launch X" id="3fdd-ba4a-7b9e-8de0" hidden="false" type="rule" targetId="0158-e952-527e-8955"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Carrier T3 (Heavy)" hidden="false" id="359d-2c0e-dd3a-4ebf" publicationId="3942-1ba6-967b-c9ed" page="19">
+      <categoryLinks>
+        <categoryLink targetId="ddf0-e667-c5bb-bfd0" id="fcec-3c69-4945-cdbe" primary="true" name="Capital"/>
+        <categoryLink targetId="b034-e255-5fb8-51b1" id="8b8a-5e78-2cbd-456c" primary="false" name="SINO Russian Pact"/>
+        <categoryLink targetId="99a8-81d3-ead9-288b" id="78b3-068b-4df5-7980" primary="false" name="Heavy"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="dd57-09ff-340f-8e48" value="74"/>
+      </costs>
+      <profiles>
+        <profile name="Carrier T3" typeId="fd62-daee-6b9c-c612" typeName="Ship Stats" hidden="false" id="b0f7-a131-6688-a4ad">
+          <characteristics>
+            <characteristic name="Shield Strength" typeId="face-6a39-0cf0-eebe">8</characteristic>
+            <characteristic name="Max Thrust" typeId="0351-9250-0a32-4131">4</characteristic>
+            <characteristic name="Hull Points" typeId="b78c-8434-3b73-3728">4</characteristic>
+            <characteristic name="Crew Size" typeId="ba69-5c5c-fbb2-ee8f">6</characteristic>
+            <characteristic name="Strike Bay" typeId="6951-636f-b7cf-dff3">6</characteristic>
+            <characteristic name="Assault bay" typeId="5064-520e-c582-fc1a">2</characteristic>
+            <characteristic name="Traits" typeId="7875-4af0-5837-6dcb">Strike Support 1, Launch 3, Sluggish</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Strike Support X" id="1952-f8fc-c09e-984a" hidden="false" type="rule" targetId="97b1-7581-93a1-af45"/>
+        <infoLink name="Sluggish" id="77f2-c3d3-2925-f4e6" hidden="false" type="rule" targetId="8a4f-3958-18fe-0838"/>
+        <infoLink name="Launch X" id="051b-8690-002f-9644" hidden="false" type="rule" targetId="0158-e952-527e-8955"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Missile Pod" hidden="false" id="fb2c-d75b-29cd-26ae" type="selectionEntry" targetId="dd91-3a71-fd82-e67e">
+          <constraints>
+            <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="64af-f69a-aa41-f236"/>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="7eff-058b-d039-0cc2"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Mac Cannons" hidden="false" id="f9f9-0d28-98c0-214e" type="selectionEntry" targetId="9f8c-88e8-8338-6364">
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="be46-8ffb-58e8-0181"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="3749-8784-766f-0a71"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Commander" hidden="false" id="c713-b49b-03dc-348d" type="selectionEntryGroup" targetId="f514-1193-a474-711f"/>
+        <entryLink import="true" name="Strike Craft" hidden="false" id="f5e0-99b8-fa34-5cfe" type="selectionEntryGroup" targetId="435b-832a-ba77-5ac2">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="93b0-d82c-a866-1c70"/>
+            <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="6297-47dd-d18d-baf2"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="CQB Companies" hidden="false" id="452e-19de-eac9-ee0b" type="selectionEntryGroup" targetId="2dd3-4a75-8ce2-8eb1">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="48ef-9e6d-e04a-2d26"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="58a8-3c18-191a-008f"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <modifiers>
+        <modifier type="add" value="b5b8-5ac8-4c77-cbb0" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="self" childId="df1f-937a-7be9-2333" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Destroyer" hidden="false" id="f303-58a6-d1aa-6358" publicationId="3942-1ba6-967b-c9ed" page="20">
+      <costs>
+        <cost name="Points" typeId="dd57-09ff-340f-8e48" value="27"/>
+      </costs>
+      <profiles>
+        <profile name="Destroyer" typeId="fd62-daee-6b9c-c612" typeName="Ship Stats" hidden="false" id="9ba5-40a3-528d-3643">
+          <characteristics>
+            <characteristic name="Shield Strength" typeId="face-6a39-0cf0-eebe">4</characteristic>
+            <characteristic name="Max Thrust" typeId="0351-9250-0a32-4131">4</characteristic>
+            <characteristic name="Hull Points" typeId="b78c-8434-3b73-3728">2</characteristic>
+            <characteristic name="Crew Size" typeId="ba69-5c5c-fbb2-ee8f">2</characteristic>
+            <characteristic name="Strike Bay" typeId="6951-636f-b7cf-dff3"/>
+            <characteristic name="Assault bay" typeId="5064-520e-c582-fc1a"/>
+            <characteristic name="Traits" typeId="7875-4af0-5837-6dcb">ADS</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="1" field="5064-520e-c582-fc1a">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="8f56-177a-7cd3-6a30" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="+1 Assault Bay" hidden="false" id="8f56-177a-7cd3-6a30">
+          <costs>
+            <cost name="Points" typeId="dd57-09ff-340f-8e48" value="2"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7d02-258c-09f6-9373"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="af99-5be5-7243-ddb2"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="ff8c-6404-d96c-d06e" id="a588-0a1f-b33c-8416" primary="true" name="support"/>
+        <categoryLink targetId="b034-e255-5fb8-51b1" id="a701-9420-d5f1-1cc8" primary="false" name="SINO Russian Pact"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="ADS X" id="6a8a-43e1-e3df-8ff8" hidden="false" type="rule" targetId="7b47-f592-16a4-f8f4"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="bc27-49cf-b250-6f36" type="selectionEntryGroup" targetId="f514-1193-a474-711f"/>
+        <entryLink import="true" name="Missile Pod" hidden="false" id="3385-f8ff-2346-74b6" type="selectionEntry" targetId="dd91-3a71-fd82-e67e">
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="dbf9-4199-6f0f-3c5e"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="24e3-c44f-92c1-4e8d"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Gun Battery" hidden="false" id="c8c9-4860-7e38-7097" type="selectionEntry" targetId="83bc-492a-2006-778d">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f576-b9fb-b73b-469f"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="955b-ff4b-c267-66e8"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Mac Cannons" hidden="false" id="346e-ab12-ce36-5ab1" type="selectionEntry" targetId="9f8c-88e8-8338-6364">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="fe89-d7b3-e0f2-ed28"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="a51a-ea88-b742-be88"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <modifiers>
+        <modifier type="add" value="b5b8-5ac8-4c77-cbb0" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="self" childId="df1f-937a-7be9-2333" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Heavy Destroyer" hidden="false" id="6398-eea5-e7e6-b29d">
+      <costs>
+        <cost name="Points" typeId="dd57-09ff-340f-8e48" value="34"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="ff8c-6404-d96c-d06e" id="9b22-085c-838a-a233" primary="true" name="support"/>
+        <categoryLink targetId="b034-e255-5fb8-51b1" id="cbb7-ddef-e1c7-589b" primary="false" name="SINO Russian Pact"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Heavy Destroyer" typeId="fd62-daee-6b9c-c612" typeName="Ship Stats" hidden="false" id="6185-1ec4-4c39-8f3b">
+          <characteristics>
+            <characteristic name="Shield Strength" typeId="face-6a39-0cf0-eebe">5</characteristic>
+            <characteristic name="Max Thrust" typeId="0351-9250-0a32-4131">3</characteristic>
+            <characteristic name="Hull Points" typeId="b78c-8434-3b73-3728">2</characteristic>
+            <characteristic name="Crew Size" typeId="ba69-5c5c-fbb2-ee8f">3</characteristic>
+            <characteristic name="Strike Bay" typeId="6951-636f-b7cf-dff3"/>
+            <characteristic name="Assault bay" typeId="5064-520e-c582-fc1a"/>
+            <characteristic name="Traits" typeId="7875-4af0-5837-6dcb"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="e190-8b5c-badf-0536" type="selectionEntryGroup" targetId="f514-1193-a474-711f"/>
+        <entryLink import="true" name="Missile Pod" hidden="false" id="0f83-f486-ba8e-3232" type="selectionEntry" targetId="dd91-3a71-fd82-e67e">
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="b3f0-fe5a-2e3d-4f74"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="deae-be2f-3a76-2e15"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Gun Battery" hidden="false" id="127c-9a47-93b3-26d5" type="selectionEntry" targetId="83bc-492a-2006-778d">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="45a5-6d3d-9d5e-4e98"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="dba4-8be8-52ae-5d2d"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Mac Cannons" hidden="false" id="a19c-3938-ca42-3214" type="selectionEntry" targetId="9f8c-88e8-8338-6364">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="f0aa-46f3-cf4f-b3df"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="f885-123a-e6e0-945b"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <modifiers>
+        <modifier type="add" value="b5b8-5ac8-4c77-cbb0" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="self" childId="df1f-937a-7be9-2333" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Heavy Destroyer T3" hidden="false" id="52d4-2020-d0d1-333c" publicationId="3942-1ba6-967b-c9ed" page="20">
+      <costs>
+        <cost name="Points" typeId="dd57-09ff-340f-8e48" value="34"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="ff8c-6404-d96c-d06e" id="1156-150e-76c7-6817" primary="true" name="support"/>
+        <categoryLink targetId="b034-e255-5fb8-51b1" id="8a37-c4d3-b610-e0a5" primary="false" name="SINO Russian Pact"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Heavy Destroyer T3" typeId="fd62-daee-6b9c-c612" typeName="Ship Stats" hidden="false" id="764f-ecf8-559d-0bbd">
+          <characteristics>
+            <characteristic name="Shield Strength" typeId="face-6a39-0cf0-eebe">6</characteristic>
+            <characteristic name="Max Thrust" typeId="0351-9250-0a32-4131">4</characteristic>
+            <characteristic name="Hull Points" typeId="b78c-8434-3b73-3728">3</characteristic>
+            <characteristic name="Crew Size" typeId="ba69-5c5c-fbb2-ee8f">3</characteristic>
+            <characteristic name="Strike Bay" typeId="6951-636f-b7cf-dff3"/>
+            <characteristic name="Assault bay" typeId="5064-520e-c582-fc1a"/>
+            <characteristic name="Traits" typeId="7875-4af0-5837-6dcb"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="8f5b-3cab-9221-5d6b" type="selectionEntryGroup" targetId="f514-1193-a474-711f"/>
+        <entryLink import="true" name="Missile Pod" hidden="false" id="7a3e-00b9-99b0-2cf7" type="selectionEntry" targetId="dd91-3a71-fd82-e67e">
+          <constraints>
+            <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="1467-9881-d136-06b8"/>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="641d-e2ed-57e6-7cc1"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Mac Cannons" hidden="false" id="222f-b954-f59e-a1c1" type="selectionEntry" targetId="9f8c-88e8-8338-6364">
+          <constraints>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="f1e4-bf22-f928-43fa"/>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="83e5-6479-10a5-68a3"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <modifiers>
+        <modifier type="add" value="b5b8-5ac8-4c77-cbb0" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="self" childId="df1f-937a-7be9-2333" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Torpedo Boat" hidden="false" id="8cc1-cccd-e404-b17f" publicationId="3942-1ba6-967b-c9ed" page="20">
+      <costs>
+        <cost name="Points" typeId="dd57-09ff-340f-8e48" value="24"/>
+      </costs>
+      <profiles>
+        <profile name="Torpedo Boat" typeId="fd62-daee-6b9c-c612" typeName="Ship Stats" hidden="false" id="4ed6-9b38-2f67-7d22">
+          <characteristics>
+            <characteristic name="Shield Strength" typeId="face-6a39-0cf0-eebe">2</characteristic>
+            <characteristic name="Max Thrust" typeId="0351-9250-0a32-4131">4</characteristic>
+            <characteristic name="Hull Points" typeId="b78c-8434-3b73-3728">2</characteristic>
+            <characteristic name="Crew Size" typeId="ba69-5c5c-fbb2-ee8f">1</characteristic>
+            <characteristic name="Strike Bay" typeId="6951-636f-b7cf-dff3"/>
+            <characteristic name="Assault bay" typeId="5064-520e-c582-fc1a"/>
+            <characteristic name="Traits" typeId="7875-4af0-5837-6dcb"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="25c4-2347-3c70-a175" type="selectionEntryGroup" targetId="f514-1193-a474-711f"/>
+        <entryLink import="true" name="Torpedo" hidden="false" id="1cb6-2b8f-cd45-eb4d" type="selectionEntry" targetId="b277-a7ac-b1b0-0b11">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="9b9b-158f-d943-5728"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="415c-80fe-4429-5b2d"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Missile Pod" hidden="false" id="7076-0f7e-6cd8-7f0a" type="selectionEntry" targetId="dd91-3a71-fd82-e67e">
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="0bb4-2c5a-23f9-2796"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="3a2b-1507-605a-400d"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <modifiers>
+        <modifier type="add" value="b5b8-5ac8-4c77-cbb0" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="self" childId="df1f-937a-7be9-2333" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="ff8c-6404-d96c-d06e" id="56b6-f60e-ff19-207e" primary="true" name="support"/>
+        <categoryLink targetId="b034-e255-5fb8-51b1" id="ba6b-d0a1-9a6b-50de" primary="false" name="SINO Russian Pact"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Electronic Warfare Frigate T3" hidden="false" id="8af4-4494-c8f0-9138">
+      <costs>
+        <cost name="Points" typeId="dd57-09ff-340f-8e48" value="26"/>
+      </costs>
+      <profiles>
+        <profile name="Electronic Warfare Frigate T3" typeId="fd62-daee-6b9c-c612" typeName="Ship Stats" hidden="false" id="1853-71ed-5ab2-ae1a">
+          <characteristics>
+            <characteristic name="Shield Strength" typeId="face-6a39-0cf0-eebe">3</characteristic>
+            <characteristic name="Max Thrust" typeId="0351-9250-0a32-4131">4</characteristic>
+            <characteristic name="Hull Points" typeId="b78c-8434-3b73-3728">2</characteristic>
+            <characteristic name="Crew Size" typeId="ba69-5c5c-fbb2-ee8f">1</characteristic>
+            <characteristic name="Strike Bay" typeId="6951-636f-b7cf-dff3"/>
+            <characteristic name="Assault bay" typeId="5064-520e-c582-fc1a"/>
+            <characteristic name="Traits" typeId="7875-4af0-5837-6dcb">EW1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="db13-ef52-fefc-112d" type="selectionEntryGroup" targetId="f514-1193-a474-711f"/>
+        <entryLink import="true" name="Missile Pod" hidden="false" id="4f67-178a-59d4-28b4" type="selectionEntry" targetId="dd91-3a71-fd82-e67e">
+          <constraints>
+            <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="c8fb-5578-efb7-1922"/>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="f138-8fae-5886-0ee0"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <modifiers>
+        <modifier type="add" value="b5b8-5ac8-4c77-cbb0" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="self" childId="df1f-937a-7be9-2333" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="b034-e255-5fb8-51b1" id="c993-977e-a483-a5ea" primary="false" name="SINO Russian Pact"/>
+        <categoryLink targetId="ff8c-6404-d96c-d06e" id="6cee-d622-15c8-d6c7" primary="true" name="support"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Mine Layer T3" hidden="false" id="3958-9cbe-4755-fece" publicationId="3942-1ba6-967b-c9ed" page="20">
+      <costs>
+        <cost name="Points" typeId="dd57-09ff-340f-8e48" value="30"/>
+      </costs>
+      <profiles>
+        <profile name="Mine Layer T3" typeId="fd62-daee-6b9c-c612" typeName="Ship Stats" hidden="false" id="055b-9ed3-e427-7386">
+          <characteristics>
+            <characteristic name="Shield Strength" typeId="face-6a39-0cf0-eebe">3</characteristic>
+            <characteristic name="Max Thrust" typeId="0351-9250-0a32-4131">4</characteristic>
+            <characteristic name="Hull Points" typeId="b78c-8434-3b73-3728">2</characteristic>
+            <characteristic name="Crew Size" typeId="ba69-5c5c-fbb2-ee8f">1</characteristic>
+            <characteristic name="Strike Bay" typeId="6951-636f-b7cf-dff3"/>
+            <characteristic name="Assault bay" typeId="5064-520e-c582-fc1a"/>
+            <characteristic name="Traits" typeId="7875-4af0-5837-6dcb">Mine Layer 2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Mine Layer X" id="2fff-3ca1-ccf8-ea39" hidden="false" type="rule" targetId="ac76-33b1-4ca8-67a3"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="a15d-76c1-2fba-6c6e" type="selectionEntryGroup" targetId="f514-1193-a474-711f"/>
+        <entryLink import="true" name="Missile Pod" hidden="false" id="3a1f-2ede-d1dd-9427" type="selectionEntry" targetId="dd91-3a71-fd82-e67e">
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="886f-bd96-cf64-5560"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="675e-f4b6-94a0-1a7d"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <modifiers>
+        <modifier type="add" value="b5b8-5ac8-4c77-cbb0" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="self" childId="df1f-937a-7be9-2333" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="ff8c-6404-d96c-d06e" id="3349-cb0e-17d7-fb2d" primary="true" name="support"/>
+        <categoryLink targetId="b034-e255-5fb8-51b1" id="970c-3e8c-8d9d-8779" primary="false" name="SINO Russian Pact"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Frigate" hidden="false" id="8381-ec61-b702-fc21">
+      <costs>
+        <cost name="Points" typeId="dd57-09ff-340f-8e48" value="23"/>
+      </costs>
+      <profiles>
+        <profile name="Frigate" typeId="fd62-daee-6b9c-c612" typeName="Ship Stats" hidden="false" id="4d62-6ce5-eba4-dcbf">
+          <characteristics>
+            <characteristic name="Shield Strength" typeId="face-6a39-0cf0-eebe">3</characteristic>
+            <characteristic name="Max Thrust" typeId="0351-9250-0a32-4131">4</characteristic>
+            <characteristic name="Hull Points" typeId="b78c-8434-3b73-3728">2</characteristic>
+            <characteristic name="Crew Size" typeId="ba69-5c5c-fbb2-ee8f">1</characteristic>
+            <characteristic name="Strike Bay" typeId="6951-636f-b7cf-dff3"/>
+            <characteristic name="Assault bay" typeId="5064-520e-c582-fc1a"/>
+            <characteristic name="Traits" typeId="7875-4af0-5837-6dcb">ADS</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="append" value="2" field="7875-4af0-5837-6dcb">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="8381-ec61-b702-fc21" childId="43b1-f5be-81c4-0d36" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="09ca-cf4d-3248-f4bb" type="selectionEntryGroup" targetId="f514-1193-a474-711f"/>
+        <entryLink import="true" name="Missile Pod" hidden="false" id="456a-5786-829f-d0d0" type="selectionEntry" targetId="dd91-3a71-fd82-e67e">
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="55d0-af1d-de84-5f98"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="876a-b008-dda3-7801"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Mac Cannons" hidden="false" id="356d-7ece-8a49-13f5" type="selectionEntry" targetId="9f8c-88e8-8338-6364">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="43ba-7d30-046d-29fd"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="b483-c244-ffbe-0e2a"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <modifiers>
+        <modifier type="add" value="b5b8-5ac8-4c77-cbb0" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="self" childId="df1f-937a-7be9-2333" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="+1 ADS" hidden="false" id="43b1-f5be-81c4-0d36" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7ec9-14f2-9035-a7ee" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="4815-2798-a22e-a6b7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <costs>
+            <cost name="Points" typeId="dd57-09ff-340f-8e48" value="3"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="ff8c-6404-d96c-d06e" id="a9ab-c2cf-c51e-7e97" primary="true" name="support"/>
+        <categoryLink targetId="b034-e255-5fb8-51b1" id="2739-63aa-9a4e-55ad" primary="false" name="SINO Russian Pact"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="ADS X" id="77fb-c0e1-ef91-5d99" hidden="false" type="rule" targetId="7b47-f592-16a4-f8f4"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Gunboat Squadron T3" hidden="false" id="4ac6-7cac-aefe-f77b" publicationId="3942-1ba6-967b-c9ed" page="20">
+      <costs>
+        <cost name="Points" typeId="dd57-09ff-340f-8e48" value="25"/>
+      </costs>
+      <profiles>
+        <profile name="Gunboat Squadron T3" typeId="fd62-daee-6b9c-c612" typeName="Ship Stats" hidden="false" id="0c8e-28d4-593b-7c75">
+          <characteristics>
+            <characteristic name="Shield Strength" typeId="face-6a39-0cf0-eebe">3</characteristic>
+            <characteristic name="Max Thrust" typeId="0351-9250-0a32-4131">4</characteristic>
+            <characteristic name="Hull Points" typeId="b78c-8434-3b73-3728">2</characteristic>
+            <characteristic name="Crew Size" typeId="ba69-5c5c-fbb2-ee8f">3</characteristic>
+            <characteristic name="Strike Bay" typeId="6951-636f-b7cf-dff3"/>
+            <characteristic name="Assault bay" typeId="5064-520e-c582-fc1a"/>
+            <characteristic name="Traits" typeId="7875-4af0-5837-6dcb">ADS, Squadron</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="0a66-49a7-cc37-6fa9" type="selectionEntryGroup" targetId="f514-1193-a474-711f"/>
+        <entryLink import="true" name="Missile Pod" hidden="false" id="42ee-5dca-7bec-5f68" type="selectionEntry" targetId="dd91-3a71-fd82-e67e">
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="5f1f-fd5b-2442-bdd1"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="c338-21cb-6dd5-4f25"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Mac Cannons" hidden="false" id="398f-6623-6a6a-5fcc" type="selectionEntry" targetId="9f8c-88e8-8338-6364">
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="0ed9-d43e-931c-e90b"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="7ad2-abd5-32a6-46c7"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <modifiers>
+        <modifier type="add" value="b5b8-5ac8-4c77-cbb0" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="self" childId="df1f-937a-7be9-2333" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="9cb1-f70a-60f2-5d11" id="2f72-1e2e-deff-6229" primary="true" name="Escort"/>
+        <categoryLink targetId="b034-e255-5fb8-51b1" id="b033-1b56-b0e6-5494" primary="false" name="SINO Russian Pact"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Squadron" id="348d-7f2e-b8e7-9b05" hidden="false" type="rule" targetId="bda1-dd8e-11d9-8a18"/>
+        <infoLink name="ADS X" id="8b27-db82-525d-cd39" hidden="false" type="rule" targetId="7b47-f592-16a4-f8f4"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Heavy Frigate T3" hidden="false" id="a195-15ad-12c6-c6b8" publicationId="3942-1ba6-967b-c9ed" page="20">
+      <costs>
+        <cost name="Points" typeId="dd57-09ff-340f-8e48" value="30"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="9cb1-f70a-60f2-5d11" id="4dc5-118b-7db8-bea3" primary="true" name="Escort"/>
+        <categoryLink targetId="b034-e255-5fb8-51b1" id="becc-e552-20c6-204c" primary="false" name="SINO Russian Pact"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Heavy Frigate T3" typeId="fd62-daee-6b9c-c612" typeName="Ship Stats" hidden="false" id="2aca-a8bf-f337-32b2">
+          <characteristics>
+            <characteristic name="Shield Strength" typeId="face-6a39-0cf0-eebe">4</characteristic>
+            <characteristic name="Max Thrust" typeId="0351-9250-0a32-4131">4</characteristic>
+            <characteristic name="Hull Points" typeId="b78c-8434-3b73-3728">3</characteristic>
+            <characteristic name="Crew Size" typeId="ba69-5c5c-fbb2-ee8f">1</characteristic>
+            <characteristic name="Strike Bay" typeId="6951-636f-b7cf-dff3"/>
+            <characteristic name="Assault bay" typeId="5064-520e-c582-fc1a"/>
+            <characteristic name="Traits" typeId="7875-4af0-5837-6dcb">ADS</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="1" field="5064-520e-c582-fc1a">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="a195-15ad-12c6-c6b8" childId="6c13-668c-b259-e287" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="+1 Assault bay" hidden="false" id="6c13-668c-b259-e287">
+          <costs>
+            <cost name="Points" typeId="dd57-09ff-340f-8e48" value="2"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <infoLinks>
+        <infoLink name="ADS X" id="5325-4a45-3c02-9a2c" hidden="false" type="rule" targetId="7b47-f592-16a4-f8f4"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="5da4-09e2-0fe1-71f7" type="selectionEntryGroup" targetId="f514-1193-a474-711f"/>
+        <entryLink import="true" name="Missile Pod" hidden="false" id="104a-b522-b36b-4b40" type="selectionEntry" targetId="dd91-3a71-fd82-e67e">
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="7583-58e6-2f52-b915"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="802a-5a35-ae73-d20d"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Mac Cannons" hidden="false" id="f8ee-77fc-a4f7-a7ae" type="selectionEntry" targetId="9f8c-88e8-8338-6364">
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="21e8-e692-ba50-e274"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="14c4-b422-c780-8595"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <modifiers>
+        <modifier type="add" value="b5b8-5ac8-4c77-cbb0" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="self" childId="df1f-937a-7be9-2333" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Corvette" hidden="false" id="cd34-2a0e-8ddc-42e8" publicationId="3942-1ba6-967b-c9ed" page="20">
+      <costs>
+        <cost name="Points" typeId="dd57-09ff-340f-8e48" value="21"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="9cb1-f70a-60f2-5d11" id="8cef-19a1-6e6d-4d33" primary="true" name="Escort"/>
+        <categoryLink targetId="b034-e255-5fb8-51b1" id="47f0-159e-1a07-a735" primary="false" name="SINO Russian Pact"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Corvette" typeId="fd62-daee-6b9c-c612" typeName="Ship Stats" hidden="false" id="12c5-8313-abd9-f633">
+          <characteristics>
+            <characteristic name="Shield Strength" typeId="face-6a39-0cf0-eebe">2</characteristic>
+            <characteristic name="Max Thrust" typeId="0351-9250-0a32-4131">5</characteristic>
+            <characteristic name="Hull Points" typeId="b78c-8434-3b73-3728">2</characteristic>
+            <characteristic name="Crew Size" typeId="ba69-5c5c-fbb2-ee8f">1</characteristic>
+            <characteristic name="Strike Bay" typeId="6951-636f-b7cf-dff3"/>
+            <characteristic name="Assault bay" typeId="5064-520e-c582-fc1a"/>
+            <characteristic name="Traits" typeId="7875-4af0-5837-6dcb"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="d247-5224-e487-ef1e" type="selectionEntryGroup" targetId="f514-1193-a474-711f"/>
+        <entryLink import="true" name="Missile Pod" hidden="false" id="9013-1b53-aacc-6041" type="selectionEntry" targetId="dd91-3a71-fd82-e67e">
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="fcbe-8ed8-75eb-05ab"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="7692-3279-d140-8192"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <modifiers>
+        <modifier type="add" value="b5b8-5ac8-4c77-cbb0" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="self" childId="df1f-937a-7be9-2333" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="ADS X" id="54cc-3208-0ae1-2bd6" hidden="false" type="rule" targetId="7b47-f592-16a4-f8f4"/>
+        <infoLink name="Thrust Vectoring" id="d5af-e954-96af-ddeb" hidden="false" type="rule" targetId="bdbe-b620-67db-d020"/>
+        <infoLink name="Aegis" id="fb3d-ab29-94fe-232f" hidden="false" type="rule" targetId="c1f8-d8c6-a1b8-d7c3"/>
+      </infoLinks>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup name="CQB Companies" id="2dd3-4a75-8ce2-8eb1" hidden="false" publicationId="3942-1ba6-967b-c9ed" page="64" collective="false" import="true">
+      <categoryLinks>
+        <categoryLink name="CQB" hidden="false" id="b5ba-ce10-c9f6-50b7" targetId="b70b-1ba2-e198-c944" primary="true"/>
+        <categoryLink name="Imperial Hemina" hidden="false" id="92cf-b30e-f542-9f39" targetId="1117-20a0-a34d-68bd" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="unit" import="true" name="Light Company" hidden="false" id="9d3d-119c-57a9-fd68" collective="false">
+          <profiles>
+            <profile name="Light Company" typeId="8047-aa6f-c1da-a700" typeName="CQB Stats" hidden="false" id="fbf6-c820-8dee-43b2">
+              <characteristics>
+                <characteristic name="Attack" typeId="0727-c56d-4766-19fd">10+</characteristic>
+                <characteristic name="Defend" typeId="d333-c742-1468-d3dd">8+</characteristic>
+                <characteristic name="Attacks (amount)" typeId="178f-aab5-a6d3-5cf0">1</characteristic>
+                <characteristic name="Save" typeId="911c-0ad0-6f4e-5186">9+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink name="CQB" hidden="false" id="e8bf-df10-43ea-8183" targetId="b70b-1ba2-e198-c944" primary="true"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Points" typeId="dd57-09ff-340f-8e48" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Regular Company" hidden="false" id="d2ae-55bd-352f-f199" publicationId="3942-1ba6-967b-c9ed" page="64" collective="false">
+          <profiles>
+            <profile name="Regular Company" typeId="8047-aa6f-c1da-a700" typeName="CQB Stats" hidden="false" id="06a8-e1b8-f7f8-42d6">
+              <characteristics>
+                <characteristic name="Attack" typeId="0727-c56d-4766-19fd">7+</characteristic>
+                <characteristic name="Defend" typeId="d333-c742-1468-d3dd">6+</characteristic>
+                <characteristic name="Attacks (amount)" typeId="178f-aab5-a6d3-5cf0">1</characteristic>
+                <characteristic name="Save" typeId="911c-0ad0-6f4e-5186">8+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink name="CQB" hidden="false" id="de7e-df86-df3d-81c5" targetId="b70b-1ba2-e198-c944" primary="true"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Points" typeId="dd57-09ff-340f-8e48" value="3"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Shock Company" hidden="false" id="b28a-624d-20f3-7000" publicationId="3942-1ba6-967b-c9ed" page="64" collective="false">
+          <profiles>
+            <profile name="Shock Company" typeId="8047-aa6f-c1da-a700" typeName="CQB Stats" hidden="false" id="3eb0-ef3f-a638-dbd6">
+              <characteristics>
+                <characteristic name="Attack" typeId="0727-c56d-4766-19fd">5+</characteristic>
+                <characteristic name="Defend" typeId="d333-c742-1468-d3dd">7+</characteristic>
+                <characteristic name="Attacks (amount)" typeId="178f-aab5-a6d3-5cf0">2</characteristic>
+                <characteristic name="Save" typeId="911c-0ad0-6f4e-5186">8+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink name="CQB" hidden="false" id="b9e5-fd8f-4b93-1be1" targetId="b70b-1ba2-e198-c944" primary="true"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Points" typeId="dd57-09ff-340f-8e48" value="5"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Power Armour Company" hidden="false" id="b493-0169-b4a0-4105" publicationId="3942-1ba6-967b-c9ed" page="64" collective="false">
+          <profiles>
+            <profile name="Power Armour Company" typeId="8047-aa6f-c1da-a700" typeName="CQB Stats" hidden="false" id="6821-c7bc-2cc9-d1c6">
+              <characteristics>
+                <characteristic name="Attack" typeId="0727-c56d-4766-19fd">4+</characteristic>
+                <characteristic name="Defend" typeId="d333-c742-1468-d3dd">4+</characteristic>
+                <characteristic name="Attacks (amount)" typeId="178f-aab5-a6d3-5cf0">2</characteristic>
+                <characteristic name="Save" typeId="911c-0ad0-6f4e-5186">7+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink name="CQB" hidden="false" id="ab21-ae2a-efdc-a2a5" targetId="b70b-1ba2-e198-c944" primary="true"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Points" typeId="dd57-09ff-340f-8e48" value="9"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Dropship" hidden="false" id="cf79-200e-519a-8015" type="selectionEntry" targetId="c916-aa7b-f49d-b983"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Strike Craft" id="435b-832a-ba77-5ac2" hidden="false" publicationId="3942-1ba6-967b-c9ed" page="21">
+      <categoryLinks>
+        <categoryLink targetId="1d5d-ac3c-0f9e-8382" id="d0b4-a5b9-f162-91a0" primary="true" name="Strike Craft"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="unit" import="true" name="J-76 Fighters" hidden="false" id="146a-bda3-7799-30f1" publicationId="3942-1ba6-967b-c9ed" page="21">
+          <categoryLinks>
+            <categoryLink targetId="1d5d-ac3c-0f9e-8382" id="1493-12eb-92f7-3ac2" primary="false" name="Strike Craft"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Points" typeId="dd57-09ff-340f-8e48" value="6"/>
+          </costs>
+          <profiles>
+            <profile name="J-76 Fighters" typeId="8562-1ee2-d80c-e753" typeName="Strike Craft Stats" hidden="false" id="72a4-be5a-5bbf-c3b4">
+              <characteristics>
+                <characteristic name="Speed" typeId="b7a0-b9fb-4295-87bf">10&quot;</characteristic>
+                <characteristic name="Anti SC" typeId="a1d2-240a-d9fa-1712">4+</characteristic>
+                <characteristic name="Anti-Ship" typeId="bc6e-037f-58a9-1faf">4+</characteristic>
+                <characteristic name="Attack against ships" typeId="f633-6e0a-1576-0f9c">2</characteristic>
+                <characteristic name="Save" typeId="d415-0e55-c4dd-d7b7">5+</characteristic>
+                <characteristic name="Traits" typeId="3875-2795-81d2-a053"/>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="H-30 Stealth Bombers" hidden="false" id="ce06-710a-ba94-253f" publicationId="3942-1ba6-967b-c9ed" page="21">
+          <costs>
+            <cost name="Points" typeId="dd57-09ff-340f-8e48" value="8"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Shield Skipping X" id="644c-5b6c-4efc-da2b" hidden="false" type="rule" targetId="0fe7-9a92-6258-9885"/>
+          </infoLinks>
+          <profiles>
+            <profile name="H-30 Stealth Bombers" typeId="8562-1ee2-d80c-e753" typeName="Strike Craft Stats" hidden="false" id="98a0-9965-6052-8f32">
+              <characteristics>
+                <characteristic name="Speed" typeId="b7a0-b9fb-4295-87bf">9&quot;</characteristic>
+                <characteristic name="Anti SC" typeId="a1d2-240a-d9fa-1712">8+</characteristic>
+                <characteristic name="Anti-Ship" typeId="bc6e-037f-58a9-1faf">4+</characteristic>
+                <characteristic name="Attack against ships" typeId="f633-6e0a-1576-0f9c">3</characteristic>
+                <characteristic name="Save" typeId="d415-0e55-c4dd-d7b7">5+</characteristic>
+                <characteristic name="Traits" typeId="3875-2795-81d2-a053">Shield skipping 8+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="MiG-82 interceptors" hidden="false" id="3cf0-08f6-546f-8fba" publicationId="3942-1ba6-967b-c9ed" page="21">
+          <costs>
+            <cost name="Points" typeId="dd57-09ff-340f-8e48" value="4"/>
+          </costs>
+          <profiles>
+            <profile name="MiG-82 interceptors" typeId="8562-1ee2-d80c-e753" typeName="Strike Craft Stats" hidden="false" id="d5ab-76d0-3141-f19f">
+              <characteristics>
+                <characteristic name="Speed" typeId="b7a0-b9fb-4295-87bf">12&quot;</characteristic>
+                <characteristic name="Anti SC" typeId="a1d2-240a-d9fa-1712">3+</characteristic>
+                <characteristic name="Anti-Ship" typeId="bc6e-037f-58a9-1faf">4+</characteristic>
+                <characteristic name="Attack against ships" typeId="f633-6e0a-1576-0f9c">1</characteristic>
+                <characteristic name="Save" typeId="d415-0e55-c4dd-d7b7">6+</characteristic>
+                <characteristic name="Traits" typeId="3875-2795-81d2-a053">Intercept</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Intercept" id="16d3-2ec2-f0c7-a2e0" hidden="false" type="rule" targetId="1462-3907-ffc8-4bc1"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
+  <sharedProfiles>
+    <profile name="Dropship" typeId="8562-1ee2-d80c-e753" typeName="Strike Craft Stats" hidden="false" id="e4dc-a25e-ade4-b3d2" publicationId="3942-1ba6-967b-c9ed" page="64">
+      <characteristics>
+        <characteristic name="Speed" typeId="b7a0-b9fb-4295-87bf">9&quot;</characteristic>
+        <characteristic name="Anti SC" typeId="a1d2-240a-d9fa-1712">8+</characteristic>
+        <characteristic name="Anti-Ship" typeId="bc6e-037f-58a9-1faf">8+</characteristic>
+        <characteristic name="Attack against ships" typeId="f633-6e0a-1576-0f9c">1</characteristic>
+        <characteristic name="Save" typeId="d415-0e55-c4dd-d7b7">9+</characteristic>
+        <characteristic name="Traits" typeId="3875-2795-81d2-a053"/>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+  <entryLinks>
+    <entryLink import="true" name="Light Cruiser" hidden="false" id="6557-c923-1b56-e367" type="selectionEntry" targetId="fc98-db21-0155-9949"/>
+    <entryLink import="true" name="Super Carrier (Heavy)" hidden="false" id="e336-c35b-46ba-efa2" type="selectionEntry" targetId="139e-9e11-7679-fb5f"/>
+    <entryLink import="true" name="Cruiser" hidden="false" id="54bb-e36e-88d4-4edb" type="selectionEntry" targetId="7a02-e614-d234-e834"/>
+    <entryLink import="true" name="Battle Cruiser" hidden="false" id="b353-a42f-0fc4-47cd" type="selectionEntry" targetId="2031-8e52-1089-42a6"/>
+    <entryLink import="true" name="Battleship (Heavy)" hidden="false" id="9439-b357-f959-a2cb" type="selectionEntry" targetId="ab0a-c9da-8412-59cb"/>
+    <entryLink import="true" name="Carrier (Heavy)" hidden="false" id="d918-6868-092e-dcd9" type="selectionEntry" targetId="44f7-2ff2-51df-7459"/>
+    <entryLink import="true" name="Battle Cruiser T3" hidden="false" id="abd7-33b3-5f5d-7e49" type="selectionEntry" targetId="cbd8-e188-82eb-daec"/>
+    <entryLink import="true" name="Light Carrier T3" hidden="false" id="5471-8b7f-4856-5243" type="selectionEntry" targetId="668d-1640-3703-5d3b"/>
+    <entryLink import="true" name="Red Dragon Battleship T3" hidden="false" id="f078-0e6f-3717-05fa" type="selectionEntry" targetId="78c2-a13e-dd1c-ae3d"/>
+    <entryLink import="true" name="Carrier T3" hidden="false" id="8ca1-435d-e4fb-0fe8" type="selectionEntry" targetId="359d-2c0e-dd3a-4ebf"/>
+    <entryLink import="true" name="Destroyer" hidden="false" id="d491-69af-85ed-1e1e" type="selectionEntry" targetId="f303-58a6-d1aa-6358"/>
+    <entryLink import="true" name="Heavy Destroyer" hidden="false" id="831f-52ae-bbfc-e39e" type="selectionEntry" targetId="6398-eea5-e7e6-b29d"/>
+    <entryLink import="true" name="Heavy Destroyer T3" hidden="false" id="cd1b-7ecb-6cf0-6648" type="selectionEntry" targetId="52d4-2020-d0d1-333c"/>
+    <entryLink import="true" name="Torpedo Boat" hidden="false" id="24c2-61ff-7945-4396" type="selectionEntry" targetId="8cc1-cccd-e404-b17f"/>
+    <entryLink import="true" name="Electronic Warfare Frigate T3" hidden="false" id="acaf-da1b-93de-04a8" type="selectionEntry" targetId="8af4-4494-c8f0-9138"/>
+    <entryLink import="true" name="Mine Layer T3" hidden="false" id="0ca9-8cba-6ffd-e536" type="selectionEntry" targetId="3958-9cbe-4755-fece"/>
+    <entryLink import="true" name="Frigate" hidden="false" id="850c-f7df-e8d6-aebd" type="selectionEntry" targetId="8381-ec61-b702-fc21"/>
+    <entryLink import="true" name="Gunboat Squadron T3" hidden="false" id="72b2-fac0-4263-310c" type="selectionEntry" targetId="4ac6-7cac-aefe-f77b"/>
+    <entryLink import="true" name="Heavy Frigate T3" hidden="false" id="9fe5-1087-c015-059e" type="selectionEntry" targetId="a195-15ad-12c6-c6b8"/>
+    <entryLink import="true" name="Corvette" hidden="false" id="ec46-4a5f-52cc-dc28" type="selectionEntry" targetId="cd34-2a0e-8ddc-42e8"/>
+  </entryLinks>
+</catalogue>

@@ -82,6 +82,7 @@
     <categoryEntry name="not vanguard eligible" id="f40f-3734-00a7-9824" hidden="true">
       <comment>This one is meant to be given to all ships that are not eligible to make a vanguard</comment>
     </categoryEntry>
+    <categoryEntry name="SINO Russian Pact" id="b034-e255-5fb8-51b1" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="2baf-20ef-c40f-8aa8" name="Combat Group" hidden="false">

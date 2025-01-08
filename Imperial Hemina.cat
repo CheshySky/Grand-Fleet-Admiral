@@ -23,6 +23,11 @@
     <entryLink import="true" name="Heavy Cruiser" hidden="false" id="2540-fe0a-616e-ba52" type="selectionEntry" targetId="b648-2125-8c66-e93d"/>
     <entryLink import="true" name="Ravager" hidden="false" id="b215-2c07-e702-bffa" type="selectionEntry" targetId="7fda-c618-f538-aea5"/>
     <entryLink import="true" name="Protector" hidden="false" id="fc0b-0898-b1aa-05f2" type="selectionEntry" targetId="8c32-9609-c7b1-26de"/>
+    <entryLink import="true" name="Tribune Cassus [Extra assault slots]" hidden="false" id="8b1a-a528-6147-5679" type="selectionEntry" targetId="773e-c699-ff36-aaf1">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="9a66-5d3e-7327-8b28"/>
+      </constraints>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="e7f4-f372-0837-5d16" name="Light Cruiser" publicationId="3942-1ba6-967b-c9ed" page="62" hidden="false" collective="false" import="true" type="unit">
@@ -1164,6 +1169,40 @@
               </constraints>
             </entryLink>
           </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="unit" import="true" name="Tribune Cassus" hidden="false" id="958b-64d9-3075-e42e">
+              <costs>
+                <cost name="Points" typeId="dd57-09ff-340f-8e48" value="15"/>
+              </costs>
+              <categoryLinks>
+                <categoryLink targetId="b5b8-5ac8-4c77-cbb0" id="d918-df7f-cd95-8ea6" primary="true" name="Commander"/>
+                <categoryLink targetId="90dc-f798-1fec-353f" id="de5a-4179-940a-64a5" primary="false" name="Tribune Cassus [Extra assault slots]"/>
+              </categoryLinks>
+              <profiles>
+                <profile name="Tribune Cassus" typeId="f8e8-01a8-098b-ca12" typeName="Commander stats" hidden="false" id="205d-30ea-8198-20e4">
+                  <characteristics>
+                    <characteristic name="Commander Quality" typeId="388a-86b2-03af-20ad">Confident 2</characteristic>
+                    <characteristic name="Rank" typeId="16de-0568-dfa7-27a1">commander</characteristic>
+                    <characteristic name="Ship" typeId="f3f9-27da-95ec-1253">Reformed Heavy Cruiser</characteristic>
+                    <characteristic name="Skill" typeId="8cfd-31fa-dd72-6e30">+2</characteristic>
+                    <characteristic name="Morale Bonus" typeId="26e9-24ca-fa72-16d3">0</characteristic>
+                    <characteristic name="Command Capacity" typeId="9a9d-6b65-579c-ca2c">6</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule name="Loyal to one" id="cde6-281a-2196-439f" hidden="false" publicationId="3942-1ba6-967b-c9ed" page="60">
+                  <description>Once per game, when another battlegroup fails its morale check, if – is within 8” of them he may force them to succeed the check.</description>
+                </rule>
+                <rule name="Assault commander" id="e16d-ded5-4f47-0c85" hidden="false" publicationId="3942-1ba6-967b-c9ed" page="60">
+                  <description>All ships in this battlegroup gain 1 slot for dropships.</description>
+                </rule>
+              </rules>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3497-4e6e-118d-ec5b"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
         </entryLink>
         <entryLink id="3af0-53e9-3e15-111c" name="Disruptor Cannon" hidden="false" collective="false" import="true" targetId="48ed-edd2-a6ac-a720" type="selectionEntry">
           <constraints>
@@ -1758,6 +1797,58 @@
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f3fe-5898-71db-b9d9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Tribune Sejanus" hidden="false" id="278b-e610-b916-c579">
+                  <profiles>
+                    <profile name="Tribune Sejanus" typeId="f8e8-01a8-098b-ca12" typeName="Commander stats" hidden="false" id="f97e-ce43-856f-a3b2">
+                      <characteristics>
+                        <characteristic name="Commander Quality" typeId="388a-86b2-03af-20ad">Confident 2</characteristic>
+                        <characteristic name="Rank" typeId="16de-0568-dfa7-27a1">commander</characteristic>
+                        <characteristic name="Ship" typeId="f3f9-27da-95ec-1253">Krotan Carrier</characteristic>
+                        <characteristic name="Skill" typeId="8cfd-31fa-dd72-6e30">0</characteristic>
+                        <characteristic name="Morale Bonus" typeId="26e9-24ca-fa72-16d3">0</characteristic>
+                        <characteristic name="Command Capacity" typeId="9a9d-6b65-579c-ca2c">8</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="Points" typeId="dd57-09ff-340f-8e48" value="15"/>
+                  </costs>
+                  <rules>
+                    <rule name="Krotan General" id="c334-9982-ae48-743e" hidden="false" publicationId="3942-1ba6-967b-c9ed" page="60">
+                      <description>Tribune Sejanus is not affected by Onyx’s ‘Clashing doctrine’ traits. His ships may take Krotan companies where slots are available.</description>
+                    </rule>
+                    <rule name="Krotan crew supplements" id="e538-eccb-b7a4-7eda" hidden="false" publicationId="3942-1ba6-967b-c9ed" page="60">
+                      <description>Carriers and light carriers within Sejanus’ battlegroup get the ‘hospital bay’ trait for any Krotan companies nearby. Sejanus’ crews also get +1 to their save rolls when being boarded.</description>
+                    </rule>
+                  </rules>
+                </selectionEntry>
+                <selectionEntry type="unit" import="true" name="Auxiliary Legate Onyx" hidden="false" id="cd64-5bf9-c6e8-ee2a" publicationId="3942-1ba6-967b-c9ed" page="61">
+                  <costs>
+                    <cost name="Points" typeId="dd57-09ff-340f-8e48" value="22"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Auxiliary Legate Onyx" typeId="f8e8-01a8-098b-ca12" typeName="Commander stats" hidden="false" id="d6e8-dea3-bdcb-4046">
+                      <characteristics>
+                        <characteristic name="Commander Quality" typeId="388a-86b2-03af-20ad">Inspiring 3</characteristic>
+                        <characteristic name="Rank" typeId="16de-0568-dfa7-27a1">Commander</characteristic>
+                        <characteristic name="Ship" typeId="f3f9-27da-95ec-1253"> Krotan Carrier</characteristic>
+                        <characteristic name="Skill" typeId="8cfd-31fa-dd72-6e30">+2</characteristic>
+                        <characteristic name="Morale Bonus" typeId="26e9-24ca-fa72-16d3">+2</characteristic>
+                        <characteristic name="Command Capacity" typeId="9a9d-6b65-579c-ca2c">8</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <rules>
+                    <rule name="Clashing Docrines" id="cddf-ee71-d279-6af4" hidden="false" publicationId="3942-1ba6-967b-c9ed" page="61">
+                      <description>Hemina Battlegroups lead by non Krotan commanders (Not in a Krotan assault carrier) within 8” of Onyx’s battlegroup get -2 to their skill rolls.</description>
+                    </rule>
+                    <rule name="Krotan Warlord" id="4492-c9c2-d298-7a8a" hidden="false" publicationId="3942-1ba6-967b-c9ed" page="61">
+                      <description>Krotan Ravager escorts only take up 0.5 escort slots and assault bays per ship in Onyx’s battlegroup. Allowing for him to take 2 for every 1 normally allowed.</description>
+                    </rule>
+                  </rules>
+                </selectionEntry>
+              </selectionEntries>
             </entryLink>
           </entryLinks>
         </entryLink>
@@ -1773,6 +1864,26 @@
             <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="8279-07b3-fd6d-0a5f"/>
             <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="c374-0825-69e9-9156"/>
           </constraints>
+          <selectionEntries>
+            <selectionEntry type="unit" import="true" name="Krotan Shock Company" hidden="false" id="068e-2b47-4be3-c869" publicationId="3942-1ba6-967b-c9ed" page="65">
+              <categoryLinks>
+                <categoryLink targetId="b70b-1ba2-e198-c944" id="a3c6-5892-cb0a-0690" primary="false" name="CQB"/>
+              </categoryLinks>
+              <profiles>
+                <profile name="Krotan Shock Company" typeId="8047-aa6f-c1da-a700" typeName="CQB Stats" hidden="false" id="ff07-e147-1ffc-02a6">
+                  <characteristics>
+                    <characteristic name="Attack" typeId="0727-c56d-4766-19fd">5+</characteristic>
+                    <characteristic name="Defend" typeId="d333-c742-1468-d3dd">5+</characteristic>
+                    <characteristic name="Attacks (amount)" typeId="178f-aab5-a6d3-5cf0">2</characteristic>
+                    <characteristic name="Save" typeId="911c-0ad0-6f4e-5186">7+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Points" typeId="dd57-09ff-340f-8e48" value="5"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
         </entryLink>
       </entryLinks>
       <profiles>
@@ -1833,6 +1944,28 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8b25-44b0-f80b-c213" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
             <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="812c-3a46-f69f-e023" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
+          <selectionEntries>
+            <selectionEntry type="unit" import="true" name="Auxiliary Legate Mirrali" hidden="false" id="9796-79c4-3cd3-8807" publicationId="3942-1ba6-967b-c9ed" page="61">
+              <costs>
+                <cost name="Points" typeId="dd57-09ff-340f-8e48" value="10"/>
+              </costs>
+              <profiles>
+                <profile name="Auxiliary Legate Mirrali" typeId="f8e8-01a8-098b-ca12" typeName="Commander stats" hidden="false" id="e5e6-c35d-2f38-d51f">
+                  <characteristics>
+                    <characteristic name="Commander Quality" typeId="388a-86b2-03af-20ad">Confident 2</characteristic>
+                    <characteristic name="Rank" typeId="16de-0568-dfa7-27a1">Commander</characteristic>
+                    <characteristic name="Ship" typeId="f3f9-27da-95ec-1253">Vespa Heavy Cruiser</characteristic>
+                    <characteristic name="Skill" typeId="8cfd-31fa-dd72-6e30">0</characteristic>
+                    <characteristic name="Morale Bonus" typeId="26e9-24ca-fa72-16d3">0</characteristic>
+                    <characteristic name="Command Capacity" typeId="9a9d-6b65-579c-ca2c">10</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <categoryLinks>
+                <categoryLink name="Commander" hidden="false" id="822a-0e7e-d404-646a" targetId="b5b8-5ac8-4c77-cbb0" primary="true"/>
+              </categoryLinks>
+            </selectionEntry>
+          </selectionEntries>
         </entryLink>
       </entryLinks>
       <modifiers>
@@ -2076,6 +2209,32 @@
         </modifier>
       </modifiers>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Tribune Cassus [Extra assault slots]" hidden="true" id="773e-c699-ff36-aaf1" publicationId="3942-1ba6-967b-c9ed" page="60">
+      <entryLinks>
+        <entryLink import="true" name="CQB Companies" hidden="false" id="9df3-e84a-eb9c-9648" type="selectionEntryGroup" targetId="b910-5484-9fb7-15ea">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="4d40-33ac-349b-4ebc"/>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="8999-d7d1-92f3-fa75"/>
+          </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="8999-d7d1-92f3-fa75">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="force" childId="ddf0-e667-c5bb-bfd0" shared="true" roundUp="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="force" childId="ff8c-6404-d96c-d06e" shared="true" roundUp="false"/>
+                <repeat value="1" repeats="1" field="selections" scope="force" childId="9cb1-f70a-60f2-5d11" shared="true" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden" scope="parent">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="90dc-f798-1fec-353f" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="d2a5-4e87-5237-35d0" name="Strike Craft" publicationId="3942-1ba6-967b-c9ed" page="64" hidden="false" collective="false" import="true">
@@ -2173,7 +2332,7 @@
             </profile>
           </profiles>
           <categoryLinks>
-            <categoryLink id="a100-24fb-cf94-eded" name="CQB" hidden="false" targetId="b70b-1ba2-e198-c944" primary="false"/>
+            <categoryLink id="a100-24fb-cf94-eded" name="CQB" hidden="false" targetId="b70b-1ba2-e198-c944" primary="true"/>
           </categoryLinks>
           <costs>
             <cost name="Points" typeId="dd57-09ff-340f-8e48" value="0"/>
@@ -2191,7 +2350,7 @@
             </profile>
           </profiles>
           <categoryLinks>
-            <categoryLink id="1c8b-ee25-4527-bb12" name="CQB" hidden="false" targetId="b70b-1ba2-e198-c944" primary="false"/>
+            <categoryLink id="1c8b-ee25-4527-bb12" name="CQB" hidden="false" targetId="b70b-1ba2-e198-c944" primary="true"/>
           </categoryLinks>
           <costs>
             <cost name="Points" typeId="dd57-09ff-340f-8e48" value="3"/>
@@ -2209,7 +2368,7 @@
             </profile>
           </profiles>
           <categoryLinks>
-            <categoryLink id="32ce-7f7c-de23-a342" name="CQB" hidden="false" targetId="b70b-1ba2-e198-c944" primary="false"/>
+            <categoryLink id="32ce-7f7c-de23-a342" name="CQB" hidden="false" targetId="b70b-1ba2-e198-c944" primary="true"/>
           </categoryLinks>
           <costs>
             <cost name="Points" typeId="dd57-09ff-340f-8e48" value="5"/>
@@ -2227,7 +2386,7 @@
             </profile>
           </profiles>
           <categoryLinks>
-            <categoryLink id="1f4c-beff-ee3f-fd50" name="CQB" hidden="false" targetId="b70b-1ba2-e198-c944" primary="false"/>
+            <categoryLink id="1f4c-beff-ee3f-fd50" name="CQB" hidden="false" targetId="b70b-1ba2-e198-c944" primary="true"/>
           </categoryLinks>
           <costs>
             <cost name="Points" typeId="dd57-09ff-340f-8e48" value="9"/>
@@ -2256,8 +2415,11 @@
             </rule>
           </rules>
           <costs>
-            <cost name="Points" typeId="dd57-09ff-340f-8e48" value="22"/>
+            <cost name="Points" typeId="dd57-09ff-340f-8e48" value="28"/>
           </costs>
+          <categoryLinks>
+            <categoryLink targetId="b5b8-5ac8-4c77-cbb0" id="6f0c-c316-55e7-5955" primary="true" name="Commander"/>
+          </categoryLinks>
         </selectionEntry>
         <selectionEntry id="6b03-8e5e-c54a-d68c" name="Auxilia Legate Ardini" publicationId="3942-1ba6-967b-c9ed" page="61" hidden="false" collective="false" import="true" type="unit">
           <profiles>
@@ -2280,6 +2442,9 @@
           <costs>
             <cost name="Points" typeId="dd57-09ff-340f-8e48" value="12"/>
           </costs>
+          <categoryLinks>
+            <categoryLink targetId="b5b8-5ac8-4c77-cbb0" id="2a8f-c916-37b7-f094" primary="true" name="Commander"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
@@ -2333,6 +2498,9 @@ The Empress is watching: All friendly battlegroups gain +1 to morale saves, and 
 units get +1 to rolls</description>
             </rule>
           </rules>
+          <categoryLinks>
+            <categoryLink targetId="b5b8-5ac8-4c77-cbb0" id="de33-10f3-e101-55fe" primary="true" name="Commander"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
@@ -2357,34 +2525,11 @@ units get +1 to rolls</description>
             </rule>
           </rules>
           <costs>
-            <cost name="Points" typeId="dd57-09ff-340f-8e48" value="28"/>
+            <cost name="Points" typeId="dd57-09ff-340f-8e48" value="22"/>
           </costs>
-        </selectionEntry>
-      </selectionEntries>
-    </selectionEntryGroup>
-    <selectionEntryGroup id="539b-6b20-d73e-e231" name="Tribune Cassus [Reformed Heavy Cruiser only]" publicationId="3942-1ba6-967b-c9ed" page="60" hidden="false" collective="false" import="true">
-      <selectionEntries>
-        <selectionEntry id="50cf-e727-301c-ea9b" name="Tribune Cassus" hidden="false" collective="false" import="true" type="unit">
-          <profiles>
-            <profile id="a3a1-2938-6240-4241" name="Tribune Cassus" hidden="false" typeId="f8e8-01a8-098b-ca12" typeName="Commander stats">
-              <characteristics>
-                <characteristic name="Commander Quality" typeId="388a-86b2-03af-20ad">Confident 2</characteristic>
-                <characteristic name="Rank" typeId="16de-0568-dfa7-27a1">Commander</characteristic>
-                <characteristic name="Ship" typeId="f3f9-27da-95ec-1253">Reformed Heavy Cruiser</characteristic>
-                <characteristic name="Skill" typeId="8cfd-31fa-dd72-6e30">+2</characteristic>
-                <characteristic name="Morale Bonus" typeId="26e9-24ca-fa72-16d3">0</characteristic>
-                <characteristic name="Command Capacity" typeId="9a9d-6b65-579c-ca2c">6</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <rules>
-            <rule id="11cd-4106-0e31-a465" name="Tribune Cassus" publicationId="3942-1ba6-967b-c9ed" page="60" hidden="false">
-              <description>Loyal to one: Once per game, when another battlegroup fails its morale check, if – is within 8” of them he may force them to succeed the check. Assault commander: All ships in this battlegroup gain 1 slot for dropships.</description>
-            </rule>
-          </rules>
-          <costs>
-            <cost name="Points" typeId="dd57-09ff-340f-8e48" value="15"/>
-          </costs>
+          <categoryLinks>
+            <categoryLink targetId="b5b8-5ac8-4c77-cbb0" id="c0e8-8dcd-79f4-b51e" primary="true" name="Commander"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
@@ -2410,5 +2555,8 @@ This must be done before the Heavy cruiser has fired this activation.</descripti
   </sharedProfiles>
   <categoryEntries>
     <categoryEntry name="Auxiliary" id="c773-1620-0702-d575" hidden="false"/>
+    <categoryEntry name="Tribune Cassus [Extra assault slots]" id="90dc-f798-1fec-353f" hidden="true">
+      <comment>Add up to one for each ship in the battlegroup.</comment>
+    </categoryEntry>
   </categoryEntries>
 </catalogue>

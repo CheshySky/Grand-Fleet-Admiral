@@ -47,7 +47,7 @@
             <condition type="atLeast" value="1" field="selections" scope="force" childId="e449-525a-6485-abf6" shared="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="true" field="hidden" scope="parent">
+        <modifier type="set" value="true" field="hidden">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="force" childId="c773-1620-0702-d575" shared="true"/>
           </conditions>
@@ -212,7 +212,7 @@
             <condition type="atLeast" value="1" field="selections" scope="force" childId="e449-525a-6485-abf6" shared="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="true" field="hidden" scope="parent">
+        <modifier type="set" value="true" field="hidden">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="force" childId="c773-1620-0702-d575" shared="true"/>
           </conditions>
@@ -294,7 +294,7 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="set" value="true" field="hidden" scope="parent">
+        <modifier type="set" value="true" field="hidden">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="force" childId="c773-1620-0702-d575" shared="true"/>
           </conditions>
@@ -414,7 +414,7 @@
             <condition type="atLeast" value="1" field="selections" scope="force" childId="e449-525a-6485-abf6" shared="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="true" field="hidden" scope="parent">
+        <modifier type="set" value="true" field="hidden">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="force" childId="c773-1620-0702-d575" shared="true"/>
           </conditions>
@@ -472,7 +472,7 @@
             <condition field="selections" scope="0343-a79f-4b93-03f4" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="df1f-937a-7be9-2333" type="equalTo"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="true" field="hidden" scope="parent">
+        <modifier type="set" value="true" field="hidden">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="force" childId="c773-1620-0702-d575" shared="true"/>
           </conditions>
@@ -579,7 +579,7 @@
             <condition type="atLeast" value="1" field="selections" scope="force" childId="e449-525a-6485-abf6" shared="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="true" field="hidden" scope="parent">
+        <modifier type="set" value="true" field="hidden">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="force" childId="c773-1620-0702-d575" shared="true"/>
           </conditions>
@@ -667,7 +667,7 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="set" value="true" field="hidden" scope="parent">
+        <modifier type="set" value="true" field="hidden">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="force" childId="c773-1620-0702-d575" shared="true"/>
           </conditions>
@@ -794,7 +794,7 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="set" value="true" field="hidden" scope="parent">
+        <modifier type="set" value="true" field="hidden">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="force" childId="c773-1620-0702-d575" shared="true"/>
           </conditions>
@@ -914,7 +914,7 @@
             <condition type="atLeast" value="1" field="selections" scope="force" childId="e449-525a-6485-abf6" shared="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="true" field="hidden" scope="parent">
+        <modifier type="set" value="true" field="hidden">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="force" childId="c773-1620-0702-d575" shared="true"/>
           </conditions>
@@ -1029,7 +1029,7 @@
             <condition type="atLeast" value="1" field="selections" scope="force" childId="e449-525a-6485-abf6" shared="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="true" field="hidden" scope="parent">
+        <modifier type="set" value="true" field="hidden">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="force" childId="c773-1620-0702-d575" shared="true"/>
           </conditions>
@@ -1136,7 +1136,7 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="set" value="true" field="hidden" scope="parent">
+        <modifier type="set" value="true" field="hidden">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="force" childId="c773-1620-0702-d575" shared="true"/>
           </conditions>
@@ -1240,7 +1240,7 @@
             <condition field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="df1f-937a-7be9-2333" type="equalTo"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="true" field="hidden" scope="parent">
+        <modifier type="set" value="true" field="hidden">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="force" childId="c773-1620-0702-d575" shared="true"/>
           </conditions>
@@ -1409,7 +1409,7 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="set" value="true" field="hidden" scope="parent">
+        <modifier type="set" value="true" field="hidden">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="force" childId="c773-1620-0702-d575" shared="true"/>
           </conditions>
@@ -1479,7 +1479,7 @@
             <condition type="atLeast" value="1" field="selections" scope="force" childId="e449-525a-6485-abf6" shared="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="true" field="hidden" scope="parent">
+        <modifier type="set" value="true" field="hidden">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="force" childId="c773-1620-0702-d575" shared="true"/>
           </conditions>
@@ -1502,7 +1502,7 @@
             <condition type="atLeast" value="1" field="selections" scope="force" childId="e449-525a-6485-abf6" shared="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="true" field="hidden" scope="parent">
+        <modifier type="set" value="true" field="hidden">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="force" childId="c773-1620-0702-d575" shared="true"/>
           </conditions>
@@ -1572,7 +1572,7 @@
             <condition type="atLeast" value="1" field="selections" scope="force" childId="e449-525a-6485-abf6" shared="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="true" field="hidden" scope="parent">
+        <modifier type="set" value="true" field="hidden">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="force" childId="c773-1620-0702-d575" shared="true"/>
           </conditions>
@@ -1651,7 +1651,7 @@
             <condition type="atLeast" value="1" field="selections" scope="force" childId="e449-525a-6485-abf6" shared="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="true" field="hidden" scope="parent">
+        <modifier type="set" value="true" field="hidden">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="force" childId="c773-1620-0702-d575" shared="true"/>
           </conditions>
@@ -1720,7 +1720,7 @@
             <condition type="atLeast" value="1" field="selections" scope="force" childId="e449-525a-6485-abf6" shared="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="true" field="hidden" scope="parent">
+        <modifier type="set" value="true" field="hidden">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="force" childId="c773-1620-0702-d575" shared="true"/>
           </conditions>
@@ -1793,7 +1793,7 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="set" value="true" field="hidden" scope="parent">
+        <modifier type="set" value="true" field="hidden">
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
@@ -1999,7 +1999,7 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="set" value="true" field="hidden" scope="parent">
+        <modifier type="set" value="true" field="hidden">
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
@@ -2133,7 +2133,7 @@
             <condition type="atLeast" value="1" field="selections" scope="force" childId="e449-525a-6485-abf6" shared="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="true" field="hidden" scope="parent">
+        <modifier type="set" value="true" field="hidden">
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
@@ -2218,7 +2218,7 @@
             <condition type="atLeast" value="1" field="selections" scope="force" childId="e449-525a-6485-abf6" shared="true"/>
           </conditions>
         </modifier>
-        <modifier type="set" value="true" field="hidden" scope="parent">
+        <modifier type="set" value="true" field="hidden">
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>

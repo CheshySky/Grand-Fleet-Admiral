@@ -57,6 +57,13 @@
         <characteristicType id="911c-0ad0-6f4e-5186" name="Save"/>
       </characteristicTypes>
     </profileType>
+    <profileType name="Mine" id="791a-b9a2-8e22-31f8" hidden="false">
+      <characteristicTypes>
+        <characteristicType name="Range" id="8832-dd24-be83-c133"/>
+        <characteristicType name="To Hit" id="cccf-ad52-a468-7539"/>
+        <characteristicType name="Traits" id="f396-a8e7-2461-46bc"/>
+      </characteristicTypes>
+    </profileType>
   </profileTypes>
   <categoryEntries>
     <categoryEntry id="ddf0-e667-c5bb-bfd0" name="Capital" hidden="false"/>
@@ -142,8 +149,7 @@
       <categoryLinks>
         <categoryLink name="Vanguard" hidden="false" id="bc15-9796-8331-25c2" targetId="2605-3576-ce62-d271">
           <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="6520-aefe-49e7-9b77"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0875-4422-42d7-c20c"/>
+            <constraint type="max" value="30" field="dd57-09ff-340f-8e48" scope="roster" shared="true" id="1382-acee-8137-62c0" percentValue="true"/>
           </constraints>
         </categoryLink>
         <categoryLink id="b964-cffa-77db-6917" name="support" hidden="false" targetId="ff8c-6404-d96c-d06e" primary="false">
@@ -187,8 +193,7 @@
       <categoryLinks>
         <categoryLink name="Vanguard" hidden="false" id="51bb-6994-45a7-1e21" targetId="2605-3576-ce62-d271">
           <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="6ec6-0bac-318e-3cdb"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="80b6-9742-6ce7-cf9e"/>
+            <constraint type="max" value="30" field="dd57-09ff-340f-8e48" scope="roster" shared="true" id="3075-3754-a94c-4e4d" percentValue="true"/>
           </constraints>
         </categoryLink>
         <categoryLink id="6f57-d6f3-fcbc-67d9" name="Capital" hidden="false" targetId="ddf0-e667-c5bb-bfd0" primary="false">
@@ -232,8 +237,7 @@
       <categoryLinks>
         <categoryLink name="Vanguard" hidden="false" id="ad9d-7362-d2e4-4fd5" targetId="2605-3576-ce62-d271">
           <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="7e54-ff6f-9033-96fd"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="022d-553f-0f90-34bd"/>
+            <constraint type="max" value="30" field="dd57-09ff-340f-8e48" scope="roster" shared="true" id="240e-db75-5755-bacc" percentValue="true"/>
           </constraints>
         </categoryLink>
         <categoryLink id="e9bf-5a52-5652-d41e" name="Commander" hidden="false" targetId="b5b8-5ac8-4c77-cbb0" primary="false">
@@ -259,8 +263,7 @@
       <categoryLinks>
         <categoryLink name="Vanguard" hidden="false" id="3777-4dce-2cfb-dc97" targetId="2605-3576-ce62-d271">
           <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="e660-0f50-9e48-b04a"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d0bc-3a72-6943-6409"/>
+            <constraint type="max" value="30" field="dd57-09ff-340f-8e48" scope="roster" shared="true" id="2987-7464-5e73-4974" percentValue="true"/>
           </constraints>
         </categoryLink>
         <categoryLink id="7f9b-f93b-3f43-9f3b" name="Escort" hidden="false" targetId="9cb1-f70a-60f2-5d11" primary="false">
@@ -286,8 +289,7 @@
       <categoryLinks>
         <categoryLink name="Vanguard" hidden="false" id="93e5-5c1c-b5f8-b1e7" targetId="2605-3576-ce62-d271">
           <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="7a44-e796-33ce-c075"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4255-37cd-bce0-0843"/>
+            <constraint type="max" value="30" field="dd57-09ff-340f-8e48" scope="roster" shared="true" id="3297-83ec-8d10-0848" percentValue="true"/>
           </constraints>
         </categoryLink>
         <categoryLink id="5295-f9e3-4773-dacf" name="Capital" hidden="false" targetId="ddf0-e667-c5bb-bfd0" primary="false">
@@ -325,8 +327,7 @@
       <categoryLinks>
         <categoryLink name="Vanguard" hidden="false" id="e9d9-e87a-bc3f-4f12" targetId="2605-3576-ce62-d271">
           <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="b271-7a42-5e6a-4f02"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0a49-c782-f76c-4410"/>
+            <constraint type="max" value="30" field="dd57-09ff-340f-8e48" scope="roster" shared="true" id="5960-39eb-1062-2dbb" percentValue="true"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
@@ -410,6 +411,73 @@
           </profiles>
           <costs>
             <cost name="Points" typeId="dd57-09ff-340f-8e48" value="30"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Mines" id="8058-16c8-a6a8-624e" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Standard" hidden="false" id="c42c-194b-e289-5e20">
+          <rules>
+            <rule name="Minefield" id="c247-db96-19a1-2418" hidden="false" publicationId="c478-850b-f9ae-9c10" page="22">
+              <description>ref. rules</description>
+            </rule>
+          </rules>
+          <profiles>
+            <profile name="Standard" typeId="791a-b9a2-8e22-31f8" typeName="Mine" hidden="false" id="ebcb-3c60-5edc-f6b4">
+              <characteristics>
+                <characteristic name="Range" typeId="8832-dd24-be83-c133">6&quot;</characteristic>
+                <characteristic name="To Hit" typeId="cccf-ad52-a468-7539">4+</characteristic>
+                <characteristic name="Traits" typeId="f396-a8e7-2461-46bc">Shield skipping 6+, Minefield</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Shield Skipping X" id="312b-3d15-098f-d2dd" hidden="false" type="rule" targetId="0fe7-9a92-6258-9885"/>
+          </infoLinks>
+          <costs>
+            <cost name="Points" typeId="dd57-09ff-340f-8e48" value="4"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Armour Buster" hidden="false" id="1668-c4ec-598b-d224">
+          <infoLinks>
+            <infoLink name="Shield Skipping X" id="a4f7-6f5a-8cb4-a3e0" hidden="false" type="rule" targetId="0fe7-9a92-6258-9885"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Armour Buster" typeId="791a-b9a2-8e22-31f8" typeName="Mine" hidden="false" id="c0ee-3eb1-1415-431d">
+              <characteristics>
+                <characteristic name="Range" typeId="8832-dd24-be83-c133">4&quot;</characteristic>
+                <characteristic name="To Hit" typeId="cccf-ad52-a468-7539">+2</characteristic>
+                <characteristic name="Traits" typeId="f396-a8e7-2461-46bc">Shield skipping 5+, Minefield</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Minefield" id="d591-1f2e-d869-bf2a" hidden="false" publicationId="c478-850b-f9ae-9c10" page="22">
+              <description>ref. rules</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Points" typeId="dd57-09ff-340f-8e48" value="4"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Stealth" hidden="false" id="575e-6c7d-900b-2583">
+          <rules>
+            <rule name="Minefield" id="2fb7-8f64-0caa-860c" hidden="false" publicationId="c478-850b-f9ae-9c10" page="22">
+              <description>ref. rules</description>
+            </rule>
+          </rules>
+          <profiles>
+            <profile name="Stealth" typeId="791a-b9a2-8e22-31f8" typeName="Mine" hidden="false" id="8eac-7b28-d6f1-2a2b">
+              <characteristics>
+                <characteristic name="Range" typeId="8832-dd24-be83-c133">8&quot;</characteristic>
+                <characteristic name="To Hit" typeId="cccf-ad52-a468-7539">6+</characteristic>
+                <characteristic name="Traits" typeId="f396-a8e7-2461-46bc">Shield skipping 6+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Points" typeId="dd57-09ff-340f-8e48" value="4"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -686,8 +754,8 @@ In addition, the presence of a scout ship in a battlegroup allows the battlegrou
         </rule>
       </rules>
       <constraints>
-        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="cd2d-8c2c-e7c0-15e8"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="989b-092b-4cde-a470"/>
+        <constraint type="min" value="0" field="selections" scope="force" shared="true" id="cd2d-8c2c-e7c0-15e8"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="989b-092b-4cde-a470"/>
       </constraints>
       <costs>
         <cost name="Points" typeId="dd57-09ff-340f-8e48" value="0"/>

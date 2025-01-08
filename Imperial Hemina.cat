@@ -876,6 +876,18 @@
             <constraint field="selections" scope="parent" value="8" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="163c-5900-acaf-faba" type="min"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="CQB Companies" hidden="false" id="4d4a-c052-5e22-8c09" type="selectionEntryGroup" targetId="b910-5484-9fb7-15ea">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="baaf-9556-ff76-44e6"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="0c77-09d9-0b47-5571"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Strike Craft" hidden="false" id="ea05-0a57-50ec-808e" type="selectionEntryGroup" targetId="d2a5-4e87-5237-35d0">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="4fa0-c215-3d13-c79d"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="49e0-9e2b-ef54-d0fe"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="dd57-09ff-340f-8e48" value="90"/>
@@ -1612,6 +1624,12 @@
             </entryLink>
           </entryLinks>
         </entryLink>
+        <entryLink import="true" name="Mines" hidden="false" id="c96b-e9e1-1807-32dd" type="selectionEntryGroup" targetId="8058-16c8-a6a8-624e">
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="1f7a-d71c-8501-051d"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="f745-749f-8e2b-be55"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Points" typeId="dd57-09ff-340f-8e48" value="30"/>
@@ -1832,7 +1850,7 @@
                       <characteristics>
                         <characteristic name="Commander Quality" typeId="388a-86b2-03af-20ad">Inspiring 3</characteristic>
                         <characteristic name="Rank" typeId="16de-0568-dfa7-27a1">Commander</characteristic>
-                        <characteristic name="Ship" typeId="f3f9-27da-95ec-1253"> Krotan Carrier</characteristic>
+                        <characteristic name="Ship" typeId="f3f9-27da-95ec-1253">Krotan Carrier</characteristic>
                         <characteristic name="Skill" typeId="8cfd-31fa-dd72-6e30">+2</characteristic>
                         <characteristic name="Morale Bonus" typeId="26e9-24ca-fa72-16d3">+2</characteristic>
                         <characteristic name="Command Capacity" typeId="9a9d-6b65-579c-ca2c">8</characteristic>
@@ -1941,8 +1959,8 @@
         </entryLink>
         <entryLink import="true" name="Commander" hidden="false" id="04f6-638b-2015-71c0" collective="false" targetId="df1f-937a-7be9-2333" type="selectionEntry">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8b25-44b0-f80b-c213" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="812c-3a46-f69f-e023" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="4ccc-f57c-5d97-70d2"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0a48-7ea0-bc67-160f"/>
           </constraints>
           <selectionEntries>
             <selectionEntry type="unit" import="true" name="Auxiliary Legate Mirrali" hidden="false" id="9796-79c4-3cd3-8807" publicationId="3942-1ba6-967b-c9ed" page="61">
@@ -1964,6 +1982,9 @@
               <categoryLinks>
                 <categoryLink name="Commander" hidden="false" id="822a-0e7e-d404-646a" targetId="b5b8-5ac8-4c77-cbb0" primary="true"/>
               </categoryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7051-3ef9-651e-e180"/>
+              </constraints>
             </selectionEntry>
           </selectionEntries>
         </entryLink>

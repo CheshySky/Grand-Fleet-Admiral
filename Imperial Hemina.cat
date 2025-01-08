@@ -37,6 +37,16 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="add" value="2605-3576-ce62-d271" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="e449-525a-6485-abf6" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden" scope="parent">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="c773-1620-0702-d575" shared="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <profiles>
         <profile id="0901-726b-ae34-3b44" name="Light Cruiser" publicationId="3942-1ba6-967b-c9ed" page="62" hidden="false" typeId="fd62-daee-6b9c-c612" typeName="Ship Stats">
@@ -192,6 +202,16 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="add" value="2605-3576-ce62-d271" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="e449-525a-6485-abf6" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden" scope="parent">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="c773-1620-0702-d575" shared="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <profiles>
         <profile id="2e98-bbd6-5801-979c" name="Frigate" publicationId="3942-1ba6-967b-c9ed" page="63" hidden="false" typeId="fd62-daee-6b9c-c612" typeName="Ship Stats">
@@ -268,6 +288,11 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="set" value="true" field="hidden" scope="parent">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="c773-1620-0702-d575" shared="true"/>
+          </conditions>
         </modifier>
       </modifiers>
       <profiles>
@@ -379,6 +404,16 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="add" value="2605-3576-ce62-d271" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="e449-525a-6485-abf6" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden" scope="parent">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="c773-1620-0702-d575" shared="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <profiles>
         <profile id="303b-a13a-3526-b3ac" name="Destroyer" hidden="false" typeId="fd62-daee-6b9c-c612" typeName="Ship Stats">
@@ -430,6 +465,11 @@
         <modifier type="add" field="category" value="b5b8-5ac8-4c77-cbb0">
           <conditions>
             <condition field="selections" scope="0343-a79f-4b93-03f4" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="df1f-937a-7be9-2333" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden" scope="parent">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="c773-1620-0702-d575" shared="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -529,6 +569,16 @@
             <condition type="equalTo" value="1" field="selections" scope="self" childId="1138-4ed1-02dc-6973" shared="true"/>
           </conditions>
         </modifier>
+        <modifier type="add" value="2605-3576-ce62-d271" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="e449-525a-6485-abf6" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden" scope="parent">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="c773-1620-0702-d575" shared="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <profiles>
         <profile id="eef5-c192-5002-1650" name="Battle Cruiser" hidden="false" typeId="fd62-daee-6b9c-c612" typeName="Ship Stats">
@@ -611,6 +661,11 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="set" value="true" field="hidden" scope="parent">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="c773-1620-0702-d575" shared="true"/>
+          </conditions>
         </modifier>
       </modifiers>
       <profiles>
@@ -734,6 +789,11 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" value="true" field="hidden" scope="parent">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="c773-1620-0702-d575" shared="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <profiles>
         <profile id="05fd-7972-a912-7544" name="Dreadnought (Heavy)" hidden="false" typeId="fd62-daee-6b9c-c612" typeName="Ship Stats">
@@ -830,6 +890,16 @@
         <modifier type="remove" value="f40f-3734-00a7-9824" field="category">
           <conditions>
             <condition type="equalTo" value="1" field="selections" scope="self" childId="92eb-9b52-6e27-a418" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="2605-3576-ce62-d271" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="e449-525a-6485-abf6" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden" scope="parent">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="c773-1620-0702-d575" shared="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -937,6 +1007,16 @@
             <condition type="equalTo" value="1" field="selections" scope="self" childId="7756-0ad1-3fd7-46ac" shared="true"/>
           </conditions>
         </modifier>
+        <modifier type="add" value="2605-3576-ce62-d271" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="e449-525a-6485-abf6" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden" scope="parent">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="c773-1620-0702-d575" shared="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <profiles>
         <profile id="f504-919e-725d-b6ff" name="Reformed Light Carrier" hidden="false" typeId="fd62-daee-6b9c-c612" typeName="Ship Stats">
@@ -1039,6 +1119,11 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" value="true" field="hidden" scope="parent">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="c773-1620-0702-d575" shared="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <profiles>
         <profile id="697d-cffe-edb6-39f7" name="Reformed Heavy Cruiser" hidden="false" typeId="fd62-daee-6b9c-c612" typeName="Ship Stats">
@@ -1102,6 +1187,11 @@
         <modifier type="add" field="category" value="b5b8-5ac8-4c77-cbb0">
           <conditions>
             <condition field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="df1f-937a-7be9-2333" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden" scope="parent">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="c773-1620-0702-d575" shared="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -1268,6 +1358,11 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" value="true" field="hidden" scope="parent">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="c773-1620-0702-d575" shared="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
     </selectionEntry>
     <selectionEntry id="9b9d-999c-9ec2-b167" name="Reformed Destroyer" publicationId="3942-1ba6-967b-c9ed" page="63" hidden="false" collective="false" import="true" type="unit">
@@ -1327,6 +1422,18 @@
       <costs>
         <cost name="Points" typeId="dd57-09ff-340f-8e48" value="34"/>
       </costs>
+      <modifiers>
+        <modifier type="add" value="2605-3576-ce62-d271" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="e449-525a-6485-abf6" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden" scope="parent">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="c773-1620-0702-d575" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="4cdf-28ac-1788-d76d" name="Torpedo Boat" publicationId="3942-1ba6-967b-c9ed" page="63" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
@@ -1338,6 +1445,16 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="add" value="2605-3576-ce62-d271" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="e449-525a-6485-abf6" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden" scope="parent">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="c773-1620-0702-d575" shared="true"/>
+          </conditions>
         </modifier>
       </modifiers>
       <profiles>
@@ -1398,6 +1515,16 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="add" value="2605-3576-ce62-d271" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="e449-525a-6485-abf6" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden" scope="parent">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="c773-1620-0702-d575" shared="true"/>
+          </conditions>
         </modifier>
       </modifiers>
       <profiles>
@@ -1462,6 +1589,16 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="add" value="2605-3576-ce62-d271" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="e449-525a-6485-abf6" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden" scope="parent">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="c773-1620-0702-d575" shared="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <profiles>
         <profile id="eb65-8daa-afe3-6620" name="Corvette" hidden="false" typeId="fd62-daee-6b9c-c612" typeName="Ship Stats">
@@ -1520,6 +1657,16 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="add" value="2605-3576-ce62-d271" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="e449-525a-6485-abf6" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden" scope="parent">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="c773-1620-0702-d575" shared="true"/>
+          </conditions>
         </modifier>
       </modifiers>
       <profiles>
@@ -1585,6 +1732,16 @@
             <conditionGroup type="and">
               <conditions>
                 <condition type="equalTo" value="1" field="selections" scope="self" childId="df1f-937a-7be9-2333" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="true" field="hidden" scope="parent">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="c773-1620-0702-d575" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="any" shared="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -1684,6 +1841,16 @@
             <conditionGroup type="and">
               <conditions>
                 <condition type="equalTo" value="1" field="selections" scope="self" childId="df1f-937a-7be9-2333" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="true" field="hidden" scope="parent">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="c773-1620-0702-d575" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="any" shared="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -1807,6 +1974,21 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="add" value="2605-3576-ce62-d271" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="e449-525a-6485-abf6" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden" scope="parent">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="c773-1620-0702-d575" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="any" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Protector" hidden="false" id="8c32-9609-c7b1-26de" publicationId="3942-1ba6-967b-c9ed" page="65">
@@ -1873,6 +2055,21 @@
             <conditionGroup type="and">
               <conditions>
                 <condition type="equalTo" value="1" field="selections" scope="self" childId="df1f-937a-7be9-2333" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="add" value="2605-3576-ce62-d271" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="e449-525a-6485-abf6" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden" scope="parent">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="force" childId="c773-1620-0702-d575" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="any" shared="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>

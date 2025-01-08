@@ -84,10 +84,9 @@
         </rule>
       </rules>
       <categoryLinks>
-        <categoryLink name="Vanguard" hidden="false" id="e4a3-00ba-4031-1d52" targetId="2605-3576-ce62-d271" type="category">
+        <categoryLink name="Vanguard" hidden="false" id="e4a3-00ba-4031-1d52" targetId="2605-3576-ce62-d271">
           <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="9b81-9fb3-52b1-c55d"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="56f6-2870-d2ea-ad4d"/>
+            <constraint type="max" value="30" field="dd57-09ff-340f-8e48" scope="roster" shared="true" id="b683-7dbd-243d-3b3f" percentValue="true"/>
           </constraints>
         </categoryLink>
         <categoryLink id="eaac-0780-ae0c-c7c1" name="Capital" hidden="false" targetId="ddf0-e667-c5bb-bfd0" primary="false">
@@ -686,6 +685,13 @@ In addition, the presence of a scout ship in a battlegroup allows the battlegrou
           <description>If all ships in a group are thrust 4 or above, they may be upgraded to a vanguard group.</description>
         </rule>
       </rules>
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="cd2d-8c2c-e7c0-15e8"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="989b-092b-4cde-a470"/>
+      </constraints>
+      <costs>
+        <cost name="Points" typeId="dd57-09ff-340f-8e48" value="0"/>
+      </costs>
     </selectionEntry>
   </selectionEntries>
 </gameSystem>

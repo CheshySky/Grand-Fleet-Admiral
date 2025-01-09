@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="8ee7-a3b6-0307-7e64" name="Grand Fleet Admiral" revision="2" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="8ee7-a3b6-0307-7e64" name="Grand Fleet Admiral" revision="3" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <publications>
     <publication id="c478-850b-f9ae-9c10" name="Grand Fleet Admiral Core Rules V2.27" shortName="GFA V2.27"/>
     <publication id="3942-1ba6-967b-c9ed" name="GFA Factions 2.27"/>
@@ -220,6 +220,13 @@
             <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b067-f12a-fd68-709e" type="max"/>
             <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e54f-cdac-5c39-3aeb" type="min"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="3" field="b067-f12a-fd68-709e">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="557b-ef0e-38da-b485" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </categoryLink>
         <categoryLink id="f991-6603-8558-3a9d" name="Commander" hidden="false" targetId="b5b8-5ac8-4c77-cbb0" primary="false">
           <constraints>
@@ -339,6 +346,42 @@
       <entryLinks>
         <entryLink id="85bf-d78b-48f2-75f7" name="Commander" hidden="false" collective="false" import="true" targetId="f514-1193-a474-711f" type="selectionEntryGroup"/>
       </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Admiral Meng Xinyi" hidden="false" id="557b-ef0e-38da-b485" publicationId="3942-1ba6-967b-c9ed" page="15">
+      <costs>
+        <cost name="Points" typeId="dd57-09ff-340f-8e48" value="32"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Commander" hidden="false" id="c254-f247-6c47-2e01" targetId="b5b8-5ac8-4c77-cbb0" primary="true"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Admiral Meng Xinyi" typeId="f8e8-01a8-098b-ca12" typeName="Commander stats" hidden="false" id="8c1b-bc78-44f5-f8fc">
+          <characteristics>
+            <characteristic name="Commander Quality" typeId="388a-86b2-03af-20ad">Legendary 4</characteristic>
+            <characteristic name="Rank" typeId="16de-0568-dfa7-27a1">Admiral</characteristic>
+            <characteristic name="Ship" typeId="f3f9-27da-95ec-1253">Red Dragon Battleship</characteristic>
+            <characteristic name="Skill" typeId="8cfd-31fa-dd72-6e30">+3</characteristic>
+            <characteristic name="Morale Bonus" typeId="26e9-24ca-fa72-16d3">+2</characteristic>
+            <characteristic name="Command Capacity" typeId="9a9d-6b65-579c-ca2c">12</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="2ef6-c0b2-9fc7-cc07"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3c5a-0482-516c-a9b2"/>
+      </constraints>
+      <rules>
+        <rule name="3 Headed Dragon" id="9481-98ab-907d-11c0" hidden="false" publicationId="3942-1ba6-967b-c9ed" page="15">
+          <description>Admiral Meng must be taken in a bombard battlegroup with 3 Red Dragon Battleships, escorts can be added.</description>
+        </rule>
+      </rules>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="notInstanceOf" value="1" field="selections" scope="force" childId="9622-50e0-3a97-6e3f" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>

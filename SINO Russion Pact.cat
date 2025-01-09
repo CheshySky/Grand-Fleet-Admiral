@@ -1267,6 +1267,43 @@
             <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="79ac-9019-e8bd-3179"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c0b0-494f-bb35-7c8f"/>
           </constraints>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Captain Yakovna" hidden="false" id="e940-c7c4-b1c7-0031" publicationId="3942-1ba6-967b-c9ed" page="15" subType="crew">
+              <costs>
+                <cost name="Points" typeId="dd57-09ff-340f-8e48" value="10"/>
+              </costs>
+              <categoryLinks>
+                <categoryLink targetId="b5b8-5ac8-4c77-cbb0" id="875e-8783-8188-ee5b" primary="true" name="Commander"/>
+              </categoryLinks>
+              <profiles>
+                <profile name="Captain Yakovna" typeId="f8e8-01a8-098b-ca12" typeName="Commander stats" hidden="false" id="423a-569f-edbd-a070">
+                  <characteristics>
+                    <characteristic name="Commander Quality" typeId="388a-86b2-03af-20ad">Confident 2</characteristic>
+                    <characteristic name="Rank" typeId="16de-0568-dfa7-27a1">Commander</characteristic>
+                    <characteristic name="Ship" typeId="f3f9-27da-95ec-1253">Gunboat Squadron</characteristic>
+                    <characteristic name="Skill" typeId="8cfd-31fa-dd72-6e30">0</characteristic>
+                    <characteristic name="Morale Bonus" typeId="26e9-24ca-fa72-16d3">0</characteristic>
+                    <characteristic name="Command Capacity" typeId="9a9d-6b65-579c-ca2c">7</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule name="Gunboat coordination specialist" id="ccd3-70af-6d9c-67ec" hidden="false" publicationId="3942-1ba6-967b-c9ed" page="15"/>
+              </rules>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Free gunboat" hidden="false" id="809e-9da7-6215-6b36" publicationId="3942-1ba6-967b-c9ed" page="15">
+                  <constraints>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="7530-a3b8-3d81-9c3a"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1d4d-8855-cdc6-2a47"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="25b7-a4d0-6bb4-50bb"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5332-b5df-6249-4b50"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
         </entryLink>
       </entryLinks>
       <modifiers>
@@ -1551,6 +1588,30 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
+    <selectionEntryGroup name="Faction Commander" id="559c-3a9d-c868-a179" hidden="false" publicationId="3942-1ba6-967b-c9ed" page="15-18">
+      <selectionEntries>
+        <selectionEntry type="unit" import="true" name="Rear Admiral Dong Huo" hidden="false" id="fa31-8e44-db7d-00c5" publicationId="3942-1ba6-967b-c9ed" page="15">
+          <categoryLinks>
+            <categoryLink targetId="b5b8-5ac8-4c77-cbb0" id="7ae7-e9ed-4643-d3f7" primary="true" name="Commander"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Rear Admiral Dong Huo" typeId="f8e8-01a8-098b-ca12" typeName="Commander stats" hidden="false" id="b7e2-7053-3e26-0530">
+              <characteristics>
+                <characteristic name="Commander Quality" typeId="388a-86b2-03af-20ad">Legendary 4</characteristic>
+                <characteristic name="Rank" typeId="16de-0568-dfa7-27a1">Admiral / Commander</characteristic>
+                <characteristic name="Ship" typeId="f3f9-27da-95ec-1253">Any</characteristic>
+                <characteristic name="Skill" typeId="8cfd-31fa-dd72-6e30">+3</characteristic>
+                <characteristic name="Morale Bonus" typeId="26e9-24ca-fa72-16d3">+1</characteristic>
+                <characteristic name="Command Capacity" typeId="9a9d-6b65-579c-ca2c">12</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Points" typeId="dd57-09ff-340f-8e48" value="35"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedProfiles>
     <profile name="Dropship" typeId="8562-1ee2-d80c-e753" typeName="Strike Craft Stats" hidden="false" id="e4dc-a25e-ade4-b3d2" publicationId="3942-1ba6-967b-c9ed" page="64">
@@ -1574,7 +1635,7 @@
     <entryLink import="true" name="Battle Cruiser T3" hidden="false" id="abd7-33b3-5f5d-7e49" type="selectionEntry" targetId="cbd8-e188-82eb-daec"/>
     <entryLink import="true" name="Light Carrier T3" hidden="false" id="5471-8b7f-4856-5243" type="selectionEntry" targetId="668d-1640-3703-5d3b"/>
     <entryLink import="true" name="Red Dragon Battleship T3" hidden="false" id="f078-0e6f-3717-05fa" type="selectionEntry" targetId="78c2-a13e-dd1c-ae3d"/>
-    <entryLink import="true" name="Carrier T3" hidden="false" id="8ca1-435d-e4fb-0fe8" type="selectionEntry" targetId="359d-2c0e-dd3a-4ebf"/>
+    <entryLink import="true" name="Carrier T3 (Heavy)" hidden="false" id="8ca1-435d-e4fb-0fe8" type="selectionEntry" targetId="359d-2c0e-dd3a-4ebf"/>
     <entryLink import="true" name="Destroyer" hidden="false" id="d491-69af-85ed-1e1e" type="selectionEntry" targetId="f303-58a6-d1aa-6358"/>
     <entryLink import="true" name="Heavy Destroyer" hidden="false" id="831f-52ae-bbfc-e39e" type="selectionEntry" targetId="6398-eea5-e7e6-b29d"/>
     <entryLink import="true" name="Heavy Destroyer T3" hidden="false" id="cd1b-7ecb-6cf0-6648" type="selectionEntry" targetId="52d4-2020-d0d1-333c"/>
@@ -1586,4 +1647,19 @@
     <entryLink import="true" name="Heavy Frigate T3" hidden="false" id="9fe5-1087-c015-059e" type="selectionEntry" targetId="a195-15ad-12c6-c6b8"/>
     <entryLink import="true" name="Corvette" hidden="false" id="ec46-4a5f-52cc-dc28" type="selectionEntry" targetId="cd34-2a0e-8ddc-42e8"/>
   </entryLinks>
+  <rules>
+    <rule name="Power Struggle" id="879f-3696-766e-02a1" hidden="false" publicationId="3942-1ba6-967b-c9ed" page="21">
+      <description>Russian and Chinese Battlegroup commanders get -1 to their command orders
+when command ships are within 6” of one another. Non-character commanders must be chosen as Russian or Chinese during list building.</description>
+    </rule>
+    <rule name="Bulky Hulls " id="db40-be1e-9fcf-cdb1" hidden="false" publicationId="3942-1ba6-967b-c9ed" page="21">
+      <description>Ignore the first hit on hull this battlegroup takes each enemy activation.</description>
+    </rule>
+    <rule name="Tracking Gyros" id="42ad-7d38-f5f6-afb8" hidden="false" publicationId="3942-1ba6-967b-c9ed" page="21">
+      <description>All ships gain +1 to hit during their activation when they don&apos;t use any thrust to move.</description>
+    </rule>
+    <rule name="Orginised Comms network" id="d14d-74db-5e60-78c5" hidden="false" publicationId="3942-1ba6-967b-c9ed" page="21">
+      <description>+1 to available special command actions when list building.</description>
+    </rule>
+  </rules>
 </catalogue>

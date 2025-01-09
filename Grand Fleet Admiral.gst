@@ -83,6 +83,8 @@
       <comment>This one is meant to be given to all ships that are not eligible to make a vanguard</comment>
     </categoryEntry>
     <categoryEntry name="SINO Russian Pact" id="b034-e255-5fb8-51b1" hidden="false"/>
+    <categoryEntry name="ALLOW_8_SHIPS" id="b40d-40da-009b-a4a9" hidden="false"/>
+    <categoryEntry name="Ship" id="2db9-9828-2b94-e476" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="2baf-20ef-c40f-8aa8" name="Combat Group" hidden="false">
@@ -138,6 +140,18 @@
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ccbe-2018-27c2-58c5" type="max"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1a47-f691-df15-cd6a" type="min"/>
           </constraints>
+        </categoryLink>
+        <categoryLink name="SHIPS_ALLOWED" hidden="false" id="19e8-f0f5-a02e-1866" targetId="2db9-9828-2b94-e476" type="category">
+          <constraints>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="84ff-f6c9-1f71-ba98" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="8" field="84ff-f6c9-1f71-ba98">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="b40d-40da-009b-a4a9" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </categoryLink>
       </categoryLinks>
     </forceEntry>

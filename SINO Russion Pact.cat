@@ -80,6 +80,7 @@
       <categoryLinks>
         <categoryLink targetId="ddf0-e667-c5bb-bfd0" id="29c5-b671-7044-5617" primary="true" name="Capital"/>
         <categoryLink targetId="b034-e255-5fb8-51b1" id="9d0a-8aa5-246e-8f82" primary="false" name="SINO Russian Pact"/>
+        <categoryLink targetId="2db9-9828-2b94-e476" id="bd45-19e0-54b6-b606" primary="false" name="SHIPS_ALLOWED"/>
       </categoryLinks>
       <modifiers>
         <modifier type="add" value="b5b8-5ac8-4c77-cbb0" field="category">
@@ -284,6 +285,7 @@
         <categoryLink targetId="b034-e255-5fb8-51b1" id="008d-5026-3318-5b67" primary="false" name="SINO Russian Pact"/>
         <categoryLink targetId="ddf0-e667-c5bb-bfd0" id="9638-c366-3c4f-1600" primary="true" name="Capital"/>
         <categoryLink targetId="f40f-3734-00a7-9824" id="0457-f50b-106d-1f26" primary="false" name="not vanguard eligible"/>
+        <categoryLink targetId="2db9-9828-2b94-e476" id="4add-3837-234c-a115" primary="false" name="SHIPS_ALLOWED"/>
       </categoryLinks>
       <modifiers>
         <modifier type="add" value="b5b8-5ac8-4c77-cbb0" field="category">
@@ -366,6 +368,7 @@
         <categoryLink targetId="b034-e255-5fb8-51b1" id="c60f-a0f3-b0d9-a529" primary="false" name="SINO Russian Pact"/>
         <categoryLink targetId="ddf0-e667-c5bb-bfd0" id="334b-f3d8-000c-98fe" primary="true" name="Capital"/>
         <categoryLink targetId="f40f-3734-00a7-9824" id="d037-b45c-240c-7a61" primary="false" name="not vanguard eligible"/>
+        <categoryLink targetId="2db9-9828-2b94-e476" id="1bb6-e2bd-10c7-7bd0" primary="false" name="SHIPS_ALLOWED"/>
       </categoryLinks>
       <modifiers>
         <modifier type="add" value="b5b8-5ac8-4c77-cbb0" field="category">
@@ -474,6 +477,7 @@
         <categoryLink targetId="ddf0-e667-c5bb-bfd0" id="c95d-c8ef-97ae-dace" primary="true" name="Capital"/>
         <categoryLink targetId="b034-e255-5fb8-51b1" id="ce7b-e677-74ea-4bd4" primary="false" name="SINO Russian Pact"/>
         <categoryLink targetId="93c9-8079-9382-0bfc" id="902a-450d-809b-bdf0" primary="false" name="T3"/>
+        <categoryLink targetId="2db9-9828-2b94-e476" id="3c4b-6135-d390-16bf" primary="false" name="SHIPS_ALLOWED"/>
       </categoryLinks>
       <modifiers>
         <modifier type="add" value="b5b8-5ac8-4c77-cbb0" field="category">
@@ -497,6 +501,7 @@
         <categoryLink targetId="b034-e255-5fb8-51b1" id="43c6-1d05-98e5-b39f" primary="false" name="SINO Russian Pact"/>
         <categoryLink targetId="99a8-81d3-ead9-288b" id="dcc9-3b32-d6c2-d9a6" primary="false" name="Heavy"/>
         <categoryLink targetId="f40f-3734-00a7-9824" id="54ef-7de1-a28a-f5a1" primary="false" name="not vanguard eligible"/>
+        <categoryLink targetId="2db9-9828-2b94-e476" id="42b5-c31d-08b0-9b84" primary="false" name="SHIPS_ALLOWED"/>
       </categoryLinks>
       <profiles>
         <profile name="Battleship (Heavy)" typeId="fd62-daee-6b9c-c612" typeName="Ship Stats" hidden="false" id="b198-ab2e-845a-d661">
@@ -662,6 +667,7 @@
         <categoryLink targetId="99a8-81d3-ead9-288b" id="e2b9-2536-25da-2f3a" primary="false" name="Heavy"/>
         <categoryLink targetId="b034-e255-5fb8-51b1" id="9602-339c-4a5a-bb09" primary="false" name="SINO Russian Pact"/>
         <categoryLink targetId="f40f-3734-00a7-9824" id="71cc-6742-62b5-535e" primary="false" name="not vanguard eligible"/>
+        <categoryLink targetId="2db9-9828-2b94-e476" id="70ad-076a-bd67-d798" primary="false" name="SHIPS_ALLOWED"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Super Carrier (Heavy)" hidden="false" id="139e-9e11-7679-fb5f">
@@ -673,6 +679,7 @@
         <categoryLink targetId="ddf0-e667-c5bb-bfd0" id="adda-2df0-200d-977d" primary="true" name="Capital"/>
         <categoryLink targetId="b034-e255-5fb8-51b1" id="b040-1057-563e-e51e" primary="false" name="SINO Russian Pact"/>
         <categoryLink targetId="f40f-3734-00a7-9824" id="dea0-9f65-a960-5260" primary="false" name="not vanguard eligible"/>
+        <categoryLink targetId="2db9-9828-2b94-e476" id="815a-2e37-82a1-4187" primary="false" name="SHIPS_ALLOWED"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Armoured Reactor Core" hidden="false" id="a4eb-a4ba-2928-8207" publicationId="3942-1ba6-967b-c9ed" page="62" collective="false">
@@ -821,6 +828,7 @@
         <categoryLink targetId="ddf0-e667-c5bb-bfd0" id="0109-adce-514e-c665" primary="true" name="Capital"/>
         <categoryLink targetId="b034-e255-5fb8-51b1" id="2eb4-7aa3-1317-9cdf" primary="false" name="SINO Russian Pact"/>
         <categoryLink targetId="93c9-8079-9382-0bfc" id="896b-60ef-7234-e552" primary="false" name="T3"/>
+        <categoryLink targetId="2db9-9828-2b94-e476" id="f420-d9d6-81da-2384" primary="false" name="SHIPS_ALLOWED"/>
       </categoryLinks>
       <profiles>
         <profile name="Light Carrier T3" typeId="fd62-daee-6b9c-c612" typeName="Ship Stats" hidden="false" id="81f1-ce8d-c584-3a7a">
@@ -891,6 +899,7 @@
         <categoryLink targetId="99a8-81d3-ead9-288b" id="f99e-ac03-e394-3463" primary="false" name="Heavy"/>
         <categoryLink targetId="f40f-3734-00a7-9824" id="908e-9788-301f-9ee1" primary="false" name="not vanguard eligible"/>
         <categoryLink targetId="93c9-8079-9382-0bfc" id="7bf9-393c-98ce-88ad" primary="false" name="T3"/>
+        <categoryLink targetId="2db9-9828-2b94-e476" id="8943-40fc-cdaf-1822" primary="false" name="SHIPS_ALLOWED"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Armoured Reactor Core" hidden="false" id="7970-f45f-8af0-f05a" publicationId="3942-1ba6-967b-c9ed" page="62" collective="false">
@@ -1002,6 +1011,7 @@
         <categoryLink targetId="b034-e255-5fb8-51b1" id="8b8a-5e78-2cbd-456c" primary="false" name="SINO Russian Pact"/>
         <categoryLink targetId="99a8-81d3-ead9-288b" id="78b3-068b-4df5-7980" primary="false" name="Heavy"/>
         <categoryLink targetId="93c9-8079-9382-0bfc" id="0521-993a-56a7-aed4" primary="false" name="T3"/>
+        <categoryLink targetId="2db9-9828-2b94-e476" id="49ed-2147-4e3d-6431" primary="false" name="SHIPS_ALLOWED"/>
       </categoryLinks>
       <costs>
         <cost name="Points" typeId="dd57-09ff-340f-8e48" value="74"/>
@@ -1110,6 +1120,7 @@
       <categoryLinks>
         <categoryLink targetId="ff8c-6404-d96c-d06e" id="a588-0a1f-b33c-8416" primary="true" name="support"/>
         <categoryLink targetId="b034-e255-5fb8-51b1" id="a701-9420-d5f1-1cc8" primary="false" name="SINO Russian Pact"/>
+        <categoryLink targetId="2db9-9828-2b94-e476" id="7c94-1ee8-cc2c-37ad" primary="false" name="SHIPS_ALLOWED"/>
       </categoryLinks>
       <infoLinks>
         <infoLink name="ADS X" id="6a8a-43e1-e3df-8ff8" hidden="false" type="rule" targetId="7b47-f592-16a4-f8f4"/>
@@ -1169,6 +1180,7 @@
         <categoryLink targetId="ff8c-6404-d96c-d06e" id="9b22-085c-838a-a233" primary="true" name="support"/>
         <categoryLink targetId="b034-e255-5fb8-51b1" id="cbb7-ddef-e1c7-589b" primary="false" name="SINO Russian Pact"/>
         <categoryLink targetId="f40f-3734-00a7-9824" id="9035-e5c4-6756-b5ce" primary="false" name="not vanguard eligible"/>
+        <categoryLink targetId="2db9-9828-2b94-e476" id="e737-23eb-64b2-63f7" primary="false" name="SHIPS_ALLOWED"/>
       </categoryLinks>
       <profiles>
         <profile name="Heavy Destroyer" typeId="fd62-daee-6b9c-c612" typeName="Ship Stats" hidden="false" id="6185-1ec4-4c39-8f3b">
@@ -1233,6 +1245,7 @@
         <categoryLink targetId="ff8c-6404-d96c-d06e" id="1156-150e-76c7-6817" primary="true" name="support"/>
         <categoryLink targetId="b034-e255-5fb8-51b1" id="8a37-c4d3-b610-e0a5" primary="false" name="SINO Russian Pact"/>
         <categoryLink targetId="93c9-8079-9382-0bfc" id="f634-68ab-f6ee-c655" primary="false" name="T3"/>
+        <categoryLink targetId="2db9-9828-2b94-e476" id="6421-00cc-bfeb-9082" primary="false" name="SHIPS_ALLOWED"/>
       </categoryLinks>
       <profiles>
         <profile name="Heavy Destroyer T3" typeId="fd62-daee-6b9c-c612" typeName="Ship Stats" hidden="false" id="764f-ecf8-559d-0bbd">
@@ -1343,6 +1356,7 @@
       <categoryLinks>
         <categoryLink targetId="ff8c-6404-d96c-d06e" id="56b6-f60e-ff19-207e" primary="true" name="support"/>
         <categoryLink targetId="b034-e255-5fb8-51b1" id="ba6b-d0a1-9a6b-50de" primary="false" name="SINO Russian Pact"/>
+        <categoryLink targetId="2db9-9828-2b94-e476" id="e983-8c33-481b-c993" primary="false" name="SHIPS_ALLOWED"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Electronic Warfare Frigate T3" hidden="false" id="8af4-4494-c8f0-9138">
@@ -1395,6 +1409,7 @@
         <categoryLink targetId="b034-e255-5fb8-51b1" id="c993-977e-a483-a5ea" primary="false" name="SINO Russian Pact"/>
         <categoryLink targetId="ff8c-6404-d96c-d06e" id="6cee-d622-15c8-d6c7" primary="true" name="support"/>
         <categoryLink targetId="93c9-8079-9382-0bfc" id="1ce3-f3de-2db5-899b" primary="false" name="T3"/>
+        <categoryLink targetId="2db9-9828-2b94-e476" id="4249-736b-1b46-2806" primary="false" name="SHIPS_ALLOWED"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Mine Layer T3" hidden="false" id="3958-9cbe-4755-fece" publicationId="3942-1ba6-967b-c9ed" page="20">
@@ -1478,6 +1493,7 @@
         <categoryLink targetId="ff8c-6404-d96c-d06e" id="3349-cb0e-17d7-fb2d" primary="true" name="support"/>
         <categoryLink targetId="b034-e255-5fb8-51b1" id="970c-3e8c-8d9d-8779" primary="false" name="SINO Russian Pact"/>
         <categoryLink targetId="93c9-8079-9382-0bfc" id="b271-a8fe-0cae-af04" primary="false" name="T3"/>
+        <categoryLink targetId="2db9-9828-2b94-e476" id="23c9-508c-8390-7142" primary="false" name="SHIPS_ALLOWED"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Frigate" hidden="false" id="8381-ec61-b702-fc21">
@@ -1553,6 +1569,7 @@
       <categoryLinks>
         <categoryLink targetId="b034-e255-5fb8-51b1" id="2739-63aa-9a4e-55ad" primary="false" name="SINO Russian Pact"/>
         <categoryLink targetId="9cb1-f70a-60f2-5d11" id="fe09-c1cf-746e-0a13" primary="true" name="Escort"/>
+        <categoryLink targetId="2db9-9828-2b94-e476" id="08fc-4387-1220-f5ef" primary="false" name="SHIPS_ALLOWED"/>
       </categoryLinks>
       <infoLinks>
         <infoLink name="ADS X" id="77fb-c0e1-ef91-5d99" hidden="false" type="rule" targetId="7b47-f592-16a4-f8f4"/>
@@ -1665,6 +1682,7 @@
         <categoryLink targetId="9cb1-f70a-60f2-5d11" id="2f72-1e2e-deff-6229" primary="true" name="Escort"/>
         <categoryLink targetId="b034-e255-5fb8-51b1" id="b033-1b56-b0e6-5494" primary="false" name="SINO Russian Pact"/>
         <categoryLink targetId="93c9-8079-9382-0bfc" id="440c-e78d-f24b-7d2e" primary="false" name="T3"/>
+        <categoryLink targetId="2db9-9828-2b94-e476" id="ac6e-8617-e183-2c3c" primary="false" name="SHIPS_ALLOWED"/>
       </categoryLinks>
       <infoLinks>
         <infoLink name="Squadron" id="348d-7f2e-b8e7-9b05" hidden="false" type="rule" targetId="bda1-dd8e-11d9-8a18"/>
@@ -1679,6 +1697,7 @@
         <categoryLink targetId="9cb1-f70a-60f2-5d11" id="4dc5-118b-7db8-bea3" primary="true" name="Escort"/>
         <categoryLink targetId="b034-e255-5fb8-51b1" id="becc-e552-20c6-204c" primary="false" name="SINO Russian Pact"/>
         <categoryLink targetId="93c9-8079-9382-0bfc" id="636c-c742-fb5f-ee07" primary="false" name="T3"/>
+        <categoryLink targetId="2db9-9828-2b94-e476" id="40cb-2544-49aa-f463" primary="false" name="SHIPS_ALLOWED"/>
       </categoryLinks>
       <profiles>
         <profile name="Heavy Frigate T3" typeId="fd62-daee-6b9c-c612" typeName="Ship Stats" hidden="false" id="2aca-a8bf-f337-32b2">
@@ -1753,6 +1772,7 @@
       <categoryLinks>
         <categoryLink targetId="9cb1-f70a-60f2-5d11" id="8cef-19a1-6e6d-4d33" primary="true" name="Escort"/>
         <categoryLink targetId="b034-e255-5fb8-51b1" id="47f0-159e-1a07-a735" primary="false" name="SINO Russian Pact"/>
+        <categoryLink targetId="2db9-9828-2b94-e476" id="ba09-1e89-1082-9b38" primary="false" name="SHIPS_ALLOWED"/>
       </categoryLinks>
       <profiles>
         <profile name="Corvette" typeId="fd62-daee-6b9c-c612" typeName="Ship Stats" hidden="false" id="12c5-8313-abd9-f633">
@@ -1993,6 +2013,7 @@
           <categoryLinks>
             <categoryLink targetId="b034-e255-5fb8-51b1" id="924e-30d3-212c-bbac" primary="false" name="SINO Russian Pact"/>
             <categoryLink targetId="b5b8-5ac8-4c77-cbb0" id="b918-3808-c226-b833" primary="true" name="Commander"/>
+            <categoryLink targetId="b40d-40da-009b-a4a9" id="285c-3bec-f4be-4832" primary="false" name="ALLOW_8_SHIPS"/>
           </categoryLinks>
           <profiles>
             <profile name="Captain Luó Ting" typeId="f8e8-01a8-098b-ca12" typeName="Commander stats" hidden="false" id="7e63-85b6-0281-7dd8">

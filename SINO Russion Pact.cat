@@ -14,7 +14,7 @@
             <characteristic name="Traits" typeId="7875-4af0-5837-6dcb"/>
           </characteristics>
           <modifiers>
-            <modifier type="set" value="2" field="6951-636f-b7cf-dff3">
+            <modifier type="set" value="2" field="5064-520e-c582-fc1a">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="fc98-db21-0155-9949" childId="0b89-f531-bcb7-2583" shared="true"/>
               </conditions>
@@ -40,8 +40,8 @@
         </entryLink>
         <entryLink import="true" name="Commander" hidden="false" id="10f9-91fb-6baa-3b70" type="selectionEntry" targetId="df1f-937a-7be9-2333">
           <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="333a-91d0-c777-3c32"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="afe5-b4b0-88af-0cee"/>
+            <constraint type="min" value="0" field="selections" scope="self" shared="true" id="333a-91d0-c777-3c32" includeChildSelections="true"/>
+            <constraint type="max" value="1" field="selections" scope="self" shared="true" id="afe5-b4b0-88af-0cee" includeChildSelections="true"/>
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Faction Commander" hidden="false" id="1e2e-77bd-e81b-8e0e" type="selectionEntryGroup" targetId="559c-3a9d-c868-a179"/>
@@ -52,7 +52,7 @@
         <selectionEntry type="upgrade" import="true" name="+2 Assault Bays" hidden="false" id="0b89-f531-bcb7-2583" publicationId="3942-1ba6-967b-c9ed" page="62" collective="false">
           <constraints>
             <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="5837-c52f-af1f-9f5f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d877-fd83-f2b7-503d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="d877-fd83-f2b7-503d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <entryLinks>
             <entryLink import="true" name="CQB Companies" hidden="false" id="133f-4d7c-8ec8-0fb9" collective="false" targetId="2dd3-4a75-8ce2-8eb1" type="selectionEntryGroup">
@@ -80,7 +80,7 @@
       <categoryLinks>
         <categoryLink targetId="ddf0-e667-c5bb-bfd0" id="29c5-b671-7044-5617" primary="true" name="Capital"/>
         <categoryLink targetId="b034-e255-5fb8-51b1" id="9d0a-8aa5-246e-8f82" primary="false" name="SINO Russian Pact"/>
-        <categoryLink targetId="2db9-9828-2b94-e476" id="bd45-19e0-54b6-b606" primary="false" name="SHIPS_ALLOWED"/>
+        <categoryLink targetId="2db9-9828-2b94-e476" id="bd45-19e0-54b6-b606" primary="false" name="Ship"/>
       </categoryLinks>
       <modifiers>
         <modifier type="add" value="b5b8-5ac8-4c77-cbb0" field="category">
@@ -273,8 +273,8 @@
         </entryLink>
         <entryLink import="true" name="Commander" hidden="false" id="f088-cbc0-da3b-c39d" type="selectionEntry" targetId="df1f-937a-7be9-2333">
           <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="11eb-bc7e-ebc1-cbcf"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="97b7-8e31-99b9-48d5"/>
+            <constraint type="min" value="0" field="selections" scope="self" shared="true" id="11eb-bc7e-ebc1-cbcf" includeChildSelections="true"/>
+            <constraint type="max" value="1" field="selections" scope="self" shared="true" id="97b7-8e31-99b9-48d5" includeChildSelections="true"/>
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Faction Commander" hidden="false" id="0257-fe27-2944-7242" type="selectionEntryGroup" targetId="559c-3a9d-c868-a179"/>
@@ -285,7 +285,7 @@
         <categoryLink targetId="b034-e255-5fb8-51b1" id="008d-5026-3318-5b67" primary="false" name="SINO Russian Pact"/>
         <categoryLink targetId="ddf0-e667-c5bb-bfd0" id="9638-c366-3c4f-1600" primary="true" name="Capital"/>
         <categoryLink targetId="f40f-3734-00a7-9824" id="0457-f50b-106d-1f26" primary="false" name="not vanguard eligible"/>
-        <categoryLink targetId="2db9-9828-2b94-e476" id="4add-3837-234c-a115" primary="false" name="SHIPS_ALLOWED"/>
+        <categoryLink targetId="2db9-9828-2b94-e476" id="4add-3837-234c-a115" primary="false" name="Ship"/>
       </categoryLinks>
       <modifiers>
         <modifier type="add" value="b5b8-5ac8-4c77-cbb0" field="category">
@@ -356,8 +356,8 @@
         </entryLink>
         <entryLink import="true" name="Commander" hidden="false" id="1f0f-4df9-bd32-c230" type="selectionEntry" targetId="df1f-937a-7be9-2333">
           <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="6313-b361-c52d-f91a"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cd75-5443-83bc-f0ea"/>
+            <constraint type="min" value="0" field="selections" scope="self" shared="true" id="6313-b361-c52d-f91a" includeChildSelections="true"/>
+            <constraint type="max" value="1" field="selections" scope="self" shared="true" id="cd75-5443-83bc-f0ea" includeChildSelections="true"/>
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Faction Commander" hidden="false" id="a59a-f0b3-b072-db57" type="selectionEntryGroup" targetId="559c-3a9d-c868-a179"/>
@@ -368,7 +368,7 @@
         <categoryLink targetId="b034-e255-5fb8-51b1" id="c60f-a0f3-b0d9-a529" primary="false" name="SINO Russian Pact"/>
         <categoryLink targetId="ddf0-e667-c5bb-bfd0" id="334b-f3d8-000c-98fe" primary="true" name="Capital"/>
         <categoryLink targetId="f40f-3734-00a7-9824" id="d037-b45c-240c-7a61" primary="false" name="not vanguard eligible"/>
-        <categoryLink targetId="2db9-9828-2b94-e476" id="1bb6-e2bd-10c7-7bd0" primary="false" name="SHIPS_ALLOWED"/>
+        <categoryLink targetId="2db9-9828-2b94-e476" id="1bb6-e2bd-10c7-7bd0" primary="false" name="Ship"/>
       </categoryLinks>
       <modifiers>
         <modifier type="add" value="b5b8-5ac8-4c77-cbb0" field="category">
@@ -434,8 +434,8 @@
         </entryLink>
         <entryLink import="true" name="Commander" hidden="false" id="27e9-91d4-2ec9-9bd5" type="selectionEntry" targetId="df1f-937a-7be9-2333">
           <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="9811-73be-324a-8441"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="518b-c9e9-38dc-6ee4"/>
+            <constraint type="min" value="0" field="selections" scope="self" shared="true" id="9811-73be-324a-8441" includeChildSelections="true"/>
+            <constraint type="max" value="1" field="selections" scope="self" shared="true" id="518b-c9e9-38dc-6ee4" includeChildSelections="true"/>
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Faction Commander" hidden="false" id="bb9b-067b-6dfd-771c" type="selectionEntryGroup" targetId="559c-3a9d-c868-a179"/>
@@ -469,6 +469,10 @@
                   <description>The battlegroup may only contain T3 ships.</description>
                 </rule>
               </rules>
+              <categoryLinks>
+                <categoryLink targetId="b5b8-5ac8-4c77-cbb0" id="16f4-78b9-cc81-e446" primary="true" name="Commander"/>
+                <categoryLink targetId="3b9b-e843-4c69-2e3c" id="8b5a-065a-f1b1-bc0a" primary="false" name="ALLOW_7_SHIPS"/>
+              </categoryLinks>
             </selectionEntry>
           </selectionEntries>
         </entryLink>
@@ -477,7 +481,7 @@
         <categoryLink targetId="ddf0-e667-c5bb-bfd0" id="c95d-c8ef-97ae-dace" primary="true" name="Capital"/>
         <categoryLink targetId="b034-e255-5fb8-51b1" id="ce7b-e677-74ea-4bd4" primary="false" name="SINO Russian Pact"/>
         <categoryLink targetId="93c9-8079-9382-0bfc" id="902a-450d-809b-bdf0" primary="false" name="T3"/>
-        <categoryLink targetId="2db9-9828-2b94-e476" id="3c4b-6135-d390-16bf" primary="false" name="SHIPS_ALLOWED"/>
+        <categoryLink targetId="2db9-9828-2b94-e476" id="3c4b-6135-d390-16bf" primary="false" name="Ship"/>
       </categoryLinks>
       <modifiers>
         <modifier type="add" value="b5b8-5ac8-4c77-cbb0" field="category">
@@ -501,7 +505,7 @@
         <categoryLink targetId="b034-e255-5fb8-51b1" id="43c6-1d05-98e5-b39f" primary="false" name="SINO Russian Pact"/>
         <categoryLink targetId="99a8-81d3-ead9-288b" id="dcc9-3b32-d6c2-d9a6" primary="false" name="Heavy"/>
         <categoryLink targetId="f40f-3734-00a7-9824" id="54ef-7de1-a28a-f5a1" primary="false" name="not vanguard eligible"/>
-        <categoryLink targetId="2db9-9828-2b94-e476" id="42b5-c31d-08b0-9b84" primary="false" name="SHIPS_ALLOWED"/>
+        <categoryLink targetId="2db9-9828-2b94-e476" id="42b5-c31d-08b0-9b84" primary="false" name="Ship"/>
       </categoryLinks>
       <profiles>
         <profile name="Battleship (Heavy)" typeId="fd62-daee-6b9c-c612" typeName="Ship Stats" hidden="false" id="b198-ab2e-845a-d661">
@@ -554,8 +558,8 @@
         </entryLink>
         <entryLink import="true" name="Commander" hidden="false" id="ce6a-e225-7737-faf1" type="selectionEntry" targetId="df1f-937a-7be9-2333">
           <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="5bd0-2840-8202-8150"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ad1d-f5fa-7c40-fc14"/>
+            <constraint type="min" value="0" field="selections" scope="self" shared="true" id="5bd0-2840-8202-8150" includeChildSelections="true"/>
+            <constraint type="max" value="1" field="selections" scope="self" shared="true" id="ad1d-f5fa-7c40-fc14" includeChildSelections="true"/>
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Faction Commander" hidden="false" id="f7db-07ff-b5d0-6a23" type="selectionEntryGroup" targetId="559c-3a9d-c868-a179"/>
@@ -605,7 +609,7 @@
             <cost name="Points" typeId="dd57-09ff-340f-8e48" value="3"/>
           </costs>
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6d24-63fa-2cba-b1bc"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="6d24-63fa-2cba-b1bc"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f189-7d11-9342-98fa"/>
           </constraints>
         </selectionEntry>
@@ -625,9 +629,21 @@
         </entryLink>
         <entryLink import="true" name="Strike Craft" hidden="false" id="dabc-1deb-ddc8-179c" type="selectionEntryGroup" targetId="435b-832a-ba77-5ac2">
           <constraints>
-            <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="9950-0250-82eb-2399"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="9950-0250-82eb-2399"/>
             <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="b053-2a9b-4822-0618"/>
           </constraints>
+          <modifiers>
+            <modifier type="decrement" value="1" field="b053-2a9b-4822-0618">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="c3a9-452b-830f-7473" shared="true" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" value="4" field="b053-2a9b-4822-0618">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="b03d-8a35-9ea1-1896" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </entryLink>
         <entryLink import="true" name="CQB Companies" hidden="false" id="8957-9f1b-0507-0509" type="selectionEntryGroup" targetId="2dd3-4a75-8ce2-8eb1">
           <constraints>
@@ -637,8 +653,8 @@
         </entryLink>
         <entryLink import="true" name="Commander" hidden="false" id="a075-aaea-88e8-9883" type="selectionEntry" targetId="df1f-937a-7be9-2333">
           <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="bacb-92c9-48d9-7168"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2cfb-5e40-0bb1-1f9a"/>
+            <constraint type="min" value="0" field="selections" scope="self" shared="true" id="bacb-92c9-48d9-7168" includeChildSelections="true"/>
+            <constraint type="max" value="1" field="selections" scope="self" shared="true" id="2cfb-5e40-0bb1-1f9a" includeChildSelections="true"/>
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Faction Commander" hidden="false" id="6849-a68b-ea97-c417" type="selectionEntryGroup" targetId="559c-3a9d-c868-a179"/>
@@ -667,7 +683,7 @@
         <categoryLink targetId="99a8-81d3-ead9-288b" id="e2b9-2536-25da-2f3a" primary="false" name="Heavy"/>
         <categoryLink targetId="b034-e255-5fb8-51b1" id="9602-339c-4a5a-bb09" primary="false" name="SINO Russian Pact"/>
         <categoryLink targetId="f40f-3734-00a7-9824" id="71cc-6742-62b5-535e" primary="false" name="not vanguard eligible"/>
-        <categoryLink targetId="2db9-9828-2b94-e476" id="70ad-076a-bd67-d798" primary="false" name="SHIPS_ALLOWED"/>
+        <categoryLink targetId="2db9-9828-2b94-e476" id="70ad-076a-bd67-d798" primary="false" name="Ship"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Super Carrier (Heavy)" hidden="false" id="139e-9e11-7679-fb5f">
@@ -679,7 +695,7 @@
         <categoryLink targetId="ddf0-e667-c5bb-bfd0" id="adda-2df0-200d-977d" primary="true" name="Capital"/>
         <categoryLink targetId="b034-e255-5fb8-51b1" id="b040-1057-563e-e51e" primary="false" name="SINO Russian Pact"/>
         <categoryLink targetId="f40f-3734-00a7-9824" id="dea0-9f65-a960-5260" primary="false" name="not vanguard eligible"/>
-        <categoryLink targetId="2db9-9828-2b94-e476" id="815a-2e37-82a1-4187" primary="false" name="SHIPS_ALLOWED"/>
+        <categoryLink targetId="2db9-9828-2b94-e476" id="815a-2e37-82a1-4187" primary="false" name="Ship"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Armoured Reactor Core" hidden="false" id="a4eb-a4ba-2928-8207" publicationId="3942-1ba6-967b-c9ed" page="62" collective="false">
@@ -731,7 +747,7 @@
         </entryLink>
         <entryLink import="true" name="Strike Craft" hidden="false" id="8ded-777d-0dd1-5470" type="selectionEntryGroup" targetId="435b-832a-ba77-5ac2">
           <constraints>
-            <constraint type="min" value="9" field="selections" scope="parent" shared="true" id="a83b-2366-2172-ef2d"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="a83b-2366-2172-ef2d"/>
             <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="ea7a-154e-878c-96ee"/>
           </constraints>
           <selectionEntries>
@@ -759,6 +775,13 @@
               </infoLinks>
             </selectionEntry>
           </selectionEntries>
+          <modifiers>
+            <modifier type="decrement" value="1" field="ea7a-154e-878c-96ee">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="c3a9-452b-830f-7473" shared="true" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
         </entryLink>
         <entryLink import="true" name="CQB Companies" hidden="false" id="4208-2a8a-8784-1a28" type="selectionEntryGroup" targetId="2dd3-4a75-8ce2-8eb1">
           <constraints>
@@ -768,8 +791,8 @@
         </entryLink>
         <entryLink import="true" name="Commander" hidden="false" id="99d9-7a45-b13d-1d3c" type="selectionEntry" targetId="df1f-937a-7be9-2333">
           <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="fa09-3726-5072-22c8"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="05ae-df80-9e35-61f0"/>
+            <constraint type="min" value="0" field="selections" scope="self" shared="true" id="fa09-3726-5072-22c8" includeChildSelections="true"/>
+            <constraint type="max" value="1" field="selections" scope="self" shared="true" id="05ae-df80-9e35-61f0" includeChildSelections="true"/>
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Faction Commander" hidden="false" id="3b66-9e51-583c-3f14" type="selectionEntryGroup" targetId="559c-3a9d-c868-a179"/>
@@ -794,6 +817,7 @@
               <categoryLinks>
                 <categoryLink name="SINO Russian Pact" hidden="false" id="a0ee-aa7f-3e78-9e21" targetId="b034-e255-5fb8-51b1" primary="false"/>
                 <categoryLink name="Commander" hidden="false" id="a156-7698-90e3-7541" targetId="b5b8-5ac8-4c77-cbb0" primary="true"/>
+                <categoryLink targetId="3dd4-ce23-6c07-83db" id="bca4-9962-7920-0741" primary="false" name="ALLOW_12_SHIPS"/>
               </categoryLinks>
               <rules>
                 <rule name="Indomitable Command" id="9704-3a11-b36f-a7b8" hidden="false" publicationId="3942-1ba6-967b-c9ed" page="16">
@@ -828,7 +852,7 @@
         <categoryLink targetId="ddf0-e667-c5bb-bfd0" id="0109-adce-514e-c665" primary="true" name="Capital"/>
         <categoryLink targetId="b034-e255-5fb8-51b1" id="2eb4-7aa3-1317-9cdf" primary="false" name="SINO Russian Pact"/>
         <categoryLink targetId="93c9-8079-9382-0bfc" id="896b-60ef-7234-e552" primary="false" name="T3"/>
-        <categoryLink targetId="2db9-9828-2b94-e476" id="f420-d9d6-81da-2384" primary="false" name="SHIPS_ALLOWED"/>
+        <categoryLink targetId="2db9-9828-2b94-e476" id="f420-d9d6-81da-2384" primary="false" name="Ship"/>
       </categoryLinks>
       <profiles>
         <profile name="Light Carrier T3" typeId="fd62-daee-6b9c-c612" typeName="Ship Stats" hidden="false" id="81f1-ce8d-c584-3a7a">
@@ -856,9 +880,16 @@
         </entryLink>
         <entryLink import="true" name="Strike Craft" hidden="false" id="e448-d062-2457-8dd6" type="selectionEntryGroup" targetId="435b-832a-ba77-5ac2">
           <constraints>
-            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="9f27-b87f-2ab7-c245"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="9f27-b87f-2ab7-c245"/>
             <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="f3a4-4746-fe4c-846b"/>
           </constraints>
+          <modifiers>
+            <modifier type="decrement" value="1" field="f3a4-4746-fe4c-846b">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="c3a9-452b-830f-7473" shared="true" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
         </entryLink>
         <entryLink import="true" name="CQB Companies" hidden="false" id="e84f-e79a-8211-d3c1" type="selectionEntryGroup" targetId="2dd3-4a75-8ce2-8eb1">
           <constraints>
@@ -868,8 +899,8 @@
         </entryLink>
         <entryLink import="true" name="Commander" hidden="false" id="88a7-66da-78e0-e761" type="selectionEntry" targetId="df1f-937a-7be9-2333">
           <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="0316-4784-d5da-bc07"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f178-ff8a-9fd9-aaf9"/>
+            <constraint type="min" value="0" field="selections" scope="self" shared="true" id="0316-4784-d5da-bc07" includeChildSelections="true"/>
+            <constraint type="max" value="1" field="selections" scope="self" shared="true" id="f178-ff8a-9fd9-aaf9" includeChildSelections="true"/>
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Faction Commander" hidden="false" id="eb21-386e-7189-4478" type="selectionEntryGroup" targetId="559c-3a9d-c868-a179"/>
@@ -899,7 +930,7 @@
         <categoryLink targetId="99a8-81d3-ead9-288b" id="f99e-ac03-e394-3463" primary="false" name="Heavy"/>
         <categoryLink targetId="f40f-3734-00a7-9824" id="908e-9788-301f-9ee1" primary="false" name="not vanguard eligible"/>
         <categoryLink targetId="93c9-8079-9382-0bfc" id="7bf9-393c-98ce-88ad" primary="false" name="T3"/>
-        <categoryLink targetId="2db9-9828-2b94-e476" id="8943-40fc-cdaf-1822" primary="false" name="SHIPS_ALLOWED"/>
+        <categoryLink targetId="2db9-9828-2b94-e476" id="8943-40fc-cdaf-1822" primary="false" name="Ship"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Armoured Reactor Core" hidden="false" id="7970-f45f-8af0-f05a" publicationId="3942-1ba6-967b-c9ed" page="62" collective="false">
@@ -937,14 +968,14 @@
         </entryLink>
         <entryLink import="true" name="Strike Craft" hidden="false" id="cbd4-aca4-1729-11db" type="selectionEntryGroup" targetId="435b-832a-ba77-5ac2">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="187a-3726-31e1-6c2a"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="187a-3726-31e1-6c2a"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4b80-60d4-4892-7f6c"/>
           </constraints>
         </entryLink>
         <entryLink import="true" name="Commander" hidden="false" id="f0fc-5c19-60ca-ff42" type="selectionEntry" targetId="df1f-937a-7be9-2333">
           <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="7652-142e-6a8e-3458"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="322b-1c73-44b4-ded4"/>
+            <constraint type="min" value="0" field="selections" scope="self" shared="true" id="7652-142e-6a8e-3458" includeChildSelections="true"/>
+            <constraint type="max" value="1" field="selections" scope="self" shared="true" id="322b-1c73-44b4-ded4" includeChildSelections="true"/>
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Faction Commander" hidden="false" id="acef-f849-0de9-59c5" type="selectionEntryGroup" targetId="559c-3a9d-c868-a179"/>
@@ -966,6 +997,7 @@
               <categoryLinks>
                 <categoryLink targetId="b034-e255-5fb8-51b1" id="779a-2516-f476-2544" primary="false" name="SINO Russian Pact"/>
                 <categoryLink targetId="b5b8-5ac8-4c77-cbb0" id="6058-b7e7-148e-8c48" primary="true" name="Commander"/>
+                <categoryLink targetId="3dd4-ce23-6c07-83db" id="6848-8fcd-3b77-2635" primary="false" name="ALLOW_12_SHIPS"/>
               </categoryLinks>
               <profiles>
                 <profile name="Admiral Zou Zhiqiang" typeId="f8e8-01a8-098b-ca12" typeName="Commander stats" hidden="false" id="eb07-db04-7a47-c1d3">
@@ -1011,7 +1043,7 @@
         <categoryLink targetId="b034-e255-5fb8-51b1" id="8b8a-5e78-2cbd-456c" primary="false" name="SINO Russian Pact"/>
         <categoryLink targetId="99a8-81d3-ead9-288b" id="78b3-068b-4df5-7980" primary="false" name="Heavy"/>
         <categoryLink targetId="93c9-8079-9382-0bfc" id="0521-993a-56a7-aed4" primary="false" name="T3"/>
-        <categoryLink targetId="2db9-9828-2b94-e476" id="49ed-2147-4e3d-6431" primary="false" name="SHIPS_ALLOWED"/>
+        <categoryLink targetId="2db9-9828-2b94-e476" id="49ed-2147-4e3d-6431" primary="false" name="Ship"/>
       </categoryLinks>
       <costs>
         <cost name="Points" typeId="dd57-09ff-340f-8e48" value="74"/>
@@ -1050,8 +1082,15 @@
         <entryLink import="true" name="Strike Craft" hidden="false" id="f5e0-99b8-fa34-5cfe" type="selectionEntryGroup" targetId="435b-832a-ba77-5ac2">
           <constraints>
             <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="93b0-d82c-a866-1c70"/>
-            <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="6297-47dd-d18d-baf2"/>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="6297-47dd-d18d-baf2"/>
           </constraints>
+          <modifiers>
+            <modifier type="decrement" value="1" field="6297-47dd-d18d-baf2">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="c3a9-452b-830f-7473" shared="true" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
         </entryLink>
         <entryLink import="true" name="CQB Companies" hidden="false" id="452e-19de-eac9-ee0b" type="selectionEntryGroup" targetId="2dd3-4a75-8ce2-8eb1">
           <constraints>
@@ -1061,8 +1100,8 @@
         </entryLink>
         <entryLink import="true" name="Commander" hidden="false" id="382a-5c04-2e7b-5ee2" type="selectionEntry" targetId="df1f-937a-7be9-2333">
           <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="2016-8020-5b88-9924"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ede1-e988-2fc5-695f"/>
+            <constraint type="min" value="0" field="selections" scope="self" shared="true" id="2016-8020-5b88-9924" includeChildSelections="true"/>
+            <constraint type="max" value="1" field="selections" scope="self" shared="true" id="ede1-e988-2fc5-695f" includeChildSelections="true"/>
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Faction Commander" hidden="false" id="69b8-59c1-3670-f347" type="selectionEntryGroup" targetId="559c-3a9d-c868-a179"/>
@@ -1120,7 +1159,7 @@
       <categoryLinks>
         <categoryLink targetId="ff8c-6404-d96c-d06e" id="a588-0a1f-b33c-8416" primary="true" name="support"/>
         <categoryLink targetId="b034-e255-5fb8-51b1" id="a701-9420-d5f1-1cc8" primary="false" name="SINO Russian Pact"/>
-        <categoryLink targetId="2db9-9828-2b94-e476" id="7c94-1ee8-cc2c-37ad" primary="false" name="SHIPS_ALLOWED"/>
+        <categoryLink targetId="2db9-9828-2b94-e476" id="7c94-1ee8-cc2c-37ad" primary="false" name="Ship"/>
       </categoryLinks>
       <infoLinks>
         <infoLink name="ADS X" id="6a8a-43e1-e3df-8ff8" hidden="false" type="rule" targetId="7b47-f592-16a4-f8f4"/>
@@ -1146,8 +1185,8 @@
         </entryLink>
         <entryLink import="true" name="Commander" hidden="false" id="38ec-d692-5243-ee37" type="selectionEntry" targetId="df1f-937a-7be9-2333">
           <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="473c-9b3e-38b8-9c16"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f8ca-6c5c-f7a8-dd47"/>
+            <constraint type="min" value="0" field="selections" scope="self" shared="true" id="473c-9b3e-38b8-9c16" includeChildSelections="true"/>
+            <constraint type="max" value="1" field="selections" scope="self" shared="true" id="f8ca-6c5c-f7a8-dd47" includeChildSelections="true"/>
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Faction Commander" hidden="false" id="b85a-cb88-fef4-874b" type="selectionEntryGroup" targetId="559c-3a9d-c868-a179"/>
@@ -1180,7 +1219,7 @@
         <categoryLink targetId="ff8c-6404-d96c-d06e" id="9b22-085c-838a-a233" primary="true" name="support"/>
         <categoryLink targetId="b034-e255-5fb8-51b1" id="cbb7-ddef-e1c7-589b" primary="false" name="SINO Russian Pact"/>
         <categoryLink targetId="f40f-3734-00a7-9824" id="9035-e5c4-6756-b5ce" primary="false" name="not vanguard eligible"/>
-        <categoryLink targetId="2db9-9828-2b94-e476" id="e737-23eb-64b2-63f7" primary="false" name="SHIPS_ALLOWED"/>
+        <categoryLink targetId="2db9-9828-2b94-e476" id="e737-23eb-64b2-63f7" primary="false" name="Ship"/>
       </categoryLinks>
       <profiles>
         <profile name="Heavy Destroyer" typeId="fd62-daee-6b9c-c612" typeName="Ship Stats" hidden="false" id="6185-1ec4-4c39-8f3b">
@@ -1216,8 +1255,8 @@
         </entryLink>
         <entryLink import="true" name="Commander" hidden="false" id="f711-c1ab-f1bc-ac44" type="selectionEntry" targetId="df1f-937a-7be9-2333">
           <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="ddd0-58d9-8fa5-0616"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9382-dec1-4324-128a"/>
+            <constraint type="min" value="0" field="selections" scope="self" shared="true" id="ddd0-58d9-8fa5-0616" includeChildSelections="true"/>
+            <constraint type="max" value="1" field="selections" scope="self" shared="true" id="9382-dec1-4324-128a" includeChildSelections="true"/>
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Faction Commander" hidden="false" id="49cd-75b3-c73b-94c5" type="selectionEntryGroup" targetId="559c-3a9d-c868-a179"/>
@@ -1245,7 +1284,7 @@
         <categoryLink targetId="ff8c-6404-d96c-d06e" id="1156-150e-76c7-6817" primary="true" name="support"/>
         <categoryLink targetId="b034-e255-5fb8-51b1" id="8a37-c4d3-b610-e0a5" primary="false" name="SINO Russian Pact"/>
         <categoryLink targetId="93c9-8079-9382-0bfc" id="f634-68ab-f6ee-c655" primary="false" name="T3"/>
-        <categoryLink targetId="2db9-9828-2b94-e476" id="6421-00cc-bfeb-9082" primary="false" name="SHIPS_ALLOWED"/>
+        <categoryLink targetId="2db9-9828-2b94-e476" id="6421-00cc-bfeb-9082" primary="false" name="Ship"/>
       </categoryLinks>
       <profiles>
         <profile name="Heavy Destroyer T3" typeId="fd62-daee-6b9c-c612" typeName="Ship Stats" hidden="false" id="764f-ecf8-559d-0bbd">
@@ -1275,8 +1314,8 @@
         </entryLink>
         <entryLink import="true" name="Commander" hidden="false" id="1797-8dfb-292e-ad59" type="selectionEntry" targetId="df1f-937a-7be9-2333">
           <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="df3a-280f-2126-7723"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="428d-9b01-e222-94b6"/>
+            <constraint type="min" value="0" field="selections" scope="self" shared="true" id="df3a-280f-2126-7723" includeChildSelections="true"/>
+            <constraint type="max" value="1" field="selections" scope="self" shared="true" id="428d-9b01-e222-94b6" includeChildSelections="true"/>
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Faction Commander" hidden="false" id="1161-9c43-d306-ab88" type="selectionEntryGroup" targetId="559c-3a9d-c868-a179"/>
@@ -1328,8 +1367,8 @@
         </entryLink>
         <entryLink import="true" name="Commander" hidden="false" id="b858-e2be-3acf-7bbf" type="selectionEntry" targetId="df1f-937a-7be9-2333">
           <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="83d3-438a-4e6d-b6d4"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="abba-6108-620a-49ed"/>
+            <constraint type="min" value="0" field="selections" scope="self" shared="true" id="83d3-438a-4e6d-b6d4" includeChildSelections="true"/>
+            <constraint type="max" value="1" field="selections" scope="self" shared="true" id="abba-6108-620a-49ed" includeChildSelections="true"/>
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Faction Commander" hidden="false" id="1f0f-8bd8-f4b4-bc4f" type="selectionEntryGroup" targetId="559c-3a9d-c868-a179"/>
@@ -1356,7 +1395,7 @@
       <categoryLinks>
         <categoryLink targetId="ff8c-6404-d96c-d06e" id="56b6-f60e-ff19-207e" primary="true" name="support"/>
         <categoryLink targetId="b034-e255-5fb8-51b1" id="ba6b-d0a1-9a6b-50de" primary="false" name="SINO Russian Pact"/>
-        <categoryLink targetId="2db9-9828-2b94-e476" id="e983-8c33-481b-c993" primary="false" name="SHIPS_ALLOWED"/>
+        <categoryLink targetId="2db9-9828-2b94-e476" id="e983-8c33-481b-c993" primary="false" name="Ship"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Electronic Warfare Frigate T3" hidden="false" id="8af4-4494-c8f0-9138">
@@ -1385,8 +1424,8 @@
         </entryLink>
         <entryLink import="true" name="Commander" hidden="false" id="0551-40cf-1a02-13c4" type="selectionEntry" targetId="df1f-937a-7be9-2333">
           <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="365e-f2dc-8a4e-2c50"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cdc4-49ac-f0b0-586b"/>
+            <constraint type="min" value="0" field="selections" scope="self" shared="true" id="365e-f2dc-8a4e-2c50" includeChildSelections="true"/>
+            <constraint type="max" value="1" field="selections" scope="self" shared="true" id="cdc4-49ac-f0b0-586b" includeChildSelections="true"/>
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Faction Commander" hidden="false" id="bfcc-b512-1ff1-a596" type="selectionEntryGroup" targetId="559c-3a9d-c868-a179"/>
@@ -1409,7 +1448,7 @@
         <categoryLink targetId="b034-e255-5fb8-51b1" id="c993-977e-a483-a5ea" primary="false" name="SINO Russian Pact"/>
         <categoryLink targetId="ff8c-6404-d96c-d06e" id="6cee-d622-15c8-d6c7" primary="true" name="support"/>
         <categoryLink targetId="93c9-8079-9382-0bfc" id="1ce3-f3de-2db5-899b" primary="false" name="T3"/>
-        <categoryLink targetId="2db9-9828-2b94-e476" id="4249-736b-1b46-2806" primary="false" name="SHIPS_ALLOWED"/>
+        <categoryLink targetId="2db9-9828-2b94-e476" id="4249-736b-1b46-2806" primary="false" name="Ship"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Mine Layer T3" hidden="false" id="3958-9cbe-4755-fece" publicationId="3942-1ba6-967b-c9ed" page="20">
@@ -1441,8 +1480,8 @@
         </entryLink>
         <entryLink import="true" name="Commander" hidden="false" id="658a-d022-6076-721b" type="selectionEntry" targetId="df1f-937a-7be9-2333">
           <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="ae9c-f407-cdf0-2e6f"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b081-4071-eaf0-08bf"/>
+            <constraint type="min" value="0" field="selections" scope="self" shared="true" id="ae9c-f407-cdf0-2e6f" includeChildSelections="true"/>
+            <constraint type="max" value="1" field="selections" scope="self" shared="true" id="b081-4071-eaf0-08bf" includeChildSelections="true"/>
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Faction Commander" hidden="false" id="0ac7-7f3b-bb0e-78f6" type="selectionEntryGroup" targetId="559c-3a9d-c868-a179"/>
@@ -1455,6 +1494,7 @@
               <categoryLinks>
                 <categoryLink targetId="b034-e255-5fb8-51b1" id="0fc5-0de4-7bfc-3f11" primary="false" name="SINO Russian Pact"/>
                 <categoryLink targetId="b5b8-5ac8-4c77-cbb0" id="849e-df9f-d393-4b49" primary="true" name="Commander"/>
+                <categoryLink targetId="c939-66e5-c157-f0f8" id="5544-132f-44c7-bc14" primary="false" name="ALLOW_6_SHIPS"/>
               </categoryLinks>
               <profiles>
                 <profile name="Captain Xie Qiang" typeId="f8e8-01a8-098b-ca12" typeName="Commander stats" hidden="false" id="b01b-8248-b834-8ea6">
@@ -1493,7 +1533,7 @@
         <categoryLink targetId="ff8c-6404-d96c-d06e" id="3349-cb0e-17d7-fb2d" primary="true" name="support"/>
         <categoryLink targetId="b034-e255-5fb8-51b1" id="970c-3e8c-8d9d-8779" primary="false" name="SINO Russian Pact"/>
         <categoryLink targetId="93c9-8079-9382-0bfc" id="b271-a8fe-0cae-af04" primary="false" name="T3"/>
-        <categoryLink targetId="2db9-9828-2b94-e476" id="23c9-508c-8390-7142" primary="false" name="SHIPS_ALLOWED"/>
+        <categoryLink targetId="2db9-9828-2b94-e476" id="23c9-508c-8390-7142" primary="false" name="Ship"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Frigate" hidden="false" id="8381-ec61-b702-fc21">
@@ -1535,8 +1575,8 @@
         </entryLink>
         <entryLink import="true" name="Commander" hidden="false" id="c870-20fb-352d-5d45" type="selectionEntry" targetId="df1f-937a-7be9-2333">
           <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="69bf-936e-8b2b-9e85"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a882-dbd4-3c55-256a"/>
+            <constraint type="min" value="0" field="selections" scope="self" shared="true" id="69bf-936e-8b2b-9e85" includeChildSelections="true"/>
+            <constraint type="max" value="1" field="selections" scope="self" shared="true" id="a882-dbd4-3c55-256a" includeChildSelections="true"/>
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Faction Commander" hidden="false" id="484a-450b-e5a0-03df" type="selectionEntryGroup" targetId="559c-3a9d-c868-a179"/>
@@ -1569,7 +1609,7 @@
       <categoryLinks>
         <categoryLink targetId="b034-e255-5fb8-51b1" id="2739-63aa-9a4e-55ad" primary="false" name="SINO Russian Pact"/>
         <categoryLink targetId="9cb1-f70a-60f2-5d11" id="fe09-c1cf-746e-0a13" primary="true" name="Escort"/>
-        <categoryLink targetId="2db9-9828-2b94-e476" id="08fc-4387-1220-f5ef" primary="false" name="SHIPS_ALLOWED"/>
+        <categoryLink targetId="2db9-9828-2b94-e476" id="08fc-4387-1220-f5ef" primary="false" name="Ship"/>
       </categoryLinks>
       <infoLinks>
         <infoLink name="ADS X" id="77fb-c0e1-ef91-5d99" hidden="false" type="rule" targetId="7b47-f592-16a4-f8f4"/>
@@ -1607,8 +1647,8 @@
         </entryLink>
         <entryLink import="true" name="Commander" hidden="false" id="400e-89a6-2e3b-9ad8" type="selectionEntry" targetId="df1f-937a-7be9-2333">
           <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="79ac-9019-e8bd-3179"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c0b0-494f-bb35-7c8f"/>
+            <constraint type="min" value="0" field="selections" scope="self" shared="true" id="79ac-9019-e8bd-3179" includeChildSelections="true"/>
+            <constraint type="max" value="1" field="selections" scope="self" shared="true" id="c0b0-494f-bb35-7c8f" includeChildSelections="true"/>
           </constraints>
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Captain Yakovna" hidden="false" id="e940-c7c4-b1c7-0031" publicationId="3942-1ba6-967b-c9ed" page="15" subType="crew">
@@ -1617,6 +1657,7 @@
               </costs>
               <categoryLinks>
                 <categoryLink targetId="b5b8-5ac8-4c77-cbb0" id="875e-8783-8188-ee5b" primary="true" name="Commander"/>
+                <categoryLink targetId="3b9b-e843-4c69-2e3c" id="c8a2-eb74-48c1-cf31" primary="false" name="ALLOW_7_SHIPS"/>
               </categoryLinks>
               <profiles>
                 <profile name="Captain Yakovna" typeId="f8e8-01a8-098b-ca12" typeName="Commander stats" hidden="false" id="423a-569f-edbd-a070">
@@ -1682,7 +1723,7 @@
         <categoryLink targetId="9cb1-f70a-60f2-5d11" id="2f72-1e2e-deff-6229" primary="true" name="Escort"/>
         <categoryLink targetId="b034-e255-5fb8-51b1" id="b033-1b56-b0e6-5494" primary="false" name="SINO Russian Pact"/>
         <categoryLink targetId="93c9-8079-9382-0bfc" id="440c-e78d-f24b-7d2e" primary="false" name="T3"/>
-        <categoryLink targetId="2db9-9828-2b94-e476" id="ac6e-8617-e183-2c3c" primary="false" name="SHIPS_ALLOWED"/>
+        <categoryLink targetId="2db9-9828-2b94-e476" id="ac6e-8617-e183-2c3c" primary="false" name="Ship"/>
       </categoryLinks>
       <infoLinks>
         <infoLink name="Squadron" id="348d-7f2e-b8e7-9b05" hidden="false" type="rule" targetId="bda1-dd8e-11d9-8a18"/>
@@ -1697,7 +1738,7 @@
         <categoryLink targetId="9cb1-f70a-60f2-5d11" id="4dc5-118b-7db8-bea3" primary="true" name="Escort"/>
         <categoryLink targetId="b034-e255-5fb8-51b1" id="becc-e552-20c6-204c" primary="false" name="SINO Russian Pact"/>
         <categoryLink targetId="93c9-8079-9382-0bfc" id="636c-c742-fb5f-ee07" primary="false" name="T3"/>
-        <categoryLink targetId="2db9-9828-2b94-e476" id="40cb-2544-49aa-f463" primary="false" name="SHIPS_ALLOWED"/>
+        <categoryLink targetId="2db9-9828-2b94-e476" id="40cb-2544-49aa-f463" primary="false" name="Ship"/>
       </categoryLinks>
       <profiles>
         <profile name="Heavy Frigate T3" typeId="fd62-daee-6b9c-c612" typeName="Ship Stats" hidden="false" id="2aca-a8bf-f337-32b2">
@@ -1744,8 +1785,8 @@
         </entryLink>
         <entryLink import="true" name="Commander" hidden="false" id="1209-af56-c9b9-1f32" type="selectionEntry" targetId="df1f-937a-7be9-2333">
           <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="70f2-430e-1e53-96b1"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a84d-9d82-41ed-9cf5"/>
+            <constraint type="min" value="0" field="selections" scope="self" shared="true" id="70f2-430e-1e53-96b1" includeChildSelections="true"/>
+            <constraint type="max" value="1" field="selections" scope="self" shared="true" id="a84d-9d82-41ed-9cf5" includeChildSelections="true"/>
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Faction Commander" hidden="false" id="e3bc-8b65-fa53-dd63" type="selectionEntryGroup" targetId="559c-3a9d-c868-a179"/>
@@ -1772,7 +1813,7 @@
       <categoryLinks>
         <categoryLink targetId="9cb1-f70a-60f2-5d11" id="8cef-19a1-6e6d-4d33" primary="true" name="Escort"/>
         <categoryLink targetId="b034-e255-5fb8-51b1" id="47f0-159e-1a07-a735" primary="false" name="SINO Russian Pact"/>
-        <categoryLink targetId="2db9-9828-2b94-e476" id="ba09-1e89-1082-9b38" primary="false" name="SHIPS_ALLOWED"/>
+        <categoryLink targetId="2db9-9828-2b94-e476" id="ba09-1e89-1082-9b38" primary="false" name="Ship"/>
       </categoryLinks>
       <profiles>
         <profile name="Corvette" typeId="fd62-daee-6b9c-c612" typeName="Ship Stats" hidden="false" id="12c5-8313-abd9-f633">
@@ -1796,8 +1837,8 @@
         </entryLink>
         <entryLink import="true" name="Commander" hidden="false" id="168e-2236-d06b-376f" type="selectionEntry" targetId="df1f-937a-7be9-2333">
           <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="4440-2642-6efc-5409"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7ec7-099f-0754-d29a"/>
+            <constraint type="min" value="0" field="selections" scope="self" shared="true" id="4440-2642-6efc-5409" includeChildSelections="true"/>
+            <constraint type="max" value="1" field="selections" scope="self" shared="true" id="7ec7-099f-0754-d29a" includeChildSelections="true"/>
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Faction Commander" hidden="false" id="aaeb-b4e8-18d5-eade" type="selectionEntryGroup" targetId="559c-3a9d-c868-a179"/>
@@ -1978,6 +2019,9 @@
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Mines" hidden="false" id="c3a9-452b-830f-7473" type="selectionEntryGroup" targetId="8058-16c8-a6a8-624e"/>
+      </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Faction Commander" id="559c-3a9d-c868-a179" hidden="false" publicationId="3942-1ba6-967b-c9ed" page="15-18">
       <selectionEntries>
@@ -1985,6 +2029,7 @@
           <categoryLinks>
             <categoryLink targetId="b5b8-5ac8-4c77-cbb0" id="7ae7-e9ed-4643-d3f7" primary="true" name="Commander"/>
             <categoryLink targetId="b034-e255-5fb8-51b1" id="19b2-78f0-18c1-5878" primary="false" name="SINO Russian Pact"/>
+            <categoryLink targetId="3dd4-ce23-6c07-83db" id="31ee-5d21-3667-c57c" primary="false" name="ALLOW_12_SHIPS"/>
           </categoryLinks>
           <profiles>
             <profile name="Rear Admiral Dong Huo" typeId="f8e8-01a8-098b-ca12" typeName="Commander stats" hidden="false" id="b7e2-7053-3e26-0530">
@@ -2044,6 +2089,7 @@
           <categoryLinks>
             <categoryLink targetId="b034-e255-5fb8-51b1" id="aadf-fc39-fe1b-3a11" primary="false" name="SINO Russian Pact"/>
             <categoryLink targetId="b5b8-5ac8-4c77-cbb0" id="03fe-7b34-247d-a327" primary="true" name="Commander"/>
+            <categoryLink targetId="3e76-94f8-896c-2354" id="e121-ff4b-a26c-c07f" primary="false" name="ALLOW_9_SHIPS"/>
           </categoryLinks>
           <profiles>
             <profile name="Rear Admiral Vlasova" typeId="f8e8-01a8-098b-ca12" typeName="Commander stats" hidden="false" id="fdf8-f9c4-6392-71e0">
@@ -2102,6 +2148,7 @@
           <categoryLinks>
             <categoryLink targetId="b034-e255-5fb8-51b1" id="aabc-7036-d4f9-17a9" primary="false" name="SINO Russian Pact"/>
             <categoryLink targetId="b5b8-5ac8-4c77-cbb0" id="1fc2-fcba-1b44-41cb" primary="true" name="Commander"/>
+            <categoryLink targetId="c939-66e5-c157-f0f8" id="ef57-114d-378b-6f90" primary="false" name="ALLOW_6_SHIPS"/>
           </categoryLinks>
         </selectionEntry>
         <selectionEntry type="unit" import="true" name="Captain Karol Aleksandrov" hidden="false" id="47db-879b-ac84-1155" publicationId="3942-1ba6-967b-c9ed" page="18">
@@ -2132,6 +2179,7 @@
           <categoryLinks>
             <categoryLink targetId="b034-e255-5fb8-51b1" id="29c2-333d-7308-e408" primary="false" name="SINO Russian Pact"/>
             <categoryLink targetId="b5b8-5ac8-4c77-cbb0" id="4ed3-ac4d-001f-3dae" primary="true" name="Commander"/>
+            <categoryLink targetId="b40d-40da-009b-a4a9" id="74b0-da3f-393d-97f2" primary="false" name="ALLOW_8_SHIPS"/>
           </categoryLinks>
         </selectionEntry>
         <selectionEntry type="unit" import="true" name="Rear Admiral Solovev" hidden="false" id="0bbc-d34b-9bb9-c921" publicationId="3942-1ba6-967b-c9ed" page="18">
@@ -2141,6 +2189,7 @@
           <categoryLinks>
             <categoryLink targetId="b5b8-5ac8-4c77-cbb0" id="d67f-2219-0317-aad6" primary="true" name="Commander"/>
             <categoryLink targetId="b034-e255-5fb8-51b1" id="867a-4dbe-a516-5be5" primary="false" name="SINO Russian Pact"/>
+            <categoryLink targetId="c939-66e5-c157-f0f8" id="9ad6-7e59-6a6a-0b51" primary="false" name="ALLOW_6_SHIPS"/>
           </categoryLinks>
           <profiles>
             <profile name="Rear Admiral Solovev" typeId="f8e8-01a8-098b-ca12" typeName="Commander stats" hidden="false" id="b039-45d1-227b-2037">

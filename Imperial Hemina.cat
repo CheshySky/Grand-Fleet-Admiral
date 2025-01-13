@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="dbf3-b055-c4e9-fc31" name="Imperial Hemina" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="8ee7-a3b6-0307-7e64" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="dbf3-b055-c4e9-fc31" name="Imperial Hemina" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="8ee7-a3b6-0307-7e64" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <entryLinks>
     <entryLink id="737a-f16a-a62a-60a4" name="Light Cruiser" hidden="false" collective="false" import="true" targetId="e7f4-f372-0837-5d16" type="selectionEntry"/>
     <entryLink id="d2e0-7d59-af09-0e66" name="Frigate" hidden="false" collective="false" import="true" targetId="a541-a97d-67d6-eee3" type="selectionEntry"/>
@@ -72,6 +72,7 @@
       <categoryLinks>
         <categoryLink id="f099-6816-80fd-aad3" name="Capital" hidden="false" targetId="ddf0-e667-c5bb-bfd0" primary="true"/>
         <categoryLink id="5209-1530-46bd-26f5" name="Imperial Hemina" hidden="false" targetId="1117-20a0-a34d-68bd" primary="false"/>
+        <categoryLink targetId="2db9-9828-2b94-e476" id="1b2c-4fb7-2c77-e353" primary="false" name="Ship"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="dd91-6a13-e7e1-16d4" name="+2 Assault Bays" publicationId="3942-1ba6-967b-c9ed" page="62" hidden="false" collective="false" import="true" type="upgrade" sortIndex="4">
@@ -120,12 +121,26 @@
             <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8dcd-446a-67cd-6cce" type="max"/>
             <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="906e-e459-e102-2a6d" type="min"/>
           </constraints>
+          <modifiers>
+            <modifier type="decrement" value="1" field="8dcd-446a-67cd-6cce">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="353d-cc83-9d26-a02f" shared="true" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
         </entryLink>
         <entryLink id="9fa3-3c3b-c6dd-7363" name="Commander" hidden="false" collective="false" import="true" targetId="df1f-937a-7be9-2333" type="selectionEntry" sortIndex="1">
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="97bf-a5ba-ef7a-d58b" type="max"/>
-            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8231-7f0d-39fc-9132" type="min"/>
+            <constraint field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="97bf-a5ba-ef7a-d58b" type="max"/>
+            <constraint field="selections" scope="self" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8231-7f0d-39fc-9132" type="min"/>
           </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Imperial Hemina Commander" hidden="false" id="7abb-79e4-b96c-9d8f" collective="false" targetId="35d8-7348-7bb0-6b11" type="selectionEntryGroup">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3f1d-49a5-af62-0802" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </entryLink>
       </entryLinks>
       <costs>
@@ -244,6 +259,7 @@
       <categoryLinks>
         <categoryLink id="be08-6a5d-ae0c-ce6b" name="Escort" hidden="false" targetId="9cb1-f70a-60f2-5d11" primary="true"/>
         <categoryLink id="1635-3764-78e8-0b08" name="Imperial Hemina" hidden="false" targetId="1117-20a0-a34d-68bd" primary="false"/>
+        <categoryLink targetId="2db9-9828-2b94-e476" id="b5fc-8158-1248-529c" primary="false" name="Ship"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="a6e8-de4a-156e-d561" name="Disruptor Cannon" hidden="false" collective="false" import="true" targetId="48ed-edd2-a6ac-a720" type="selectionEntry">
@@ -260,8 +276,8 @@
         </entryLink>
         <entryLink id="84f0-9961-f195-7a63" name="Commander" hidden="false" collective="false" import="true" targetId="df1f-937a-7be9-2333" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="80b8-fca5-828f-e7f8" type="max"/>
-            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d718-8de2-da8f-8228" type="min"/>
+            <constraint field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="80b8-fca5-828f-e7f8" type="max"/>
+            <constraint field="selections" scope="self" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d718-8de2-da8f-8228" type="min"/>
           </constraints>
           <entryLinks>
             <entryLink id="95da-70bc-16c1-6acb" name="Imperial Hemina Commander" hidden="false" collective="false" import="true" targetId="35d8-7348-7bb0-6b11" type="selectionEntryGroup"/>
@@ -317,6 +333,7 @@
         <categoryLink id="2270-68c0-a60c-3ddd" name="Capital" hidden="false" targetId="ddf0-e667-c5bb-bfd0" primary="true"/>
         <categoryLink id="f416-3c80-6fa4-7416" name="Imperial Hemina" hidden="false" targetId="1117-20a0-a34d-68bd" primary="false"/>
         <categoryLink targetId="f40f-3734-00a7-9824" id="3862-99b1-5499-2256" primary="false" name="not vanguard eligible"/>
+        <categoryLink targetId="2db9-9828-2b94-e476" id="ae11-feec-4781-e42e" primary="false" name="Ship"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="8b63-7aab-c106-aba1" name="+2 Assault Bays" publicationId="3942-1ba6-967b-c9ed" page="62" hidden="false" collective="false" import="true" type="upgrade">
@@ -362,8 +379,8 @@
         </entryLink>
         <entryLink id="a3cc-e95e-9422-a2b4" name="Commander" hidden="false" collective="false" import="true" targetId="df1f-937a-7be9-2333" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9eca-df95-e0ee-4942" type="max"/>
-            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f543-cfeb-4b63-1736" type="min"/>
+            <constraint field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9eca-df95-e0ee-4942" type="max"/>
+            <constraint field="selections" scope="self" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f543-cfeb-4b63-1736" type="min"/>
           </constraints>
           <entryLinks>
             <entryLink id="635c-a512-bab1-4674" name="Imperial Hemina Commander" hidden="false" collective="false" import="true" targetId="35d8-7348-7bb0-6b11" type="selectionEntryGroup">
@@ -440,6 +457,7 @@
       <categoryLinks>
         <categoryLink id="c662-c267-d5e3-f576" name="support" hidden="false" targetId="ff8c-6404-d96c-d06e" primary="true"/>
         <categoryLink id="5604-0b7c-72a7-4aae" name="Imperial Hemina" hidden="false" targetId="1117-20a0-a34d-68bd" primary="false"/>
+        <categoryLink targetId="2db9-9828-2b94-e476" id="818f-5f71-0cde-d0c5" primary="false" name="Ship"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="4a9e-9d21-e6f7-b43e" name="Disruptor Cannon" hidden="false" collective="false" import="true" targetId="48ed-edd2-a6ac-a720" type="selectionEntry">
@@ -456,8 +474,8 @@
         </entryLink>
         <entryLink id="2ed0-58e7-c531-f24c" name="Commander" hidden="false" collective="false" import="true" targetId="df1f-937a-7be9-2333" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a13-5da5-ebea-df9e" type="max"/>
-            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e465-0803-276e-d938" type="min"/>
+            <constraint field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3a13-5da5-ebea-df9e" type="max"/>
+            <constraint field="selections" scope="self" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e465-0803-276e-d938" type="min"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -499,6 +517,7 @@
         <categoryLink id="bbd0-cf17-0086-5f1a" name="Imperial Hemina" hidden="false" targetId="1117-20a0-a34d-68bd" primary="false"/>
         <categoryLink id="093d-ebbb-a8a2-3228" name="Heavy" hidden="false" targetId="99a8-81d3-ead9-288b" primary="false"/>
         <categoryLink targetId="f40f-3734-00a7-9824" id="fb3d-3665-80ed-0819" primary="false" name="not vanguard eligible"/>
+        <categoryLink targetId="2db9-9828-2b94-e476" id="7440-a70d-2255-1a14" primary="false" name="Ship"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="4fd2-5692-e330-db60" name="Armoured Reactor Core" publicationId="3942-1ba6-967b-c9ed" page="62" hidden="false" collective="false" import="true" type="upgrade">
@@ -541,8 +560,8 @@
         </entryLink>
         <entryLink id="cd4d-c232-3f77-89fa" name="Commander" hidden="false" collective="false" import="true" targetId="df1f-937a-7be9-2333" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3658-07f9-4217-5a46" type="max"/>
-            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b24-985b-efd4-59b5" type="min"/>
+            <constraint field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3658-07f9-4217-5a46" type="max"/>
+            <constraint field="selections" scope="self" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0b24-985b-efd4-59b5" type="min"/>
           </constraints>
           <entryLinks>
             <entryLink id="1ed5-e0b8-dc21-1d25" name="Imperial Hemina Commander" hidden="false" collective="false" import="true" targetId="35d8-7348-7bb0-6b11" type="selectionEntryGroup">
@@ -612,6 +631,7 @@
         <categoryLink id="d0d0-c80f-7668-1f1a" name="Capital" hidden="false" targetId="ddf0-e667-c5bb-bfd0" primary="true"/>
         <categoryLink id="df99-9da0-c809-a5b7" name="Imperial Hemina" hidden="false" targetId="1117-20a0-a34d-68bd" primary="false"/>
         <categoryLink targetId="f40f-3734-00a7-9824" id="b90b-daf5-68be-e6c1" primary="false" name="not vanguard eligible"/>
+        <categoryLink targetId="2db9-9828-2b94-e476" id="3ac5-7419-6d69-18b0" primary="false" name="Ship"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="1138-4ed1-02dc-6973" name="+1 Max Thrust" hidden="false" collective="false" import="true" type="upgrade">
@@ -627,8 +647,8 @@
       <entryLinks>
         <entryLink id="20ab-44dd-17d5-e896" name="Commander" hidden="false" collective="false" import="true" targetId="df1f-937a-7be9-2333" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e290-2336-3736-2fd7" type="max"/>
-            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a4ee-670b-6c97-98eb" type="min"/>
+            <constraint field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e290-2336-3736-2fd7" type="max"/>
+            <constraint field="selections" scope="self" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a4ee-670b-6c97-98eb" type="min"/>
           </constraints>
           <entryLinks>
             <entryLink id="39de-ef4e-dc93-8a74" name="Imperial Hemina Commander" hidden="false" collective="false" import="true" targetId="35d8-7348-7bb0-6b11" type="selectionEntryGroup">
@@ -703,6 +723,7 @@
         <categoryLink id="bdb8-5c9a-6e0a-9a28" name="Heavy" hidden="false" targetId="99a8-81d3-ead9-288b" primary="false"/>
         <categoryLink id="4605-c85f-f6e0-460b" name="Imperial Hemina" hidden="false" targetId="1117-20a0-a34d-68bd" primary="false"/>
         <categoryLink targetId="f40f-3734-00a7-9824" id="6798-8bda-f3bc-b030" primary="false" name="not vanguard eligible"/>
+        <categoryLink targetId="2db9-9828-2b94-e476" id="4b2f-ae6a-f8ab-af9c" primary="false" name="Ship"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="bb69-2355-5965-090d" name="Flag Bridge" publicationId="3942-1ba6-967b-c9ed" page="62" hidden="false" collective="false" import="true" type="upgrade">
@@ -742,8 +763,8 @@
         </entryLink>
         <entryLink id="4904-135f-57cb-e24b" name="Commander" hidden="false" collective="false" import="true" targetId="df1f-937a-7be9-2333" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8597-d9fb-570e-dcba" type="max"/>
-            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d225-87e1-ab87-4afe" type="min"/>
+            <constraint field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8597-d9fb-570e-dcba" type="max"/>
+            <constraint field="selections" scope="self" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d225-87e1-ab87-4afe" type="min"/>
           </constraints>
           <entryLinks>
             <entryLink id="ab2d-b19d-f02c-42bc" name="Imperial Hemina Commander" hidden="false" collective="false" import="true" targetId="35d8-7348-7bb0-6b11" type="selectionEntryGroup">
@@ -764,6 +785,11 @@
               <conditions>
                 <condition field="selections" scope="b648-e884-4c46-7d17" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3d86-c638-c45f-c46d" type="equalTo"/>
               </conditions>
+            </modifier>
+            <modifier type="decrement" value="1" field="e6f9-3cc2-52b8-b21b">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="353d-cc83-9d26-a02f" shared="true" roundUp="false"/>
+              </repeats>
             </modifier>
           </modifiers>
           <constraints>
@@ -823,6 +849,7 @@
         <categoryLink id="a8a1-5ce3-037f-c101" name="Imperial Hemina" hidden="false" targetId="1117-20a0-a34d-68bd" primary="false"/>
         <categoryLink id="c945-f630-1516-fe6b" name="Heavy" hidden="false" targetId="99a8-81d3-ead9-288b" primary="false"/>
         <categoryLink targetId="f40f-3734-00a7-9824" id="5361-bcd2-d9c8-bfaf" primary="false" name="not vanguard eligible"/>
+        <categoryLink targetId="2db9-9828-2b94-e476" id="ce78-9c66-d300-3561" primary="false" name="Ship"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="61d3-3a6e-f984-0dca" name="Armoured Reactor Core" hidden="false" collective="false" import="true" type="upgrade">
@@ -853,8 +880,8 @@
       <entryLinks>
         <entryLink id="6986-0c0a-4569-0fc6" name="Commander" hidden="false" collective="false" import="true" targetId="df1f-937a-7be9-2333" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6ffa-2b0f-8035-cd3d" type="max"/>
-            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3c94-0936-6312-4568" type="min"/>
+            <constraint field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6ffa-2b0f-8035-cd3d" type="max"/>
+            <constraint field="selections" scope="self" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3c94-0936-6312-4568" type="min"/>
           </constraints>
           <entryLinks>
             <entryLink id="e8b8-bb3a-24ae-9ba3" name="Imperial Hemina Commander" hidden="false" collective="false" import="true" targetId="35d8-7348-7bb0-6b11" type="selectionEntryGroup">
@@ -887,6 +914,13 @@
             <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="4fa0-c215-3d13-c79d"/>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="49e0-9e2b-ef54-d0fe"/>
           </constraints>
+          <modifiers>
+            <modifier type="decrement" value="1" field="49e0-9e2b-ef54-d0fe">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="353d-cc83-9d26-a02f" shared="true" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
         </entryLink>
       </entryLinks>
       <costs>
@@ -937,6 +971,7 @@
         <categoryLink id="ecd3-24b8-ea3f-cd05" name="Capital" hidden="false" targetId="ddf0-e667-c5bb-bfd0" primary="true"/>
         <categoryLink id="15cc-5a95-332c-c31c" name="Imperial Hemina" hidden="false" targetId="1117-20a0-a34d-68bd" primary="false"/>
         <categoryLink targetId="f40f-3734-00a7-9824" id="1c75-4712-aa77-018c" primary="false" name="not vanguard eligible"/>
+        <categoryLink targetId="2db9-9828-2b94-e476" id="998d-f3da-2d54-6099" primary="false" name="Ship"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="b884-bfc4-15c5-7656" name="Disruptor Cannon" hidden="false" collective="false" import="true" targetId="48ed-edd2-a6ac-a720" type="selectionEntry">
@@ -953,8 +988,8 @@
         </entryLink>
         <entryLink id="b982-35b0-1de1-2982" name="Commander" hidden="false" collective="false" import="true" targetId="df1f-937a-7be9-2333" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cfc3-c3a1-547e-763b" type="max"/>
-            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fc8d-6a6c-3489-a792" type="min"/>
+            <constraint field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="cfc3-c3a1-547e-763b" type="max"/>
+            <constraint field="selections" scope="self" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="fc8d-6a6c-3489-a792" type="min"/>
           </constraints>
           <entryLinks>
             <entryLink id="561f-c268-10de-3f20" name="Imperial Hemina Commander" hidden="false" collective="false" import="true" targetId="35d8-7348-7bb0-6b11" type="selectionEntryGroup">
@@ -1068,6 +1103,7 @@
         <categoryLink id="c58e-1d78-ab39-0dfd" name="Capital" hidden="false" targetId="ddf0-e667-c5bb-bfd0" primary="true"/>
         <categoryLink id="6ab8-5d4c-0bbd-3b9a" name="Imperial Hemina" hidden="false" targetId="1117-20a0-a34d-68bd" primary="false"/>
         <categoryLink targetId="b5b8-5ac8-4c77-cbb0" id="a394-2135-f983-ef7d" primary="false" name="Commander"/>
+        <categoryLink targetId="2db9-9828-2b94-e476" id="94f6-66ca-47d4-e8fd" primary="false" name="Ship"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="3fdb-2c77-d331-0214" name="+4 Strike Bay" hidden="false" collective="false" import="true" type="upgrade">
@@ -1104,8 +1140,8 @@
         </entryLink>
         <entryLink id="b154-73b8-44b4-fbad" name="Commander" hidden="false" collective="false" import="true" targetId="df1f-937a-7be9-2333" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df6e-a4b9-8fe3-8594" type="max"/>
-            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1095-044b-8ea9-f75e" type="min"/>
+            <constraint field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="df6e-a4b9-8fe3-8594" type="max"/>
+            <constraint field="selections" scope="self" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1095-044b-8ea9-f75e" type="min"/>
           </constraints>
           <entryLinks>
             <entryLink id="7a21-96fe-6300-35d0" name="Imperial Hemina Commander" hidden="false" collective="false" import="true" targetId="35d8-7348-7bb0-6b11" type="selectionEntryGroup">
@@ -1119,6 +1155,24 @@
               </constraints>
             </entryLink>
           </entryLinks>
+        </entryLink>
+        <entryLink import="true" name="Strike Craft" hidden="false" id="4ff1-e2e3-8c11-dae1" type="selectionEntryGroup" targetId="d2a5-4e87-5237-35d0">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="ba76-cd57-1c51-3a71"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="258d-d5d5-8a41-abdb"/>
+          </constraints>
+          <modifiers>
+            <modifier type="increment" value="4" field="258d-d5d5-8a41-abdb">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="3fdb-2c77-d331-0214" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" value="1" field="258d-d5d5-8a41-abdb">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="353d-cc83-9d26-a02f" shared="true" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
         </entryLink>
       </entryLinks>
       <costs>
@@ -1162,12 +1216,13 @@
         <categoryLink id="1e8a-8c24-1b8d-6e58" name="Capital" hidden="false" targetId="ddf0-e667-c5bb-bfd0" primary="true"/>
         <categoryLink targetId="1117-20a0-a34d-68bd" id="c75b-9ad0-ddf0-ef15" primary="false" name="Imperial Hemina"/>
         <categoryLink targetId="f40f-3734-00a7-9824" id="6dbf-b16e-0f21-1a72" primary="false" name="not vanguard eligible"/>
+        <categoryLink targetId="2db9-9828-2b94-e476" id="0007-9c97-f9af-9e6f" primary="false" name="Ship"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="8874-95e8-e707-3454" name="Commander" hidden="false" collective="false" import="true" targetId="df1f-937a-7be9-2333" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d81f-c51c-5e5a-77b6" type="max"/>
-            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4b7e-0ab2-3ac1-d318" type="min"/>
+            <constraint field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d81f-c51c-5e5a-77b6" type="max"/>
+            <constraint field="selections" scope="self" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4b7e-0ab2-3ac1-d318" type="min"/>
           </constraints>
           <entryLinks>
             <entryLink id="6c2e-1784-930e-5171" name="Imperial Hemina Commander" hidden="false" collective="false" import="true" targetId="35d8-7348-7bb0-6b11" type="selectionEntryGroup">
@@ -1189,6 +1244,7 @@
               <categoryLinks>
                 <categoryLink targetId="b5b8-5ac8-4c77-cbb0" id="d918-df7f-cd95-8ea6" primary="true" name="Commander"/>
                 <categoryLink targetId="90dc-f798-1fec-353f" id="de5a-4179-940a-64a5" primary="false" name="Tribune Cassus [Extra assault slots]"/>
+                <categoryLink targetId="c939-66e5-c157-f0f8" id="1193-17a2-469a-6ded" primary="false" name="ALLOW_6_SHIPS"/>
               </categoryLinks>
               <profiles>
                 <profile name="Tribune Cassus" typeId="f8e8-01a8-098b-ca12" typeName="Commander stats" hidden="false" id="205d-30ea-8198-20e4">
@@ -1275,6 +1331,7 @@
         <categoryLink id="aa13-8a94-a58f-aeb7" name="Heavy" hidden="false" targetId="99a8-81d3-ead9-288b" primary="false"/>
         <categoryLink targetId="1117-20a0-a34d-68bd" id="f4c2-a7a9-28d8-2021" primary="false" name="Imperial Hemina"/>
         <categoryLink targetId="f40f-3734-00a7-9824" id="8b5a-9193-260e-7dc7" primary="false" name="not vanguard eligible"/>
+        <categoryLink targetId="2db9-9828-2b94-e476" id="6ea1-32c0-31e9-18b7" primary="false" name="Ship"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="1e73-3336-1dc7-1222" name="Armoured Reactor Core" publicationId="3942-1ba6-967b-c9ed" page="62" hidden="false" collective="false" import="true" type="upgrade">
@@ -1311,8 +1368,8 @@
         </entryLink>
         <entryLink id="e4e0-3ac7-e07f-797a" name="Commander" hidden="false" collective="false" import="true" targetId="df1f-937a-7be9-2333" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="99e5-f0d2-129b-7e43" type="max"/>
-            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="948f-a00e-b63d-b757" type="min"/>
+            <constraint field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="99e5-f0d2-129b-7e43" type="max"/>
+            <constraint field="selections" scope="self" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="948f-a00e-b63d-b757" type="min"/>
           </constraints>
           <entryLinks>
             <entryLink id="1540-1ccc-f363-ae4f" name="Prefect Lupinus [Reformed Only]" hidden="false" collective="false" import="true" targetId="167e-94c1-d160-de1e" type="selectionEntryGroup">
@@ -1356,6 +1413,7 @@
         <categoryLink id="7814-c2f1-15c5-13c2" name="support" hidden="false" targetId="ff8c-6404-d96c-d06e" primary="true"/>
         <categoryLink targetId="1117-20a0-a34d-68bd" id="c984-d40b-73f5-d78c" primary="false" name="Imperial Hemina"/>
         <categoryLink targetId="f40f-3734-00a7-9824" id="c647-ebaa-5e37-d56c" primary="false" name="not vanguard eligible"/>
+        <categoryLink targetId="2db9-9828-2b94-e476" id="a78e-ffda-9116-436e" primary="false" name="Ship"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="acfd-7e8a-b7fa-15a2" name="+1 Assault Bay" hidden="false" collective="false" import="true" type="upgrade">
@@ -1391,9 +1449,12 @@
         </entryLink>
         <entryLink id="ae7a-15f8-e5f6-18eb" name="Commander" hidden="false" collective="false" import="true" targetId="df1f-937a-7be9-2333" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3820-cf0b-e06f-7c8f" type="max"/>
-            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="acb3-ed7b-6ddb-e15a" type="min"/>
+            <constraint field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3820-cf0b-e06f-7c8f" type="max"/>
+            <constraint field="selections" scope="self" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="acb3-ed7b-6ddb-e15a" type="min"/>
           </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Imperial Hemina Commander" hidden="false" id="5d6b-f79e-42da-e286" collective="false" targetId="35d8-7348-7bb0-6b11" type="selectionEntryGroup"/>
+          </entryLinks>
         </entryLink>
       </entryLinks>
       <costs>
@@ -1443,6 +1504,7 @@
       <categoryLinks>
         <categoryLink id="0c18-bdae-d202-a096" name="support" hidden="false" targetId="ff8c-6404-d96c-d06e" primary="true"/>
         <categoryLink targetId="1117-20a0-a34d-68bd" id="6395-33ad-34d8-01c7" primary="false" name="Imperial Hemina"/>
+        <categoryLink targetId="2db9-9828-2b94-e476" id="9b36-26e2-df40-5fb5" primary="false" name="Ship"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="584f-b9f3-238d-189b" name="+1 ADS" hidden="false" collective="false" import="true" type="upgrade">
@@ -1458,8 +1520,8 @@
       <entryLinks>
         <entryLink id="840e-60d4-d42c-7eb1" name="Commander" hidden="false" collective="false" import="true" targetId="df1f-937a-7be9-2333" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f54f-bf6a-c4e9-768f" type="max"/>
-            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f081-f774-6192-bd9e" type="min"/>
+            <constraint field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f54f-bf6a-c4e9-768f" type="max"/>
+            <constraint field="selections" scope="self" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f081-f774-6192-bd9e" type="min"/>
           </constraints>
           <entryLinks>
             <entryLink id="d690-950e-571f-7700" name="Prefect Lupinus [Reformed Only]" hidden="false" collective="false" import="true" targetId="167e-94c1-d160-de1e" type="selectionEntryGroup">
@@ -1524,6 +1586,7 @@
       <categoryLinks>
         <categoryLink id="ae11-e137-9831-c696" name="support" hidden="false" targetId="ff8c-6404-d96c-d06e" primary="true"/>
         <categoryLink targetId="1117-20a0-a34d-68bd" id="e51a-cfcd-4165-8720" primary="false" name="Imperial Hemina"/>
+        <categoryLink targetId="2db9-9828-2b94-e476" id="59d5-f61f-5abc-c920" primary="false" name="Ship"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="a856-0e17-235e-e9b9" name="Photon Torpedo (ord)" hidden="false" collective="false" import="true" targetId="6735-8692-ee9a-f3f6" type="selectionEntry">
@@ -1540,8 +1603,8 @@
         </entryLink>
         <entryLink id="dc8b-5f3f-f3c4-f45e" name="Commander" hidden="false" collective="false" import="true" targetId="df1f-937a-7be9-2333" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3d98-b9c4-d3e6-2346" type="max"/>
-            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cb9f-95a4-a778-aa23" type="min"/>
+            <constraint field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3d98-b9c4-d3e6-2346" type="max"/>
+            <constraint field="selections" scope="self" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="cb9f-95a4-a778-aa23" type="min"/>
           </constraints>
           <entryLinks>
             <entryLink id="fa0c-7ff5-48c2-bbb9" name="Imperial Hemina Commander" hidden="false" collective="false" import="true" targetId="35d8-7348-7bb0-6b11" type="selectionEntryGroup">
@@ -1598,6 +1661,7 @@
       <categoryLinks>
         <categoryLink id="14b1-4a79-b6be-0abc" name="support" hidden="false" targetId="ff8c-6404-d96c-d06e" primary="true"/>
         <categoryLink targetId="1117-20a0-a34d-68bd" id="bb72-619b-eb78-e1c6" primary="false" name="Imperial Hemina"/>
+        <categoryLink targetId="2db9-9828-2b94-e476" id="8d7b-10b4-9522-ea8a" primary="false" name="Ship"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="8f51-b4b8-26a3-ee11" name="Particle Laser" hidden="false" collective="false" import="true" targetId="44f1-16a6-a351-ba77" type="selectionEntry">
@@ -1608,8 +1672,8 @@
         </entryLink>
         <entryLink id="0273-531a-b1bb-4662" name="Commander" hidden="false" collective="false" import="true" targetId="df1f-937a-7be9-2333" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9708-aad8-66e6-b088" type="max"/>
-            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9e3b-a80d-a5fc-3060" type="min"/>
+            <constraint field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9708-aad8-66e6-b088" type="max"/>
+            <constraint field="selections" scope="self" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9e3b-a80d-a5fc-3060" type="min"/>
           </constraints>
           <entryLinks>
             <entryLink id="3c35-70bf-4439-f1b5" name="Imperial Hemina Commander" hidden="false" collective="false" import="true" targetId="35d8-7348-7bb0-6b11" type="selectionEntryGroup">
@@ -1678,12 +1742,13 @@
       <categoryLinks>
         <categoryLink id="0afa-c440-588a-33a5" name="Escort" hidden="false" targetId="9cb1-f70a-60f2-5d11" primary="true"/>
         <categoryLink targetId="1117-20a0-a34d-68bd" id="e708-fab6-e6f6-517a" primary="false" name="Imperial Hemina"/>
+        <categoryLink targetId="2db9-9828-2b94-e476" id="9a11-6826-5654-880f" primary="false" name="Ship"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="1fe1-522d-d36f-ac62" name="Commander" hidden="false" collective="false" import="true" targetId="df1f-937a-7be9-2333" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="756b-1155-5d71-7600" type="max"/>
-            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bd2e-b467-1f78-2de2" type="min"/>
+            <constraint field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="756b-1155-5d71-7600" type="max"/>
+            <constraint field="selections" scope="self" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="bd2e-b467-1f78-2de2" type="min"/>
           </constraints>
           <entryLinks>
             <entryLink id="79e1-6929-a196-21b3" name="Imperial Hemina Commander" hidden="false" collective="false" import="true" targetId="35d8-7348-7bb0-6b11" type="selectionEntryGroup">
@@ -1746,6 +1811,7 @@
       <categoryLinks>
         <categoryLink id="7b9b-0b50-f0b7-d9a9" name="Escort" hidden="false" targetId="9cb1-f70a-60f2-5d11" primary="true"/>
         <categoryLink targetId="1117-20a0-a34d-68bd" id="f65a-c10c-56a6-eb15" primary="false" name="Imperial Hemina"/>
+        <categoryLink targetId="2db9-9828-2b94-e476" id="8438-1381-997a-c545" primary="false" name="Ship"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="4eea-3241-9194-106f" name="Disruptor Cannon" hidden="false" collective="false" import="true" targetId="48ed-edd2-a6ac-a720" type="selectionEntry">
@@ -1756,8 +1822,8 @@
         </entryLink>
         <entryLink id="85ce-90d1-e36e-3747" name="Commander" hidden="false" collective="false" import="true" targetId="df1f-937a-7be9-2333" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="13e9-7633-5f45-74cf" type="max"/>
-            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="420d-8eb5-6af5-3088" type="min"/>
+            <constraint field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="13e9-7633-5f45-74cf" type="max"/>
+            <constraint field="selections" scope="self" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="420d-8eb5-6af5-3088" type="min"/>
           </constraints>
           <entryLinks>
             <entryLink id="6045-9619-4dfe-5492" name="Prefect Lupinus [Reformed Only]" hidden="false" collective="false" import="true" targetId="167e-94c1-d160-de1e" type="selectionEntryGroup">
@@ -1782,6 +1848,7 @@
         <categoryLink targetId="1117-20a0-a34d-68bd" id="4a5a-8fa4-7b5c-5dae" primary="false" name="Imperial Hemina"/>
         <categoryLink targetId="c773-1620-0702-d575" id="c052-9ffb-b05c-8a58" primary="false" name="Auxiliary"/>
         <categoryLink targetId="f40f-3734-00a7-9824" id="2c7b-ab6f-e7c7-2424" primary="false" name="not vanguard eligible"/>
+        <categoryLink targetId="2db9-9828-2b94-e476" id="2fc8-09a3-df67-da20" primary="false" name="Ship"/>
       </categoryLinks>
       <modifiers>
         <modifier type="add" value="b5b8-5ac8-4c77-cbb0" field="category">
@@ -1807,8 +1874,8 @@
       <entryLinks>
         <entryLink import="true" name="Commander" hidden="false" id="1954-b773-40de-da45" collective="false" targetId="df1f-937a-7be9-2333" type="selectionEntry">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9672-22d7-03b5-3ab0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="cbff-8c94-7616-ca8c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="self" shared="true" id="9672-22d7-03b5-3ab0" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <constraint type="min" value="0" field="selections" scope="self" shared="true" id="cbff-8c94-7616-ca8c" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Imperial Hemina Commander" hidden="false" id="d609-6bb1-fae1-4064" collective="false" targetId="35d8-7348-7bb0-6b11" type="selectionEntryGroup">
@@ -1930,6 +1997,7 @@
         <categoryLink targetId="c773-1620-0702-d575" id="2bd6-5708-c6a2-5991" primary="false" name="Auxiliary"/>
         <categoryLink targetId="ddf0-e667-c5bb-bfd0" id="a709-c025-0faa-40d0" primary="true" name="Capital"/>
         <categoryLink targetId="1117-20a0-a34d-68bd" id="de8b-5818-f84d-e29e" primary="false" name="Imperial Hemina"/>
+        <categoryLink targetId="2db9-9828-2b94-e476" id="66f6-eb2d-1ec4-591b" primary="false" name="Ship"/>
       </categoryLinks>
       <profiles>
         <profile name="Heavy Cruiser" typeId="fd62-daee-6b9c-c612" typeName="Ship Stats" hidden="false" id="a26e-e6e2-bc14-69dd">
@@ -1959,8 +2027,8 @@
         </entryLink>
         <entryLink import="true" name="Commander" hidden="false" id="04f6-638b-2015-71c0" collective="false" targetId="df1f-937a-7be9-2333" type="selectionEntry">
           <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="4ccc-f57c-5d97-70d2"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0a48-7ea0-bc67-160f"/>
+            <constraint type="min" value="0" field="selections" scope="self" shared="true" id="4ccc-f57c-5d97-70d2" includeChildSelections="true"/>
+            <constraint type="max" value="1" field="selections" scope="self" shared="true" id="0a48-7ea0-bc67-160f" includeChildSelections="true"/>
           </constraints>
           <selectionEntries>
             <selectionEntry type="unit" import="true" name="Auxiliary Legate Mirrali" hidden="false" id="9796-79c4-3cd3-8807" publicationId="3942-1ba6-967b-c9ed" page="61">
@@ -1981,12 +2049,16 @@
               </profiles>
               <categoryLinks>
                 <categoryLink name="Commander" hidden="false" id="822a-0e7e-d404-646a" targetId="b5b8-5ac8-4c77-cbb0" primary="true"/>
+                <categoryLink targetId="77ae-ced1-931a-77a4" id="4b04-cd28-8b10-39bf" primary="false" name="ALLOW_10_SHIPS"/>
               </categoryLinks>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7051-3ef9-651e-e180"/>
               </constraints>
             </selectionEntry>
           </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Imperial Hemina Commander" hidden="false" id="17c0-7739-1fb6-d00a" collective="false" targetId="35d8-7348-7bb0-6b11" type="selectionEntryGroup"/>
+          </entryLinks>
         </entryLink>
       </entryLinks>
       <modifiers>
@@ -2088,6 +2160,8 @@
       <categoryLinks>
         <categoryLink targetId="c773-1620-0702-d575" id="9fe8-7c35-09df-a41f" primary="false" name="Auxiliary"/>
         <categoryLink targetId="9cb1-f70a-60f2-5d11" id="0bd2-20cb-dbae-bc80" primary="true" name="Escort"/>
+        <categoryLink targetId="1117-20a0-a34d-68bd" id="b8a7-fb77-c0a4-00ac" primary="false" name="Imperial Hemina"/>
+        <categoryLink targetId="2db9-9828-2b94-e476" id="bd94-71e9-06ff-f3bd" primary="false" name="Ship"/>
       </categoryLinks>
       <infoLinks>
         <infoLink name="ADS X" id="fbdf-4569-a88a-92aa" hidden="false" type="rule" targetId="7b47-f592-16a4-f8f4"/>
@@ -2101,8 +2175,8 @@
         </entryLink>
         <entryLink import="true" name="Commander" hidden="false" id="39f1-5745-b913-94ab" collective="false" targetId="df1f-937a-7be9-2333" type="selectionEntry">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3801-9764-649c-c8b4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="ad68-e50f-fafd-d4cc" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="self" shared="true" id="3801-9764-649c-c8b4" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <constraint type="min" value="0" field="selections" scope="self" shared="true" id="ad68-e50f-fafd-d4cc" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Prefect Lupinus [Reformed Only]" hidden="false" id="fe6d-0757-a680-e44d" collective="false" targetId="167e-94c1-d160-de1e" type="selectionEntryGroup">
@@ -2174,8 +2248,8 @@
         </entryLink>
         <entryLink import="true" name="Commander" hidden="false" id="d89c-cb0b-a72e-79ae" collective="false" targetId="df1f-937a-7be9-2333" type="selectionEntry">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="860f-df8b-f4f9-d7ce" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="da4a-c042-41c3-70ad" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="self" shared="true" id="860f-df8b-f4f9-d7ce" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <constraint type="min" value="0" field="selections" scope="self" shared="true" id="da4a-c042-41c3-70ad" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Prefect Lupinus [Reformed Only]" hidden="false" id="2f12-f6e9-a8fb-3235" collective="false" targetId="167e-94c1-d160-de1e" type="selectionEntryGroup">
@@ -2202,6 +2276,8 @@
       <categoryLinks>
         <categoryLink targetId="c773-1620-0702-d575" id="08e7-b506-f487-cf72" primary="false" name="Auxiliary"/>
         <categoryLink targetId="9cb1-f70a-60f2-5d11" id="0f99-610c-97bb-bbec" primary="true" name="Escort"/>
+        <categoryLink targetId="1117-20a0-a34d-68bd" id="8a7f-0080-128b-a510" primary="false" name="Imperial Hemina"/>
+        <categoryLink targetId="2db9-9828-2b94-e476" id="d9e7-87fc-de9a-d6ff" primary="false" name="Ship"/>
       </categoryLinks>
       <modifiers>
         <modifier type="add" value="b5b8-5ac8-4c77-cbb0" field="category">
@@ -2255,6 +2331,9 @@
           </conditions>
         </modifier>
       </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="1117-20a0-a34d-68bd" id="034b-248e-072c-bb44" primary="false" name="Imperial Hemina"/>
+      </categoryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -2334,6 +2413,9 @@
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Mines" hidden="false" id="353d-cc83-9d26-a02f" type="selectionEntryGroup" targetId="8058-16c8-a6a8-624e"/>
+      </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="b910-5484-9fb7-15ea" name="CQB Companies" publicationId="3942-1ba6-967b-c9ed" page="64" hidden="false" collective="false" import="true">
       <categoryLinks>
@@ -2440,6 +2522,8 @@
           </costs>
           <categoryLinks>
             <categoryLink targetId="b5b8-5ac8-4c77-cbb0" id="6f0c-c316-55e7-5955" primary="true" name="Commander"/>
+            <categoryLink targetId="3dd4-ce23-6c07-83db" id="1d41-1cb0-4463-3a13" primary="false" name="ALLOW_12_SHIPS"/>
+            <categoryLink targetId="1117-20a0-a34d-68bd" id="b48b-cf8b-5676-709e" primary="false" name="Imperial Hemina"/>
           </categoryLinks>
         </selectionEntry>
         <selectionEntry id="6b03-8e5e-c54a-d68c" name="Auxilia Legate Ardini" publicationId="3942-1ba6-967b-c9ed" page="61" hidden="false" collective="false" import="true" type="unit">
@@ -2465,6 +2549,8 @@
           </costs>
           <categoryLinks>
             <categoryLink targetId="b5b8-5ac8-4c77-cbb0" id="2a8f-c916-37b7-f094" primary="true" name="Commander"/>
+            <categoryLink targetId="083a-58ee-6008-542f" id="1222-b8c4-f364-c99a" primary="false" name="ALLOW_5_SHIPS"/>
+            <categoryLink targetId="1117-20a0-a34d-68bd" id="fc21-c05f-51c4-7dbd" primary="false" name="Imperial Hemina"/>
           </categoryLinks>
         </selectionEntry>
       </selectionEntries>
@@ -2491,6 +2577,11 @@
           </rules>
         </selectionEntry>
       </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="b5b8-5ac8-4c77-cbb0" id="a2ee-75c0-4ca5-fa6b" primary="true" name="Commander"/>
+        <categoryLink targetId="b40d-40da-009b-a4a9" id="f057-51d8-55a6-9578" primary="false" name="ALLOW_8_SHIPS"/>
+        <categoryLink targetId="1117-20a0-a34d-68bd" id="c676-2306-af6e-401d" primary="false" name="Imperial Hemina"/>
+      </categoryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="79b5-37ad-ddce-eaa8" name="Empress Herra [Empress Flagship only]" hidden="false" collective="false" import="true">
       <selectionEntries>
@@ -2524,6 +2615,11 @@ units get +1 to rolls</description>
           </categoryLinks>
         </selectionEntry>
       </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="b5b8-5ac8-4c77-cbb0" id="a3b6-076e-8fcd-f2d1" primary="true" name="Commander"/>
+        <categoryLink targetId="98a6-1cad-66d4-06f1" id="3800-6021-8d47-4bd9" primary="false" name="ALLOW_15_SHIPS"/>
+        <categoryLink targetId="1117-20a0-a34d-68bd" id="9c09-a81a-802f-6e5a" primary="false" name="Imperial Hemina"/>
+      </categoryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="167e-94c1-d160-de1e" name="Prefect Lupinus [Reformed Only]" hidden="false" collective="false" import="true">
       <selectionEntries>
@@ -2550,9 +2646,14 @@ units get +1 to rolls</description>
           </costs>
           <categoryLinks>
             <categoryLink targetId="b5b8-5ac8-4c77-cbb0" id="c0e8-8dcd-79f4-b51e" primary="true" name="Commander"/>
+            <categoryLink targetId="1117-20a0-a34d-68bd" id="7558-84ad-c355-0ac5" primary="false" name="Imperial Hemina"/>
           </categoryLinks>
         </selectionEntry>
       </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="b40d-40da-009b-a4a9" id="1832-7b04-9df0-45d0" primary="false" name="ALLOW_8_SHIPS"/>
+        <categoryLink targetId="b5b8-5ac8-4c77-cbb0" id="551c-5f46-f0b0-c50e" primary="true" name="Commander"/>
+      </categoryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="8ee7-a3b6-0307-7e64" name="Grand Fleet Admiral" revision="3" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="8ee7-a3b6-0307-7e64" name="Grand Fleet Admiral" revision="3" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem" authorName="Alicia (Cheshy)">
   <publications>
     <publication id="c478-850b-f9ae-9c10" name="Grand Fleet Admiral Core Rules V2.27" shortName="GFA V2.27"/>
     <publication id="3942-1ba6-967b-c9ed" name="GFA Factions 2.27"/>
@@ -83,8 +83,17 @@
       <comment>This one is meant to be given to all ships that are not eligible to make a vanguard</comment>
     </categoryEntry>
     <categoryEntry name="SINO Russian Pact" id="b034-e255-5fb8-51b1" hidden="false"/>
-    <categoryEntry name="ALLOW_8_SHIPS" id="b40d-40da-009b-a4a9" hidden="false"/>
+    <categoryEntry name="ALLOW_8_SHIPS" id="b40d-40da-009b-a4a9" hidden="true"/>
     <categoryEntry name="Ship" id="2db9-9828-2b94-e476" hidden="false"/>
+    <categoryEntry name="ALLOW_12_SHIPS" id="3dd4-ce23-6c07-83db" hidden="true"/>
+    <categoryEntry name="ALLOW_5_SHIPS" id="083a-58ee-6008-542f" hidden="true"/>
+    <categoryEntry name="ALLOW_15_SHIPS" id="98a6-1cad-66d4-06f1" hidden="true"/>
+    <categoryEntry name="ALLOW_10_SHIPS" id="77ae-ced1-931a-77a4" hidden="true"/>
+    <categoryEntry name="ALLOW_6_SHIPS" id="c939-66e5-c157-f0f8" hidden="true"/>
+    <categoryEntry name="ALLOW_9_SHIPS" id="3e76-94f8-896c-2354" hidden="true"/>
+    <categoryEntry name="ALLOW_3_SHIPS" id="7f60-7f72-12ff-0246" hidden="true"/>
+    <categoryEntry name="ALLOW_7_SHIPS" id="3b9b-e843-4c69-2e3c" hidden="true"/>
+    <categoryEntry name="Nosterov Covens" id="ab7f-97d6-5683-b31b" hidden="false" publicationId="3942-1ba6-967b-c9ed" page="40"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="2baf-20ef-c40f-8aa8" name="Combat Group" hidden="false">
@@ -141,14 +150,49 @@
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1a47-f691-df15-cd6a" type="min"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="SHIPS_ALLOWED" hidden="false" id="19e8-f0f5-a02e-1866" targetId="2db9-9828-2b94-e476" type="category">
+        <categoryLink name="Ship" hidden="false" id="19e8-f0f5-a02e-1866" targetId="2db9-9828-2b94-e476">
           <constraints>
-            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="84ff-f6c9-1f71-ba98" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="84ff-f6c9-1f71-ba98" includeChildSelections="false"/>
           </constraints>
           <modifiers>
+            <modifier type="set" value="5" field="84ff-f6c9-1f71-ba98">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="083a-58ee-6008-542f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="15" field="84ff-f6c9-1f71-ba98">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="98a6-1cad-66d4-06f1" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
             <modifier type="set" value="8" field="84ff-f6c9-1f71-ba98">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="force" childId="b40d-40da-009b-a4a9" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="12" field="84ff-f6c9-1f71-ba98">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="3dd4-ce23-6c07-83db" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="10" field="84ff-f6c9-1f71-ba98">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="77ae-ced1-931a-77a4" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="6" field="84ff-f6c9-1f71-ba98">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="c939-66e5-c157-f0f8" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="9" field="84ff-f6c9-1f71-ba98">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="3e76-94f8-896c-2354" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="7" field="84ff-f6c9-1f71-ba98">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="3b9b-e843-4c69-2e3c" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -196,6 +240,53 @@
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="612a-bb4c-396d-baa3" type="max"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="526b-b0eb-59c8-1e68" type="min"/>
           </constraints>
+        </categoryLink>
+        <categoryLink name="Ship" hidden="false" id="4e35-17a5-5cc7-1842" targetId="2db9-9828-2b94-e476">
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="ef0b-dd62-7fcc-dc4b" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="5" field="ef0b-dd62-7fcc-dc4b">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="083a-58ee-6008-542f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="15" field="ef0b-dd62-7fcc-dc4b">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="98a6-1cad-66d4-06f1" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="8" field="ef0b-dd62-7fcc-dc4b">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="b40d-40da-009b-a4a9" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="12" field="ef0b-dd62-7fcc-dc4b">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="3dd4-ce23-6c07-83db" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="10" field="ef0b-dd62-7fcc-dc4b">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="77ae-ced1-931a-77a4" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="6" field="ef0b-dd62-7fcc-dc4b">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="c939-66e5-c157-f0f8" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="9" field="ef0b-dd62-7fcc-dc4b">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="3e76-94f8-896c-2354" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="7" field="ef0b-dd62-7fcc-dc4b">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="3b9b-e843-4c69-2e3c" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </categoryLink>
       </categoryLinks>
     </forceEntry>
@@ -248,6 +339,53 @@
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8611-6968-e43b-0e14" type="min"/>
           </constraints>
         </categoryLink>
+        <categoryLink name="Ship" hidden="false" id="5c56-552f-253c-9272" targetId="2db9-9828-2b94-e476">
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="4cd5-fc90-3171-3518" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="5" field="4cd5-fc90-3171-3518">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="083a-58ee-6008-542f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="15" field="4cd5-fc90-3171-3518">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="98a6-1cad-66d4-06f1" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="8" field="4cd5-fc90-3171-3518">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="b40d-40da-009b-a4a9" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="12" field="4cd5-fc90-3171-3518">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="3dd4-ce23-6c07-83db" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="10" field="4cd5-fc90-3171-3518">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="77ae-ced1-931a-77a4" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="6" field="4cd5-fc90-3171-3518">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="c939-66e5-c157-f0f8" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="9" field="4cd5-fc90-3171-3518">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="3e76-94f8-896c-2354" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="7" field="4cd5-fc90-3171-3518">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="3b9b-e843-4c69-2e3c" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </categoryLink>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="89dc-b51c-4123-f779" name="Patrol Group" hidden="false">
@@ -274,6 +412,53 @@
             <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c6f1-d8ce-11c2-28a5" type="min"/>
           </constraints>
         </categoryLink>
+        <categoryLink name="Ship" hidden="false" id="ea85-3f08-0b74-f24a" targetId="2db9-9828-2b94-e476">
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="a6ec-1a14-ec70-cb85" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="5" field="a6ec-1a14-ec70-cb85">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="083a-58ee-6008-542f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="15" field="a6ec-1a14-ec70-cb85">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="98a6-1cad-66d4-06f1" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="8" field="a6ec-1a14-ec70-cb85">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="b40d-40da-009b-a4a9" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="12" field="a6ec-1a14-ec70-cb85">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="3dd4-ce23-6c07-83db" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="10" field="a6ec-1a14-ec70-cb85">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="77ae-ced1-931a-77a4" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="6" field="a6ec-1a14-ec70-cb85">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="c939-66e5-c157-f0f8" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="9" field="a6ec-1a14-ec70-cb85">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="3e76-94f8-896c-2354" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="7" field="a6ec-1a14-ec70-cb85">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="3b9b-e843-4c69-2e3c" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </categoryLink>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="fe99-bd5c-d263-228f" name="Picket Group" hidden="false">
@@ -299,6 +484,53 @@
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b1b4-eedf-e0db-87ac" type="max"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fa97-73ad-8e07-6cfe" type="min"/>
           </constraints>
+        </categoryLink>
+        <categoryLink name="Ship" hidden="false" id="ee08-eaf9-6e22-a182" targetId="2db9-9828-2b94-e476">
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="b6e2-5a54-f28f-e331" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="5" field="b6e2-5a54-f28f-e331">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="083a-58ee-6008-542f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="15" field="b6e2-5a54-f28f-e331">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="98a6-1cad-66d4-06f1" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="8" field="b6e2-5a54-f28f-e331">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="b40d-40da-009b-a4a9" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="12" field="b6e2-5a54-f28f-e331">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="3dd4-ce23-6c07-83db" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="10" field="b6e2-5a54-f28f-e331">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="77ae-ced1-931a-77a4" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="6" field="b6e2-5a54-f28f-e331">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="c939-66e5-c157-f0f8" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="9" field="b6e2-5a54-f28f-e331">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="3e76-94f8-896c-2354" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="7" field="b6e2-5a54-f28f-e331">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="3b9b-e843-4c69-2e3c" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </categoryLink>
       </categoryLinks>
     </forceEntry>
@@ -338,6 +570,53 @@
             <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a308-b5fb-9c11-8443" type="min"/>
           </constraints>
         </categoryLink>
+        <categoryLink name="Ship" hidden="false" id="cada-c5e4-c4ec-1548" targetId="2db9-9828-2b94-e476">
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="94c3-d524-71dd-a481" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="5" field="94c3-d524-71dd-a481">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="083a-58ee-6008-542f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="15" field="94c3-d524-71dd-a481">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="98a6-1cad-66d4-06f1" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="8" field="94c3-d524-71dd-a481">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="b40d-40da-009b-a4a9" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="12" field="94c3-d524-71dd-a481">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="3dd4-ce23-6c07-83db" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="10" field="94c3-d524-71dd-a481">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="77ae-ced1-931a-77a4" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="6" field="94c3-d524-71dd-a481">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="c939-66e5-c157-f0f8" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="9" field="94c3-d524-71dd-a481">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="3e76-94f8-896c-2354" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="7" field="94c3-d524-71dd-a481">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="3b9b-e843-4c69-2e3c" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </categoryLink>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="392a-2c8c-34bb-0327" name="Titan Group" hidden="false">
@@ -351,6 +630,53 @@
           <constraints>
             <constraint type="max" value="30" field="dd57-09ff-340f-8e48" scope="roster" shared="true" id="5960-39eb-1062-2dbb" percentValue="true"/>
           </constraints>
+        </categoryLink>
+        <categoryLink name="Ship" hidden="false" id="ee8e-404a-a4b8-aae0" targetId="2db9-9828-2b94-e476">
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="fe69-4d43-b6c8-94fa" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="5" field="fe69-4d43-b6c8-94fa">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="083a-58ee-6008-542f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="15" field="fe69-4d43-b6c8-94fa">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="98a6-1cad-66d4-06f1" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="8" field="fe69-4d43-b6c8-94fa">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="b40d-40da-009b-a4a9" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="12" field="fe69-4d43-b6c8-94fa">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="3dd4-ce23-6c07-83db" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="10" field="fe69-4d43-b6c8-94fa">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="77ae-ced1-931a-77a4" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="6" field="fe69-4d43-b6c8-94fa">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="c939-66e5-c157-f0f8" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="9" field="fe69-4d43-b6c8-94fa">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="3e76-94f8-896c-2354" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="7" field="fe69-4d43-b6c8-94fa">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="3b9b-e843-4c69-2e3c" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </categoryLink>
       </categoryLinks>
     </forceEntry>
@@ -367,6 +693,7 @@
       </costs>
       <categoryLinks>
         <categoryLink name="Commander" hidden="false" id="c254-f247-6c47-2e01" targetId="b5b8-5ac8-4c77-cbb0" primary="true"/>
+        <categoryLink targetId="3dd4-ce23-6c07-83db" id="db0b-7675-d482-48e0" primary="false" name="ALLOW_12_SHIPS"/>
       </categoryLinks>
       <profiles>
         <profile name="Admiral Meng Xinyi" typeId="f8e8-01a8-098b-ca12" typeName="Commander stats" hidden="false" id="8c1b-bc78-44f5-f8fc">
@@ -418,6 +745,9 @@
               </characteristics>
             </profile>
           </profiles>
+          <categoryLinks>
+            <categoryLink targetId="b5b8-5ac8-4c77-cbb0" id="6486-7fa6-2330-b314" primary="true" name="Commander"/>
+          </categoryLinks>
         </selectionEntry>
         <selectionEntry id="f0c4-cfce-79dd-8d80" name="Commander [Confident]" hidden="false" collective="false" import="true" type="unit">
           <profiles>
@@ -435,8 +765,11 @@
           <costs>
             <cost name="Points" typeId="dd57-09ff-340f-8e48" value="8"/>
           </costs>
+          <categoryLinks>
+            <categoryLink targetId="b5b8-5ac8-4c77-cbb0" id="feac-0732-2ef8-bdec" primary="true" name="Commander"/>
+            <categoryLink targetId="c939-66e5-c157-f0f8" id="2b83-ab05-6242-877a" primary="false" name="ALLOW_6_SHIPS"/>
+          </categoryLinks>
         </selectionEntry>
-        <selectionEntry id="221b-ca2c-0c6a-34a5" name="Faction Commander [ if available ]" hidden="false" collective="false" import="true" type="unit"/>
         <selectionEntry id="af44-37ac-7403-af7d" name="Commander [Inspiring]" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
             <profile id="e631-bebe-793e-3b70" name="Commander [Inspiring]" hidden="false" typeId="f8e8-01a8-098b-ca12" typeName="Commander stats">
@@ -453,6 +786,10 @@
           <costs>
             <cost name="Points" typeId="dd57-09ff-340f-8e48" value="16"/>
           </costs>
+          <categoryLinks>
+            <categoryLink targetId="b5b8-5ac8-4c77-cbb0" id="4670-7dd5-ba3f-68f0" primary="true" name="Commander"/>
+            <categoryLink targetId="3e76-94f8-896c-2354" id="d6bd-37cc-2417-4498" primary="false" name="ALLOW_9_SHIPS"/>
+          </categoryLinks>
         </selectionEntry>
         <selectionEntry id="5793-e526-abf7-9335" name="Commander [legendary]" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
@@ -470,6 +807,10 @@
           <costs>
             <cost name="Points" typeId="dd57-09ff-340f-8e48" value="30"/>
           </costs>
+          <categoryLinks>
+            <categoryLink targetId="3dd4-ce23-6c07-83db" id="8d6f-f644-49c8-c050" primary="false" name="ALLOW_12_SHIPS"/>
+            <categoryLink targetId="b5b8-5ac8-4c77-cbb0" id="6e64-5d26-481b-de32" primary="true" name="Commander"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>

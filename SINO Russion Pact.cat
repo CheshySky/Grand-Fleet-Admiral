@@ -2050,6 +2050,11 @@
             <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="d53a-b01c-14da-2369"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1fd0-9711-6248-bf4b"/>
           </constraints>
+          <rules>
+            <rule name="Skill Unmatched" id="8f20-171e-53bb-65c6" hidden="false">
+              <description>When Rear Admiral Dong Huo is admiral of the fleet, add 2 green BIT tokens to the bag. These are SRP specific BIT tokens and cannot be used by the opposing player. If the opponent draws them then put them aside until the end of the turn and they must draw again.</description>
+            </rule>
+          </rules>
         </selectionEntry>
         <selectionEntry type="unit" import="true" name="Captain Luó Ting" hidden="false" id="054f-2483-d81e-c031">
           <costs>

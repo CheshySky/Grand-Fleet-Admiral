@@ -1102,7 +1102,6 @@
       <categoryLinks>
         <categoryLink id="c58e-1d78-ab39-0dfd" name="Capital" hidden="false" targetId="ddf0-e667-c5bb-bfd0" primary="true"/>
         <categoryLink id="6ab8-5d4c-0bbd-3b9a" name="Imperial Hemina" hidden="false" targetId="1117-20a0-a34d-68bd" primary="false"/>
-        <categoryLink targetId="b5b8-5ac8-4c77-cbb0" id="a394-2135-f983-ef7d" primary="false" name="Commander"/>
         <categoryLink targetId="2db9-9828-2b94-e476" id="94f6-66ca-47d4-e8fd" primary="false" name="Ship"/>
       </categoryLinks>
       <selectionEntries>
@@ -1907,6 +1906,11 @@
                       <description>Carriers and light carriers within Sejanus’ battlegroup get the ‘hospital bay’ trait for any Krotan companies nearby. Sejanus’ crews also get +1 to their save rolls when being boarded.</description>
                     </rule>
                   </rules>
+                  <categoryLinks>
+                    <categoryLink name="Imperial Hemina" hidden="false" id="0953-5dd3-0c71-e271" targetId="1117-20a0-a34d-68bd" primary="false"/>
+                    <categoryLink targetId="b40d-40da-009b-a4a9" id="a3b4-f7b6-6dda-474e" primary="false" name="ALLOW_8_SHIPS"/>
+                    <categoryLink targetId="b5b8-5ac8-4c77-cbb0" id="f341-994d-734f-0635" primary="true" name="Commander"/>
+                  </categoryLinks>
                 </selectionEntry>
                 <selectionEntry type="unit" import="true" name="Auxiliary Legate Onyx" hidden="false" id="cd64-5bf9-c6e8-ee2a" publicationId="3942-1ba6-967b-c9ed" page="61">
                   <costs>

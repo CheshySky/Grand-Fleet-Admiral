@@ -301,7 +301,7 @@
           </profiles>
           <rules>
             <rule name="Crimson Rush" id="9a9f-c5db-a8be-17c1" hidden="false" publicationId="3942-1ba6-967b-c9ed" page="43">
-              <description>You may spend 4 blood counters to increase this battlegroup’s max thrust by 1. This has a limit of +3 max thrust. </description>
+              <description>You may spend 4 blood counters to increase this battlegroup’s max thrust by 1. This has a limit of +3 max thrust.</description>
             </rule>
           </rules>
         </selectionEntry>

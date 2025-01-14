@@ -1,2 +1,550 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="035f-a394-8bec-ed4e" name="San Batavia Republic" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="8ee7-a3b6-0307-7e64" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorName="Alicia (Cheshy)" type="catalogue"/>
+<catalogue id="035f-a394-8bec-ed4e" name="San Batavia Republic" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="8ee7-a3b6-0307-7e64" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorName="Alicia (Cheshy)" type="catalogue">
+  <rules>
+    <rule name="Stand off" id="0866-bd98-dddf-a353" hidden="false" publicationId="3942-1ba6-967b-c9ed" page="228">
+      <description>This strike craft fires their munitions from extended range so that they can’t be shot down by point defence in the process. Strike craft with this trait can target ships up to 3” away. ADS rolls have a -2 modifier against this strike craft’s attacks. Successful ADS rolls only block hits and do not force a save for the attacking SC. (When the defender has the Aegis trait ‘Stand Off’ doesn’t take
+effect as the battlegroup will outrange the stand off weapons).</description>
+    </rule>
+    <rule name="AWACS" id="28f1-6a29-2180-94a8" hidden="false" publicationId="3942-1ba6-967b-c9ed" page="228">
+      <description>Strike craft with the AWACS trait give friendly strike craft within 8” a +1 to all of their saving throws (this trait does not stack with itself).</description>
+    </rule>
+  </rules>
+  <sharedSelectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Torpedo" hidden="false" id="d8cf-286b-61bb-16c4" publicationId="3942-1ba6-967b-c9ed" page="228">
+      <profiles>
+        <profile name="Torpedo" typeId="0faa-34ea-a9b8-dccb" typeName="Weapon Stats" hidden="false" id="a688-d547-fa36-7692">
+          <characteristics>
+            <characteristic name="Range" typeId="70bd-05d7-583c-390d">8&quot;-24&quot;</characteristic>
+            <characteristic name="Roll to hit" typeId="a5ba-9b41-500b-6c52">4+</characteristic>
+            <characteristic name="Shield Damage" typeId="90c8-0f37-d9b7-e2e1">1</characteristic>
+            <characteristic name="Hull Damage" typeId="9dc6-3082-ba5b-4c5a">1</characteristic>
+            <characteristic name="Fire Points" typeId="d0d5-25ad-92ff-bf0c">Front</characteristic>
+            <characteristic name="Traits" typeId="69fd-d140-d640-f992">Shield Skipping 6+, Dumb fire, Ordanence</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Shield Skipping X" id="0f31-ad9f-e379-59a8" hidden="false" type="rule" targetId="0fe7-9a92-6258-9885"/>
+        <infoLink name="Dumb fire" id="e06e-573a-2c48-b56e" hidden="false" type="rule" targetId="92d6-9731-df3b-d262"/>
+        <infoLink name="Ordanence" id="069f-16b0-dcee-2d55" hidden="false" type="rule" targetId="a8c2-e70e-c16c-301d"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Ballistic Warheads" hidden="false" id="6d9f-d9b3-65be-a4cd">
+      <profiles>
+        <profile name="Ballistic Warheads" typeId="0faa-34ea-a9b8-dccb" typeName="Weapon Stats" hidden="false" id="dfc8-f82c-4963-a960">
+          <characteristics>
+            <characteristic name="Range" typeId="70bd-05d7-583c-390d">12&quot;</characteristic>
+            <characteristic name="Roll to hit" typeId="a5ba-9b41-500b-6c52">4+	</characteristic>
+            <characteristic name="Shield Damage" typeId="90c8-0f37-d9b7-e2e1">1</characteristic>
+            <characteristic name="Hull Damage" typeId="9dc6-3082-ba5b-4c5a">2</characteristic>
+            <characteristic name="Fire Points" typeId="d0d5-25ad-92ff-bf0c">All</characteristic>
+            <characteristic name="Traits" typeId="69fd-d140-d640-f992">Target Lock, Pen Aid 2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Ordanence" id="1a6f-307f-30fc-8f88" hidden="false" type="rule" targetId="a8c2-e70e-c16c-301d"/>
+        <infoLink name="Penetration Aid X" id="a328-a7a2-b6b3-0588" hidden="false" type="rule" targetId="0b5b-e685-0337-0c82"/>
+        <infoLink name="Target Lock" id="67c3-d48b-b2b3-4d4f" hidden="false" type="rule" targetId="1d62-343c-1246-9699"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Kinetic Cannons" hidden="false" id="dfa5-c96b-13d6-d7bc" publicationId="3942-1ba6-967b-c9ed" page="228">
+      <profiles>
+        <profile name="Kinetic Cannons" typeId="0faa-34ea-a9b8-dccb" typeName="Weapon Stats" hidden="false" id="89dc-2df9-b34f-60bf" publicationId="3942-1ba6-967b-c9ed" page="228">
+          <characteristics>
+            <characteristic name="Range" typeId="70bd-05d7-583c-390d">8&quot;</characteristic>
+            <characteristic name="Roll to hit" typeId="a5ba-9b41-500b-6c52">3+</characteristic>
+            <characteristic name="Shield Damage" typeId="90c8-0f37-d9b7-e2e1">1</characteristic>
+            <characteristic name="Hull Damage" typeId="9dc6-3082-ba5b-4c5a">1</characteristic>
+            <characteristic name="Fire Points" typeId="d0d5-25ad-92ff-bf0c">Front+Side</characteristic>
+            <characteristic name="Traits" typeId="69fd-d140-d640-f992">Long Range</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Kinetic Cannons" typeId="0faa-34ea-a9b8-dccb" typeName="Weapon Stats" hidden="false" id="f179-6bc0-3338-cb8c" publicationId="3942-1ba6-967b-c9ed" page="228">
+          <characteristics>
+            <characteristic name="Range" typeId="70bd-05d7-583c-390d">8&quot;</characteristic>
+            <characteristic name="Roll to hit" typeId="a5ba-9b41-500b-6c52">3+</characteristic>
+            <characteristic name="Shield Damage" typeId="90c8-0f37-d9b7-e2e1">1</characteristic>
+            <characteristic name="Hull Damage" typeId="9dc6-3082-ba5b-4c5a">1</characteristic>
+            <characteristic name="Fire Points" typeId="d0d5-25ad-92ff-bf0c">Front+Side</characteristic>
+            <characteristic name="Traits" typeId="69fd-d140-d640-f992">Long Range</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Long Range" id="aa28-015f-bf02-20f5" hidden="false" type="rule" targetId="94d1-31a9-2ae2-016a"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Kinetic Guns" hidden="false" id="2029-1ed4-655b-da08" publicationId="3942-1ba6-967b-c9ed" page="228">
+      <profiles>
+        <profile name="Kinetic Guns" typeId="0faa-34ea-a9b8-dccb" typeName="Weapon Stats" hidden="false" id="af75-6dd3-fcd5-11c3">
+          <characteristics>
+            <characteristic name="Range" typeId="70bd-05d7-583c-390d">8&quot;</characteristic>
+            <characteristic name="Roll to hit" typeId="a5ba-9b41-500b-6c52">4+</characteristic>
+            <characteristic name="Shield Damage" typeId="90c8-0f37-d9b7-e2e1">1</characteristic>
+            <characteristic name="Hull Damage" typeId="9dc6-3082-ba5b-4c5a">1</characteristic>
+            <characteristic name="Fire Points" typeId="d0d5-25ad-92ff-bf0c">Front+Side</characteristic>
+            <characteristic name="Traits" typeId="69fd-d140-d640-f992">Rapid Fire</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Rapid Fire" id="b61e-59d2-9d5b-bdd1" hidden="false" type="rule" targetId="a3be-d504-f029-1157"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Lance Battery" hidden="false" id="1782-3e9a-fe4e-8ac9" publicationId="3942-1ba6-967b-c9ed" page="228">
+      <profiles>
+        <profile name="Lance Battery" typeId="0faa-34ea-a9b8-dccb" typeName="Weapon Stats" hidden="false" id="f652-e426-c8d8-511f">
+          <characteristics>
+            <characteristic name="Range" typeId="70bd-05d7-583c-390d">8&quot;</characteristic>
+            <characteristic name="Roll to hit" typeId="a5ba-9b41-500b-6c52">3+</characteristic>
+            <characteristic name="Shield Damage" typeId="90c8-0f37-d9b7-e2e1">1</characteristic>
+            <characteristic name="Hull Damage" typeId="9dc6-3082-ba5b-4c5a">2</characteristic>
+            <characteristic name="Fire Points" typeId="d0d5-25ad-92ff-bf0c">Front + Side</characteristic>
+            <characteristic name="Traits" typeId="69fd-d140-d640-f992">Shield Skipping 6+, Beam</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Lance Battery" typeId="0faa-34ea-a9b8-dccb" typeName="Weapon Stats" hidden="false" id="e39e-004e-c548-d63b">
+          <characteristics>
+            <characteristic name="Range" typeId="70bd-05d7-583c-390d">8&quot;</characteristic>
+            <characteristic name="Roll to hit" typeId="a5ba-9b41-500b-6c52">3+</characteristic>
+            <characteristic name="Shield Damage" typeId="90c8-0f37-d9b7-e2e1">1</characteristic>
+            <characteristic name="Hull Damage" typeId="9dc6-3082-ba5b-4c5a">2</characteristic>
+            <characteristic name="Fire Points" typeId="d0d5-25ad-92ff-bf0c">Front + Side</characteristic>
+            <characteristic name="Traits" typeId="69fd-d140-d640-f992">Shield Skipping 6+, Beam</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Shield Skipping X" id="e448-e3cf-9240-a3aa" hidden="false" type="rule" targetId="0fe7-9a92-6258-9885"/>
+        <infoLink name="Beam" id="fd86-5f76-bbec-da89" hidden="false" type="rule" targetId="52cf-cd8c-a2ee-2d09"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Caliburn Light Cruiser" hidden="false" id="8817-aa00-51da-b3c2" publicationId="3942-1ba6-967b-c9ed" page="226">
+      <costs>
+        <cost name="Points" typeId="dd57-09ff-340f-8e48" value="40"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="ddf0-e667-c5bb-bfd0" id="46f1-68b9-9db5-f8fd" primary="true" name="Capital"/>
+        <categoryLink targetId="2aae-af04-ca62-3fab" id="9af9-1253-de57-1fd5" primary="false" name="San Batavia Republic"/>
+        <categoryLink targetId="2db9-9828-2b94-e476" id="66a3-f330-69be-0c82" primary="false" name="Ship"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Caliburn Light Cruiser" typeId="fd62-daee-6b9c-c612" typeName="Ship Stats" hidden="false" id="8562-bfe7-5554-ebbb">
+          <characteristics>
+            <characteristic name="Shield Strength" typeId="face-6a39-0cf0-eebe">6</characteristic>
+            <characteristic name="Max Thrust" typeId="0351-9250-0a32-4131">4</characteristic>
+            <characteristic name="Hull Points" typeId="b78c-8434-3b73-3728">3</characteristic>
+            <characteristic name="Crew Size" typeId="ba69-5c5c-fbb2-ee8f">4</characteristic>
+            <characteristic name="Strike Bay" typeId="6951-636f-b7cf-dff3"/>
+            <characteristic name="Assault bay" typeId="5064-520e-c582-fc1a"/>
+            <characteristic name="Traits" typeId="7875-4af0-5837-6dcb"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Kinetic Guns" hidden="false" id="8ae3-cf57-1f98-733c" type="selectionEntry" targetId="2029-1ed4-655b-da08">
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="13d0-7c98-f556-10ee-min"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="13d0-7c98-f556-10ee-max"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Commander" hidden="false" id="35c7-99af-055a-57f2" type="selectionEntry" targetId="df1f-937a-7be9-2333">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="self" shared="true" id="d4c4-9b6d-f470-a883" includeChildSelections="true"/>
+            <constraint type="max" value="1" field="selections" scope="self" shared="true" id="6a41-8957-183c-d6e8" includeChildSelections="true"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Admiraal Jan Derk Evertsen" hidden="false" id="77b8-cac7-7e9d-f20b" type="selectionEntry" targetId="b1b0-f688-1958-855b">
+              <categoryLinks>
+                <categoryLink targetId="b5b8-5ac8-4c77-cbb0" id="11b3-336b-9e34-9dfc" primary="true" name="Commander"/>
+              </categoryLinks>
+            </entryLink>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapon options" id="299d-0ee6-636c-1232" hidden="false" flatten="false" defaultSelectionEntryId="0082-ba3b-4271-bbc2" collapsible="false" collective="false">
+          <entryLinks>
+            <entryLink import="true" name="Kinetic Cannons" hidden="false" id="0082-ba3b-4271-bbc2" type="selectionEntry" targetId="dfa5-c96b-13d6-d7bc" flatten="false" defaultAmount="" sortIndex="1">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cf1a-c1f0-4cd2-7ab0"/>
+              </constraints>
+              <modifiers>
+                <modifier type="prepend" value="2 " field="name"/>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Lance Battery" hidden="false" id="4e02-7b0a-be24-52b4" type="selectionEntry" targetId="1782-3e9a-fe4e-8ac9" flatten="false" defaultAmount="" collapsible="false" sortIndex="2">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0d19-c7d8-a3f5-882a"/>
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="dd57-09ff-340f-8e48" value="8"/>
+              </costs>
+              <modifiers>
+                <modifier type="replace" value="2 Lance batteries" field="name" arg="Lance Battery"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="102f-1524-a232-480c-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="102f-1524-a232-480c-max"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <modifiers>
+        <modifier type="add" value="b5b8-5ac8-4c77-cbb0" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="self" childId="df1f-937a-7be9-2333" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="2605-3576-ce62-d271" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="e449-525a-6485-abf6" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Admiraal Jan Derk Evertsen" hidden="false" id="b1b0-f688-1958-855b" publicationId="3942-1ba6-967b-c9ed" page="224">
+      <costs>
+        <cost name="Points" typeId="dd57-09ff-340f-8e48" value="35"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="b5b8-5ac8-4c77-cbb0" id="d54c-870a-d5dd-31c7" primary="true" name="Commander"/>
+        <categoryLink targetId="2aae-af04-ca62-3fab" id="bf75-f3cc-558d-e255" primary="false" name="San Batavia Republic"/>
+        <categoryLink targetId="b40d-40da-009b-a4a9" id="ab99-9d33-66ed-62a5" primary="false" name="ALLOW_8_SHIPS"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Admiraal Jan Derk Evertsen" typeId="f8e8-01a8-098b-ca12" typeName="Commander stats" hidden="false" id="e4d0-2b90-f8f8-9d5f">
+          <characteristics>
+            <characteristic name="Commander Quality" typeId="388a-86b2-03af-20ad">Inspiring 3</characteristic>
+            <characteristic name="Rank" typeId="16de-0568-dfa7-27a1">Admiral</characteristic>
+            <characteristic name="Ship" typeId="f3f9-27da-95ec-1253">Any</characteristic>
+            <characteristic name="Skill" typeId="8cfd-31fa-dd72-6e30">+2</characteristic>
+            <characteristic name="Morale Bonus" typeId="26e9-24ca-fa72-16d3">0</characteristic>
+            <characteristic name="Command Capacity" typeId="9a9d-6b65-579c-ca2c">8</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Resilience of Old Urth" id="7460-80e2-5863-c0f5" hidden="false" publicationId="3942-1ba6-967b-c9ed" page="224">
+          <description>Once per turn, when an enemy fires on a friendly battlegroup, if this character’s battlegroup is also within weapons range for the attacker, you may force them to fire on this character’s battlegroup instead.</description>
+        </rule>
+      </rules>
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="self" shared="true" id="721e-1cd7-7689-64d0"/>
+        <constraint type="max" value="1" field="selections" scope="self" shared="true" id="1124-b026-2c83-7839"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Missiles Cruiser" hidden="false" id="230f-0295-0a07-13de" publicationId="3942-1ba6-967b-c9ed" page="226">
+      <costs>
+        <cost name="Points" typeId="dd57-09ff-340f-8e48" value="62"/>
+      </costs>
+      <profiles>
+        <profile name="Missiles Cruiser" typeId="fd62-daee-6b9c-c612" typeName="Ship Stats" hidden="false" id="f0b8-9b59-70b0-d911">
+          <characteristics>
+            <characteristic name="Shield Strength" typeId="face-6a39-0cf0-eebe">6</characteristic>
+            <characteristic name="Max Thrust" typeId="0351-9250-0a32-4131">3</characteristic>
+            <characteristic name="Hull Points" typeId="b78c-8434-3b73-3728">3</characteristic>
+            <characteristic name="Crew Size" typeId="ba69-5c5c-fbb2-ee8f">4</characteristic>
+            <characteristic name="Strike Bay" typeId="6951-636f-b7cf-dff3"/>
+            <characteristic name="Assault bay" typeId="5064-520e-c582-fc1a"/>
+            <characteristic name="Traits" typeId="7875-4af0-5837-6dcb"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="+2 Assault Bays" hidden="false" id="d05f-70f1-aa20-e60f" publicationId="3942-1ba6-967b-c9ed" page="62" collective="false" sortIndex="2">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="9014-00fa-4aeb-23b8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2be4-d644-98dc-4b06" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="CQB companies" hidden="false" id="084e-d234-1937-2bd1" collective="false" targetId="fb21-206b-9e99-40e5" type="selectionEntryGroup">
+              <modifiers>
+                <modifier type="set" value="2" field="043c-93c9-a410-2d74">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="parent" childId="any" shared="true" roundUp="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="f845-f58b-0fcf-095b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="043c-93c9-a410-2d74" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="Points" typeId="dd57-09ff-340f-8e48" value="3"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Torpedo" hidden="false" id="6092-b891-ab21-5ce0" type="selectionEntry" targetId="d8cf-286b-61bb-16c4" sortIndex="4">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0193-454c-1398-392b-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0193-454c-1398-392b-max"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Ballistic Warheads" hidden="false" id="92ae-a52b-e495-bf5b" type="selectionEntry" targetId="6d9f-d9b3-65be-a4cd" sortIndex="3">
+          <constraints>
+            <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="fe74-5ee6-d44b-434e-min"/>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="fe74-5ee6-d44b-434e-max"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Kinetic Guns" hidden="false" id="bb47-30c8-dc26-c038" type="selectionEntry" targetId="2029-1ed4-655b-da08" sortIndex="5">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3b54-2098-7dc2-08b8-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3b54-2098-7dc2-08b8-max"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Commander" hidden="false" id="1b04-8ac4-bb54-2fd1" type="selectionEntry" targetId="df1f-937a-7be9-2333" sortIndex="1">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="self" shared="true" id="e88b-7bf3-e2ab-73af" includeChildSelections="true"/>
+            <constraint type="max" value="1" field="selections" scope="self" shared="true" id="a10e-d9d0-d137-5699" includeChildSelections="true"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Admiraal Jan Derk Evertsen" hidden="false" id="15ab-f1bc-5b2e-1395" type="selectionEntry" targetId="b1b0-f688-1958-855b">
+              <categoryLinks>
+                <categoryLink name="Commander" hidden="false" id="4ef6-bab4-8001-a0a0" targetId="b5b8-5ac8-4c77-cbb0" primary="true"/>
+              </categoryLinks>
+            </entryLink>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="ddf0-e667-c5bb-bfd0" id="31c5-ec98-459c-dd2d" primary="true" name="Capital"/>
+        <categoryLink targetId="f40f-3734-00a7-9824" id="128a-bb3a-9796-3249" primary="false" name="not vanguard eligible"/>
+        <categoryLink targetId="2db9-9828-2b94-e476" id="06b4-7c2f-616c-89d1" primary="false" name="Ship"/>
+        <categoryLink targetId="2aae-af04-ca62-3fab" id="3a9a-34d3-393c-6838" primary="false" name="San Batavia Republic"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="add" value="b5b8-5ac8-4c77-cbb0" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="self" childId="df1f-937a-7be9-2333" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup name="CQB companies" id="fb21-206b-9e99-40e5" hidden="false" publicationId="3942-1ba6-967b-c9ed" page="228">
+      <selectionEntries>
+        <selectionEntry type="unit" import="true" name="Light Company" hidden="false" id="c3a5-0f75-d97f-3888" publicationId="3942-1ba6-967b-c9ed" page="228">
+          <categoryLinks>
+            <categoryLink targetId="b70b-1ba2-e198-c944" id="668a-262b-5d98-0770" primary="true" name="CQB"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Light Company" typeId="8047-aa6f-c1da-a700" typeName="CQB Stats" hidden="false" id="4f00-63b3-4dc0-81e4">
+              <characteristics>
+                <characteristic name="Attack" typeId="0727-c56d-4766-19fd">10+</characteristic>
+                <characteristic name="Defend" typeId="d333-c742-1468-d3dd">8+</characteristic>
+                <characteristic name="Attacks (amount)" typeId="178f-aab5-a6d3-5cf0">1</characteristic>
+                <characteristic name="Save" typeId="911c-0ad0-6f4e-5186">9+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Regular Company" hidden="false" id="11d2-e88d-dd50-b98f" publicationId="3942-1ba6-967b-c9ed" page="228">
+          <costs>
+            <cost name="Points" typeId="dd57-09ff-340f-8e48" value="3"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink targetId="b70b-1ba2-e198-c944" id="16a1-dbd7-bde3-7526" primary="true" name="CQB"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Regular Company" typeId="8047-aa6f-c1da-a700" typeName="CQB Stats" hidden="false" id="e93a-a99f-ca10-219a">
+              <characteristics>
+                <characteristic name="Attack" typeId="0727-c56d-4766-19fd">7+</characteristic>
+                <characteristic name="Defend" typeId="d333-c742-1468-d3dd">6</characteristic>
+                <characteristic name="Attacks (amount)" typeId="178f-aab5-a6d3-5cf0">1</characteristic>
+                <characteristic name="Save" typeId="911c-0ad0-6f4e-5186">8+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Shock Company" hidden="false" id="9b30-2393-f3c0-7b87" publicationId="3942-1ba6-967b-c9ed" page="228">
+          <costs>
+            <cost name="Points" typeId="dd57-09ff-340f-8e48" value="5"/>
+          </costs>
+          <profiles>
+            <profile name="Shock Company" typeId="8047-aa6f-c1da-a700" typeName="CQB Stats" hidden="false" id="5bfd-0c6d-16a2-9c00">
+              <characteristics>
+                <characteristic name="Attack" typeId="0727-c56d-4766-19fd">5+</characteristic>
+                <characteristic name="Defend" typeId="d333-c742-1468-d3dd">7+</characteristic>
+                <characteristic name="Attacks (amount)" typeId="178f-aab5-a6d3-5cf0">2</characteristic>
+                <characteristic name="Save" typeId="911c-0ad0-6f4e-5186">8+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Power Armour Company" hidden="false" id="fc1b-4dbc-9797-a391" publicationId="3942-1ba6-967b-c9ed" page="228">
+          <categoryLinks>
+            <categoryLink targetId="b70b-1ba2-e198-c944" id="becd-4762-be81-d241" primary="true" name="CQB"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Power Armour Company" typeId="8047-aa6f-c1da-a700" typeName="CQB Stats" hidden="false" id="bf30-ce90-f015-d962">
+              <characteristics>
+                <characteristic name="Attack" typeId="0727-c56d-4766-19fd">4+</characteristic>
+                <characteristic name="Defend" typeId="d333-c742-1468-d3dd">4+</characteristic>
+                <characteristic name="Attacks (amount)" typeId="178f-aab5-a6d3-5cf0">2</characteristic>
+                <characteristic name="Save" typeId="911c-0ad0-6f4e-5186">7+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Points" typeId="dd57-09ff-340f-8e48" value="9"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <profiles>
+        <profile name="Werkspoor Valwind Dropships" typeId="8562-1ee2-d80c-e753" typeName="Strike Craft Stats" hidden="false" id="8b94-9efe-d140-f3ca">
+          <characteristics>
+            <characteristic name="Speed" typeId="b7a0-b9fb-4295-87bf">9&quot;</characteristic>
+            <characteristic name="Anti SC" typeId="a1d2-240a-d9fa-1712">8+</characteristic>
+            <characteristic name="Anti-Ship" typeId="bc6e-037f-58a9-1faf">8+</characteristic>
+            <characteristic name="Attack against ships" typeId="f633-6e0a-1576-0f9c">1</characteristic>
+            <characteristic name="Save" typeId="d415-0e55-c4dd-d7b7">9+</characteristic>
+            <characteristic name="Traits" typeId="3875-2795-81d2-a053"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Strike Craft" id="cbce-02a7-d736-fff3" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="unit" import="true" name="Fokker Tempes Fighters" hidden="false" id="9321-ed0f-7f53-14ec" publicationId="3942-1ba6-967b-c9ed" page="227">
+          <costs>
+            <cost name="Points" typeId="dd57-09ff-340f-8e48" value="6"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink targetId="1d5d-ac3c-0f9e-8382" id="255b-82d7-f3a2-dfbb" primary="true" name="Strike Craft"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Fokker Tempes Fighters" typeId="8562-1ee2-d80c-e753" typeName="Strike Craft Stats" hidden="false" id="4a7d-0f41-2607-479d">
+              <characteristics>
+                <characteristic name="Speed" typeId="b7a0-b9fb-4295-87bf">10&quot;</characteristic>
+                <characteristic name="Anti SC" typeId="a1d2-240a-d9fa-1712">4+</characteristic>
+                <characteristic name="Anti-Ship" typeId="bc6e-037f-58a9-1faf">4+</characteristic>
+                <characteristic name="Attack against ships" typeId="f633-6e0a-1576-0f9c">2</characteristic>
+                <characteristic name="Save" typeId="d415-0e55-c4dd-d7b7">5+</characteristic>
+                <characteristic name="Traits" typeId="3875-2795-81d2-a053"/>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Fokker Tempest Strike Fighters" hidden="false" id="3b08-6870-dc46-e856" publicationId="3942-1ba6-967b-c9ed" page="227">
+          <costs>
+            <cost name="Points" typeId="dd57-09ff-340f-8e48" value="7"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink targetId="1d5d-ac3c-0f9e-8382" id="5298-3777-299c-c6e9" primary="true" name="Strike Craft"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Fokker Tempest Strike Fighters" typeId="8562-1ee2-d80c-e753" typeName="Strike Craft Stats" hidden="false" id="d321-5fbd-8cd0-50da">
+              <characteristics>
+                <characteristic name="Speed" typeId="b7a0-b9fb-4295-87bf">10&quot;</characteristic>
+                <characteristic name="Anti SC" typeId="a1d2-240a-d9fa-1712">4+</characteristic>
+                <characteristic name="Anti-Ship" typeId="bc6e-037f-58a9-1faf">4+</characteristic>
+                <characteristic name="Attack against ships" typeId="f633-6e0a-1576-0f9c">3</characteristic>
+                <characteristic name="Save" typeId="d415-0e55-c4dd-d7b7">5+</characteristic>
+                <characteristic name="Traits" typeId="3875-2795-81d2-a053"/>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Koolhoven Tenebris Attack Craft" hidden="false" id="bfce-6657-0187-0242" publicationId="3942-1ba6-967b-c9ed" page="227">
+          <costs>
+            <cost name="Points" typeId="dd57-09ff-340f-8e48" value="8"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink targetId="1d5d-ac3c-0f9e-8382" id="7ae1-0f6a-2405-60c7" primary="true" name="Strike Craft"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Koolhoven Tenebris Attack Craft" typeId="8562-1ee2-d80c-e753" typeName="Strike Craft Stats" hidden="false" id="8639-49ea-5bb7-c189">
+              <characteristics>
+                <characteristic name="Speed" typeId="b7a0-b9fb-4295-87bf">10&quot;</characteristic>
+                <characteristic name="Anti SC" typeId="a1d2-240a-d9fa-1712">8+</characteristic>
+                <characteristic name="Anti-Ship" typeId="bc6e-037f-58a9-1faf">4+</characteristic>
+                <characteristic name="Attack against ships" typeId="f633-6e0a-1576-0f9c">3</characteristic>
+                <characteristic name="Save" typeId="d415-0e55-c4dd-d7b7">5+</characteristic>
+                <characteristic name="Traits" typeId="3875-2795-81d2-a053">Shield Skipping 7+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Shield Skipping X" id="1e1a-9daa-3c31-9a63" hidden="false" type="rule" targetId="0fe7-9a92-6258-9885"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Koolhoven Albedo Torpedo Bomber" hidden="false" id="165e-11aa-4016-d29a" publicationId="3942-1ba6-967b-c9ed" page="227">
+          <categoryLinks>
+            <categoryLink targetId="1d5d-ac3c-0f9e-8382" id="6181-85e6-9294-6f5f" primary="true" name="Strike Craft"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Points" typeId="dd57-09ff-340f-8e48" value="8"/>
+          </costs>
+          <profiles>
+            <profile name="Koolhoven Albedo Torpedo Bomber" typeId="8562-1ee2-d80c-e753" typeName="Strike Craft Stats" hidden="false" id="7697-9cc6-48ce-97c8">
+              <characteristics>
+                <characteristic name="Speed" typeId="b7a0-b9fb-4295-87bf">10&quot;</characteristic>
+                <characteristic name="Anti SC" typeId="a1d2-240a-d9fa-1712">10+</characteristic>
+                <characteristic name="Anti-Ship" typeId="bc6e-037f-58a9-1faf">4+</characteristic>
+                <characteristic name="Attack against ships" typeId="f633-6e0a-1576-0f9c">2</characteristic>
+                <characteristic name="Save" typeId="d415-0e55-c4dd-d7b7">7+</characteristic>
+                <characteristic name="Traits" typeId="3875-2795-81d2-a053">Shield skipping 7+, Stand Off</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Shield Skipping X" id="1c32-5591-300e-6a15" hidden="false" type="rule" targetId="0fe7-9a92-6258-9885"/>
+            <infoLink name="Stand off" id="7c44-cba2-3194-3f22" hidden="false" type="rule" targetId="0866-bd98-dddf-a353"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Fokker Gale Interceptors" hidden="false" id="8cb0-af90-0ed5-2cc5" publicationId="3942-1ba6-967b-c9ed" page="227">
+          <costs>
+            <cost name="Points" typeId="dd57-09ff-340f-8e48" value="3"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink targetId="1d5d-ac3c-0f9e-8382" id="4d0e-328f-83c2-db57" primary="true" name="Strike Craft"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Fokker Gale Interceptors" typeId="8562-1ee2-d80c-e753" typeName="Strike Craft Stats" hidden="false" id="edfc-bb75-f2a5-ba63">
+              <characteristics>
+                <characteristic name="Speed" typeId="b7a0-b9fb-4295-87bf">12&quot;</characteristic>
+                <characteristic name="Anti SC" typeId="a1d2-240a-d9fa-1712">3+</characteristic>
+                <characteristic name="Anti-Ship" typeId="bc6e-037f-58a9-1faf">4+</characteristic>
+                <characteristic name="Attack against ships" typeId="f633-6e0a-1576-0f9c">1</characteristic>
+                <characteristic name="Save" typeId="d415-0e55-c4dd-d7b7">6+</characteristic>
+                <characteristic name="Traits" typeId="3875-2795-81d2-a053">Intercept</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Intercept" id="884b-0c1f-1900-2744" hidden="false" type="rule" targetId="1462-3907-ffc8-4bc1"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Werkspoor Valwind Dropships" hidden="false" id="3dbd-a54b-150f-1906" publicationId="3942-1ba6-967b-c9ed" page="227">
+          <categoryLinks>
+            <categoryLink targetId="b70b-1ba2-e198-c944" id="4ebe-93c5-2847-9cc4" primary="false" name="CQB"/>
+            <categoryLink targetId="1d5d-ac3c-0f9e-8382" id="f4e9-b1ad-88ab-d9a4" primary="true" name="Strike Craft"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Werkspoor Valwind Dropships" typeId="8562-1ee2-d80c-e753" typeName="Strike Craft Stats" hidden="false" id="bb46-bfc4-7aac-f468">
+              <characteristics>
+                <characteristic name="Speed" typeId="b7a0-b9fb-4295-87bf">9&quot;</characteristic>
+                <characteristic name="Anti SC" typeId="a1d2-240a-d9fa-1712">8+</characteristic>
+                <characteristic name="Anti-Ship" typeId="bc6e-037f-58a9-1faf">8+</characteristic>
+                <characteristic name="Attack against ships" typeId="f633-6e0a-1576-0f9c">1</characteristic>
+                <characteristic name="Save" typeId="d415-0e55-c4dd-d7b7">9+</characteristic>
+                <characteristic name="Traits" typeId="3875-2795-81d2-a053"/>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
+  <entryLinks>
+    <entryLink import="true" name="Caliburn Light Cruiser" hidden="false" id="205d-1812-0c9d-e245" targetId="8817-aa00-51da-b3c2" type="selectionEntry"/>
+    <entryLink import="true" name="Missiles Cruiser" hidden="false" id="526d-e94f-196d-c3b8" targetId="230f-0295-0a07-13de" type="selectionEntry"/>
+  </entryLinks>
+</catalogue>

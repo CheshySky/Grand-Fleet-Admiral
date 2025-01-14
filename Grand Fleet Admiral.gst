@@ -94,6 +94,7 @@
     <categoryEntry name="ALLOW_3_SHIPS" id="7f60-7f72-12ff-0246" hidden="true"/>
     <categoryEntry name="ALLOW_7_SHIPS" id="3b9b-e843-4c69-2e3c" hidden="true"/>
     <categoryEntry name="Nosterov Covens" id="ab7f-97d6-5683-b31b" hidden="false" publicationId="3942-1ba6-967b-c9ed" page="40"/>
+    <categoryEntry name="San Batavia Republic" id="2aae-af04-ca62-3fab" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="2baf-20ef-c40f-8aa8" name="Combat Group" hidden="false">

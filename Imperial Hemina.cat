@@ -1989,6 +1989,7 @@
       </profiles>
       <infoLinks>
         <infoLink name="Launch X" id="a315-37d9-b472-1a09" hidden="false" targetId="0158-e952-527e-8955" type="rule"/>
+        <infoLink name="Sluggish" id="326d-0039-6d5d-280d" hidden="false" type="rule" targetId="8a4f-3958-18fe-0838"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Heavy Cruiser" hidden="false" id="b648-2125-8c66-e93d" publicationId="3942-1ba6-967b-c9ed" page="65">
@@ -2557,6 +2558,10 @@
           </categoryLinks>
         </selectionEntry>
       </selectionEntries>
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="9ef9-7428-88c9-cca8"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6bc3-06c9-0eab-098b"/>
+      </constraints>
     </selectionEntryGroup>
     <selectionEntryGroup id="c5e9-3afc-1d97-118d" name="Tribune Sisenna [Carriers only]" hidden="false" collective="false" import="true">
       <selectionEntries>

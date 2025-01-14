@@ -156,7 +156,7 @@
             <characteristic name="Shield Damage" typeId="90c8-0f37-d9b7-e2e1">1</characteristic>
             <characteristic name="Hull Damage" typeId="9dc6-3082-ba5b-4c5a">1</characteristic>
             <characteristic name="Fire Points" typeId="d0d5-25ad-92ff-bf0c">Side</characteristic>
-            <characteristic name="Traits" typeId="69fd-d140-d640-f992">Shield Skipping 6+, Dumb fire</characteristic>
+            <characteristic name="Traits" typeId="69fd-d140-d640-f992">Broadside, Long Range</characteristic>
           </characteristics>
         </profile>
       </profiles>

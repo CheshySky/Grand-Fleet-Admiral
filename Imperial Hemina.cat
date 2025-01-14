@@ -1947,7 +1947,6 @@
             <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="ad37-59a7-2e90-bfa3-max"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Sluggish" hidden="false" id="52a9-a90f-473a-6b14" type="rule" targetId="8a4f-3958-18fe-0838"/>
         <entryLink import="true" name="CQB Companies" hidden="false" id="8dc8-e88a-0876-a838" type="selectionEntryGroup" targetId="b910-5484-9fb7-15ea">
           <constraints>
             <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="8279-07b3-fd6d-0a5f"/>

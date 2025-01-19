@@ -1764,5 +1764,6 @@ effect as the battlegroup will outrange the stand off weapons).</description>
     <entryLink import="true" name="Frigate" hidden="false" id="0186-f77f-8eea-97ab" targetId="6e56-0d45-7c75-09e2" type="selectionEntry"/>
     <entryLink import="true" name="Heavy Destroyer" hidden="false" id="c50e-3046-9136-63f7" targetId="37e0-ffd1-ad0a-566f" type="selectionEntry"/>
     <entryLink import="true" name="Escort Carrier" hidden="false" id="71d6-55a5-835a-fbca" targetId="d995-0928-50fb-d020" type="selectionEntry"/>
+    <entryLink import="true" name="Escort Destroyer" hidden="false" id="dbd4-209b-c6db-194f" targetId="0e74-9e79-5b82-53bc" type="selectionEntry"/>
   </entryLinks>
 </catalogue>

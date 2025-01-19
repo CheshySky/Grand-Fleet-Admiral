@@ -1108,6 +1108,10 @@ effect as the battlegroup will outrange the stand off weapons).</description>
           <infoLinks>
             <infoLink name="Flag Bridge" id="7405-a2d1-b7e9-74b4" hidden="false" type="rule" targetId="deb6-b945-6a96-0eb7"/>
           </infoLinks>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="d761-7e88-acda-6a1f"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a4cd-5843-1db3-65da"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
@@ -1326,6 +1330,10 @@ effect as the battlegroup will outrange the stand off weapons).</description>
           <costs>
             <cost name="Points" typeId="dd57-09ff-340f-8e48" value="3"/>
           </costs>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="a262-fefb-8559-8c94"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="23ee-b7c8-6798-2f7b"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>

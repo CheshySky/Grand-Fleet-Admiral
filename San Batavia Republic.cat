@@ -512,7 +512,7 @@ effect as the battlegroup will outrange the stand off weapons).</description>
         <infoLink name="Launch X" id="97e3-9d96-22ed-aee5" hidden="false" type="rule" targetId="0158-e952-527e-8955"/>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Weapon options" id="c2a7-818e-a9d0-0585" hidden="false" flatten="false" defaultSelectionEntryId="0082-ba3b-4271-bbc2" collapsible="false" collective="false">
+        <selectionEntryGroup name="Weapon options" id="c2a7-818e-a9d0-0585" hidden="false" flatten="false" defaultSelectionEntryId="0082-ba3b-4271-bbc2" collapsible="false" collective="false" sortIndex="2">
           <entryLinks>
             <entryLink import="true" name="Kinetic Cannons" hidden="false" id="f598-0815-c23c-4581" type="selectionEntry" targetId="dfa5-c96b-13d6-d7bc" flatten="false" defaultAmount="" sortIndex="1">
               <constraints>
@@ -553,7 +553,7 @@ effect as the battlegroup will outrange the stand off weapons).</description>
         </modifier>
       </modifiers>
       <entryLinks>
-        <entryLink import="true" name="Commander" hidden="false" id="fcf6-35d9-58b9-4b31" type="selectionEntry" targetId="df1f-937a-7be9-2333">
+        <entryLink import="true" name="Commander" hidden="false" id="fcf6-35d9-58b9-4b31" type="selectionEntry" targetId="df1f-937a-7be9-2333" sortIndex="1">
           <constraints>
             <constraint type="min" value="0" field="selections" scope="self" shared="true" id="cb73-f419-801a-7ee4" includeChildSelections="true"/>
             <constraint type="max" value="1" field="selections" scope="self" shared="true" id="156e-de4b-8aee-2729" includeChildSelections="true"/>
@@ -566,13 +566,13 @@ effect as the battlegroup will outrange the stand off weapons).</description>
             </entryLink>
           </entryLinks>
         </entryLink>
-        <entryLink import="true" name="Strike Craft" hidden="false" id="56bf-eadd-a7c8-b573" type="selectionEntryGroup" targetId="cbce-02a7-d736-fff3">
+        <entryLink import="true" name="Strike Craft" hidden="false" id="56bf-eadd-a7c8-b573" type="selectionEntryGroup" targetId="cbce-02a7-d736-fff3" sortIndex="3">
           <constraints>
             <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="c7b3-89cc-8cd6-45ff"/>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="5e3f-1a51-a7f8-351f"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="CQB companies" hidden="false" id="ed37-71c4-2532-4fb9" type="selectionEntryGroup" targetId="fb21-206b-9e99-40e5">
+        <entryLink import="true" name="CQB companies" hidden="false" id="ed37-71c4-2532-4fb9" type="selectionEntryGroup" targetId="fb21-206b-9e99-40e5" sortIndex="4">
           <constraints>
             <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="9aa6-34ce-18bc-3ea5"/>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="41af-6488-06c1-e54d"/>
@@ -991,6 +991,10 @@ effect as the battlegroup will outrange the stand off weapons).</description>
                   <description>When one of your battlegroups destroys more than one ship in an enemy battlegroup with strike craft in a single activation, the enemy battlegroup must make an immediate morale check.</description>
                 </rule>
               </rules>
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="5a14-64ab-78c6-c412"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0be3-d73a-7842-d724"/>
+              </constraints>
             </selectionEntry>
           </selectionEntries>
         </entryLink>

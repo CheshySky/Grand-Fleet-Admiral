@@ -64,6 +64,13 @@
             <characteristic name="Assault bay" typeId="5064-520e-c582-fc1a"/>
             <characteristic name="Traits" typeId="7875-4af0-5837-6dcb">Launch 2</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="2" field="5064-520e-c582-fc1a">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="e7f4-f372-0837-5d16" childId="dd91-6a13-e7e1-16d4" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <infoLinks>
@@ -327,6 +334,13 @@
             <characteristic name="Assault bay" typeId="5064-520e-c582-fc1a"/>
             <characteristic name="Traits" typeId="7875-4af0-5837-6dcb"/>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="2" field="5064-520e-c582-fc1a">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="a658-033f-bc4f-7b4d" childId="8b63-7aab-c106-aba1" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <categoryLinks>
@@ -519,46 +533,20 @@
         <categoryLink targetId="f40f-3734-00a7-9824" id="fb3d-3665-80ed-0819" primary="false" name="not vanguard eligible"/>
         <categoryLink targetId="2db9-9828-2b94-e476" id="7440-a70d-2255-1a14" primary="false" name="Ship"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="4fd2-5692-e330-db60" name="Armoured Reactor Core" publicationId="3942-1ba6-967b-c9ed" page="62" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5de5-c89a-6e85-2ab7" type="max"/>
-            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="76e5-1340-a61f-8e5b" type="min"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="49e9-8663-84f7-2549" name="Armoured Reactor Core" hidden="false" targetId="e597-6ea8-a851-86e8" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="Points" typeId="dd57-09ff-340f-8e48" value="3"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="3116-ec0e-e2f1-78d3" name="Flag Bridge" publicationId="3942-1ba6-967b-c9ed" page="62" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="042e-b672-a2d0-a7b1" type="max"/>
-            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dd51-a3de-97af-98ae" type="min"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="5b3b-2592-4a3c-6b23" name="Flag Bridge" hidden="false" targetId="deb6-b945-6a96-0eb7" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="Points" typeId="dd57-09ff-340f-8e48" value="6"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <entryLinks>
-        <entryLink id="7ee7-7dbe-ab85-2570" name="Disruptor Cannon" hidden="false" collective="false" import="true" targetId="48ed-edd2-a6ac-a720" type="selectionEntry">
+        <entryLink id="7ee7-7dbe-ab85-2570" name="Disruptor Cannon" hidden="false" collective="false" import="true" targetId="48ed-edd2-a6ac-a720" type="selectionEntry" sortIndex="3">
           <constraints>
             <constraint field="selections" scope="parent" value="6" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9d19-a897-b048-e400" type="max"/>
             <constraint field="selections" scope="parent" value="6" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1a37-3745-0315-f4c2" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="71d1-0646-ad71-3caf" name="Particle Laser" hidden="false" collective="false" import="true" targetId="44f1-16a6-a351-ba77" type="selectionEntry">
+        <entryLink id="71d1-0646-ad71-3caf" name="Particle Laser" hidden="false" collective="false" import="true" targetId="44f1-16a6-a351-ba77" type="selectionEntry" sortIndex="4">
           <constraints>
             <constraint field="selections" scope="parent" value="6" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="10de-8682-d69d-c32f" type="max"/>
             <constraint field="selections" scope="parent" value="6" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d43f-43aa-54a0-2ffb" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="cd4d-c232-3f77-89fa" name="Commander" hidden="false" collective="false" import="true" targetId="df1f-937a-7be9-2333" type="selectionEntry">
+        <entryLink id="cd4d-c232-3f77-89fa" name="Commander" hidden="false" collective="false" import="true" targetId="df1f-937a-7be9-2333" type="selectionEntry" sortIndex="2">
           <constraints>
             <constraint field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3658-07f9-4217-5a46" type="max"/>
             <constraint field="selections" scope="self" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0b24-985b-efd4-59b5" type="min"/>
@@ -576,6 +564,40 @@
         <cost name="Points" typeId="dd57-09ff-340f-8e48" value="62"/>
         <cost name="Hidden Thrust" typeId="a69d-b0f6-7ef9-5d17" value="3"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="2a08-ea67-297f-a83e" hidden="false" sortIndex="1">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Armoured Reactor Core" hidden="false" id="4fd2-5692-e330-db60" publicationId="3942-1ba6-967b-c9ed" page="62" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5de5-c89a-6e85-2ab7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="76e5-1340-a61f-8e5b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Armoured Reactor Core" id="49e9-8663-84f7-2549" hidden="false" targetId="e597-6ea8-a851-86e8" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="Points" typeId="dd57-09ff-340f-8e48" value="3"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Flag Bridge" hidden="false" id="3116-ec0e-e2f1-78d3" publicationId="3942-1ba6-967b-c9ed" page="62" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="042e-b672-a2d0-a7b1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="dd51-a3de-97af-98ae" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Flag Bridge" id="5b3b-2592-4a3c-6b23" hidden="false" targetId="deb6-b945-6a96-0eb7" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="Points" typeId="dd57-09ff-340f-8e48" value="6"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="0f9a-c2d4-4625-bddf"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5f6a-ea6d-4a7c-624a"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="bdfb-8a89-d183-5722" name="Battle Cruiser" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
@@ -725,43 +747,20 @@
         <categoryLink targetId="f40f-3734-00a7-9824" id="6798-8bda-f3bc-b030" primary="false" name="not vanguard eligible"/>
         <categoryLink targetId="2db9-9828-2b94-e476" id="4b2f-ae6a-f8ab-af9c" primary="false" name="Ship"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="bb69-2355-5965-090d" name="Flag Bridge" publicationId="3942-1ba6-967b-c9ed" page="62" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a7a4-915b-13b5-1fcd" type="max"/>
-            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7501-149e-5446-8775" type="min"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="9d94-4334-09bb-6f2c" name="Flag Bridge" hidden="false" targetId="deb6-b945-6a96-0eb7" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="Points" typeId="dd57-09ff-340f-8e48" value="6"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="3d86-c638-c45f-c46d" name="+4 Strike Bay" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eeb4-dea5-32bd-d096" type="max"/>
-            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3580-63c6-954a-1433" type="min"/>
-          </constraints>
-          <costs>
-            <cost name="Points" typeId="dd57-09ff-340f-8e48" value="3"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <entryLinks>
-        <entryLink id="b7d2-981f-7acb-3810" name="Particle Laser" hidden="false" collective="false" import="true" targetId="44f1-16a6-a351-ba77" type="selectionEntry">
+        <entryLink id="b7d2-981f-7acb-3810" name="Particle Laser" hidden="false" collective="false" import="true" targetId="44f1-16a6-a351-ba77" type="selectionEntry" sortIndex="6">
           <constraints>
             <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b174-fd31-9006-879f" type="max"/>
             <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5317-38b8-05cd-e617" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="7e96-aa7a-0030-fc78" name="Disruptor Cannon" hidden="false" collective="false" import="true" targetId="48ed-edd2-a6ac-a720" type="selectionEntry">
+        <entryLink id="7e96-aa7a-0030-fc78" name="Disruptor Cannon" hidden="false" collective="false" import="true" targetId="48ed-edd2-a6ac-a720" type="selectionEntry" sortIndex="5">
           <constraints>
             <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="23f2-473b-8987-9561" type="max"/>
             <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f424-cbb6-7cdd-e9cf" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="4904-135f-57cb-e24b" name="Commander" hidden="false" collective="false" import="true" targetId="df1f-937a-7be9-2333" type="selectionEntry">
+        <entryLink id="4904-135f-57cb-e24b" name="Commander" hidden="false" collective="false" import="true" targetId="df1f-937a-7be9-2333" type="selectionEntry" sortIndex="2">
           <constraints>
             <constraint field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8597-d9fb-570e-dcba" type="max"/>
             <constraint field="selections" scope="self" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d225-87e1-ab87-4afe" type="min"/>
@@ -779,7 +778,7 @@
             </entryLink>
           </entryLinks>
         </entryLink>
-        <entryLink id="8de9-3ec0-78b1-9694" name="Strike Craft" hidden="false" collective="false" import="true" targetId="d2a5-4e87-5237-35d0" type="selectionEntryGroup">
+        <entryLink id="8de9-3ec0-78b1-9694" name="Strike Craft" hidden="false" collective="false" import="true" targetId="d2a5-4e87-5237-35d0" type="selectionEntryGroup" sortIndex="3">
           <modifiers>
             <modifier type="set" field="e6f9-3cc2-52b8-b21b" value="10">
               <conditions>
@@ -797,7 +796,7 @@
             <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1630-a9f2-b175-097d" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="5573-c2b0-14a2-fbe3" name="CQB Companies" hidden="false" collective="false" import="true" targetId="b910-5484-9fb7-15ea" type="selectionEntryGroup">
+        <entryLink id="5573-c2b0-14a2-fbe3" name="CQB Companies" hidden="false" collective="false" import="true" targetId="b910-5484-9fb7-15ea" type="selectionEntryGroup" sortIndex="4">
           <constraints>
             <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a029-92fb-8257-dc2c" type="min"/>
             <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a134-0ad6-2e10-6621" type="max"/>
@@ -808,6 +807,37 @@
         <cost name="Points" typeId="dd57-09ff-340f-8e48" value="62"/>
         <cost name="Hidden Thrust" typeId="a69d-b0f6-7ef9-5d17" value="3"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="bf7d-033a-54ce-c17f" hidden="false" sortIndex="1">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="+4 Strike Bay" hidden="false" id="3d86-c638-c45f-c46d" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eeb4-dea5-32bd-d096" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="3580-63c6-954a-1433" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="dd57-09ff-340f-8e48" value="3"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Flag Bridge" hidden="false" id="bb69-2355-5965-090d" publicationId="3942-1ba6-967b-c9ed" page="62" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a7a4-915b-13b5-1fcd" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="7501-149e-5446-8775" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Flag Bridge" id="9d94-4334-09bb-6f2c" hidden="false" targetId="deb6-b945-6a96-0eb7" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="Points" typeId="dd57-09ff-340f-8e48" value="6"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="329e-c573-fa1e-96e0"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="551a-c141-6451-a068"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="ed6b-49fd-5ee0-1484" name="Dreadnought (Heavy)" publicationId="3942-1ba6-967b-c9ed" page="62" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
@@ -851,34 +881,8 @@
         <categoryLink targetId="f40f-3734-00a7-9824" id="5361-bcd2-d9c8-bfaf" primary="false" name="not vanguard eligible"/>
         <categoryLink targetId="2db9-9828-2b94-e476" id="ce78-9c66-d300-3561" primary="false" name="Ship"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="61d3-3a6e-f984-0dca" name="Armoured Reactor Core" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0ae4-204c-4677-6a59" type="max"/>
-            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a7eb-ca94-e656-6206" type="min"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="b10d-3a18-fabd-0592" name="Armoured Reactor Core" hidden="false" targetId="e597-6ea8-a851-86e8" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="Points" typeId="dd57-09ff-340f-8e48" value="3"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="9a3f-94a7-b3bc-b9c4" name="Flag Bridge" publicationId="3942-1ba6-967b-c9ed" page="62" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f884-0e49-3e78-182e" type="max"/>
-            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="61a8-766b-9a6d-781d" type="min"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="47fb-cdfb-4fc6-3080" name="Flag Bridge" hidden="false" targetId="deb6-b945-6a96-0eb7" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="Points" typeId="dd57-09ff-340f-8e48" value="6"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <entryLinks>
-        <entryLink id="6986-0c0a-4569-0fc6" name="Commander" hidden="false" collective="false" import="true" targetId="df1f-937a-7be9-2333" type="selectionEntry">
+        <entryLink id="6986-0c0a-4569-0fc6" name="Commander" hidden="false" collective="false" import="true" targetId="df1f-937a-7be9-2333" type="selectionEntry" sortIndex="2">
           <constraints>
             <constraint field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6ffa-2b0f-8035-cd3d" type="max"/>
             <constraint field="selections" scope="self" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3c94-0936-6312-4568" type="min"/>
@@ -891,25 +895,25 @@
             </entryLink>
           </entryLinks>
         </entryLink>
-        <entryLink id="958a-8bc5-aacc-acc8" name="Particle Laser" hidden="false" collective="false" import="true" targetId="44f1-16a6-a351-ba77" type="selectionEntry">
+        <entryLink id="958a-8bc5-aacc-acc8" name="Particle Laser" hidden="false" collective="false" import="true" targetId="44f1-16a6-a351-ba77" type="selectionEntry" sortIndex="6">
           <constraints>
             <constraint field="selections" scope="parent" value="6" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cd69-231b-c01e-097a" type="max"/>
             <constraint field="selections" scope="parent" value="6" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b57f-ace8-fff8-f72d" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="bc4f-3c7e-3670-8a20" name="Disruptor Cannon" hidden="false" collective="false" import="true" targetId="48ed-edd2-a6ac-a720" type="selectionEntry">
+        <entryLink id="bc4f-3c7e-3670-8a20" name="Disruptor Cannon" hidden="false" collective="false" import="true" targetId="48ed-edd2-a6ac-a720" type="selectionEntry" sortIndex="5">
           <constraints>
             <constraint field="selections" scope="parent" value="8" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3edf-8ba1-2216-5fb1" type="max"/>
             <constraint field="selections" scope="parent" value="8" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="163c-5900-acaf-faba" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="CQB Companies" hidden="false" id="4d4a-c052-5e22-8c09" type="selectionEntryGroup" targetId="b910-5484-9fb7-15ea">
+        <entryLink import="true" name="CQB Companies" hidden="false" id="4d4a-c052-5e22-8c09" type="selectionEntryGroup" targetId="b910-5484-9fb7-15ea" sortIndex="4">
           <constraints>
             <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="baaf-9556-ff76-44e6"/>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="0c77-09d9-0b47-5571"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Strike Craft" hidden="false" id="ea05-0a57-50ec-808e" type="selectionEntryGroup" targetId="d2a5-4e87-5237-35d0">
+        <entryLink import="true" name="Strike Craft" hidden="false" id="ea05-0a57-50ec-808e" type="selectionEntryGroup" targetId="d2a5-4e87-5237-35d0" sortIndex="3">
           <constraints>
             <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="4fa0-c215-3d13-c79d"/>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="49e0-9e2b-ef54-d0fe"/>
@@ -926,6 +930,36 @@
       <costs>
         <cost name="Points" typeId="dd57-09ff-340f-8e48" value="90"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="b633-3ee9-53c8-68bc" hidden="false" sortIndex="1">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Flag Bridge" hidden="false" id="9a3f-94a7-b3bc-b9c4" publicationId="3942-1ba6-967b-c9ed" page="62" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f884-0e49-3e78-182e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="61a8-766b-9a6d-781d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Flag Bridge" id="47fb-cdfb-4fc6-3080" hidden="false" targetId="deb6-b945-6a96-0eb7" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="Points" typeId="dd57-09ff-340f-8e48" value="6"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Armoured Reactor Core" hidden="false" id="61d3-3a6e-f984-0dca" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0ae4-204c-4677-6a59" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="a7eb-ca94-e656-6206" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Armoured Reactor Core" id="b10d-3a18-fabd-0592" hidden="false" targetId="e597-6ea8-a851-86e8" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="Points" typeId="dd57-09ff-340f-8e48" value="3"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="63a6-ea29-82d5-52b0" name="Reformed Cruiser" publicationId="3942-1ba6-967b-c9ed" page="62" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
@@ -1104,40 +1138,20 @@
         <categoryLink id="6ab8-5d4c-0bbd-3b9a" name="Imperial Hemina" hidden="false" targetId="1117-20a0-a34d-68bd" primary="false"/>
         <categoryLink targetId="2db9-9828-2b94-e476" id="94f6-66ca-47d4-e8fd" primary="false" name="Ship"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="3fdb-2c77-d331-0214" name="+4 Strike Bay" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4e73-3719-03c3-02f6" type="max"/>
-            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="511f-cec7-5ae0-6168" type="min"/>
-          </constraints>
-          <costs>
-            <cost name="Points" typeId="dd57-09ff-340f-8e48" value="3"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="7756-0ad1-3fd7-46ac" name="+1 Max Thrust" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0742-09df-1509-c492" type="max"/>
-            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a124-a9e8-d559-d936" type="min"/>
-          </constraints>
-          <costs>
-            <cost name="Points" typeId="dd57-09ff-340f-8e48" value="5"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <entryLinks>
-        <entryLink id="840a-0b02-4f70-4b8a" name="Disruptor Cannon" hidden="false" collective="false" import="true" targetId="48ed-edd2-a6ac-a720" type="selectionEntry">
+        <entryLink id="840a-0b02-4f70-4b8a" name="Disruptor Cannon" hidden="false" collective="false" import="true" targetId="48ed-edd2-a6ac-a720" type="selectionEntry" sortIndex="4">
           <constraints>
             <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="74ee-9ce5-97ba-5a81" type="max"/>
             <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f7bd-0563-0a1d-fb74" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="eff1-cd71-7842-92e7" name="Particle Laser" hidden="false" collective="false" import="true" targetId="44f1-16a6-a351-ba77" type="selectionEntry">
+        <entryLink id="eff1-cd71-7842-92e7" name="Particle Laser" hidden="false" collective="false" import="true" targetId="44f1-16a6-a351-ba77" type="selectionEntry" sortIndex="5">
           <constraints>
             <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b3f9-ff2f-dd9e-8c8e" type="max"/>
             <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4e12-90e7-e47f-c5b0" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="b154-73b8-44b4-fbad" name="Commander" hidden="false" collective="false" import="true" targetId="df1f-937a-7be9-2333" type="selectionEntry">
+        <entryLink id="b154-73b8-44b4-fbad" name="Commander" hidden="false" collective="false" import="true" targetId="df1f-937a-7be9-2333" type="selectionEntry" sortIndex="2">
           <constraints>
             <constraint field="selections" scope="self" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="df6e-a4b9-8fe3-8594" type="max"/>
             <constraint field="selections" scope="self" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1095-044b-8ea9-f75e" type="min"/>
@@ -1155,7 +1169,7 @@
             </entryLink>
           </entryLinks>
         </entryLink>
-        <entryLink import="true" name="Strike Craft" hidden="false" id="4ff1-e2e3-8c11-dae1" type="selectionEntryGroup" targetId="d2a5-4e87-5237-35d0">
+        <entryLink import="true" name="Strike Craft" hidden="false" id="4ff1-e2e3-8c11-dae1" type="selectionEntryGroup" targetId="d2a5-4e87-5237-35d0" sortIndex="3">
           <constraints>
             <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="ba76-cd57-1c51-3a71"/>
             <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="258d-d5d5-8a41-abdb"/>
@@ -1177,6 +1191,34 @@
       <costs>
         <cost name="Points" typeId="dd57-09ff-340f-8e48" value="52"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="4ea3-9b46-7f1e-1247" hidden="false" sortIndex="1">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="+4 Strike Bay" hidden="false" id="3fdb-2c77-d331-0214" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4e73-3719-03c3-02f6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="511f-cec7-5ae0-6168" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="dd57-09ff-340f-8e48" value="3"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="+1 Max Thrust" hidden="false" id="7756-0ad1-3fd7-46ac" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0742-09df-1509-c492" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="a124-a9e8-d559-d936" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="dd57-09ff-340f-8e48" value="5"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="481d-d26b-0b51-71b1"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4dfc-e636-3193-bb41"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="47fa-ea5f-cf86-5960" name="Reformed Heavy Cruiser" hidden="false" collective="false" import="true" type="upgrade" publicationId="3942-1ba6-967b-c9ed">
       <modifiers>
@@ -1392,7 +1434,11 @@
       <profiles>
         <profile id="b5ac-eee7-6ef9-b5d2" name="Heavy Destroyer" hidden="false" typeId="fd62-daee-6b9c-c612" typeName="Ship Stats">
           <modifiers>
-            <modifier type="set" field="5064-520e-c582-fc1a" value="1"/>
+            <modifier type="set" field="5064-520e-c582-fc1a" value="1">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="c73f-2619-9f66-5664" childId="acfd-7e8a-b7fa-15a2" shared="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <characteristics>
             <characteristic name="Shield Strength" typeId="face-6a39-0cf0-eebe">5</characteristic>

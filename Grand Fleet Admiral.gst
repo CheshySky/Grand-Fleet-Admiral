@@ -95,6 +95,13 @@
     <categoryEntry name="ALLOW_7_SHIPS" id="3b9b-e843-4c69-2e3c" hidden="true"/>
     <categoryEntry name="Nosterov Covens" id="ab7f-97d6-5683-b31b" hidden="false" publicationId="3942-1ba6-967b-c9ed" page="40"/>
     <categoryEntry name="San Batavia Republic" id="2aae-af04-ca62-3fab" hidden="false"/>
+    <categoryEntry name="Anglo European Alliance" id="e2ce-6480-e740-5ba4" hidden="false" publicationId="3942-1ba6-967b-c9ed" page="3"/>
+    <categoryEntry name="Super Heavy" id="7f3a-181d-1d3c-e282" hidden="false">
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="roster" shared="true" id="d836-c4e6-1054-2006" includeChildSelections="true" includeChildForces="true"/>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="f97d-92a0-7153-c688" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="2baf-20ef-c40f-8aa8" name="Combat Group" hidden="false">
@@ -725,6 +732,36 @@
         </modifier>
       </modifiers>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Admiral Kodoth" hidden="false" id="f0fe-f2e7-9580-8d33">
+      <costs>
+        <cost name="Points" typeId="dd57-09ff-340f-8e48" value="20"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Commander" hidden="false" id="3eab-5b5c-9c07-18b9" targetId="b5b8-5ac8-4c77-cbb0" primary="true"/>
+        <categoryLink targetId="c939-66e5-c157-f0f8" id="7d7e-84b2-e9f3-ab44" primary="false" name="ALLOW_6_SHIPS"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Admiral Kodoth" typeId="f8e8-01a8-098b-ca12" typeName="Commander stats" hidden="false" id="8418-0f35-5f99-4e61" publicationId="3942-1ba6-967b-c9ed" page="5">
+          <characteristics>
+            <characteristic name="Commander Quality" typeId="388a-86b2-03af-20ad">Legendary 4</characteristic>
+            <characteristic name="Rank" typeId="16de-0568-dfa7-27a1">Admiral</characteristic>
+            <characteristic name="Ship" typeId="f3f9-27da-95ec-1253">Kodoth Flagship</characteristic>
+            <characteristic name="Skill" typeId="8cfd-31fa-dd72-6e30">+2</characteristic>
+            <characteristic name="Morale Bonus" typeId="26e9-24ca-fa72-16d3">+3</characteristic>
+            <characteristic name="Command Capacity" typeId="9a9d-6b65-579c-ca2c">6</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f105-0f73-333f-b872-min"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f105-0f73-333f-b872-max"/>
+      </constraints>
+      <rules>
+        <rule name="Old Guard" id="dd0f-860c-b208-9e3a" hidden="false" publicationId="3942-1ba6-967b-c9ed" page="5">
+          <description>Old AEA doctrine specialised around heavy ships supported by the use of torpedoes and mines. Torpedo boats in his fleet gain an extra torpedo. Every Auxiliary Group must contain at least 1 mine layer.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="f514-1193-a474-711f" name="Commander" hidden="false" collective="false" import="true" defaultSelectionEntryId="72a1-5827-9cf9-5f9d">
@@ -733,7 +770,7 @@
         <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1703-2288-b830-7dac" type="min"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="72a1-5827-9cf9-5f9d" name="Commander [Poor]" hidden="false" collective="false" import="true" type="unit">
+        <selectionEntry id="72a1-5827-9cf9-5f9d" name="Commander [Poor]" hidden="false" collective="false" import="true" type="unit" sortIndex="1">
           <profiles>
             <profile id="7290-4e26-100b-b541" name="Commander [Poor]" hidden="false" typeId="f8e8-01a8-098b-ca12" typeName="Commander stats">
               <characteristics>
@@ -750,7 +787,7 @@
             <categoryLink targetId="b5b8-5ac8-4c77-cbb0" id="6486-7fa6-2330-b314" primary="true" name="Commander"/>
           </categoryLinks>
         </selectionEntry>
-        <selectionEntry id="f0c4-cfce-79dd-8d80" name="Commander [Confident]" hidden="false" collective="false" import="true" type="unit">
+        <selectionEntry id="f0c4-cfce-79dd-8d80" name="Commander [Confident]" hidden="false" collective="false" import="true" type="unit" sortIndex="2">
           <profiles>
             <profile id="b5c5-5ba8-7032-f0dc" name="Commander [Confident]" hidden="false" typeId="f8e8-01a8-098b-ca12" typeName="Commander stats">
               <characteristics>
@@ -771,7 +808,7 @@
             <categoryLink targetId="c939-66e5-c157-f0f8" id="2b83-ab05-6242-877a" primary="false" name="ALLOW_6_SHIPS"/>
           </categoryLinks>
         </selectionEntry>
-        <selectionEntry id="af44-37ac-7403-af7d" name="Commander [Inspiring]" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="af44-37ac-7403-af7d" name="Commander [Inspiring]" hidden="false" collective="false" import="true" type="upgrade" sortIndex="3">
           <profiles>
             <profile id="e631-bebe-793e-3b70" name="Commander [Inspiring]" hidden="false" typeId="f8e8-01a8-098b-ca12" typeName="Commander stats">
               <characteristics>
@@ -792,7 +829,7 @@
             <categoryLink targetId="3e76-94f8-896c-2354" id="d6bd-37cc-2417-4498" primary="false" name="ALLOW_9_SHIPS"/>
           </categoryLinks>
         </selectionEntry>
-        <selectionEntry id="5793-e526-abf7-9335" name="Commander [legendary]" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="5793-e526-abf7-9335" name="Commander [legendary]" hidden="false" collective="false" import="true" type="upgrade" sortIndex="4">
           <profiles>
             <profile id="0477-d5f0-2dd9-6edf" name="Commander [legendary]" hidden="false" typeId="f8e8-01a8-098b-ca12" typeName="Commander stats">
               <characteristics>

@@ -274,7 +274,7 @@
               <description>Winters’ has access to all command actions not chosen by the admiral, but cannot use any of the chosen abilities.</description>
             </rule>
             <rule name="Adapted organisation" id="8d71-5ff9-aba9-4b81" hidden="false" publicationId="3942-1ba6-967b-c9ed" page="6">
-              <description>The bonus provided by the Combat battlegroup is replaced with the bonus of the Auxiliary battlegroup [Modifier: +1 to hit rolls with weapons.]</description>
+              <description>Winters must be taken in a Combat battlegroup. His battlegroup gains the modifier for an Auxiliary group instead of the regular Combat modifier.</description>
             </rule>
           </rules>
           <modifiers>

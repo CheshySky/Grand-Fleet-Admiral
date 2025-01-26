@@ -102,6 +102,8 @@
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="f97d-92a0-7153-c688" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
     </categoryEntry>
+    <categoryEntry name="Rear admiral Pearson" id="cd6b-01e9-64aa-0144" hidden="false"/>
+    <categoryEntry name="AEA_SUPER_CARRIER" id="5823-555f-702c-262e" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="2baf-20ef-c40f-8aa8" name="Combat Group" hidden="false">
@@ -201,6 +203,18 @@
             <modifier type="set" value="7" field="84ff-f6c9-1f71-ba98">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="force" childId="3b9b-e843-4c69-2e3c" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+        <categoryLink name="AEA_SUPER_CARRIER" hidden="false" id="5697-4079-4d55-a1ed" targetId="5823-555f-702c-262e">
+          <constraints>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="249c-0db9-4354-6f23" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="2" field="249c-0db9-4354-6f23">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="cd6b-01e9-64aa-0144" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -390,6 +404,18 @@
             <modifier type="set" value="7" field="4cd5-fc90-3171-3518">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="force" childId="3b9b-e843-4c69-2e3c" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+        <categoryLink name="AEA_SUPER_CARRIER" hidden="false" id="81c2-6528-24dc-cf75" targetId="5823-555f-702c-262e" type="category">
+          <constraints>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="43e4-f6df-c338-09e9" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="2" field="43e4-f6df-c338-09e9">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="cd6b-01e9-64aa-0144" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="035f-a394-8bec-ed4e" name="San Batavia Republic" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="8ee7-a3b6-0307-7e64" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorName="Alicia (Cheshy)" type="catalogue">
+<catalogue id="035f-a394-8bec-ed4e" name="San Batavia Republic" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="8ee7-a3b6-0307-7e64" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorName="Alicia (Cheshy)" type="catalogue">
   <rules>
     <rule name="Stand off" id="0866-bd98-dddf-a353" hidden="false" publicationId="3942-1ba6-967b-c9ed" page="228">
       <description>This strike craft fires their munitions from extended range so that they can’t be shot down by point defence in the process. Strike craft with this trait can target ships up to 3” away. ADS rolls have a -2 modifier against this strike craft’s attacks. Successful ADS rolls only block hits and do not force a save for the attacking SC. (When the defender has the Aegis trait ‘Stand Off’ doesn’t take
@@ -571,6 +571,16 @@ effect as the battlegroup will outrange the stand off weapons).</description>
             <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="c7b3-89cc-8cd6-45ff"/>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="5e3f-1a51-a7f8-351f"/>
           </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Mines" hidden="false" id="8146-c83d-0992-0399" type="selectionEntryGroup" targetId="8058-16c8-a6a8-624e"/>
+          </entryLinks>
+          <modifiers>
+            <modifier type="decrement" value="1" field="5e3f-1a51-a7f8-351f">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="8146-c83d-0992-0399" shared="true" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
         </entryLink>
         <entryLink import="true" name="CQB companies" hidden="false" id="ed37-71c4-2532-4fb9" type="selectionEntryGroup" targetId="fb21-206b-9e99-40e5" sortIndex="4">
           <constraints>
@@ -712,6 +722,16 @@ effect as the battlegroup will outrange the stand off weapons).</description>
             <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="71fe-8241-ae8a-d9e6"/>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="2a96-e5e2-c66a-5a32"/>
           </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Mines" hidden="false" id="d98c-6b9d-283f-43cc" type="selectionEntryGroup" targetId="8058-16c8-a6a8-624e"/>
+          </entryLinks>
+          <modifiers>
+            <modifier type="decrement" value="1" field="2a96-e5e2-c66a-5a32">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="d98c-6b9d-283f-43cc" shared="true" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
         </entryLink>
       </entryLinks>
       <modifiers>
@@ -863,6 +883,16 @@ effect as the battlegroup will outrange the stand off weapons).</description>
             <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="b8c0-5c4c-8df8-cbb1"/>
             <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="6774-1fb0-23da-44e2"/>
           </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Mines" hidden="false" id="7d64-0ef3-32ce-5d9d" type="selectionEntryGroup" targetId="8058-16c8-a6a8-624e"/>
+          </entryLinks>
+          <modifiers>
+            <modifier type="decrement" value="1" field="6774-1fb0-23da-44e2">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="7d64-0ef3-32ce-5d9d" shared="true" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
         </entryLink>
         <entryLink import="true" name="CQB companies" hidden="false" id="08f1-5768-3a3e-21db" type="selectionEntryGroup" targetId="fb21-206b-9e99-40e5" sortIndex="4">
           <constraints>
@@ -1088,6 +1118,16 @@ effect as the battlegroup will outrange the stand off weapons).</description>
               </infoLinks>
             </selectionEntry>
           </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Mines" hidden="false" id="d58b-6622-e426-88c9" type="selectionEntryGroup" targetId="8058-16c8-a6a8-624e"/>
+          </entryLinks>
+          <modifiers>
+            <modifier type="decrement" value="1" field="5a51-09c2-56d8-d1ca">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="d58b-6622-e426-88c9" shared="true" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
         </entryLink>
         <entryLink import="true" name="CQB companies" hidden="false" id="baa5-1bba-67e3-7c41" type="selectionEntryGroup" targetId="fb21-206b-9e99-40e5" sortIndex="4">
           <constraints>
@@ -1426,6 +1466,16 @@ effect as the battlegroup will outrange the stand off weapons).</description>
             <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="77ad-db86-7ff7-0879"/>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="61f2-4eac-6865-9618"/>
           </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Mines" hidden="false" id="4103-0453-2567-571a" type="selectionEntryGroup" targetId="8058-16c8-a6a8-624e"/>
+          </entryLinks>
+          <modifiers>
+            <modifier type="decrement" value="1" field="61f2-4eac-6865-9618">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="4103-0453-2567-571a" shared="true" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
         </entryLink>
         <entryLink import="true" name="Commander" hidden="false" id="8f31-483b-e08e-e67f" type="selectionEntry" targetId="df1f-937a-7be9-2333" sortIndex="1">
           <constraints>

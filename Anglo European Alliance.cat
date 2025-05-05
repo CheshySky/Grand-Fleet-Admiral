@@ -1497,6 +1497,9 @@
           </categoryLinks>
         </entryLink>
       </entryLinks>
+      <costs>
+        <cost name="Points" typeId="dd57-09ff-340f-8e48" value="70"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Mine Layer" hidden="false" id="3766-ae94-3b0c-75ad" publicationId="3942-1ba6-967b-c9ed" page="8">
       <costs>

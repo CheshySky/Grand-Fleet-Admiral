@@ -1,2 +1,2316 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="1af2-46a7-fc18-3cce" name="Martian Confederation" gameSystemId="8ee7-a3b6-0307-7e64" gameSystemRevision="3" revision="1" authorName="Alicia (Cheshy)" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema"/>
+<catalogue library="false" id="1af2-46a7-fc18-3cce" name="Martian Confederation" gameSystemId="8ee7-a3b6-0307-7e64" gameSystemRevision="3" revision="1" authorName="Hexahedron" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" publicationId="3942-1ba6-967b-c9ed">
+  <sharedSelectionEntries>
+    <selectionEntry type="unit" import="true" name="Light Cruiser" hidden="false" id="6c61-76bb-fdbb-1109" publicationId="3942-1ba6-967b-c9ed" page="52">
+      <costs>
+        <cost name="Points" typeId="dd57-09ff-340f-8e48" value="39"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="ddf0-e667-c5bb-bfd0" id="a113-76f6-4bdd-e2db" primary="true" name="Capital"/>
+        <categoryLink targetId="2db9-9828-2b94-e476" id="285d-2265-5fc3-72a0" primary="false" name="Ship"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Light Cruiser" typeId="fd62-daee-6b9c-c612" typeName="Ship Stats" hidden="false" id="c69e-bd21-92e6-fe43">
+          <characteristics>
+            <characteristic name="Shield Strength" typeId="face-6a39-0cf0-eebe">5</characteristic>
+            <characteristic name="Max Thrust" typeId="0351-9250-0a32-4131">4</characteristic>
+            <characteristic name="Hull Points" typeId="b78c-8434-3b73-3728">4</characteristic>
+            <characteristic name="Crew Size" typeId="ba69-5c5c-fbb2-ee8f">4</characteristic>
+            <characteristic name="Strike Bay" typeId="6951-636f-b7cf-dff3"/>
+            <characteristic name="Assault bay" typeId="5064-520e-c582-fc1a"/>
+            <characteristic name="Traits" typeId="7875-4af0-5837-6dcb">ADS, Sluggish</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="2" field="5064-520e-c582-fc1a">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="6c61-76bb-fdbb-1109" childId="777b-d5f5-eab8-9349" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="replace" value=" " field="7875-4af0-5837-6dcb" arg="Sluggish">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="3d91-1655-75cf-4518" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="Thrust Vectoring" field="7875-4af0-5837-6dcb" join=",">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1753-ab8b-3332-2883" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Coilgun" hidden="false" id="264a-8b7b-769e-056d" type="selectionEntry" publicationId="3942-1ba6-967b-c9ed" targetId="607b-a6ef-2b27-9d78" sortIndex="3">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0856-f6b0-0e7b-8fa6-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0856-f6b0-0e7b-8fa6-max"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Missile Pods" hidden="false" id="5d46-66c8-4ce3-8fe7" type="selectionEntry" targetId="2503-88df-79db-7f5a" sortIndex="4">
+          <constraints>
+            <constraint type="min" value="6" field="selections" scope="parent" shared="true" id="d05e-2ed6-d5e0-9090-min"/>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="d05e-2ed6-d5e0-9090-max"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Commander" hidden="false" id="842a-482a-1e69-0e25" type="selectionEntry" targetId="df1f-937a-7be9-2333" sortIndex="2" publicationId="c478-850b-f9ae-9c10">
+          <entryLinks>
+            <entryLink import="true" name="Faction Commanders" hidden="false" id="0660-1e89-cff7-6f73" type="selectionEntryGroup" targetId="5636-c598-0372-7366"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="self" shared="true" id="2994-408b-0d18-61ce" includeChildSelections="true"/>
+            <constraint type="max" value="1" field="selections" scope="self" shared="true" id="c59c-1ccf-2cd7-84ce" includeChildSelections="true"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="+2 Assault Bays" hidden="false" id="777b-d5f5-eab8-9349" publicationId="3942-1ba6-967b-c9ed" page="52" sortIndex="1">
+          <costs>
+            <cost name="Points" typeId="dd57-09ff-340f-8e48" value="3"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="e4c8-b296-a212-ac3f"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ac5e-8ad4-1bb9-8087"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="CQB Companies" hidden="false" id="ad91-858e-b7fc-33f4" type="selectionEntryGroup" targetId="262e-cb19-5c9b-e95a">
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="46ec-4c72-cfb5-93de"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="77ce-3641-15b4-9275"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <modifiers>
+        <modifier type="add" value="b5b8-5ac8-4c77-cbb0" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="self" childId="df1f-937a-7be9-2333" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="2605-3576-ce62-d271" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="e449-525a-6485-abf6" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Sluggish" id="a233-566d-4b06-b496" hidden="false" type="rule" targetId="8a4f-3958-18fe-0838"/>
+        <infoLink name="ADS X" id="c006-19b6-e1f6-2a93" hidden="false" type="rule" targetId="7b47-f592-16a4-f8f4"/>
+        <infoLink name="Thrust Vectoring" id="e0ef-1a50-471f-688a" hidden="true" type="rule" targetId="bdbe-b620-67db-d020">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1753-ab8b-3332-2883" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Coilgun" hidden="false" id="607b-a6ef-2b27-9d78">
+      <profiles>
+        <profile name="Coilgun" typeId="0faa-34ea-a9b8-dccb" typeName="Weapon Stats" hidden="false" id="821d-7afc-7116-779c">
+          <characteristics>
+            <characteristic name="Range" typeId="70bd-05d7-583c-390d">10&quot;</characteristic>
+            <characteristic name="Roll to hit" typeId="a5ba-9b41-500b-6c52">3+</characteristic>
+            <characteristic name="Shield Damage" typeId="90c8-0f37-d9b7-e2e1">1</characteristic>
+            <characteristic name="Hull Damage" typeId="9dc6-3082-ba5b-4c5a">1</characteristic>
+            <characteristic name="Fire Points" typeId="d0d5-25ad-92ff-bf0c">Front+Side</characteristic>
+            <characteristic name="Traits" typeId="69fd-d140-d640-f992">Long Range</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Long Range" id="de3a-0a64-fdb8-fa8c" hidden="false" type="rule" publicationId="c478-850b-f9ae-9c10" targetId="94d1-31a9-2ae2-016a"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Missile Pods" hidden="false" id="2503-88df-79db-7f5a">
+      <profiles>
+        <profile name="Missile Pods" typeId="0faa-34ea-a9b8-dccb" typeName="Weapon Stats" hidden="false" id="e412-1cec-8e0a-6132" publicationId="3942-1ba6-967b-c9ed" page="54">
+          <characteristics>
+            <characteristic name="Range" typeId="70bd-05d7-583c-390d">8&quot;</characteristic>
+            <characteristic name="Roll to hit" typeId="a5ba-9b41-500b-6c52">6+</characteristic>
+            <characteristic name="Shield Damage" typeId="90c8-0f37-d9b7-e2e1">1</characteristic>
+            <characteristic name="Hull Damage" typeId="9dc6-3082-ba5b-4c5a">1</characteristic>
+            <characteristic name="Fire Points" typeId="d0d5-25ad-92ff-bf0c">All</characteristic>
+            <characteristic name="Traits" typeId="69fd-d140-d640-f992">Target Lock, Ordanence</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Ordanence" id="5e3c-b564-72a1-2172" hidden="false" type="rule" targetId="a8c2-e70e-c16c-301d"/>
+        <infoLink name="Target Lock" id="623f-d704-4ca0-cda6" hidden="false" type="rule" targetId="1d62-343c-1246-9699"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Stinger Torpedo" hidden="false" id="99dd-9eb3-1259-64fe" publicationId="3942-1ba6-967b-c9ed" page="54">
+      <profiles>
+        <profile name="Stinger Torpedo" typeId="0faa-34ea-a9b8-dccb" typeName="Weapon Stats" hidden="false" id="4427-3b81-e7e9-0a3f" publicationId="3942-1ba6-967b-c9ed" page="54">
+          <characteristics>
+            <characteristic name="Range" typeId="70bd-05d7-583c-390d">6&quot;-20&quot;</characteristic>
+            <characteristic name="Roll to hit" typeId="a5ba-9b41-500b-6c52">2+</characteristic>
+            <characteristic name="Shield Damage" typeId="90c8-0f37-d9b7-e2e1">1</characteristic>
+            <characteristic name="Hull Damage" typeId="9dc6-3082-ba5b-4c5a">1</characteristic>
+            <characteristic name="Fire Points" typeId="d0d5-25ad-92ff-bf0c">Front</characteristic>
+            <characteristic name="Traits" typeId="69fd-d140-d640-f992">Shield skipping 6+, Dumb fire</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Shield Skipping X" id="e297-2cee-7636-896c" hidden="false" type="rule" targetId="0fe7-9a92-6258-9885"/>
+        <infoLink name="Dumb fire" id="42d5-8780-569e-818e" hidden="false" type="rule" targetId="92d6-9731-df3b-d262"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Zeus Cannon" hidden="false" id="b259-2a8b-006c-8b8d" publicationId="3942-1ba6-967b-c9ed" page="54">
+      <profiles>
+        <profile name="Zeus Cannon" typeId="0faa-34ea-a9b8-dccb" typeName="Weapon Stats" hidden="false" id="9873-3c82-0c9b-ef45" publicationId="3942-1ba6-967b-c9ed" page="54">
+          <characteristics>
+            <characteristic name="Range" typeId="70bd-05d7-583c-390d">14&quot;</characteristic>
+            <characteristic name="Roll to hit" typeId="a5ba-9b41-500b-6c52">3+</characteristic>
+            <characteristic name="Shield Damage" typeId="90c8-0f37-d9b7-e2e1">2</characteristic>
+            <characteristic name="Hull Damage" typeId="9dc6-3082-ba5b-4c5a">2</characteristic>
+            <characteristic name="Fire Points" typeId="d0d5-25ad-92ff-bf0c">Front</characteristic>
+            <characteristic name="Traits" typeId="69fd-d140-d640-f992">Hypervelocity</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Hyper-Velocity" id="8db2-f4fd-6296-1469" hidden="false" type="rule" targetId="8559-664a-55d0-d527"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Cruiser" hidden="false" id="326d-5341-3a7d-3698" publicationId="3942-1ba6-967b-c9ed" page="52">
+      <costs>
+        <cost name="Points" typeId="dd57-09ff-340f-8e48" value="41"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="ddf0-e667-c5bb-bfd0" id="3857-4669-b526-6eae" primary="true" name="Capital"/>
+        <categoryLink targetId="2db9-9828-2b94-e476" id="a838-88e3-2cdc-de12" primary="false" name="Ship"/>
+        <categoryLink targetId="f40f-3734-00a7-9824" id="ee04-8df9-ce4d-21a5" primary="false" name="not vanguard eligible"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Cruiser" typeId="fd62-daee-6b9c-c612" typeName="Ship Stats" hidden="false" id="c362-ee5b-2c65-b5a4" publicationId="3942-1ba6-967b-c9ed" page="52">
+          <characteristics>
+            <characteristic name="Shield Strength" typeId="face-6a39-0cf0-eebe">6</characteristic>
+            <characteristic name="Max Thrust" typeId="0351-9250-0a32-4131">3</characteristic>
+            <characteristic name="Hull Points" typeId="b78c-8434-3b73-3728">4</characteristic>
+            <characteristic name="Crew Size" typeId="ba69-5c5c-fbb2-ee8f">4</characteristic>
+            <characteristic name="Strike Bay" typeId="6951-636f-b7cf-dff3"/>
+            <characteristic name="Assault bay" typeId="5064-520e-c582-fc1a"/>
+            <characteristic name="Traits" typeId="7875-4af0-5837-6dcb">Sluggish</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="2" field="5064-520e-c582-fc1a">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="326d-5341-3a7d-3698" childId="1d4e-2f1a-e768-8008" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="replace" value=" " field="7875-4af0-5837-6dcb" arg="Sluggish">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="3d91-1655-75cf-4518" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="Thrust Vectoring" field="7875-4af0-5837-6dcb" join=",">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1753-ab8b-3332-2883" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Coilgun" hidden="false" id="cb0f-ecb7-2f60-fc20" type="selectionEntry" publicationId="3942-1ba6-967b-c9ed" targetId="607b-a6ef-2b27-9d78" sortIndex="3">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="1f0a-f48e-55cb-ad9c-min"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="1f0a-f48e-55cb-ad9c-max"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Commander" hidden="false" id="1147-6d4c-10cf-2d9a" type="selectionEntry" targetId="df1f-937a-7be9-2333" sortIndex="2" publicationId="c478-850b-f9ae-9c10">
+          <entryLinks>
+            <entryLink import="true" name="Faction Commanders" hidden="false" id="1d98-74aa-9366-df29" type="selectionEntryGroup" targetId="5636-c598-0372-7366"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="self" shared="true" id="b8f0-e348-4e6d-5551" includeChildSelections="true"/>
+            <constraint type="max" value="1" field="selections" scope="self" shared="true" id="2981-142b-9099-f81b" includeChildSelections="true"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Stinger Torpedo" hidden="false" id="5441-f554-78bb-bbcd" type="selectionEntry" targetId="99dd-9eb3-1259-64fe" sortIndex="4">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="cb4d-cd8c-899d-d481-min"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="cb4d-cd8c-899d-d481-max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="+2 Assault Bays" hidden="false" id="1d4e-2f1a-e768-8008" publicationId="3942-1ba6-967b-c9ed" page="52" sortIndex="1">
+          <costs>
+            <cost name="Points" typeId="dd57-09ff-340f-8e48" value="3"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="e657-79eb-3c4d-7e0d"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2115-f963-8a3c-1486"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="CQB Companies" hidden="false" id="2ed4-2f97-f090-bfc9" type="selectionEntryGroup" targetId="262e-cb19-5c9b-e95a">
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="be05-7a2a-ded0-34a9"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="2c08-819e-21b3-66ec"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <modifiers>
+        <modifier type="add" value="b5b8-5ac8-4c77-cbb0" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="self" childId="df1f-937a-7be9-2333" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Sluggish" id="8024-cbe4-fc4e-4cb4" hidden="false" type="rule" targetId="8a4f-3958-18fe-0838"/>
+        <infoLink name="Thrust Vectoring" id="5957-8521-4f71-29cf" hidden="true" type="rule" targetId="bdbe-b620-67db-d020">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1753-ab8b-3332-2883" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="T3 Heavy Cruiser" hidden="false" id="acbe-1153-5994-90bc" publicationId="3942-1ba6-967b-c9ed" page="52">
+      <costs>
+        <cost name="Points" typeId="dd57-09ff-340f-8e48" value="56"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="ddf0-e667-c5bb-bfd0" id="0a7e-0d81-9bac-b98f" primary="true" name="Capital"/>
+        <categoryLink targetId="2db9-9828-2b94-e476" id="10bc-f1a8-fc54-122d" primary="false" name="Ship"/>
+        <categoryLink targetId="f40f-3734-00a7-9824" id="d6f9-6b49-c5e9-15e4" primary="false" name="not vanguard eligible"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="T3 Heavy Cruiser" typeId="fd62-daee-6b9c-c612" typeName="Ship Stats" hidden="false" id="38b5-a8e6-f8da-93e0" publicationId="3942-1ba6-967b-c9ed" page="52">
+          <characteristics>
+            <characteristic name="Shield Strength" typeId="face-6a39-0cf0-eebe">6</characteristic>
+            <characteristic name="Max Thrust" typeId="0351-9250-0a32-4131">3</characteristic>
+            <characteristic name="Hull Points" typeId="b78c-8434-3b73-3728">5</characteristic>
+            <characteristic name="Crew Size" typeId="ba69-5c5c-fbb2-ee8f">5</characteristic>
+            <characteristic name="Strike Bay" typeId="6951-636f-b7cf-dff3"/>
+            <characteristic name="Assault bay" typeId="5064-520e-c582-fc1a"/>
+            <characteristic name="Traits" typeId="7875-4af0-5837-6dcb">Reactive Armour 1, Sluggish</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="replace" value=" " field="7875-4af0-5837-6dcb" arg="Sluggish">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="3d91-1655-75cf-4518" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="Thrust Vectoring" field="7875-4af0-5837-6dcb" join=",">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1753-ab8b-3332-2883" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Coilgun" hidden="false" id="92e1-a675-571c-66ca" type="selectionEntry" publicationId="3942-1ba6-967b-c9ed" targetId="607b-a6ef-2b27-9d78" sortIndex="3">
+          <constraints>
+            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="b01a-919e-e956-a0da-min"/>
+            <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="b01a-919e-e956-a0da-max"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Commander" hidden="false" id="fba6-67b7-6c02-f743" type="selectionEntry" targetId="df1f-937a-7be9-2333" sortIndex="2" publicationId="c478-850b-f9ae-9c10">
+          <entryLinks>
+            <entryLink import="true" name="Faction Commanders" hidden="false" id="ef49-53df-f401-5152" type="selectionEntryGroup" targetId="5636-c598-0372-7366"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="self" shared="true" id="a01e-2f73-19fe-a4b6" includeChildSelections="true"/>
+            <constraint type="max" value="1" field="selections" scope="self" shared="true" id="23dd-c5a8-cbed-524f" includeChildSelections="true"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Missile Pods" hidden="false" id="67e5-b441-e431-ea0a" type="selectionEntry" targetId="2503-88df-79db-7f5a" sortIndex="4">
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="3368-6e71-dea1-6266-min"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="3368-6e71-dea1-6266-max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Armoured Reactor Core" hidden="false" id="49ff-644d-4024-6da9" publicationId="3942-1ba6-967b-c9ed" page="52" sortIndex="1">
+          <costs>
+            <cost name="Points" typeId="dd57-09ff-340f-8e48" value="3"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="2c2f-1090-310a-5918"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="17b4-1247-d7f0-7a32"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Armoured Reactor Core" id="8141-2312-fe54-52e4" hidden="false" type="rule" targetId="e597-6ea8-a851-86e8"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <modifiers>
+        <modifier type="add" value="b5b8-5ac8-4c77-cbb0" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="self" childId="df1f-937a-7be9-2333" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Sluggish" id="379f-f036-fbdc-7727" hidden="false" type="rule" targetId="8a4f-3958-18fe-0838"/>
+        <infoLink name="Reactive Armour X" id="9bd8-1ee1-b058-48dd" hidden="false" type="rule" targetId="c714-09db-f6d2-a6af"/>
+        <infoLink name="Thrust Vectoring" id="c389-f0ee-0cf8-5391" hidden="true" type="rule" targetId="bdbe-b620-67db-d020">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1753-ab8b-3332-2883" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Battle Cruiser " hidden="false" id="d063-9c20-e38a-8a6f" publicationId="3942-1ba6-967b-c9ed" page="52">
+      <costs>
+        <cost name="Points" typeId="dd57-09ff-340f-8e48" value="50"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="ddf0-e667-c5bb-bfd0" id="38f4-5026-96a7-7649" primary="true" name="Capital"/>
+        <categoryLink targetId="2db9-9828-2b94-e476" id="dd15-8162-ce67-10d8" primary="false" name="Ship"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Battle Cruiser " typeId="fd62-daee-6b9c-c612" typeName="Ship Stats" hidden="false" id="88ec-3147-2ba9-2cb6" publicationId="3942-1ba6-967b-c9ed" page="52">
+          <characteristics>
+            <characteristic name="Shield Strength" typeId="face-6a39-0cf0-eebe">6</characteristic>
+            <characteristic name="Max Thrust" typeId="0351-9250-0a32-4131">3</characteristic>
+            <characteristic name="Hull Points" typeId="b78c-8434-3b73-3728">4</characteristic>
+            <characteristic name="Crew Size" typeId="ba69-5c5c-fbb2-ee8f">4</characteristic>
+            <characteristic name="Strike Bay" typeId="6951-636f-b7cf-dff3"/>
+            <characteristic name="Assault bay" typeId="5064-520e-c582-fc1a"/>
+            <characteristic name="Traits" typeId="7875-4af0-5837-6dcb">Sluggish</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="increment" value="1" field="0351-9250-0a32-4131">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="cb05-0407-81a1-e25f" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="replace" value=" " field="7875-4af0-5837-6dcb" arg="Sluggish">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="3d91-1655-75cf-4518" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="Thrust Vectoring" field="7875-4af0-5837-6dcb" join=",">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1753-ab8b-3332-2883" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Coilgun" hidden="false" id="752f-1a20-f405-ef61" type="selectionEntry" publicationId="3942-1ba6-967b-c9ed" targetId="607b-a6ef-2b27-9d78" sortIndex="4">
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="05b7-02cc-f590-a18a-min"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="05b7-02cc-f590-a18a-max"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="0" field="05b7-02cc-f590-a18a-min">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="81f4-b030-bd93-edbb" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="0" field="05b7-02cc-f590-a18a-max">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="81f4-b030-bd93-edbb" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Commander" hidden="false" id="a23f-b64a-cbb9-a855" type="selectionEntry" targetId="df1f-937a-7be9-2333" sortIndex="3" publicationId="c478-850b-f9ae-9c10">
+          <entryLinks>
+            <entryLink import="true" name="Faction Commanders" hidden="false" id="6b12-8191-ee28-37be" type="selectionEntryGroup" targetId="5636-c598-0372-7366">
+              <selectionEntries>
+                <selectionEntry type="unit" import="true" name="Shar Ura" hidden="false" id="81f4-b030-bd93-edbb">
+                  <costs>
+                    <cost name="Points" typeId="dd57-09ff-340f-8e48" value="20"/>
+                  </costs>
+                  <categoryLinks>
+                    <categoryLink targetId="b5b8-5ac8-4c77-cbb0" id="fca9-fcb7-a38c-2c7a" primary="false" name="Commander"/>
+                    <categoryLink targetId="c939-66e5-c157-f0f8" id="5781-2559-6710-be31" primary="false" name="ALLOW_6_SHIPS"/>
+                  </categoryLinks>
+                  <profiles>
+                    <profile name="Shar Ura" typeId="f8e8-01a8-098b-ca12" typeName="Commander stats" hidden="false" id="816c-1a9f-4a31-24d8" publicationId="3942-1ba6-967b-c9ed" page="51">
+                      <characteristics>
+                        <characteristic name="Commander Quality" typeId="388a-86b2-03af-20ad">Inspiring 3</characteristic>
+                        <characteristic name="Rank" typeId="16de-0568-dfa7-27a1">Commander</characteristic>
+                        <characteristic name="Ship" typeId="f3f9-27da-95ec-1253">Battle Cruiser</characteristic>
+                        <characteristic name="Skill" typeId="8cfd-31fa-dd72-6e30">+2</characteristic>
+                        <characteristic name="Morale Bonus" typeId="26e9-24ca-fa72-16d3">0</characteristic>
+                        <characteristic name="Command Capacity" typeId="9a9d-6b65-579c-ca2c">6</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <rules>
+                    <rule name="Missile Refits" id="70cc-3db7-a91d-f7de" hidden="false" publicationId="3942-1ba6-967b-c9ed" page="51">
+                      <description>Battle Cruisers in this battlegroup have +3 Missile Pods. Missile pods for this battlegroup have 16” range. Battle Cruisers in this battlegroup lose their Coilguns.</description>
+                    </rule>
+                  </rules>
+                </selectionEntry>
+              </selectionEntries>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="self" shared="true" id="c43f-7ce3-a31a-068d" includeChildSelections="true"/>
+            <constraint type="max" value="1" field="selections" scope="self" shared="true" id="74d4-dc49-9371-3b4b" includeChildSelections="true"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Armoured Reactor Core" hidden="false" id="dd2b-2909-7ef0-f582" publicationId="3942-1ba6-967b-c9ed" page="52" sortIndex="1">
+          <costs>
+            <cost name="Points" typeId="dd57-09ff-340f-8e48" value="3"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="4b53-2852-4a3a-ed4e"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fe68-6731-0ab0-6ea9"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Armoured Reactor Core" id="d7a2-8025-99bc-2265" hidden="false" type="rule" targetId="e597-6ea8-a851-86e8"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="+1 Max Thrust" hidden="false" id="cb05-0407-81a1-e25f" sortIndex="2">
+          <costs>
+            <cost name="Points" typeId="dd57-09ff-340f-8e48" value="5"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="00aa-6cf8-4564-00ce"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="92ac-dcc2-1d28-9e8a"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Missile Pods" hidden="false" id="9ae3-9213-3efe-e60b" sortIndex="5">
+          <profiles>
+            <profile name="Missile Pods" typeId="0faa-34ea-a9b8-dccb" typeName="Weapon Stats" hidden="false" id="fec3-fedb-87c9-f40f" publicationId="3942-1ba6-967b-c9ed" page="54">
+              <characteristics>
+                <characteristic name="Range" typeId="70bd-05d7-583c-390d">8&quot;</characteristic>
+                <characteristic name="Roll to hit" typeId="a5ba-9b41-500b-6c52">6+</characteristic>
+                <characteristic name="Shield Damage" typeId="90c8-0f37-d9b7-e2e1">1</characteristic>
+                <characteristic name="Hull Damage" typeId="9dc6-3082-ba5b-4c5a">1</characteristic>
+                <characteristic name="Fire Points" typeId="d0d5-25ad-92ff-bf0c">All</characteristic>
+                <characteristic name="Traits" typeId="69fd-d140-d640-f992">Target Lock, Ordanence</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="set" value="16&quot;" field="70bd-05d7-583c-390d">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="81f4-b030-bd93-edbb" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Ordanence" id="6657-f022-fd9a-2551" hidden="false" type="rule" targetId="a8c2-e70e-c16c-301d"/>
+            <infoLink name="Target Lock" id="cd51-712a-bd5e-1285" hidden="false" type="rule" targetId="1d62-343c-1246-9699"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="8" field="selections" scope="parent" shared="true" id="aedc-8e26-1086-6698-min"/>
+            <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="aedc-8e26-1086-6698-max"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="11" field="aedc-8e26-1086-6698-min">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="81f4-b030-bd93-edbb" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="11" field="aedc-8e26-1086-6698-max">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="81f4-b030-bd93-edbb" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+      </selectionEntries>
+      <modifiers>
+        <modifier type="add" value="b5b8-5ac8-4c77-cbb0" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="self" childId="df1f-937a-7be9-2333" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="2605-3576-ce62-d271" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="e449-525a-6485-abf6" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Sluggish" id="62d5-8c84-1993-ae1d" hidden="false" type="rule" targetId="8a4f-3958-18fe-0838"/>
+        <infoLink name="Thrust Vectoring" id="d2c2-34b5-9148-74b3" hidden="true" type="rule" targetId="bdbe-b620-67db-d020">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1753-ab8b-3332-2883" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Battleship" hidden="false" id="7d20-eb87-d537-a61a" publicationId="3942-1ba6-967b-c9ed" page="52">
+      <costs>
+        <cost name="Points" typeId="dd57-09ff-340f-8e48" value="66"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="ddf0-e667-c5bb-bfd0" id="6b2b-cc1b-97a4-daef" primary="true" name="Capital"/>
+        <categoryLink targetId="2db9-9828-2b94-e476" id="a658-a444-c54a-15f7" primary="false" name="Ship"/>
+        <categoryLink targetId="f40f-3734-00a7-9824" id="3b1d-b8b1-8a63-8395" primary="false" name="not vanguard eligible"/>
+        <categoryLink targetId="99a8-81d3-ead9-288b" id="6086-2260-2da7-b518" primary="false" name="Heavy"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Battleship" typeId="fd62-daee-6b9c-c612" typeName="Ship Stats" hidden="false" id="539c-093b-11f5-55a6" publicationId="3942-1ba6-967b-c9ed" page="52">
+          <characteristics>
+            <characteristic name="Shield Strength" typeId="face-6a39-0cf0-eebe">7</characteristic>
+            <characteristic name="Max Thrust" typeId="0351-9250-0a32-4131">3</characteristic>
+            <characteristic name="Hull Points" typeId="b78c-8434-3b73-3728">5</characteristic>
+            <characteristic name="Crew Size" typeId="ba69-5c5c-fbb2-ee8f">6</characteristic>
+            <characteristic name="Strike Bay" typeId="6951-636f-b7cf-dff3"/>
+            <characteristic name="Assault bay" typeId="5064-520e-c582-fc1a"/>
+            <characteristic name="Traits" typeId="7875-4af0-5837-6dcb">Sluggish</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="replace" value=" " field="7875-4af0-5837-6dcb" arg="Sluggish">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="3d91-1655-75cf-4518" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="Thrust Vectoring" field="7875-4af0-5837-6dcb" join=",">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1753-ab8b-3332-2883" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Coilgun" hidden="false" id="14fd-9667-d9dd-dc79" type="selectionEntry" publicationId="3942-1ba6-967b-c9ed" targetId="607b-a6ef-2b27-9d78" sortIndex="4">
+          <constraints>
+            <constraint type="min" value="7" field="selections" scope="parent" shared="true" id="9ffa-8f02-e842-c0e4-min"/>
+            <constraint type="max" value="7" field="selections" scope="parent" shared="true" id="9ffa-8f02-e842-c0e4-max"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Commander" hidden="false" id="f67a-58b7-9924-44d0" type="selectionEntry" targetId="df1f-937a-7be9-2333" sortIndex="3" publicationId="c478-850b-f9ae-9c10">
+          <entryLinks>
+            <entryLink import="true" name="Faction Commanders" hidden="false" id="670e-d0ec-ad81-0438" type="selectionEntryGroup" targetId="5636-c598-0372-7366"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="self" shared="true" id="45c5-8030-ac3c-4cad" includeChildSelections="true"/>
+            <constraint type="max" value="1" field="selections" scope="self" shared="true" id="6f52-710f-5b41-7dd9" includeChildSelections="true"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Missile Pods" hidden="false" id="12ae-14eb-0a41-8023" type="selectionEntry" targetId="2503-88df-79db-7f5a" sortIndex="5">
+          <constraints>
+            <constraint type="min" value="8" field="selections" scope="parent" shared="true" id="5ec6-b442-be02-5324-min"/>
+            <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="5ec6-b442-be02-5324-max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Armoured Reactor Core" hidden="false" id="ac11-71cf-a605-6d71" publicationId="3942-1ba6-967b-c9ed" page="52" sortIndex="1">
+          <costs>
+            <cost name="Points" typeId="dd57-09ff-340f-8e48" value="3"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="29e7-2e38-f6ec-e1a0"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1709-23da-2049-d81b"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Armoured Reactor Core" id="5989-3930-db1c-bb82" hidden="false" type="rule" targetId="e597-6ea8-a851-86e8"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <modifiers>
+        <modifier type="add" value="b5b8-5ac8-4c77-cbb0" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="self" childId="df1f-937a-7be9-2333" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Sluggish" id="5327-46da-9ee0-ebe3" hidden="false" type="rule" targetId="8a4f-3958-18fe-0838"/>
+        <infoLink name="Thrust Vectoring" id="b265-57a9-49e7-b8ba" hidden="true" type="rule" targetId="bdbe-b620-67db-d020">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1753-ab8b-3332-2883" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Carrier" hidden="false" id="4c94-0220-7e2f-365e" publicationId="3942-1ba6-967b-c9ed" page="52">
+      <costs>
+        <cost name="Points" typeId="dd57-09ff-340f-8e48" value="70"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="ddf0-e667-c5bb-bfd0" id="1df0-cf7d-bf42-c19c" primary="true" name="Capital"/>
+        <categoryLink targetId="2db9-9828-2b94-e476" id="3c17-14cc-f9eb-f9af" primary="false" name="Ship"/>
+        <categoryLink targetId="f40f-3734-00a7-9824" id="1d3e-1a12-3529-5278" primary="false" name="not vanguard eligible"/>
+        <categoryLink targetId="99a8-81d3-ead9-288b" id="42cf-7c9d-5cc4-7b93" primary="false" name="Heavy"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Carrier" typeId="fd62-daee-6b9c-c612" typeName="Ship Stats" hidden="false" id="4a7a-0410-dfe9-f94a" publicationId="3942-1ba6-967b-c9ed" page="52">
+          <characteristics>
+            <characteristic name="Shield Strength" typeId="face-6a39-0cf0-eebe">7</characteristic>
+            <characteristic name="Max Thrust" typeId="0351-9250-0a32-4131">3</characteristic>
+            <characteristic name="Hull Points" typeId="b78c-8434-3b73-3728">4</characteristic>
+            <characteristic name="Crew Size" typeId="ba69-5c5c-fbb2-ee8f">6</characteristic>
+            <characteristic name="Strike Bay" typeId="6951-636f-b7cf-dff3">7</characteristic>
+            <characteristic name="Assault bay" typeId="5064-520e-c582-fc1a">2</characteristic>
+            <characteristic name="Traits" typeId="7875-4af0-5837-6dcb">Strike Support 1, Launch 4, Catapults,
+Sluggish</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="increment" value="4" field="6951-636f-b7cf-dff3">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="30c2-7dc6-a4df-c07e" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="replace" value=" " field="7875-4af0-5837-6dcb" arg="Sluggish">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="3d91-1655-75cf-4518" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="Thrust Vectoring" field="7875-4af0-5837-6dcb" join=",">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1753-ab8b-3332-2883" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Coilgun" hidden="false" id="0b76-e1c7-33e1-8f10" type="selectionEntry" publicationId="3942-1ba6-967b-c9ed" targetId="607b-a6ef-2b27-9d78" sortIndex="6">
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="dadd-5273-1349-70f2-min"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="dadd-5273-1349-70f2-max"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Commander" hidden="false" id="1853-de60-0077-0c88" type="selectionEntry" targetId="df1f-937a-7be9-2333" sortIndex="3" publicationId="c478-850b-f9ae-9c10">
+          <entryLinks>
+            <entryLink import="true" name="Faction Commanders" hidden="false" id="2250-92a6-7760-32b8" type="selectionEntryGroup" targetId="5636-c598-0372-7366">
+              <entryLinks>
+                <entryLink import="true" name="Squadron Captain Arira" hidden="false" id="707e-2f82-67ef-c6b6" type="selectionEntry" targetId="3d91-1655-75cf-4518"/>
+              </entryLinks>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="self" shared="true" id="baf9-58b5-a6dd-f12c" includeChildSelections="true"/>
+            <constraint type="max" value="1" field="selections" scope="self" shared="true" id="7932-3102-f62b-0750" includeChildSelections="true"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="unit" import="true" name="Squadron Captain Arira" hidden="false" id="a429-ff06-7952-3572">
+              <categoryLinks>
+                <categoryLink name="Commander" hidden="false" id="50a1-f3ce-de89-04f6" targetId="b5b8-5ac8-4c77-cbb0" primary="true"/>
+              </categoryLinks>
+              <costs>
+                <cost name="Points" typeId="dd57-09ff-340f-8e48" value="15"/>
+              </costs>
+              <profiles>
+                <profile name="Squadron Captain Arira" typeId="f8e8-01a8-098b-ca12" typeName="Commander stats" hidden="false" id="104e-c4fe-5c44-b736" publicationId="3942-1ba6-967b-c9ed" page="51">
+                  <characteristics>
+                    <characteristic name="Commander Quality" typeId="388a-86b2-03af-20ad">Confident 2</characteristic>
+                    <characteristic name="Rank" typeId="16de-0568-dfa7-27a1">Commander</characteristic>
+                    <characteristic name="Ship" typeId="f3f9-27da-95ec-1253">Any Carrier</characteristic>
+                    <characteristic name="Skill" typeId="8cfd-31fa-dd72-6e30">+1</characteristic>
+                    <characteristic name="Morale Bonus" typeId="26e9-24ca-fa72-16d3">0</characteristic>
+                    <characteristic name="Command Capacity" typeId="9a9d-6b65-579c-ca2c">8</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule name="Rebel" id="6d9c-2ed2-e23b-296d" hidden="false">
+                  <description>Ships in this battlegroup lose the Sluggish trait.</description>
+                </rule>
+              </rules>
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="fe67-0720-3d48-f030"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="525b-147d-ca51-83f9"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </entryLink>
+        <entryLink import="true" name="Missile Pods" hidden="false" id="7d18-b852-9676-dc28" type="selectionEntry" targetId="2503-88df-79db-7f5a" sortIndex="6">
+          <constraints>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="86da-9f18-4058-82fa-min"/>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="86da-9f18-4058-82fa-max"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Strike Craft" hidden="false" id="84bc-668c-62b9-779c" type="selectionEntryGroup" targetId="d7d1-b7b3-8eaf-72a5" sortIndex="4">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="fbfd-4db7-6f86-22e0"/>
+            <constraint type="max" value="7" field="selections" scope="parent" shared="true" id="fc28-699e-c479-5af6"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="11" field="fc28-699e-c479-5af6">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="30c2-7dc6-a4df-c07e" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" value="1" field="fc28-699e-c479-5af6">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="8058-16c8-a6a8-624e" shared="true" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="CQB Companies" hidden="false" id="4194-1151-d861-e457" type="selectionEntryGroup" targetId="262e-cb19-5c9b-e95a" sortIndex="5">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="a24b-24a1-6d0d-f834"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="7734-5fa9-34c6-6724"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="+4 Strike Bays" hidden="false" id="30c2-7dc6-a4df-c07e" publicationId="3942-1ba6-967b-c9ed" page="52" sortIndex="2">
+          <costs>
+            <cost name="Points" typeId="dd57-09ff-340f-8e48" value="3"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="95bf-2664-5782-76b1"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6c0f-4c10-4b3b-4148"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <modifiers>
+        <modifier type="add" value="b5b8-5ac8-4c77-cbb0" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="self" childId="df1f-937a-7be9-2333" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Sluggish" id="ac21-9b2f-650b-3e43" hidden="false" type="rule" targetId="8a4f-3958-18fe-0838"/>
+        <infoLink name="Strike Support X" id="a921-e09d-931c-bac3" hidden="false" type="rule" targetId="97b1-7581-93a1-af45"/>
+        <infoLink name="Catapults" id="c027-fb62-6fb2-42ce" hidden="false" type="rule" targetId="21f1-960d-2c7b-3dbb"/>
+        <infoLink name="Launch X" id="d81c-f329-2030-8bf0" hidden="false" type="rule" targetId="0158-e952-527e-8955"/>
+        <infoLink name="Thrust Vectoring" id="2472-eeff-c73c-03b2" hidden="true" type="rule" targetId="bdbe-b620-67db-d020">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1753-ab8b-3332-2883" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Super Carrier" hidden="false" id="e532-34d2-d795-2ee7" publicationId="3942-1ba6-967b-c9ed" page="52">
+      <costs>
+        <cost name="Points" typeId="dd57-09ff-340f-8e48" value="105"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="ddf0-e667-c5bb-bfd0" id="ba5e-9e5e-282b-2073" primary="true" name="Capital"/>
+        <categoryLink targetId="2db9-9828-2b94-e476" id="1f0f-80a9-d94c-49f1" primary="false" name="Ship"/>
+        <categoryLink targetId="f40f-3734-00a7-9824" id="9370-0a3a-78c1-d1b8" primary="false" name="not vanguard eligible"/>
+        <categoryLink targetId="99a8-81d3-ead9-288b" id="4cad-f970-b382-f35b" primary="false" name="Heavy"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Super Carrier" typeId="fd62-daee-6b9c-c612" typeName="Ship Stats" hidden="false" id="228b-6727-ce35-d9a2" publicationId="3942-1ba6-967b-c9ed" page="52">
+          <characteristics>
+            <characteristic name="Shield Strength" typeId="face-6a39-0cf0-eebe">9</characteristic>
+            <characteristic name="Max Thrust" typeId="0351-9250-0a32-4131">3</characteristic>
+            <characteristic name="Hull Points" typeId="b78c-8434-3b73-3728">6</characteristic>
+            <characteristic name="Crew Size" typeId="ba69-5c5c-fbb2-ee8f">8</characteristic>
+            <characteristic name="Strike Bay" typeId="6951-636f-b7cf-dff3">9</characteristic>
+            <characteristic name="Assault bay" typeId="5064-520e-c582-fc1a">3</characteristic>
+            <characteristic name="Traits" typeId="7875-4af0-5837-6dcb">Strike Support 3, Launch 5, Catapults, Indestructible, Fleet Repair Shop, Sluggish</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="replace" value=" " field="7875-4af0-5837-6dcb" arg="Sluggish">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="3d91-1655-75cf-4518" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="Thrust Vectoring" field="7875-4af0-5837-6dcb" join=",">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1753-ab8b-3332-2883" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Coilgun" hidden="false" id="ee8c-acee-604e-00e3" type="selectionEntry" publicationId="3942-1ba6-967b-c9ed" targetId="607b-a6ef-2b27-9d78" sortIndex="6">
+          <constraints>
+            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="e131-9b88-5a03-af16-min"/>
+            <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="e131-9b88-5a03-af16-max"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Commander" hidden="false" id="ca11-da05-3a3c-7b73" type="selectionEntry" targetId="df1f-937a-7be9-2333" sortIndex="3" publicationId="c478-850b-f9ae-9c10">
+          <entryLinks>
+            <entryLink import="true" name="Faction Commanders" hidden="false" id="74ef-1609-164c-7923" type="selectionEntryGroup" targetId="5636-c598-0372-7366">
+              <entryLinks>
+                <entryLink import="true" name="Squadron Captain Arira" hidden="false" id="db4c-a10b-1ac8-d46a" type="selectionEntry" targetId="3d91-1655-75cf-4518"/>
+              </entryLinks>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="self" shared="true" id="96e6-4a2a-068a-bd5c" includeChildSelections="true"/>
+            <constraint type="max" value="1" field="selections" scope="self" shared="true" id="445b-3ec3-4868-4c95" includeChildSelections="true"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Missile Pods" hidden="false" id="ed52-d305-2fe2-843b" type="selectionEntry" targetId="2503-88df-79db-7f5a" sortIndex="7">
+          <constraints>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="b390-8bd1-29a9-984b-min"/>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="b390-8bd1-29a9-984b-max"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Strike Craft" hidden="false" id="9b67-7186-db7a-5af9" type="selectionEntryGroup" targetId="d7d1-b7b3-8eaf-72a5" sortIndex="4">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="ad1d-3016-4775-0602"/>
+            <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="42f6-1488-27d7-3e64"/>
+          </constraints>
+          <modifiers>
+            <modifier type="decrement" value="1" field="42f6-1488-27d7-3e64">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="8058-16c8-a6a8-624e" shared="true" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="CQB Companies" hidden="false" id="17a5-89ea-3031-b925" type="selectionEntryGroup" targetId="262e-cb19-5c9b-e95a" sortIndex="5">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="d790-d858-00b7-71cf"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="248d-e2f7-542c-abee"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Armoured Reactor Core" hidden="false" id="1c8e-64ad-5b9c-207a" publicationId="3942-1ba6-967b-c9ed" page="52" sortIndex="1">
+          <costs>
+            <cost name="Points" typeId="dd57-09ff-340f-8e48" value="3"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="5600-d7b1-5f98-ba09"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="94a1-ab02-9d28-6b95"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Armoured Reactor Core" id="565f-31d4-ce06-a5a6" hidden="false" type="rule" targetId="e597-6ea8-a851-86e8"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <modifiers>
+        <modifier type="add" value="b5b8-5ac8-4c77-cbb0" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="self" childId="df1f-937a-7be9-2333" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Sluggish" id="8a94-825d-e879-d4cf" hidden="false" type="rule" targetId="8a4f-3958-18fe-0838"/>
+        <infoLink name="Strike Support X" id="b485-16a3-a93d-2bce" hidden="false" type="rule" targetId="97b1-7581-93a1-af45"/>
+        <infoLink name="Catapults" id="5a67-d0b9-de36-27fd" hidden="false" type="rule" targetId="21f1-960d-2c7b-3dbb"/>
+        <infoLink name="Launch X" id="c7a6-1fdd-a06f-16c3" hidden="false" type="rule" targetId="0158-e952-527e-8955"/>
+        <infoLink name="Indestructible" id="ff9b-96d2-07ff-10f8" hidden="false" type="rule" targetId="04f8-da66-f082-a310"/>
+        <infoLink name="Fleet Repair Shop" id="d6a0-7ca4-f7be-9ff8" hidden="false" type="rule" targetId="a168-0e58-484d-dbdb"/>
+        <infoLink name="Thrust Vectoring" id="ff51-589d-79d1-a80e" hidden="true" type="rule" targetId="bdbe-b620-67db-d020">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1753-ab8b-3332-2883" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Flagship" hidden="false" id="fcd8-70dd-a56e-2767" publicationId="3942-1ba6-967b-c9ed" page="52">
+      <costs>
+        <cost name="Points" typeId="dd57-09ff-340f-8e48" value="72"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="ddf0-e667-c5bb-bfd0" id="6264-fba2-01cb-336c" primary="true" name="Capital"/>
+        <categoryLink targetId="2db9-9828-2b94-e476" id="eb77-762e-77a7-6e5c" primary="false" name="Ship"/>
+        <categoryLink targetId="f40f-3734-00a7-9824" id="360f-3308-4427-41a0" primary="false" name="not vanguard eligible"/>
+        <categoryLink targetId="99a8-81d3-ead9-288b" id="76fa-c722-bd37-383e" primary="false" name="Heavy"/>
+        <categoryLink targetId="7f3a-181d-1d3c-e282" id="f84a-4e04-51c3-28c1" primary="false" name="Super Heavy"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Flagship" typeId="fd62-daee-6b9c-c612" typeName="Ship Stats" hidden="false" id="07d8-ba52-7e96-cc99" publicationId="3942-1ba6-967b-c9ed" page="52">
+          <characteristics>
+            <characteristic name="Shield Strength" typeId="face-6a39-0cf0-eebe">9</characteristic>
+            <characteristic name="Max Thrust" typeId="0351-9250-0a32-4131">3</characteristic>
+            <characteristic name="Hull Points" typeId="b78c-8434-3b73-3728">5</characteristic>
+            <characteristic name="Crew Size" typeId="ba69-5c5c-fbb2-ee8f">7</characteristic>
+            <characteristic name="Strike Bay" typeId="6951-636f-b7cf-dff3"/>
+            <characteristic name="Assault bay" typeId="5064-520e-c582-fc1a"/>
+            <characteristic name="Traits" typeId="7875-4af0-5837-6dcb">Flag Bridge, Sluggish, Super Heavy</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="replace" value=" " field="7875-4af0-5837-6dcb" arg="Sluggish">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="3d91-1655-75cf-4518" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Coilgun" hidden="false" id="25af-d046-54ca-8f8d" type="selectionEntry" publicationId="3942-1ba6-967b-c9ed" targetId="607b-a6ef-2b27-9d78" sortIndex="4">
+          <constraints>
+            <constraint type="min" value="7" field="selections" scope="parent" shared="true" id="a0c9-e1ac-7216-03b7-min"/>
+            <constraint type="max" value="7" field="selections" scope="parent" shared="true" id="a0c9-e1ac-7216-03b7-max"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Commander" hidden="false" id="e53d-4174-363e-8bbb" type="selectionEntry" targetId="df1f-937a-7be9-2333" sortIndex="3" publicationId="c478-850b-f9ae-9c10">
+          <entryLinks>
+            <entryLink import="true" name="Faction Commanders" hidden="false" id="bc4d-204c-f646-1fc2" type="selectionEntryGroup" targetId="5636-c598-0372-7366"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="self" shared="true" id="2db1-65ad-76f6-a093" includeChildSelections="true"/>
+            <constraint type="max" value="1" field="selections" scope="self" shared="true" id="be1c-a51e-b806-4074" includeChildSelections="true"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Missile Pods" hidden="false" id="efd9-a238-65b2-7041" type="selectionEntry" targetId="2503-88df-79db-7f5a" sortIndex="5">
+          <constraints>
+            <constraint type="min" value="8" field="selections" scope="parent" shared="true" id="b03b-7bfd-b4da-8940-min"/>
+            <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="b03b-7bfd-b4da-8940-max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Armoured Reactor Core" hidden="false" id="bc16-cf83-8637-f6fe" publicationId="3942-1ba6-967b-c9ed" page="52" sortIndex="1">
+          <costs>
+            <cost name="Points" typeId="dd57-09ff-340f-8e48" value="3"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="30e4-aed9-2b0f-78db"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f6fc-73f7-9928-d53c"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Armoured Reactor Core" id="f694-9398-b42c-d699" hidden="false" type="rule" targetId="e597-6ea8-a851-86e8"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <modifiers>
+        <modifier type="add" value="b5b8-5ac8-4c77-cbb0" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="self" childId="df1f-937a-7be9-2333" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Sluggish" id="a533-213b-a90a-3b2c" hidden="false" type="rule" targetId="8a4f-3958-18fe-0838"/>
+        <infoLink name="Flag Bridge" id="0f70-dfdb-b21b-bf79" hidden="false" type="rule" targetId="deb6-b945-6a96-0eb7"/>
+        <infoLink name="Super Heavy" id="a9ab-50b8-76a0-23c6" hidden="false" type="rule" targetId="b543-30c9-4ae4-959c"/>
+        <infoLink name="Thrust Vectoring" id="2c71-7486-5574-7793" hidden="true" type="rule" targetId="bdbe-b620-67db-d020">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1753-ab8b-3332-2883" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Tharsis LBB" hidden="false" id="78c9-e06c-cd4f-5f41" publicationId="3942-1ba6-967b-c9ed" page="52">
+      <costs>
+        <cost name="Points" typeId="dd57-09ff-340f-8e48" value="90"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="ddf0-e667-c5bb-bfd0" id="5eb5-175e-2a55-1ff6" primary="true" name="Capital"/>
+        <categoryLink targetId="2db9-9828-2b94-e476" id="95c8-da9c-6745-bafb" primary="false" name="Ship"/>
+        <categoryLink targetId="f40f-3734-00a7-9824" id="1c12-bf85-51ea-e3ea" primary="false" name="not vanguard eligible"/>
+        <categoryLink targetId="99a8-81d3-ead9-288b" id="9d55-6f01-30d9-a501" primary="false" name="Heavy"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Tharsis LBB" typeId="fd62-daee-6b9c-c612" typeName="Ship Stats" hidden="false" id="65ce-23a3-f476-2f35" publicationId="3942-1ba6-967b-c9ed" page="52">
+          <characteristics>
+            <characteristic name="Shield Strength" typeId="face-6a39-0cf0-eebe">7</characteristic>
+            <characteristic name="Max Thrust" typeId="0351-9250-0a32-4131">3</characteristic>
+            <characteristic name="Hull Points" typeId="b78c-8434-3b73-3728">4</characteristic>
+            <characteristic name="Crew Size" typeId="ba69-5c5c-fbb2-ee8f">6</characteristic>
+            <characteristic name="Strike Bay" typeId="6951-636f-b7cf-dff3"/>
+            <characteristic name="Assault bay" typeId="5064-520e-c582-fc1a"/>
+            <characteristic name="Traits" typeId="7875-4af0-5837-6dcb">Character, Sluggish, Assassin Systems</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Coilgun" hidden="false" id="2fc7-bdd4-93d2-964b" type="selectionEntry" publicationId="3942-1ba6-967b-c9ed" targetId="607b-a6ef-2b27-9d78" sortIndex="4">
+          <constraints>
+            <constraint type="min" value="7" field="selections" scope="parent" shared="true" id="8ed4-6bd4-d6d1-cac2-min"/>
+            <constraint type="max" value="7" field="selections" scope="parent" shared="true" id="8ed4-6bd4-d6d1-cac2-max"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Zeus Cannon" hidden="false" id="9dc3-1d35-2dda-6750" type="selectionEntry" targetId="b259-2a8b-006c-8b8d" sortIndex="5">
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="2d37-6d00-cce9-4d69-min"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="2d37-6d00-cce9-4d69-max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="unit" import="true" name="Orion Prod" hidden="false" id="6915-0a0c-1360-f5c8" sortIndex="1">
+          <costs>
+            <cost name="Points" typeId="dd57-09ff-340f-8e48" value="10"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink targetId="b5b8-5ac8-4c77-cbb0" id="8223-8fce-0cbb-3518" primary="true" name="Commander"/>
+            <categoryLink targetId="b40d-40da-009b-a4a9" id="7eb0-c308-271c-e9b9" primary="false" name="ALLOW_8_SHIPS"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Orion Prod" typeId="f8e8-01a8-098b-ca12" typeName="Commander stats" hidden="false" id="360b-300b-6093-bef4" publicationId="3942-1ba6-967b-c9ed" page="50">
+              <characteristics>
+                <characteristic name="Commander Quality" typeId="388a-86b2-03af-20ad">Confident 2</characteristic>
+                <characteristic name="Rank" typeId="16de-0568-dfa7-27a1">Commander</characteristic>
+                <characteristic name="Ship" typeId="f3f9-27da-95ec-1253">Tharsis Battleship</characteristic>
+                <characteristic name="Skill" typeId="8cfd-31fa-dd72-6e30">0</characteristic>
+                <characteristic name="Morale Bonus" typeId="26e9-24ca-fa72-16d3">-1</characteristic>
+                <characteristic name="Command Capacity" typeId="9a9d-6b65-579c-ca2c">8</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="65a9-d4ef-4428-5573-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="65a9-d4ef-4428-5573-max"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <modifiers>
+        <modifier type="add" value="b5b8-5ac8-4c77-cbb0" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="self" childId="df1f-937a-7be9-2333" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Sluggish" id="15b2-0118-692f-51a7" hidden="false" type="rule" targetId="8a4f-3958-18fe-0838"/>
+        <infoLink name="Character" id="2ec0-746f-171f-0d7a" hidden="false" type="rule" targetId="1b1b-b907-076f-db7e"/>
+        <infoLink name="Assasin System" id="3647-5699-4f76-c6e5" hidden="false" type="rule" targetId="830f-689d-bd0d-7296"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Olympus Flagship" hidden="false" id="a28d-b8ea-276b-42d8" publicationId="3942-1ba6-967b-c9ed" page="52">
+      <costs>
+        <cost name="Points" typeId="dd57-09ff-340f-8e48" value="110"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="ddf0-e667-c5bb-bfd0" id="b13a-6b16-dc3d-4057" primary="true" name="Capital"/>
+        <categoryLink targetId="2db9-9828-2b94-e476" id="4be1-07b4-289b-0d78" primary="false" name="Ship"/>
+        <categoryLink targetId="f40f-3734-00a7-9824" id="2cc6-8730-f9a5-1fb9" primary="false" name="not vanguard eligible"/>
+        <categoryLink targetId="99a8-81d3-ead9-288b" id="dbae-6a50-70df-7a02" primary="false" name="Heavy"/>
+        <categoryLink targetId="7f3a-181d-1d3c-e282" id="a8df-e967-e41d-8329" primary="false" name="Super Heavy"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Olympus Flagship" typeId="fd62-daee-6b9c-c612" typeName="Ship Stats" hidden="false" id="0837-5cd5-bd2d-f60a" publicationId="3942-1ba6-967b-c9ed" page="52">
+          <characteristics>
+            <characteristic name="Shield Strength" typeId="face-6a39-0cf0-eebe">9</characteristic>
+            <characteristic name="Max Thrust" typeId="0351-9250-0a32-4131">3</characteristic>
+            <characteristic name="Hull Points" typeId="b78c-8434-3b73-3728">5</characteristic>
+            <characteristic name="Crew Size" typeId="ba69-5c5c-fbb2-ee8f">8</characteristic>
+            <characteristic name="Strike Bay" typeId="6951-636f-b7cf-dff3">3</characteristic>
+            <characteristic name="Assault bay" typeId="5064-520e-c582-fc1a">6</characteristic>
+            <characteristic name="Traits" typeId="7875-4af0-5837-6dcb">Assault Pods, Character, Launch 3, Indestructible, Flag Bridge, Sluggish, Super Heavy</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Coilgun" hidden="false" id="4213-1e23-4f2a-e2e1" type="selectionEntry" publicationId="3942-1ba6-967b-c9ed" targetId="607b-a6ef-2b27-9d78" sortIndex="6">
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="9d38-6452-ee4b-adbc-min"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="9d38-6452-ee4b-adbc-max"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Missile Pods" hidden="false" id="3a5c-0eff-f029-c5f5" type="selectionEntry" targetId="2503-88df-79db-7f5a" sortIndex="7">
+          <constraints>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="dc7e-3490-2416-3390-min"/>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="dc7e-3490-2416-3390-max"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Strike Craft" hidden="false" id="4bb0-493d-833d-c37e" type="selectionEntryGroup" targetId="d7d1-b7b3-8eaf-72a5" sortIndex="4">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="7fa6-d25b-07ff-885b"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="da3a-b49e-3988-ee1a"/>
+          </constraints>
+          <modifiers>
+            <modifier type="decrement" value="1" field="da3a-b49e-3988-ee1a">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="8058-16c8-a6a8-624e" shared="true" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="CQB Companies" hidden="false" id="9d3a-107a-4312-d872" type="selectionEntryGroup" targetId="262e-cb19-5c9b-e95a" sortIndex="5">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="bcaa-a895-c5ee-37fc"/>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="b199-3784-2993-dadc"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="unit" import="true" name="Valgar Sagittyr" hidden="false" id="3da8-a525-f7ce-42fd" publicationId="3942-1ba6-967b-c9ed" page="50" sortIndex="1">
+          <costs>
+            <cost name="Points" typeId="dd57-09ff-340f-8e48" value="35"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Commander" hidden="false" id="6c49-78d2-5db0-fd62" targetId="b5b8-5ac8-4c77-cbb0" primary="true"/>
+            <categoryLink targetId="3dd4-ce23-6c07-83db" id="9906-82b5-b170-4322" primary="false" name="ALLOW_12_SHIPS"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Valgar Sagittyr" typeId="f8e8-01a8-098b-ca12" typeName="Commander stats" hidden="false" id="6f1c-219d-3657-d7a5" publicationId="3942-1ba6-967b-c9ed" page="50">
+              <characteristics>
+                <characteristic name="Commander Quality" typeId="388a-86b2-03af-20ad">Legendary 4</characteristic>
+                <characteristic name="Rank" typeId="16de-0568-dfa7-27a1">Admiral</characteristic>
+                <characteristic name="Ship" typeId="f3f9-27da-95ec-1253">Olympus Class Flagship</characteristic>
+                <characteristic name="Skill" typeId="8cfd-31fa-dd72-6e30">+3</characteristic>
+                <characteristic name="Morale Bonus" typeId="26e9-24ca-fa72-16d3">+3</characteristic>
+                <characteristic name="Command Capacity" typeId="9a9d-6b65-579c-ca2c">12</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Brutal" id="4327-fe76-ef29-9710" hidden="false" publicationId="3942-1ba6-967b-c9ed" page="50">
+              <description>Sagittyr’s battlegroup gains the Fear trait while he is in it.</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4156-f310-e275-90cc-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4156-f310-e275-90cc-max"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <modifiers>
+        <modifier type="add" value="b5b8-5ac8-4c77-cbb0" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="self" childId="df1f-937a-7be9-2333" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Sluggish" id="ed7b-8418-7a04-eb53" hidden="false" type="rule" targetId="8a4f-3958-18fe-0838"/>
+        <infoLink name="Launch X" id="dedf-81b6-0f33-1007" hidden="false" type="rule" targetId="0158-e952-527e-8955"/>
+        <infoLink name="Indestructible" id="21ea-9582-d03f-f611" hidden="false" type="rule" targetId="04f8-da66-f082-a310"/>
+        <infoLink name="Assault pods" id="b38d-ddf1-2e0f-ef86" hidden="false" type="rule" targetId="176a-d5d0-cea3-82d6"/>
+        <infoLink name="Character" id="4651-70b0-1df4-0fc3" hidden="false" type="rule" targetId="1b1b-b907-076f-db7e"/>
+        <infoLink name="Flag Bridge" id="10d8-758b-c364-bc8e" hidden="false" type="rule" targetId="deb6-b945-6a96-0eb7"/>
+        <infoLink name="Super Heavy" id="68c4-f364-82d9-93a2" hidden="false" type="rule" targetId="b543-30c9-4ae4-959c"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Marineris HMC" hidden="false" id="ee3c-2081-e5b8-5f3a" publicationId="3942-1ba6-967b-c9ed" page="52">
+      <costs>
+        <cost name="Points" typeId="dd57-09ff-340f-8e48" value="60"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="ddf0-e667-c5bb-bfd0" id="b68b-9645-703c-cbc6" primary="true" name="Capital"/>
+        <categoryLink targetId="2db9-9828-2b94-e476" id="c1dc-15c5-7413-6526" primary="false" name="Ship"/>
+        <categoryLink targetId="99a8-81d3-ead9-288b" id="d969-6476-7c84-8eec" primary="false" name="Heavy"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Marineris HMC" typeId="fd62-daee-6b9c-c612" typeName="Ship Stats" hidden="false" id="a2d2-be92-b844-d097" publicationId="3942-1ba6-967b-c9ed" page="52">
+          <characteristics>
+            <characteristic name="Shield Strength" typeId="face-6a39-0cf0-eebe">7</characteristic>
+            <characteristic name="Max Thrust" typeId="0351-9250-0a32-4131">4</characteristic>
+            <characteristic name="Hull Points" typeId="b78c-8434-3b73-3728">4</characteristic>
+            <characteristic name="Crew Size" typeId="ba69-5c5c-fbb2-ee8f">5</characteristic>
+            <characteristic name="Strike Bay" typeId="6951-636f-b7cf-dff3"/>
+            <characteristic name="Assault bay" typeId="5064-520e-c582-fc1a"/>
+            <characteristic name="Traits" typeId="7875-4af0-5837-6dcb">Mine layer 6, Sluggish</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="append" value="Thrust Vectoring" field="7875-4af0-5837-6dcb" join=",">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1753-ab8b-3332-2883" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Coilgun" hidden="false" id="d654-58dc-f339-6fa4" type="selectionEntry" publicationId="3942-1ba6-967b-c9ed" targetId="607b-a6ef-2b27-9d78" sortIndex="4">
+          <constraints>
+            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="2aaa-ca1e-b1cb-5476-min"/>
+            <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="2aaa-ca1e-b1cb-5476-max"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Commander" hidden="false" id="7661-64c0-2eeb-8d39" type="selectionEntry" targetId="df1f-937a-7be9-2333" sortIndex="3" publicationId="c478-850b-f9ae-9c10">
+          <entryLinks>
+            <entryLink import="true" name="Faction Commanders" hidden="false" id="2dfd-3890-7f70-92b0" type="selectionEntryGroup" targetId="5636-c598-0372-7366">
+              <selectionEntries>
+                <selectionEntry type="unit" import="true" name="Onya Brayhaul" hidden="false" id="e375-5ede-4b9d-0e1b" publicationId="3942-1ba6-967b-c9ed" page="5">
+                  <costs>
+                    <cost name="Points" typeId="dd57-09ff-340f-8e48" value="20"/>
+                  </costs>
+                  <categoryLinks>
+                    <categoryLink name="Commander" hidden="false" id="c304-5c82-3684-268f" targetId="b5b8-5ac8-4c77-cbb0" primary="true"/>
+                    <categoryLink targetId="3b9b-e843-4c69-2e3c" id="c17a-9d69-0349-b801" primary="false" name="ALLOW_7_SHIPS"/>
+                  </categoryLinks>
+                  <profiles>
+                    <profile name="Onya Brayhaul" typeId="f8e8-01a8-098b-ca12" typeName="Commander stats" hidden="false" id="17f3-8067-3f1e-8a1d" publicationId="3942-1ba6-967b-c9ed" page="50">
+                      <characteristics>
+                        <characteristic name="Commander Quality" typeId="388a-86b2-03af-20ad">Inspiring 3</characteristic>
+                        <characteristic name="Rank" typeId="16de-0568-dfa7-27a1">Commander</characteristic>
+                        <characteristic name="Ship" typeId="f3f9-27da-95ec-1253">Marineris Cruiser</characteristic>
+                        <characteristic name="Skill" typeId="8cfd-31fa-dd72-6e30">+2</characteristic>
+                        <characteristic name="Morale Bonus" typeId="26e9-24ca-fa72-16d3">0</characteristic>
+                        <characteristic name="Command Capacity" typeId="9a9d-6b65-579c-ca2c">7</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <rules>
+                    <rule name="Unorthodox Tactics" id="bb0d-c9d5-6f1e-fcef" hidden="false" publicationId="3942-1ba6-967b-c9ed" page="50">
+                      <description>Brayhaul’s battlegroup gains Hidden Stalkers 10. She must be taken as battlegroup commander.</description>
+                    </rule>
+                  </rules>
+                  <infoLinks>
+                    <infoLink name="Hidden Stalkers X" id="a9b7-b4f5-21db-4ef8" hidden="false" type="rule" targetId="2e0a-34d9-8954-a476"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="192b-a11e-6c95-021f"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8ccd-1860-4d14-c37d"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="self" shared="true" id="440c-7df0-95c2-f9c5" includeChildSelections="true"/>
+            <constraint type="max" value="1" field="selections" scope="self" shared="true" id="cc7c-3e16-9946-e2b2" includeChildSelections="true"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Mines" hidden="false" id="c6af-3fa7-bd7a-60b5" type="selectionEntryGroup" targetId="8058-16c8-a6a8-624e">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="6e8f-5cd6-134b-ec2d"/>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="14b2-c779-88db-db6b"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <modifiers>
+        <modifier type="add" value="b5b8-5ac8-4c77-cbb0" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="self" childId="df1f-937a-7be9-2333" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="2605-3576-ce62-d271" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="e449-525a-6485-abf6" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Sluggish" id="d7a7-a36a-dc8b-c187" hidden="false" type="rule" targetId="8a4f-3958-18fe-0838"/>
+        <infoLink name="Mine Layer X" id="1db4-b313-35ec-125d" hidden="false" type="rule" targetId="ac76-33b1-4ca8-67a3"/>
+        <infoLink name="Thrust Vectoring" id="add2-cb86-6259-e12e" hidden="true" type="rule" targetId="bdbe-b620-67db-d020">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1753-ab8b-3332-2883" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Destroyer" hidden="false" id="3fa8-58fa-a218-b62d" publicationId="3942-1ba6-967b-c9ed" page="53">
+      <costs>
+        <cost name="Points" typeId="dd57-09ff-340f-8e48" value="26"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="2db9-9828-2b94-e476" id="97ac-d4e9-b76d-080d" primary="false" name="Ship"/>
+        <categoryLink targetId="ff8c-6404-d96c-d06e" id="7b3f-625d-10b4-dfe6" primary="true" name="support"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Destroyer" typeId="fd62-daee-6b9c-c612" typeName="Ship Stats" hidden="false" id="d7e4-6c0d-3439-e738" publicationId="3942-1ba6-967b-c9ed" page="53">
+          <characteristics>
+            <characteristic name="Shield Strength" typeId="face-6a39-0cf0-eebe">4</characteristic>
+            <characteristic name="Max Thrust" typeId="0351-9250-0a32-4131">4</characteristic>
+            <characteristic name="Hull Points" typeId="b78c-8434-3b73-3728">3</characteristic>
+            <characteristic name="Crew Size" typeId="ba69-5c5c-fbb2-ee8f">2</characteristic>
+            <characteristic name="Strike Bay" typeId="6951-636f-b7cf-dff3"/>
+            <characteristic name="Assault bay" typeId="5064-520e-c582-fc1a"/>
+            <characteristic name="Traits" typeId="7875-4af0-5837-6dcb">ADS</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="1" field="5064-520e-c582-fc1a">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="3fa8-58fa-a218-b62d" childId="df86-4866-680e-b73c" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="b78c-8434-3b73-3728">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="364e-1569-45ba-4afa" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="Thrust Vectoring" field="7875-4af0-5837-6dcb" join=",">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1753-ab8b-3332-2883" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Coilgun" hidden="false" id="e278-f55b-7108-c6bf" type="selectionEntry" publicationId="3942-1ba6-967b-c9ed" targetId="607b-a6ef-2b27-9d78" sortIndex="3">
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="1892-d0e5-55e7-7664-min"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="1892-d0e5-55e7-7664-max"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Commander" hidden="false" id="57dc-534f-0907-7cab" type="selectionEntry" targetId="df1f-937a-7be9-2333" sortIndex="2" publicationId="c478-850b-f9ae-9c10">
+          <entryLinks>
+            <entryLink import="true" name="Faction Commanders" hidden="false" id="290a-6057-0be6-07d7" type="selectionEntryGroup" targetId="5636-c598-0372-7366">
+              <entryLinks>
+                <entryLink import="true" name="Tiran Midus" hidden="false" id="802a-5a46-3fe5-ef6b" type="selectionEntry" targetId="364e-1569-45ba-4afa"/>
+              </entryLinks>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="self" shared="true" id="56e9-8d8c-ee1c-4947" includeChildSelections="true"/>
+            <constraint type="max" value="1" field="selections" scope="self" shared="true" id="c7ea-0d9d-1001-32d4" includeChildSelections="true"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="+1 Assault Bays" hidden="false" id="df86-4866-680e-b73c" publicationId="3942-1ba6-967b-c9ed" page="53" sortIndex="1">
+          <costs>
+            <cost name="Points" typeId="dd57-09ff-340f-8e48" value="2"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="18de-c27f-88d8-0394"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aa0d-d330-6e5b-7f01"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="CQB Companies" hidden="false" id="f83f-68ab-d89b-6acf" type="selectionEntryGroup" targetId="262e-cb19-5c9b-e95a">
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="6f97-727e-72e5-8eb0"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1287-0f22-1655-06e7"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <modifiers>
+        <modifier type="add" value="b5b8-5ac8-4c77-cbb0" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="self" childId="df1f-937a-7be9-2333" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="2605-3576-ce62-d271" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="e449-525a-6485-abf6" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="ADS X" id="7896-9da2-19cd-ffbe" hidden="false" type="rule" targetId="7b47-f592-16a4-f8f4"/>
+        <infoLink name="Thrust Vectoring" id="01f3-412d-f9f5-008c" hidden="true" type="rule" targetId="bdbe-b620-67db-d020">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1753-ab8b-3332-2883" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Heavy Destroyer" hidden="false" id="490b-786e-b13b-1c78" publicationId="3942-1ba6-967b-c9ed" page="53">
+      <costs>
+        <cost name="Points" typeId="dd57-09ff-340f-8e48" value="35"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="2db9-9828-2b94-e476" id="e707-3f4c-0bdd-8b8c" primary="false" name="Ship"/>
+        <categoryLink targetId="ff8c-6404-d96c-d06e" id="f0b9-86ce-1a10-767b" primary="true" name="support"/>
+        <categoryLink targetId="f40f-3734-00a7-9824" id="7161-50e2-e90e-da47" primary="false" name="not vanguard eligible"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Heavy Destroyer" typeId="fd62-daee-6b9c-c612" typeName="Ship Stats" hidden="false" id="3185-b567-4f06-1643" publicationId="3942-1ba6-967b-c9ed" page="53">
+          <characteristics>
+            <characteristic name="Shield Strength" typeId="face-6a39-0cf0-eebe">5</characteristic>
+            <characteristic name="Max Thrust" typeId="0351-9250-0a32-4131">3</characteristic>
+            <characteristic name="Hull Points" typeId="b78c-8434-3b73-3728">3</characteristic>
+            <characteristic name="Crew Size" typeId="ba69-5c5c-fbb2-ee8f">3</characteristic>
+            <characteristic name="Strike Bay" typeId="6951-636f-b7cf-dff3"/>
+            <characteristic name="Assault bay" typeId="5064-520e-c582-fc1a"/>
+            <characteristic name="Traits" typeId="7875-4af0-5837-6dcb"/>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="1" field="5064-520e-c582-fc1a">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="490b-786e-b13b-1c78" childId="c3b9-8f30-1ec4-2476" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="b78c-8434-3b73-3728">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="364e-1569-45ba-4afa" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Coilgun" hidden="false" id="0fd8-cd1e-2730-1b2b" type="selectionEntry" publicationId="3942-1ba6-967b-c9ed" targetId="607b-a6ef-2b27-9d78" sortIndex="3">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="9105-5435-0c66-4a28-min"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="9105-5435-0c66-4a28-max"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Commander" hidden="false" id="0a2d-4dd8-5067-5cdc" type="selectionEntry" targetId="df1f-937a-7be9-2333" sortIndex="2" publicationId="c478-850b-f9ae-9c10">
+          <entryLinks>
+            <entryLink import="true" name="Faction Commanders" hidden="false" id="225f-c562-2415-9d6d" type="selectionEntryGroup" targetId="5636-c598-0372-7366">
+              <entryLinks>
+                <entryLink import="true" name="Tiran Midus" hidden="false" id="b2e1-dd59-902f-5c4e" type="selectionEntry" targetId="364e-1569-45ba-4afa"/>
+              </entryLinks>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="self" shared="true" id="fab4-c6af-bd5f-9bf4" includeChildSelections="true"/>
+            <constraint type="max" value="1" field="selections" scope="self" shared="true" id="3528-e058-49bc-5e9e" includeChildSelections="true"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Stinger Torpedo" hidden="false" id="527d-fd42-b902-0fdb" type="selectionEntry" targetId="99dd-9eb3-1259-64fe">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5bd2-7071-e226-3438-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5bd2-7071-e226-3438-max"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Missile Pods" hidden="false" id="82f2-e498-2572-59a1" type="selectionEntry" targetId="2503-88df-79db-7f5a">
+          <constraints>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="f1da-21ef-5e9f-8685-min"/>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="f1da-21ef-5e9f-8685-max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="+1 Assault Bays" hidden="false" id="c3b9-8f30-1ec4-2476" publicationId="3942-1ba6-967b-c9ed" page="53" sortIndex="1">
+          <costs>
+            <cost name="Points" typeId="dd57-09ff-340f-8e48" value="2"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="12ba-1ce2-0719-ad5f"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="06ca-70cd-0ed9-0ea9"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="CQB Companies" hidden="false" id="592e-a631-3871-d5fa" type="selectionEntryGroup" targetId="262e-cb19-5c9b-e95a">
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="1483-9ec8-2330-c1b7"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e79a-b250-6774-f415"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <modifiers>
+        <modifier type="add" value="b5b8-5ac8-4c77-cbb0" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="self" childId="df1f-937a-7be9-2333" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Thrust Vectoring" id="1d1d-4086-c9ff-5fa4" hidden="true" type="rule" targetId="bdbe-b620-67db-d020">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1753-ab8b-3332-2883" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Armoured Destroyer" hidden="false" id="5240-dede-6359-4c0a" publicationId="3942-1ba6-967b-c9ed" page="53">
+      <costs>
+        <cost name="Points" typeId="dd57-09ff-340f-8e48" value="27"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="2db9-9828-2b94-e476" id="669c-d2ce-b980-029e" primary="false" name="Ship"/>
+        <categoryLink targetId="ff8c-6404-d96c-d06e" id="dbb4-ac99-cff0-dda8" primary="true" name="support"/>
+        <categoryLink targetId="f40f-3734-00a7-9824" id="f57e-becd-5b54-2cd1" primary="false" name="not vanguard eligible"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Armoured Destroyer" typeId="fd62-daee-6b9c-c612" typeName="Ship Stats" hidden="false" id="a791-0d19-206b-7327" publicationId="3942-1ba6-967b-c9ed" page="53">
+          <characteristics>
+            <characteristic name="Shield Strength" typeId="face-6a39-0cf0-eebe">6</characteristic>
+            <characteristic name="Max Thrust" typeId="0351-9250-0a32-4131">3</characteristic>
+            <characteristic name="Hull Points" typeId="b78c-8434-3b73-3728">3</characteristic>
+            <characteristic name="Crew Size" typeId="ba69-5c5c-fbb2-ee8f">2</characteristic>
+            <characteristic name="Strike Bay" typeId="6951-636f-b7cf-dff3"/>
+            <characteristic name="Assault bay" typeId="5064-520e-c582-fc1a"/>
+            <characteristic name="Traits" typeId="7875-4af0-5837-6dcb">Sluggish</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="increment" value="1" field="b78c-8434-3b73-3728">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="364e-1569-45ba-4afa" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="replace" value=" " field="7875-4af0-5837-6dcb" arg="Sluggish">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="3d91-1655-75cf-4518" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="Thrust Vectoring" field="7875-4af0-5837-6dcb" join=",">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1753-ab8b-3332-2883" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Coilgun" hidden="false" id="e0b6-63a5-7406-73e2" type="selectionEntry" publicationId="3942-1ba6-967b-c9ed" targetId="607b-a6ef-2b27-9d78" sortIndex="3">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="06a9-0122-74a0-7c46-min"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="06a9-0122-74a0-7c46-max"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Commander" hidden="false" id="bc58-6134-c67b-c5d8" type="selectionEntry" targetId="df1f-937a-7be9-2333" sortIndex="2" publicationId="c478-850b-f9ae-9c10">
+          <entryLinks>
+            <entryLink import="true" name="Faction Commanders" hidden="false" id="b1ba-425c-592b-3d62" type="selectionEntryGroup" targetId="5636-c598-0372-7366">
+              <entryLinks>
+                <entryLink import="true" name="Tiran Midus" hidden="false" id="6cc0-b6d3-8441-346c" type="selectionEntry" targetId="364e-1569-45ba-4afa"/>
+              </entryLinks>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="self" shared="true" id="dfc5-17f0-2642-9f2a" includeChildSelections="true"/>
+            <constraint type="max" value="1" field="selections" scope="self" shared="true" id="3dd2-9204-8cee-6c86" includeChildSelections="true"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Stinger Torpedo" hidden="false" id="507b-0dee-1d91-70ee" type="selectionEntry" targetId="99dd-9eb3-1259-64fe" sortIndex="4">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="36cc-67c7-8ece-fdaa-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="36cc-67c7-8ece-fdaa-max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <modifiers>
+        <modifier type="add" value="b5b8-5ac8-4c77-cbb0" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="self" childId="df1f-937a-7be9-2333" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Sluggish" id="7145-e3cc-a0cc-5ad1" hidden="false" type="rule" targetId="8a4f-3958-18fe-0838"/>
+        <infoLink name="Thrust Vectoring" id="6f83-7817-1c82-66fb" hidden="true" type="rule" targetId="bdbe-b620-67db-d020">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1753-ab8b-3332-2883" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Frigate" hidden="false" id="4350-682d-002b-bd04" publicationId="3942-1ba6-967b-c9ed" page="53">
+      <costs>
+        <cost name="Points" typeId="dd57-09ff-340f-8e48" value="23"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="2db9-9828-2b94-e476" id="c328-5818-b1c5-2554" primary="false" name="Ship"/>
+        <categoryLink targetId="9cb1-f70a-60f2-5d11" id="1c92-4d5e-cc93-1f72" primary="true" name="Escort"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Frigate" typeId="fd62-daee-6b9c-c612" typeName="Ship Stats" hidden="false" id="54f9-675d-65bf-9ecf" publicationId="3942-1ba6-967b-c9ed" page="53">
+          <characteristics>
+            <characteristic name="Shield Strength" typeId="face-6a39-0cf0-eebe">4</characteristic>
+            <characteristic name="Max Thrust" typeId="0351-9250-0a32-4131">4</characteristic>
+            <characteristic name="Hull Points" typeId="b78c-8434-3b73-3728">3</characteristic>
+            <characteristic name="Crew Size" typeId="ba69-5c5c-fbb2-ee8f">1</characteristic>
+            <characteristic name="Strike Bay" typeId="6951-636f-b7cf-dff3"/>
+            <characteristic name="Assault bay" typeId="5064-520e-c582-fc1a"/>
+            <characteristic name="Traits" typeId="7875-4af0-5837-6dcb">ADS, Aegis</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="append" value="Thrust Vectoring" field="7875-4af0-5837-6dcb" join=",">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1753-ab8b-3332-2883" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Coilgun" hidden="false" id="4f89-aa5a-e492-b64f" type="selectionEntry" publicationId="3942-1ba6-967b-c9ed" targetId="607b-a6ef-2b27-9d78" sortIndex="3">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e5e2-7a75-fade-1751-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e5e2-7a75-fade-1751-max"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Commander" hidden="false" id="dc19-b7f1-5fc6-870d" type="selectionEntry" targetId="df1f-937a-7be9-2333" sortIndex="2" publicationId="c478-850b-f9ae-9c10">
+          <entryLinks>
+            <entryLink import="true" name="Faction Commanders" hidden="false" id="6c9f-2f8e-a135-2e7c" type="selectionEntryGroup" targetId="5636-c598-0372-7366"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="self" shared="true" id="3ed7-16ce-a59b-239f" includeChildSelections="true"/>
+            <constraint type="max" value="1" field="selections" scope="self" shared="true" id="6b45-06e1-0783-e9e1" includeChildSelections="true"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Missile Pods" hidden="false" id="5bc8-d093-0019-0fef" type="selectionEntry" targetId="2503-88df-79db-7f5a" sortIndex="3">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="818e-3d15-fbdf-7b95-min"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="818e-3d15-fbdf-7b95-max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <modifiers>
+        <modifier type="add" value="b5b8-5ac8-4c77-cbb0" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="self" childId="df1f-937a-7be9-2333" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="2605-3576-ce62-d271" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="e449-525a-6485-abf6" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="ADS X" id="6c58-f481-36e1-2e1e" hidden="false" type="rule" targetId="7b47-f592-16a4-f8f4"/>
+        <infoLink name="Aegis" id="0476-0c10-4363-8889" hidden="false" type="rule" targetId="c1f8-d8c6-a1b8-d7c3"/>
+        <infoLink name="Thrust Vectoring" id="2094-678e-1dec-d0fb" hidden="true" type="rule" targetId="bdbe-b620-67db-d020">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1753-ab8b-3332-2883" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Line Frigate" hidden="false" id="dc04-cfa1-1c65-e07c" publicationId="3942-1ba6-967b-c9ed" page="53">
+      <costs>
+        <cost name="Points" typeId="dd57-09ff-340f-8e48" value="23"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="2db9-9828-2b94-e476" id="ec66-4f75-a465-5903" primary="false" name="Ship"/>
+        <categoryLink targetId="9cb1-f70a-60f2-5d11" id="dbaa-735c-1eab-b246" primary="true" name="Escort"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Line Frigate" typeId="fd62-daee-6b9c-c612" typeName="Ship Stats" hidden="false" id="1e51-e621-1040-a0de" publicationId="3942-1ba6-967b-c9ed" page="53">
+          <characteristics>
+            <characteristic name="Shield Strength" typeId="face-6a39-0cf0-eebe">4</characteristic>
+            <characteristic name="Max Thrust" typeId="0351-9250-0a32-4131">4</characteristic>
+            <characteristic name="Hull Points" typeId="b78c-8434-3b73-3728">3</characteristic>
+            <characteristic name="Crew Size" typeId="ba69-5c5c-fbb2-ee8f">1</characteristic>
+            <characteristic name="Strike Bay" typeId="6951-636f-b7cf-dff3"/>
+            <characteristic name="Assault bay" typeId="5064-520e-c582-fc1a"/>
+            <characteristic name="Traits" typeId="7875-4af0-5837-6dcb">ADS</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="ADS 2" field="7875-4af0-5837-6dcb">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="aded-6747-cc2e-b1cc" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="Thrust Vectoring" field="7875-4af0-5837-6dcb" join=",">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1753-ab8b-3332-2883" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Coilgun" hidden="false" id="120b-5cbd-0628-844c" type="selectionEntry" publicationId="3942-1ba6-967b-c9ed" targetId="607b-a6ef-2b27-9d78" sortIndex="3">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fff7-5035-c1d4-7e9b-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fff7-5035-c1d4-7e9b-max"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Commander" hidden="false" id="7677-7e7e-ebb1-c2d4" type="selectionEntry" targetId="df1f-937a-7be9-2333" sortIndex="2" publicationId="c478-850b-f9ae-9c10">
+          <entryLinks>
+            <entryLink import="true" name="Faction Commanders" hidden="false" id="5736-bf2f-7b7d-1981" type="selectionEntryGroup" targetId="5636-c598-0372-7366"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="self" shared="true" id="7baf-c5c3-d655-799a" includeChildSelections="true"/>
+            <constraint type="max" value="1" field="selections" scope="self" shared="true" id="511e-8dfc-fe4d-15b6" includeChildSelections="true"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Missile Pods" hidden="false" id="bd58-ee73-c8ba-9146" type="selectionEntry" targetId="2503-88df-79db-7f5a" sortIndex="3">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="e6a4-bdf2-6502-1b5a-min"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="e6a4-bdf2-6502-1b5a-max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <modifiers>
+        <modifier type="add" value="b5b8-5ac8-4c77-cbb0" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="self" childId="df1f-937a-7be9-2333" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="2605-3576-ce62-d271" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="e449-525a-6485-abf6" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="ADS X" id="deaf-f2b4-24d0-e6eb" hidden="false" type="rule" targetId="7b47-f592-16a4-f8f4"/>
+        <infoLink name="Thrust Vectoring" id="18da-afaa-2484-61d6" hidden="true" type="rule" targetId="bdbe-b620-67db-d020">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1753-ab8b-3332-2883" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="ADS +1" hidden="false" id="aded-6747-cc2e-b1cc" sortIndex="1">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="647c-6016-9512-852a"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fdf8-f90c-daad-5b75"/>
+          </constraints>
+          <costs>
+            <cost name="Points" typeId="dd57-09ff-340f-8e48" value="3"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Patrol Boat Squadron" hidden="false" id="c350-36a4-0580-3e46" publicationId="3942-1ba6-967b-c9ed" page="53">
+      <costs>
+        <cost name="Points" typeId="dd57-09ff-340f-8e48" value="26"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="2db9-9828-2b94-e476" id="95e3-5d87-118d-1d7a" primary="false" name="Ship"/>
+        <categoryLink targetId="9cb1-f70a-60f2-5d11" id="0e7e-6535-8898-9329" primary="true" name="Escort"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Patrol Boat Squadron" typeId="fd62-daee-6b9c-c612" typeName="Ship Stats" hidden="false" id="4db6-f4f3-2dc0-8197" publicationId="3942-1ba6-967b-c9ed" page="53">
+          <characteristics>
+            <characteristic name="Shield Strength" typeId="face-6a39-0cf0-eebe">3</characteristic>
+            <characteristic name="Max Thrust" typeId="0351-9250-0a32-4131">4</characteristic>
+            <characteristic name="Hull Points" typeId="b78c-8434-3b73-3728">3</characteristic>
+            <characteristic name="Crew Size" typeId="ba69-5c5c-fbb2-ee8f">3</characteristic>
+            <characteristic name="Strike Bay" typeId="6951-636f-b7cf-dff3"/>
+            <characteristic name="Assault bay" typeId="5064-520e-c582-fc1a"/>
+            <characteristic name="Traits" typeId="7875-4af0-5837-6dcb">ADS, Squadron</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="append" value="Thrust Vectoring" field="7875-4af0-5837-6dcb" join=",">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1753-ab8b-3332-2883" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Coilgun" hidden="false" id="8e2f-aedd-e026-9c23" type="selectionEntry" publicationId="3942-1ba6-967b-c9ed" targetId="607b-a6ef-2b27-9d78" sortIndex="3">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="a2a6-9b06-3531-f162-min"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="a2a6-9b06-3531-f162-max"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Commander" hidden="false" id="158e-189d-126e-63eb" type="selectionEntry" targetId="df1f-937a-7be9-2333" sortIndex="2" publicationId="c478-850b-f9ae-9c10">
+          <entryLinks>
+            <entryLink import="true" name="Faction Commanders" hidden="false" id="ad94-b785-0816-edce" type="selectionEntryGroup" targetId="5636-c598-0372-7366"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="self" shared="true" id="8c7f-8599-5e17-b936" includeChildSelections="true"/>
+            <constraint type="max" value="1" field="selections" scope="self" shared="true" id="c5df-f924-398f-83b6" includeChildSelections="true"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Missile Pods" hidden="false" id="183c-e84e-b7ad-1f80" type="selectionEntry" targetId="2503-88df-79db-7f5a" sortIndex="3">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="bce7-c273-27ab-665e-min"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="bce7-c273-27ab-665e-max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <modifiers>
+        <modifier type="add" value="b5b8-5ac8-4c77-cbb0" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="self" childId="df1f-937a-7be9-2333" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="2605-3576-ce62-d271" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="e449-525a-6485-abf6" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="ADS X" id="0b9d-a2f5-2cca-1a82" hidden="false" type="rule" targetId="7b47-f592-16a4-f8f4"/>
+        <infoLink name="Squadron" id="6d42-3436-f728-6b0a" hidden="false" type="rule" targetId="bda1-dd8e-11d9-8a18"/>
+        <infoLink name="Thrust Vectoring" id="73a0-63e6-99e4-e337" hidden="true" type="rule" targetId="bdbe-b620-67db-d020">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1753-ab8b-3332-2883" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="T3 Frigate" hidden="false" id="bd87-be29-a0bc-c49a" publicationId="3942-1ba6-967b-c9ed" page="53" sortIndex="0">
+      <costs>
+        <cost name="Points" typeId="dd57-09ff-340f-8e48" value="30"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="2db9-9828-2b94-e476" id="6ce3-7ec2-b8e7-e057" primary="false" name="Ship"/>
+        <categoryLink targetId="9cb1-f70a-60f2-5d11" id="bca3-90fb-261d-e066" primary="true" name="Escort"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="T3 Frigate" typeId="fd62-daee-6b9c-c612" typeName="Ship Stats" hidden="false" id="b5f8-de15-bb31-888f" publicationId="3942-1ba6-967b-c9ed" page="53">
+          <characteristics>
+            <characteristic name="Shield Strength" typeId="face-6a39-0cf0-eebe">4</characteristic>
+            <characteristic name="Max Thrust" typeId="0351-9250-0a32-4131">4</characteristic>
+            <characteristic name="Hull Points" typeId="b78c-8434-3b73-3728">3</characteristic>
+            <characteristic name="Crew Size" typeId="ba69-5c5c-fbb2-ee8f">2</characteristic>
+            <characteristic name="Strike Bay" typeId="6951-636f-b7cf-dff3"/>
+            <characteristic name="Assault bay" typeId="5064-520e-c582-fc1a"/>
+            <characteristic name="Traits" typeId="7875-4af0-5837-6dcb">ADS, Reactive Armour 1,</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="append" value="Thrust Vectoring" field="7875-4af0-5837-6dcb" join=",">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1753-ab8b-3332-2883" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="d535-6d50-7c2b-e0e4" type="selectionEntry" targetId="df1f-937a-7be9-2333" sortIndex="2" publicationId="c478-850b-f9ae-9c10">
+          <entryLinks>
+            <entryLink import="true" name="Faction Commanders" hidden="false" id="7cae-62bf-26b8-b125" type="selectionEntryGroup" targetId="5636-c598-0372-7366"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="self" shared="true" id="fe03-8961-f286-4625" includeChildSelections="true"/>
+            <constraint type="max" value="1" field="selections" scope="self" shared="true" id="ab72-bc53-fd66-0f28" includeChildSelections="true"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <modifiers>
+        <modifier type="add" value="b5b8-5ac8-4c77-cbb0" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="self" childId="df1f-937a-7be9-2333" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="2605-3576-ce62-d271" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="e449-525a-6485-abf6" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="ADS X" id="f2a9-5ecc-ce0f-32e9" hidden="false" type="rule" targetId="7b47-f592-16a4-f8f4"/>
+        <infoLink name="Reactive Armour X" id="5377-d7d4-a953-d971" hidden="false" type="rule" targetId="c714-09db-f6d2-a6af"/>
+        <infoLink name="Thrust Vectoring" id="7b6c-0a29-c463-de46" hidden="true" type="rule" targetId="bdbe-b620-67db-d020">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="1753-ab8b-3332-2883" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Coilgun" hidden="false" id="71f8-1e7d-4368-f8e7">
+          <profiles>
+            <profile name="Coilgun" typeId="0faa-34ea-a9b8-dccb" typeName="Weapon Stats" hidden="false" id="5ce7-539e-4405-b009">
+              <characteristics>
+                <characteristic name="Range" typeId="70bd-05d7-583c-390d">10&quot;</characteristic>
+                <characteristic name="Roll to hit" typeId="a5ba-9b41-500b-6c52">3+</characteristic>
+                <characteristic name="Shield Damage" typeId="90c8-0f37-d9b7-e2e1">1</characteristic>
+                <characteristic name="Hull Damage" typeId="9dc6-3082-ba5b-4c5a">1</characteristic>
+                <characteristic name="Fire Points" typeId="d0d5-25ad-92ff-bf0c">Front+Side</characteristic>
+                <characteristic name="Traits" typeId="69fd-d140-d640-f992">Long Range</characteristic>
+              </characteristics>
+              <modifiers>
+                <modifier type="set" value="Long Range, Hybrid 3" field="69fd-d140-d640-f992">
+                  <conditions>
+                    <condition type="atLeast" value="3" field="selections" scope="force" childId="bd87-be29-a0bc-c49a" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Long Range" id="904b-6bdc-25af-4449" hidden="false" type="rule" publicationId="c478-850b-f9ae-9c10" targetId="94d1-31a9-2ae2-016a"/>
+            <infoLink name="Hybrid X" id="5c77-cb1a-8cfc-4557" hidden="true" type="rule" targetId="2817-0107-f6b9-0108">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="3" field="selections" scope="force" childId="bd87-be29-a0bc-c49a" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="0291-61a4-100c-29e4-min"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="0291-61a4-100c-29e4-max"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Tiran Midus" hidden="false" id="364e-1569-45ba-4afa">
+      <costs>
+        <cost name="Points" typeId="dd57-09ff-340f-8e48" value="8"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Commander" hidden="false" id="67dd-18ee-6099-7a0b" targetId="b5b8-5ac8-4c77-cbb0" primary="false"/>
+        <categoryLink name="ALLOW_6_SHIPS" hidden="false" id="d873-b514-8e1e-7f27" targetId="c939-66e5-c157-f0f8" primary="false"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Tiran Midus" typeId="f8e8-01a8-098b-ca12" typeName="Commander stats" hidden="false" id="4679-bfdf-48f2-e098" publicationId="3942-1ba6-967b-c9ed" page="51">
+          <characteristics>
+            <characteristic name="Commander Quality" typeId="388a-86b2-03af-20ad">Confident 2</characteristic>
+            <characteristic name="Rank" typeId="16de-0568-dfa7-27a1">Commander</characteristic>
+            <characteristic name="Ship" typeId="f3f9-27da-95ec-1253">Any Destroyer</characteristic>
+            <characteristic name="Skill" typeId="8cfd-31fa-dd72-6e30">0</characteristic>
+            <characteristic name="Morale Bonus" typeId="26e9-24ca-fa72-16d3">+1</characteristic>
+            <characteristic name="Command Capacity" typeId="9a9d-6b65-579c-ca2c">6</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Battleforged" id="0d69-d82d-6302-a85e" hidden="false">
+          <description>Ships in this battlegroup have +1 hull points.</description>
+        </rule>
+        <rule name="Destroyer Commander" id="3610-c5d5-0527-639d" hidden="false">
+          <description>This battlegroup may only contain destroyers.</description>
+        </rule>
+      </rules>
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="4e8b-4a2b-a1a1-9d9e"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f34a-9a8b-3f6d-3e8d"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Squadron Captain Arira" hidden="false" id="3d91-1655-75cf-4518">
+      <categoryLinks>
+        <categoryLink name="Commander" hidden="false" id="fbb8-444f-9141-9dc4" targetId="b5b8-5ac8-4c77-cbb0" primary="true"/>
+        <categoryLink targetId="b40d-40da-009b-a4a9" id="93a1-a9e2-6e51-9460" primary="false" name="ALLOW_8_SHIPS"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="dd57-09ff-340f-8e48" value="15"/>
+      </costs>
+      <profiles>
+        <profile name="Squadron Captain Arira" typeId="f8e8-01a8-098b-ca12" typeName="Commander stats" hidden="false" id="6b22-87b9-f43e-fcc9" publicationId="3942-1ba6-967b-c9ed" page="51">
+          <characteristics>
+            <characteristic name="Commander Quality" typeId="388a-86b2-03af-20ad">Confident 2</characteristic>
+            <characteristic name="Rank" typeId="16de-0568-dfa7-27a1">Commander</characteristic>
+            <characteristic name="Ship" typeId="f3f9-27da-95ec-1253">Any Carrier</characteristic>
+            <characteristic name="Skill" typeId="8cfd-31fa-dd72-6e30">+1</characteristic>
+            <characteristic name="Morale Bonus" typeId="26e9-24ca-fa72-16d3">0</characteristic>
+            <characteristic name="Command Capacity" typeId="9a9d-6b65-579c-ca2c">8</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Rebel" id="6a13-9034-f7ad-6b19" hidden="false">
+          <description>Ships in this battlegroup lose the Sluggish trait.</description>
+        </rule>
+      </rules>
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="fec2-51e6-448f-390e"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d5b3-63cc-39ce-57af"/>
+      </constraints>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup name="CQB Companies" id="262e-cb19-5c9b-e95a" hidden="false" page="9" publicationId="3942-1ba6-967b-c9ed">
+      <categoryLinks>
+        <categoryLink name="CQB" hidden="false" id="afa1-0a83-2fe3-6f8d" targetId="b70b-1ba2-e198-c944" primary="true"/>
+        <categoryLink name="Anglo European Alliance" hidden="false" id="a751-4634-7cc4-3881" targetId="e2ce-6480-e740-5ba4" primary="false"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Dropships" typeId="8562-1ee2-d80c-e753" typeName="Strike Craft Stats" hidden="false" id="94d0-2aa1-54c5-fd39" publicationId="3942-1ba6-967b-c9ed" page="9">
+          <characteristics>
+            <characteristic name="Speed" typeId="b7a0-b9fb-4295-87bf">9&quot;</characteristic>
+            <characteristic name="Anti SC" typeId="a1d2-240a-d9fa-1712">8+</characteristic>
+            <characteristic name="Anti-Ship" typeId="bc6e-037f-58a9-1faf">8+</characteristic>
+            <characteristic name="Attack against ships" typeId="f633-6e0a-1576-0f9c">1</characteristic>
+            <characteristic name="Save" typeId="d415-0e55-c4dd-d7b7">9+</characteristic>
+            <characteristic name="Traits" typeId="3875-2795-81d2-a053"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry type="unit" import="true" name="Light Company" hidden="false" id="d3ee-54c4-b170-ecae" page="54" publicationId="3942-1ba6-967b-c9ed" sortIndex="1">
+          <categoryLinks>
+            <categoryLink name="CQB" hidden="false" id="acbe-4564-c3c7-969d" targetId="b70b-1ba2-e198-c944" primary="true"/>
+            <categoryLink name="Anglo European Alliance" hidden="false" id="2ce7-6ae4-8c04-26ce" targetId="e2ce-6480-e740-5ba4" primary="false"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Light Company" typeId="8047-aa6f-c1da-a700" typeName="CQB Stats" hidden="false" id="e5f5-8d0c-0b8a-3ca1">
+              <characteristics>
+                <characteristic name="Attack" typeId="0727-c56d-4766-19fd">10+</characteristic>
+                <characteristic name="Defend" typeId="d333-c742-1468-d3dd">8+</characteristic>
+                <characteristic name="Attacks (amount)" typeId="178f-aab5-a6d3-5cf0">1</characteristic>
+                <characteristic name="Save" typeId="911c-0ad0-6f4e-5186">9+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Regular Company" hidden="false" id="f97e-48a6-5eb7-4723" publicationId="3942-1ba6-967b-c9ed" page="54" sortIndex="2">
+          <costs>
+            <cost name="Points" typeId="dd57-09ff-340f-8e48" value="3"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="CQB" hidden="false" id="bfa2-4c45-5590-85ba" targetId="b70b-1ba2-e198-c944" primary="true"/>
+            <categoryLink name="Anglo European Alliance" hidden="false" id="7f5e-468b-c167-c3d5" targetId="e2ce-6480-e740-5ba4" primary="false"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Regular Company" typeId="8047-aa6f-c1da-a700" typeName="CQB Stats" hidden="false" id="fd25-071c-3e45-8849">
+              <characteristics>
+                <characteristic name="Attack" typeId="0727-c56d-4766-19fd">7+</characteristic>
+                <characteristic name="Defend" typeId="d333-c742-1468-d3dd">6+</characteristic>
+                <characteristic name="Attacks (amount)" typeId="178f-aab5-a6d3-5cf0">1</characteristic>
+                <characteristic name="Save" typeId="911c-0ad0-6f4e-5186">8+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Shock Company" hidden="false" id="603c-7f67-437d-015d" publicationId="3942-1ba6-967b-c9ed" page="54" sortIndex="3">
+          <costs>
+            <cost name="Points" typeId="dd57-09ff-340f-8e48" value="5"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="CQB" hidden="false" id="7c3b-0b87-dd4e-2f20" targetId="b70b-1ba2-e198-c944" primary="true"/>
+            <categoryLink name="Anglo European Alliance" hidden="false" id="6364-258a-dc3f-aebf" targetId="e2ce-6480-e740-5ba4" primary="false"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Shock Company" typeId="8047-aa6f-c1da-a700" typeName="CQB Stats" hidden="false" id="5c71-3354-31c9-aff1">
+              <characteristics>
+                <characteristic name="Attack" typeId="0727-c56d-4766-19fd">5+</characteristic>
+                <characteristic name="Defend" typeId="d333-c742-1468-d3dd">7+</characteristic>
+                <characteristic name="Attacks (amount)" typeId="178f-aab5-a6d3-5cf0">2</characteristic>
+                <characteristic name="Save" typeId="911c-0ad0-6f4e-5186">8+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Power Armour Company" hidden="false" id="0eb0-41c6-3704-8339" publicationId="3942-1ba6-967b-c9ed" page="54" sortIndex="4">
+          <costs>
+            <cost name="Points" typeId="dd57-09ff-340f-8e48" value="9"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="CQB" hidden="false" id="5bef-e087-74da-5aec" targetId="b70b-1ba2-e198-c944" primary="true"/>
+            <categoryLink name="Anglo European Alliance" hidden="false" id="9f51-dea8-fb37-1d67" targetId="e2ce-6480-e740-5ba4" primary="false"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Power Armour Company" typeId="8047-aa6f-c1da-a700" typeName="CQB Stats" hidden="false" id="9576-ad0d-1021-cab1">
+              <characteristics>
+                <characteristic name="Attack" typeId="0727-c56d-4766-19fd">4+</characteristic>
+                <characteristic name="Defend" typeId="d333-c742-1468-d3dd">4+</characteristic>
+                <characteristic name="Attacks (amount)" typeId="178f-aab5-a6d3-5cf0">2</characteristic>
+                <characteristic name="Save" typeId="911c-0ad0-6f4e-5186">7+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Faction Commanders" id="5636-c598-0372-7366" hidden="false" publicationId="3942-1ba6-967b-c9ed" page="50-51">
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="0246-dab3-cffb-9e6c" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b431-3927-acbf-afeb" includeChildSelections="false"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry type="unit" import="true" name="Cygnis Rugire" hidden="false" id="1753-ab8b-3332-2883" publicationId="3942-1ba6-967b-c9ed" page="50">
+          <costs>
+            <cost name="Points" typeId="dd57-09ff-340f-8e48" value="25"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Commander" hidden="false" id="c51e-7257-6980-f0a7" targetId="b5b8-5ac8-4c77-cbb0" primary="true"/>
+            <categoryLink targetId="3e76-94f8-896c-2354" id="01e2-8732-f30f-4ca8" primary="false" name="ALLOW_9_SHIPS"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Cygnis Rugire" typeId="f8e8-01a8-098b-ca12" typeName="Commander stats" hidden="false" id="cdaf-94e8-5bb1-0eed" publicationId="3942-1ba6-967b-c9ed" page="50">
+              <characteristics>
+                <characteristic name="Commander Quality" typeId="388a-86b2-03af-20ad">Inspiring 3</characteristic>
+                <characteristic name="Rank" typeId="16de-0568-dfa7-27a1">Admiral or Commander</characteristic>
+                <characteristic name="Ship" typeId="f3f9-27da-95ec-1253">Any</characteristic>
+                <characteristic name="Skill" typeId="8cfd-31fa-dd72-6e30">+1</characteristic>
+                <characteristic name="Morale Bonus" typeId="26e9-24ca-fa72-16d3">+3</characteristic>
+                <characteristic name="Command Capacity" typeId="9a9d-6b65-579c-ca2c">9</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Advanced Manoeuvre Tactics" id="de19-a781-f599-2fee" hidden="false" publicationId="3942-1ba6-967b-c9ed" page="50">
+              <description>Rugire’s battlegroup gains thrust vectoring.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink name="Thrust Vectoring" id="823d-bb9d-77ce-d595" hidden="false" type="rule" targetId="bdbe-b620-67db-d020"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Mendan Ograre" hidden="false" id="5587-7ed8-cbff-20cd" publicationId="3942-1ba6-967b-c9ed" page="51">
+          <costs>
+            <cost name="Points" typeId="dd57-09ff-340f-8e48" value="25"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink targetId="b5b8-5ac8-4c77-cbb0" id="fd59-13cd-414f-e440" primary="true" name="Commander"/>
+            <categoryLink targetId="77ae-ced1-931a-77a4" id="8243-19b2-6fcc-7b7c" primary="false" name="ALLOW_10_SHIPS"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Mendan Ograre" typeId="f8e8-01a8-098b-ca12" typeName="Commander stats" hidden="false" id="4f16-b927-a0dd-db7d" publicationId="3942-1ba6-967b-c9ed" page="51">
+              <characteristics>
+                <characteristic name="Commander Quality" typeId="388a-86b2-03af-20ad">Inspiring 3</characteristic>
+                <characteristic name="Rank" typeId="16de-0568-dfa7-27a1">Admiral</characteristic>
+                <characteristic name="Ship" typeId="f3f9-27da-95ec-1253">Any</characteristic>
+                <characteristic name="Skill" typeId="8cfd-31fa-dd72-6e30">+2</characteristic>
+                <characteristic name="Morale Bonus" typeId="26e9-24ca-fa72-16d3">0</characteristic>
+                <characteristic name="Command Capacity" typeId="9a9d-6b65-579c-ca2c">10</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Pacification" id="ae3e-b206-1273-5b84" hidden="false" publicationId="3942-1ba6-967b-c9ed" page="51">
+              <description>The first time each turn that an enemy battlegroup would fire on this battlegroup, you may force them to choose another target.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Strike Craft" id="d7d1-b7b3-8eaf-72a5" hidden="false" publicationId="3942-1ba6-967b-c9ed" page="9">
+      <categoryLinks>
+        <categoryLink name="Strike Craft" hidden="false" id="8554-f5a8-7004-3110" targetId="1d5d-ac3c-0f9e-8382" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="unit" import="true" name="Mars War Fighters" hidden="false" id="356d-2481-927a-122b" publicationId="3942-1ba6-967b-c9ed" page="54">
+          <costs>
+            <cost name="Points" typeId="dd57-09ff-340f-8e48" value="6"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Strike Craft" hidden="false" id="ef0b-e959-7737-070c" targetId="1d5d-ac3c-0f9e-8382" primary="true"/>
+            <categoryLink name="Anglo European Alliance" hidden="false" id="aaa6-dbf0-667b-aba1" targetId="e2ce-6480-e740-5ba4" primary="false"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Mars War Fighters" typeId="8562-1ee2-d80c-e753" typeName="Strike Craft Stats" hidden="false" id="af51-0047-1749-9abf">
+              <characteristics>
+                <characteristic name="Speed" typeId="b7a0-b9fb-4295-87bf">10&quot;</characteristic>
+                <characteristic name="Anti SC" typeId="a1d2-240a-d9fa-1712">3+</characteristic>
+                <characteristic name="Anti-Ship" typeId="bc6e-037f-58a9-1faf">4+</characteristic>
+                <characteristic name="Attack against ships" typeId="f633-6e0a-1576-0f9c">2</characteristic>
+                <characteristic name="Save" typeId="d415-0e55-c4dd-d7b7">5+</characteristic>
+                <characteristic name="Traits" typeId="3875-2795-81d2-a053"/>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Ares Bombers" hidden="false" id="d323-5041-5e6d-a525" publicationId="3942-1ba6-967b-c9ed" page="54">
+          <costs>
+            <cost name="Points" typeId="dd57-09ff-340f-8e48" value="8"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Strike Craft" hidden="false" id="f117-c365-4df8-da6b" targetId="1d5d-ac3c-0f9e-8382" primary="true"/>
+            <categoryLink name="Anglo European Alliance" hidden="false" id="4248-8ec7-1245-7130" targetId="e2ce-6480-e740-5ba4" primary="false"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Ares Bombers" typeId="8562-1ee2-d80c-e753" typeName="Strike Craft Stats" hidden="false" id="bdff-2c09-3b2a-908c">
+              <characteristics>
+                <characteristic name="Speed" typeId="b7a0-b9fb-4295-87bf">9&quot;</characteristic>
+                <characteristic name="Anti SC" typeId="a1d2-240a-d9fa-1712">8+</characteristic>
+                <characteristic name="Anti-Ship" typeId="bc6e-037f-58a9-1faf">4+</characteristic>
+                <characteristic name="Attack against ships" typeId="f633-6e0a-1576-0f9c">3</characteristic>
+                <characteristic name="Save" typeId="d415-0e55-c4dd-d7b7">6+</characteristic>
+                <characteristic name="Traits" typeId="3875-2795-81d2-a053">Shield Skipping 8+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Shield Skipping X" id="c529-7471-f1ad-d807" hidden="false" type="rule" targetId="0fe7-9a92-6258-9885"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Hermes Interceptors " hidden="false" id="fae4-91d1-63ed-b23c" publicationId="3942-1ba6-967b-c9ed" page="54">
+          <costs>
+            <cost name="Points" typeId="dd57-09ff-340f-8e48" value="4"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Anglo European Alliance" hidden="false" id="31a3-e84c-9a0a-6111" targetId="e2ce-6480-e740-5ba4" primary="false"/>
+            <categoryLink name="Strike Craft" hidden="false" id="6d50-d9a8-3cc2-be3d" targetId="1d5d-ac3c-0f9e-8382" primary="true"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Hermes Interceptors " typeId="8562-1ee2-d80c-e753" typeName="Strike Craft Stats" hidden="false" id="efa0-8c6f-f5a1-f0af">
+              <characteristics>
+                <characteristic name="Speed" typeId="b7a0-b9fb-4295-87bf">16&quot;</characteristic>
+                <characteristic name="Anti SC" typeId="a1d2-240a-d9fa-1712">3+</characteristic>
+                <characteristic name="Anti-Ship" typeId="bc6e-037f-58a9-1faf">4+</characteristic>
+                <characteristic name="Attack against ships" typeId="f633-6e0a-1576-0f9c">1</characteristic>
+                <characteristic name="Save" typeId="d415-0e55-c4dd-d7b7">7+</characteristic>
+                <characteristic name="Traits" typeId="3875-2795-81d2-a053">Intercept</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Intercept" id="e327-9f64-25e3-020f" hidden="false" type="rule" targetId="1462-3907-ffc8-4bc1"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="unit" import="true" name="Artemis Vipers" hidden="false" id="9783-fb72-656c-5419" publicationId="3942-1ba6-967b-c9ed" page="54">
+          <costs>
+            <cost name="Points" typeId="dd57-09ff-340f-8e48" value="12"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Strike Craft" hidden="false" id="ca9b-711e-4709-f474" targetId="1d5d-ac3c-0f9e-8382" primary="true"/>
+            <categoryLink name="Anglo European Alliance" hidden="false" id="99da-6bb7-9f55-ce81" targetId="e2ce-6480-e740-5ba4" primary="false"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Artemis Vipers" typeId="8562-1ee2-d80c-e753" typeName="Strike Craft Stats" hidden="false" id="a59e-c10b-b7f8-78fe">
+              <characteristics>
+                <characteristic name="Speed" typeId="b7a0-b9fb-4295-87bf">10&quot;</characteristic>
+                <characteristic name="Anti SC" typeId="a1d2-240a-d9fa-1712">3+</characteristic>
+                <characteristic name="Anti-Ship" typeId="bc6e-037f-58a9-1faf">4+</characteristic>
+                <characteristic name="Attack against ships" typeId="f633-6e0a-1576-0f9c">2</characteristic>
+                <characteristic name="Save" typeId="d415-0e55-c4dd-d7b7">4+</characteristic>
+                <characteristic name="Traits" typeId="3875-2795-81d2-a053">Intercept</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Intercept" id="1260-22cf-ab75-1c6a" hidden="false" type="rule" targetId="1462-3907-ffc8-4bc1"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Mines" hidden="false" id="2e24-0ce5-2b25-0ed5" type="selectionEntryGroup" targetId="8058-16c8-a6a8-624e"/>
+      </entryLinks>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
+  <entryLinks>
+    <entryLink import="true" name="Light Cruiser" hidden="false" id="4838-9a36-7a54-a6a3" targetId="6c61-76bb-fdbb-1109" type="selectionEntry" sortIndex="1"/>
+    <entryLink import="true" name="Cruiser" hidden="false" id="2fc0-8770-4431-ffc2" targetId="326d-5341-3a7d-3698" type="selectionEntry" sortIndex="2"/>
+    <entryLink import="true" name="T3 Heavy Cruiser" hidden="false" id="9f14-9e5b-d1a2-48cc" targetId="acbe-1153-5994-90bc" type="selectionEntry" sortIndex="3"/>
+    <entryLink import="true" name="Battle Cruiser " hidden="false" id="5b97-d02b-f9df-9014" targetId="d063-9c20-e38a-8a6f" type="selectionEntry" sortIndex="4"/>
+    <entryLink import="true" name="Battleship" hidden="false" id="f321-d98a-ba62-f707" targetId="7d20-eb87-d537-a61a" type="selectionEntry" sortIndex="5"/>
+    <entryLink import="true" name="Carrier" hidden="false" id="4fd4-4be1-dbe8-37a2" targetId="4c94-0220-7e2f-365e" type="selectionEntry" sortIndex="6"/>
+    <entryLink import="true" name="Super Carrier" hidden="false" id="ab88-a0b0-d082-dfd9" targetId="e532-34d2-d795-2ee7" type="selectionEntry" sortIndex="7"/>
+    <entryLink import="true" name="Flagship" hidden="false" id="f4b2-c6c2-b274-c918" targetId="fcd8-70dd-a56e-2767" type="selectionEntry" sortIndex="8"/>
+    <entryLink import="true" name="Tharsis LBB" hidden="false" id="e91b-22cd-a989-79b5" targetId="78c9-e06c-cd4f-5f41" type="selectionEntry" sortIndex="9"/>
+    <entryLink import="true" name="Olympus Flagship" hidden="false" id="883a-0765-5d54-49ce" targetId="a28d-b8ea-276b-42d8" type="selectionEntry" sortIndex="10"/>
+    <entryLink import="true" name="Marineris HMC" hidden="false" id="fbf9-dc44-d119-86ed" targetId="ee3c-2081-e5b8-5f3a" type="selectionEntry" sortIndex="11"/>
+    <entryLink import="true" name="Destroyer" hidden="false" id="65a3-e206-e585-6357" targetId="3fa8-58fa-a218-b62d" type="selectionEntry" sortIndex="12"/>
+    <entryLink import="true" name="Heavy Destroyer" hidden="false" id="eca6-3ca8-8cbf-7dda" targetId="490b-786e-b13b-1c78" type="selectionEntry" sortIndex="13"/>
+    <entryLink import="true" name="Armoured Destroyer" hidden="false" id="7913-c907-5e1f-02aa" targetId="5240-dede-6359-4c0a" type="selectionEntry" sortIndex="14"/>
+    <entryLink import="true" name="Frigate" hidden="false" id="c525-0b04-2167-16d4" targetId="4350-682d-002b-bd04" type="selectionEntry" sortIndex="15"/>
+    <entryLink import="true" name="Line Frigate" hidden="false" id="2258-2f87-2540-dbc9" targetId="dc04-cfa1-1c65-e07c" type="selectionEntry" sortIndex="16"/>
+    <entryLink import="true" name="Patrol Boat Squadron" hidden="false" id="d898-579e-6d5b-ec57" targetId="c350-36a4-0580-3e46" type="selectionEntry" sortIndex="17"/>
+    <entryLink import="true" name="T3 Frigate" hidden="false" id="5db5-c908-a7fa-9ce6" targetId="bd87-be29-a0bc-c49a" type="selectionEntry" sortIndex="18"/>
+  </entryLinks>
+  <rules>
+    <rule name="Martian Node Drive Network" id="317b-55c2-a3b9-8304" hidden="false" publicationId="3942-1ba6-967b-c9ed" page="54">
+      <description>The Martian Confederation control many of the nodes and stations in the galaxy and are backed by both SINO Russia and the Anglo European Alliance. At the start of the game the Martian player has 2 Regular Companies that they may place onto any objectives on the field. For example, 2 companies can be placed onto a single objective, or those companies can be spread out to hold 2 objectives at the start of the game.</description>
+    </rule>
+    <rule name="Battle Plating" id="35c3-3cdf-a162-5ae1" hidden="false" publicationId="3942-1ba6-967b-c9ed" page="54">
+      <description>All Martian Ships feature heavy armour plates on the front end of their ships to protect against incoming fire. When one of your battlegroups is fired on from the “Front 180” direction, it may make a skill check. If successful, ships in that battlegroup gain Reactive Armour 1 until the next battlefleet activates. This stack with other instances of Reactive Armour on individual ships</description>
+    </rule>
+    <rule name="Overclocked Thrusters" id="b527-cf2e-2b0d-23e6" hidden="false" publicationId="3942-1ba6-967b-c9ed" page="54">
+      <description>Martian engines are designed in a way that captains can grant excess energy to them during battle. Player may choose to “Overclock Thrusters” as a special command order. This adds 2 max thrust to all ship stats in the battlegroup this activation however the
+battlegroup may not rotate this activation and cannot fire any weapons at other ships.</description>
+    </rule>
+  </rules>
+  <comment>Developed by Discord user Hexahedron</comment>
+</catalogue>

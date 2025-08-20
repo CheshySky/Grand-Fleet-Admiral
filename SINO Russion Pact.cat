@@ -183,18 +183,6 @@
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Dropship" hidden="false" id="c916-aa7b-f49d-b983" collective="false">
-      <profiles>
-        <profile name="Dropship" typeId="8562-1ee2-d80c-e753" typeName="Strike Craft Stats" hidden="false" id="bb73-c98f-2640-5c41" publicationId="3942-1ba6-967b-c9ed" page="64">
-          <characteristics>
-            <characteristic name="Speed" typeId="b7a0-b9fb-4295-87bf">9&quot;</characteristic>
-            <characteristic name="Anti SC" typeId="a1d2-240a-d9fa-1712">8+</characteristic>
-            <characteristic name="Anti-Ship" typeId="bc6e-037f-58a9-1faf">8+</characteristic>
-            <characteristic name="Attack against ships" typeId="f633-6e0a-1576-0f9c">1</characteristic>
-            <characteristic name="Save" typeId="d415-0e55-c4dd-d7b7">9+</characteristic>
-            <characteristic name="Traits" typeId="3875-2795-81d2-a053"/>
-          </characteristics>
-        </profile>
-      </profiles>
       <categoryLinks>
         <categoryLink name="Strike Craft" hidden="false" id="40c5-43a9-1297-0bd2" targetId="1d5d-ac3c-0f9e-8382" primary="false"/>
       </categoryLinks>
@@ -236,9 +224,9 @@
             <entryLink import="true" name="CQB Companies" hidden="false" id="1700-4c06-9261-2c31" collective="false" targetId="2dd3-4a75-8ce2-8eb1" type="selectionEntryGroup">
               <modifiers>
                 <modifier type="set" value="2" field="ba50-de3b-bcb5-bf3a">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="parent" childId="any" shared="true" roundUp="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </repeats>
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="09b6-c57a-c778-44ef" childId="09b6-c57a-c778-44ef" shared="true" includeChildSelections="false"/>
+                  </conditions>
                 </modifier>
               </modifiers>
               <constraints>
@@ -1154,6 +1142,14 @@
             <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="7d02-258c-09f6-9373"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="af99-5be5-7243-ddb2"/>
           </constraints>
+          <entryLinks>
+            <entryLink import="true" name="CQB Companies" hidden="false" id="f0e0-2eb9-dee6-8dec" type="selectionEntryGroup" targetId="2dd3-4a75-8ce2-8eb1">
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="6b75-2c17-3b80-f3c6"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0ec4-54ad-1bbf-5d10"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
@@ -1765,6 +1761,18 @@
           <costs>
             <cost name="Points" typeId="dd57-09ff-340f-8e48" value="2"/>
           </costs>
+          <entryLinks>
+            <entryLink import="true" name="CQB Companies" hidden="false" id="bf88-310d-e045-508a" type="selectionEntryGroup" targetId="2dd3-4a75-8ce2-8eb1">
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="5134-76bb-c85c-6f66"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2ac4-f6e9-b6c8-0c53"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="8fd0-b07d-a42f-00de"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f4fb-82f9-5a65-0ac0"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
@@ -1949,9 +1957,18 @@
           </costs>
         </selectionEntry>
       </selectionEntries>
-      <entryLinks>
-        <entryLink import="true" name="Dropship" hidden="false" id="cf79-200e-519a-8015" type="selectionEntry" targetId="c916-aa7b-f49d-b983"/>
-      </entryLinks>
+      <profiles>
+        <profile name="Dropship" typeId="8562-1ee2-d80c-e753" typeName="Strike Craft Stats" hidden="false" id="bb73-c98f-2640-5c41" publicationId="3942-1ba6-967b-c9ed" page="64">
+          <characteristics>
+            <characteristic name="Speed" typeId="b7a0-b9fb-4295-87bf">9&quot;</characteristic>
+            <characteristic name="Anti SC" typeId="a1d2-240a-d9fa-1712">8+</characteristic>
+            <characteristic name="Anti-Ship" typeId="bc6e-037f-58a9-1faf">8+</characteristic>
+            <characteristic name="Attack against ships" typeId="f633-6e0a-1576-0f9c">1</characteristic>
+            <characteristic name="Save" typeId="d415-0e55-c4dd-d7b7">9+</characteristic>
+            <characteristic name="Traits" typeId="3875-2795-81d2-a053"/>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntryGroup>
     <selectionEntryGroup name="Strike Craft" id="435b-832a-ba77-5ac2" hidden="false" publicationId="3942-1ba6-967b-c9ed" page="21">
       <categoryLinks>

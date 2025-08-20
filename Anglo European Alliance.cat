@@ -1692,6 +1692,9 @@
               </constraints>
             </entryLink>
           </entryLinks>
+          <costs>
+            <cost name="Points" typeId="dd57-09ff-340f-8e48" value="2"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <modifiers>
@@ -1842,6 +1845,9 @@
               </constraints>
             </entryLink>
           </entryLinks>
+          <costs>
+            <cost name="Points" typeId="dd57-09ff-340f-8e48" value="2"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>

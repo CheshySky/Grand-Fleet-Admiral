@@ -408,7 +408,7 @@
             </modifier>
           </modifiers>
         </categoryLink>
-        <categoryLink name="AEA_SUPER_CARRIER" hidden="false" id="81c2-6528-24dc-cf75" targetId="5823-555f-702c-262e" type="category">
+        <categoryLink name="AEA_SUPER_CARRIER" hidden="false" id="81c2-6528-24dc-cf75" targetId="5823-555f-702c-262e">
           <constraints>
             <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="43e4-f6df-c338-09e9" includeChildSelections="false"/>
           </constraints>
@@ -716,11 +716,7 @@
     </forceEntry>
   </forceEntries>
   <sharedSelectionEntries>
-    <selectionEntry id="df1f-937a-7be9-2333" name="Commander" hidden="false" collective="false" import="true" type="upgrade">
-      <entryLinks>
-        <entryLink id="85bf-d78b-48f2-75f7" name="Commander" hidden="false" collective="false" import="true" targetId="f514-1193-a474-711f" type="selectionEntryGroup"/>
-      </entryLinks>
-    </selectionEntry>
+    <selectionEntry id="df1f-937a-7be9-2333" name="Commander" hidden="false" collective="false" import="true" type="upgrade"/>
     <selectionEntry type="unit" import="true" name="Admiral Meng Xinyi" hidden="false" id="557b-ef0e-38da-b485" publicationId="3942-1ba6-967b-c9ed" page="15">
       <costs>
         <cost name="Points" typeId="dd57-09ff-340f-8e48" value="32"/>

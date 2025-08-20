@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="dbf3-b055-c4e9-fc31" name="Imperial Hemina" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="8ee7-a3b6-0307-7e64" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="dbf3-b055-c4e9-fc31" name="Imperial Hemina" revision="3.1" battleScribeVersion="2.03" library="false" gameSystemId="8ee7-a3b6-0307-7e64" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <entryLinks>
     <entryLink id="737a-f16a-a62a-60a4" name="Light Cruiser" hidden="false" collective="false" import="true" targetId="e7f4-f372-0837-5d16" type="selectionEntry"/>
     <entryLink id="d2e0-7d59-af09-0e66" name="Frigate" hidden="false" collective="false" import="true" targetId="a541-a97d-67d6-eee3" type="selectionEntry"/>
@@ -28,6 +28,7 @@
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="9a66-5d3e-7327-8b28"/>
       </constraints>
     </entryLink>
+    <entryLink import="true" name="Reformed Empress (Heavy)" hidden="false" id="47d6-84d3-73d1-76f1" type="selectionEntry" targetId="c667-e9bb-22e0-c192"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="e7f4-f372-0837-5d16" name="Light Cruiser" publicationId="3942-1ba6-967b-c9ed" page="62" hidden="false" collective="false" import="true" type="unit">
@@ -2383,6 +2384,94 @@
       </modifiers>
       <categoryLinks>
         <categoryLink targetId="1117-20a0-a34d-68bd" id="034b-248e-072c-bb44" primary="false" name="Imperial Hemina"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Reformed Empress (Heavy)" hidden="false" id="c667-e9bb-22e0-c192" publicationId="3942-1ba6-967b-c9ed" page="62">
+      <costs>
+        <cost name="Points" typeId="dd57-09ff-340f-8e48" value="88"/>
+      </costs>
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="688d-246f-2dfe-8be3" type="selectionEntry" targetId="df1f-937a-7be9-2333" sortIndex="2">
+          <entryLinks>
+            <entryLink import="true" name="Empress Herra [Empress Flagship only]" hidden="false" id="d08b-99b9-f14d-c851" type="selectionEntryGroup" targetId="79b5-37ad-ddce-eaa8">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8f6e-e070-ddee-3a5e-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8f6e-e070-ddee-3a5e-max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="45e3-49eb-2e25-3b1c-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="45e3-49eb-2e25-3b1c-max"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Disruptor Cannon" hidden="false" id="2eb6-3801-e975-19a1" type="selectionEntry" targetId="48ed-edd2-a6ac-a720" sortIndex="3">
+          <constraints>
+            <constraint type="min" value="8" field="selections" scope="parent" shared="true" id="89fd-ee59-f58c-be4a-min" automatic="true"/>
+            <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="89fd-ee59-f58c-be4a-max" automatic="true"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Particle Laser" hidden="false" id="a143-0d1b-a9b2-efc8" type="selectionEntry" targetId="44f1-16a6-a351-ba77" sortIndex="4">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="3a67-990a-332d-632e-min"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="3a67-990a-332d-632e-max"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Vibro Cannon" hidden="false" id="6867-42cd-69ff-c0b3" type="selectionEntry" targetId="5fb3-1fb5-91aa-bd44" sortIndex="5">
+          <constraints>
+            <constraint type="min" value="9" field="selections" scope="parent" shared="true" id="3688-3596-d706-c269-min"/>
+            <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="3688-3596-d706-c269-max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Upgrades" id="9391-c319-0c33-a8c0" hidden="false" sortIndex="1">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Armoured Reactor Core" hidden="false" id="de38-1fa9-2a85-ba23">
+              <costs>
+                <cost name="Points" typeId="dd57-09ff-340f-8e48" value="3"/>
+              </costs>
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="fd9b-fa2e-a345-6c45"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="066d-c47b-b5e9-cce3"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Armoured Reactor Core" id="e223-e4d3-4cf9-161c" hidden="false" type="rule" targetId="e597-6ea8-a851-86e8"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <infoLinks>
+        <infoLink name="Character" id="a94e-edc7-5980-fd99" hidden="false" type="rule" targetId="1b1b-b907-076f-db7e"/>
+      </infoLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="c773-1620-0702-d575" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Reformed Empress (Heavy)" typeId="fd62-daee-6b9c-c612" typeName="Ship Stats" hidden="false" id="e714-8e98-1069-10e1">
+          <characteristics>
+            <characteristic name="Shield Strength" typeId="face-6a39-0cf0-eebe">8</characteristic>
+            <characteristic name="Max Thrust" typeId="0351-9250-0a32-4131">3</characteristic>
+            <characteristic name="Hull Points" typeId="b78c-8434-3b73-3728">5</characteristic>
+            <characteristic name="Crew Size" typeId="ba69-5c5c-fbb2-ee8f">7</characteristic>
+            <characteristic name="Strike Bay" typeId="6951-636f-b7cf-dff3"/>
+            <characteristic name="Assault bay" typeId="5064-520e-c582-fc1a"/>
+            <characteristic name="Traits" typeId="7875-4af0-5837-6dcb">Charachter, Flag Bridge, Super Heavy</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink name="Imperial Hemina" hidden="false" id="e2e1-94a6-17ff-98d8" targetId="1117-20a0-a34d-68bd" primary="false"/>
+        <categoryLink name="Capital" hidden="false" id="5da0-051d-bae5-f20b" targetId="ddf0-e667-c5bb-bfd0" primary="true"/>
+        <categoryLink name="Heavy" hidden="false" id="da6f-114b-bd2c-5fdb" targetId="99a8-81d3-ead9-288b" primary="false"/>
+        <categoryLink name="not vanguard eligible" hidden="false" id="7ca6-2ac7-ae65-7686" targetId="f40f-3734-00a7-9824" primary="false"/>
+        <categoryLink name="Ship" hidden="false" id="cc65-8656-1ecb-05f0" targetId="2db9-9828-2b94-e476" primary="false"/>
+        <categoryLink name="Commander" hidden="false" id="2a00-9db2-26a5-f30a" targetId="b5b8-5ac8-4c77-cbb0" primary="false"/>
       </categoryLinks>
     </selectionEntry>
   </sharedSelectionEntries>

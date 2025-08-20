@@ -104,6 +104,7 @@
     </categoryEntry>
     <categoryEntry name="Rear admiral Pearson" id="cd6b-01e9-64aa-0144" hidden="false"/>
     <categoryEntry name="AEA_SUPER_CARRIER" id="5823-555f-702c-262e" hidden="false"/>
+    <categoryEntry name="Empire of the Rising Sun" id="bc3f-594d-c6f9-be13" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="2baf-20ef-c40f-8aa8" name="Combat Group" hidden="false">

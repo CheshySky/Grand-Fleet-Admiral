@@ -1,2 +1,267 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="311c-40ac-5926-e96c" name="Empire of the Rising Sun" gameSystemId="8ee7-a3b6-0307-7e64" gameSystemRevision="3" revision="1" authorName="Alicia (Cheshy)" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema"/>
+<catalogue library="false" id="311c-40ac-5926-e96c" name="Empire of the Rising Sun" gameSystemId="8ee7-a3b6-0307-7e64" gameSystemRevision="3" revision="1" authorName="Alicia (Cheshy)" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <sharedSelectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Torpedo" hidden="false" id="bcab-bef5-0136-7d30">
+      <profiles>
+        <profile name="Torpedo" typeId="0faa-34ea-a9b8-dccb" typeName="Weapon Stats" hidden="false" id="4313-cc51-349d-5336">
+          <characteristics>
+            <characteristic name="Range" typeId="70bd-05d7-583c-390d">8&quot;-24&quot;</characteristic>
+            <characteristic name="Roll to hit" typeId="a5ba-9b41-500b-6c52">2+</characteristic>
+            <characteristic name="Shield Damage" typeId="90c8-0f37-d9b7-e2e1">1</characteristic>
+            <characteristic name="Hull Damage" typeId="9dc6-3082-ba5b-4c5a">1</characteristic>
+            <characteristic name="Fire Points" typeId="d0d5-25ad-92ff-bf0c">Front</characteristic>
+            <characteristic name="Traits" typeId="69fd-d140-d640-f992">Ordanence, Shield skipping 6+, Dumb fire</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Ordanence" id="4ca5-8de0-5131-6415" hidden="false" type="rule" targetId="a8c2-e70e-c16c-301d"/>
+        <infoLink name="Shield Skipping X" id="3599-49f8-0566-583b" hidden="false" type="rule" targetId="0fe7-9a92-6258-9885"/>
+        <infoLink name="Dumb fire" id="2c5a-9c5b-22a0-a09c" hidden="false" type="rule" targetId="92d6-9731-df3b-d262"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Missile Pods" hidden="false" id="7024-2c6c-8c3a-92ab">
+      <profiles>
+        <profile name="Missile Pods" typeId="0faa-34ea-a9b8-dccb" typeName="Weapon Stats" hidden="false" id="bed7-0f5c-ea97-7016">
+          <characteristics>
+            <characteristic name="Range" typeId="70bd-05d7-583c-390d">8&quot;</characteristic>
+            <characteristic name="Roll to hit" typeId="a5ba-9b41-500b-6c52">6+</characteristic>
+            <characteristic name="Shield Damage" typeId="90c8-0f37-d9b7-e2e1">1</characteristic>
+            <characteristic name="Hull Damage" typeId="9dc6-3082-ba5b-4c5a">1</characteristic>
+            <characteristic name="Fire Points" typeId="d0d5-25ad-92ff-bf0c">All</characteristic>
+            <characteristic name="Traits" typeId="69fd-d140-d640-f992">Target Lock, Ordanence</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Ordanence" id="f0d6-4d68-f85d-c57c" hidden="false" type="rule" targetId="a8c2-e70e-c16c-301d"/>
+        <infoLink name="Target Lock" id="b3b8-56a5-ee87-6415" hidden="false" type="rule" targetId="1d62-343c-1246-9699"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Ion Cannons" hidden="false" id="4bdf-1b90-82a4-9936">
+      <profiles>
+        <profile name="Ion Cannons" typeId="0faa-34ea-a9b8-dccb" typeName="Weapon Stats" hidden="false" id="828a-a051-4070-ca4d">
+          <characteristics>
+            <characteristic name="Range" typeId="70bd-05d7-583c-390d">10&quot;</characteristic>
+            <characteristic name="Roll to hit" typeId="a5ba-9b41-500b-6c52">4+</characteristic>
+            <characteristic name="Shield Damage" typeId="90c8-0f37-d9b7-e2e1">1</characteristic>
+            <characteristic name="Hull Damage" typeId="9dc6-3082-ba5b-4c5a">1</characteristic>
+            <characteristic name="Fire Points" typeId="d0d5-25ad-92ff-bf0c">Front + Side</characteristic>
+            <characteristic name="Traits" typeId="69fd-d140-d640-f992"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Heavy Ion Cannons" hidden="false" id="e916-0c35-aa52-c79a">
+      <profiles>
+        <profile name="Heavy Ion Cannons" typeId="0faa-34ea-a9b8-dccb" typeName="Weapon Stats" hidden="false" id="28a8-f663-c45c-b4cd">
+          <characteristics>
+            <characteristic name="Range" typeId="70bd-05d7-583c-390d">12&quot;</characteristic>
+            <characteristic name="Roll to hit" typeId="a5ba-9b41-500b-6c52">3+</characteristic>
+            <characteristic name="Shield Damage" typeId="90c8-0f37-d9b7-e2e1">1</characteristic>
+            <characteristic name="Hull Damage" typeId="9dc6-3082-ba5b-4c5a">1</characteristic>
+            <characteristic name="Fire Points" typeId="d0d5-25ad-92ff-bf0c">Front + Side</characteristic>
+            <characteristic name="Traits" typeId="69fd-d140-d640-f992">Long Range</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Long Range" id="6334-e78b-8507-1acb" hidden="false" type="rule" targetId="94d1-31a9-2ae2-016a"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Light Ion Beam" hidden="false" id="5289-f8e6-8763-9443">
+      <profiles>
+        <profile name="Light Ion Beam" typeId="0faa-34ea-a9b8-dccb" typeName="Weapon Stats" hidden="false" id="ab53-a047-c689-5afd">
+          <characteristics>
+            <characteristic name="Range" typeId="70bd-05d7-583c-390d">12&quot;</characteristic>
+            <characteristic name="Roll to hit" typeId="a5ba-9b41-500b-6c52">2+</characteristic>
+            <characteristic name="Shield Damage" typeId="90c8-0f37-d9b7-e2e1">2</characteristic>
+            <characteristic name="Hull Damage" typeId="9dc6-3082-ba5b-4c5a">1</characteristic>
+            <characteristic name="Fire Points" typeId="d0d5-25ad-92ff-bf0c">Front</characteristic>
+            <characteristic name="Traits" typeId="69fd-d140-d640-f992">Beam</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Beam" id="de82-66fb-c92a-5e61" hidden="false" type="rule" targetId="52cf-cd8c-a2ee-2d09"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Heavy Ion Beam" hidden="false" id="08e4-8805-9f6b-1e7b">
+      <profiles>
+        <profile name="Heavy Ion Beam" typeId="0faa-34ea-a9b8-dccb" typeName="Weapon Stats" hidden="false" id="8caf-7ebc-5930-495c">
+          <characteristics>
+            <characteristic name="Range" typeId="70bd-05d7-583c-390d">12&quot;</characteristic>
+            <characteristic name="Roll to hit" typeId="a5ba-9b41-500b-6c52">2+</characteristic>
+            <characteristic name="Shield Damage" typeId="90c8-0f37-d9b7-e2e1">3</characteristic>
+            <characteristic name="Hull Damage" typeId="9dc6-3082-ba5b-4c5a">1</characteristic>
+            <characteristic name="Fire Points" typeId="d0d5-25ad-92ff-bf0c">Front</characteristic>
+            <characteristic name="Traits" typeId="69fd-d140-d640-f992">Beam</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Beam" id="dae7-802c-02b2-bd0a" hidden="false" type="rule" targetId="52cf-cd8c-a2ee-2d09"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Light Cruiser" hidden="false" id="91e2-e293-c9df-5a79">
+      <costs>
+        <cost name="Points" typeId="dd57-09ff-340f-8e48" value="39"/>
+      </costs>
+      <entryLinks>
+        <entryLink import="true" name="Missile Pods" hidden="false" id="6e4c-d57c-1394-b88a" type="selectionEntry" targetId="7024-2c6c-8c3a-92ab" sortIndex="1">
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="2765-1e38-7d0a-cd11-min"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="2765-1e38-7d0a-cd11-max"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Ion Cannons" hidden="false" id="664d-c4e1-4588-64bb" type="selectionEntry" targetId="4bdf-1b90-82a4-9936" sortIndex="2">
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="6251-730e-6a0c-e338-min"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="6251-730e-6a0c-e338-max"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Commander" hidden="false" id="4c6f-b029-3adc-aaac" type="selectionEntryGroup" targetId="f514-1193-a474-711f"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink name="Capital" hidden="false" id="3e42-fb6e-2291-fab3" targetId="ddf0-e667-c5bb-bfd0" primary="true"/>
+        <categoryLink name="Empire of the Rising Sun" hidden="false" id="03f3-f67f-478a-4d7a" targetId="bc3f-594d-c6f9-be13" primary="false"/>
+        <categoryLink name="Ship" hidden="false" id="ee33-46e4-fe47-3a2e" targetId="2db9-9828-2b94-e476" primary="false"/>
+      </categoryLinks>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup name="Strike Craft" id="5f3c-fc84-9402-3391" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Nakajima Koifish Fighters" hidden="false" id="7dc2-966b-e7db-9d06" sortIndex="1">
+          <costs>
+            <cost name="Points" typeId="dd57-09ff-340f-8e48" value="6"/>
+          </costs>
+          <profiles>
+            <profile name="Nakajima Koifish Fighters" typeId="8562-1ee2-d80c-e753" typeName="Strike Craft Stats" hidden="false" id="7ea0-5bb4-5464-99af">
+              <characteristics>
+                <characteristic name="Speed" typeId="b7a0-b9fb-4295-87bf">10&quot;</characteristic>
+                <characteristic name="Anti SC" typeId="a1d2-240a-d9fa-1712">4+</characteristic>
+                <characteristic name="Anti-Ship" typeId="bc6e-037f-58a9-1faf">4+</characteristic>
+                <characteristic name="Attack against ships" typeId="f633-6e0a-1576-0f9c">2</characteristic>
+                <characteristic name="Save" typeId="d415-0e55-c4dd-d7b7">5+</characteristic>
+                <characteristic name="Traits" typeId="3875-2795-81d2-a053"/>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Macaque Dive Bombers" hidden="false" id="bad5-d844-f4c1-347b" sortIndex="2">
+          <costs>
+            <cost name="Points" typeId="dd57-09ff-340f-8e48" value="8"/>
+          </costs>
+          <profiles>
+            <profile name="Macaque Dive Bombers" typeId="8562-1ee2-d80c-e753" typeName="Strike Craft Stats" hidden="false" id="1e9b-fb6a-722c-1ea8">
+              <characteristics>
+                <characteristic name="Speed" typeId="b7a0-b9fb-4295-87bf">9&quot;</characteristic>
+                <characteristic name="Anti SC" typeId="a1d2-240a-d9fa-1712">8+</characteristic>
+                <characteristic name="Anti-Ship" typeId="bc6e-037f-58a9-1faf">4+</characteristic>
+                <characteristic name="Attack against ships" typeId="f633-6e0a-1576-0f9c">3</characteristic>
+                <characteristic name="Save" typeId="d415-0e55-c4dd-d7b7">6+</characteristic>
+                <characteristic name="Traits" typeId="3875-2795-81d2-a053">Shield Skipping 7+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Shield Skipping X" id="d6b9-66dd-1259-1382" hidden="false" type="rule" targetId="0fe7-9a92-6258-9885"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Tiger Interceptors" hidden="false" id="b4d8-158d-3c1f-3a94" sortIndex="3">
+          <costs>
+            <cost name="Points" typeId="dd57-09ff-340f-8e48" value="4"/>
+          </costs>
+          <profiles>
+            <profile name="Tiger Interceptors" typeId="8562-1ee2-d80c-e753" typeName="Strike Craft Stats" hidden="false" id="0100-5d5d-f513-e16d">
+              <characteristics>
+                <characteristic name="Speed" typeId="b7a0-b9fb-4295-87bf">12&quot;</characteristic>
+                <characteristic name="Anti SC" typeId="a1d2-240a-d9fa-1712">3+</characteristic>
+                <characteristic name="Anti-Ship" typeId="bc6e-037f-58a9-1faf">4+</characteristic>
+                <characteristic name="Attack against ships" typeId="f633-6e0a-1576-0f9c">1</characteristic>
+                <characteristic name="Save" typeId="d415-0e55-c4dd-d7b7">6+</characteristic>
+                <characteristic name="Traits" typeId="3875-2795-81d2-a053">Intercept</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Intercept" id="770f-ead3-c138-47f5" hidden="false" type="rule" targetId="1462-3907-ffc8-4bc1"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="CQB Companies" id="9556-4f83-34e0-cf85" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Light Company" hidden="false" id="b2a0-b482-ba03-0bdd" sortIndex="1">
+          <profiles>
+            <profile name="Light Company" typeId="8047-aa6f-c1da-a700" typeName="CQB Stats" hidden="false" id="c027-2c6d-e8c5-1056">
+              <characteristics>
+                <characteristic name="Attack" typeId="0727-c56d-4766-19fd">10+</characteristic>
+                <characteristic name="Defend" typeId="d333-c742-1468-d3dd">8+</characteristic>
+                <characteristic name="Attacks (amount)" typeId="178f-aab5-a6d3-5cf0">1</characteristic>
+                <characteristic name="Save" typeId="911c-0ad0-6f4e-5186">9+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Regular Company" hidden="false" id="4b5d-a41e-c16f-6254" sortIndex="2">
+          <costs>
+            <cost name="Points" typeId="dd57-09ff-340f-8e48" value="3"/>
+          </costs>
+          <profiles>
+            <profile name="Regular Company" typeId="8047-aa6f-c1da-a700" typeName="CQB Stats" hidden="false" id="df4c-7a6d-df59-fb28">
+              <characteristics>
+                <characteristic name="Attack" typeId="0727-c56d-4766-19fd">7+</characteristic>
+                <characteristic name="Defend" typeId="d333-c742-1468-d3dd">6+</characteristic>
+                <characteristic name="Attacks (amount)" typeId="178f-aab5-a6d3-5cf0">1</characteristic>
+                <characteristic name="Save" typeId="911c-0ad0-6f4e-5186">8+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Shock Company" hidden="false" id="cadd-f720-9d33-e4a5" sortIndex="3">
+          <costs>
+            <cost name="Points" typeId="dd57-09ff-340f-8e48" value="5"/>
+          </costs>
+          <profiles>
+            <profile name="Shock Company" typeId="8047-aa6f-c1da-a700" typeName="CQB Stats" hidden="false" id="663a-42da-7574-1ff5">
+              <characteristics>
+                <characteristic name="Attack" typeId="0727-c56d-4766-19fd">5+</characteristic>
+                <characteristic name="Defend" typeId="d333-c742-1468-d3dd">7+</characteristic>
+                <characteristic name="Attacks (amount)" typeId="178f-aab5-a6d3-5cf0">2</characteristic>
+                <characteristic name="Save" typeId="911c-0ad0-6f4e-5186">8+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Power Armour Company" hidden="false" id="f773-31d3-3f6b-d419" sortIndex="4">
+          <costs>
+            <cost name="Points" typeId="dd57-09ff-340f-8e48" value="9"/>
+          </costs>
+          <profiles>
+            <profile name="Power Armour Company" typeId="8047-aa6f-c1da-a700" typeName="CQB Stats" hidden="false" id="d503-e93d-dbae-35d6">
+              <characteristics>
+                <characteristic name="Attack" typeId="0727-c56d-4766-19fd">4+</characteristic>
+                <characteristic name="Defend" typeId="d333-c742-1468-d3dd">4+</characteristic>
+                <characteristic name="Attacks (amount)" typeId="178f-aab5-a6d3-5cf0">2</characteristic>
+                <characteristic name="Save" typeId="911c-0ad0-6f4e-5186">7+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
+  <rules>
+    <rule name="Death Before Dishonour" id="19e2-fd32-6e7c-ca0e" hidden="false">
+      <description>+2 to morale saves.</description>
+    </rule>
+    <rule name="Wave Volley Doctrine" id="46fd-e337-84e8-612d" hidden="false">
+      <description>After declaring a shooting target during their activation, your battlegroups may make a skill check. If successful, they may fire their Ion Cannons and Heavy Ion cannons together, using the to hit modifier and range for Ion Cannons.</description>
+    </rule>
+  </rules>
+  <entryLinks>
+    <entryLink import="true" name="Light Cruiser" hidden="false" id="693d-671a-9d5b-e206" type="selectionEntry" targetId="91e2-e293-c9df-5a79"/>
+  </entryLinks>
+</catalogue>

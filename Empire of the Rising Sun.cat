@@ -120,13 +120,59 @@
             <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="6251-730e-6a0c-e338-max"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Commander" hidden="false" id="4c6f-b029-3adc-aaac" type="selectionEntryGroup" targetId="f514-1193-a474-711f"/>
+        <entryLink import="true" name="Strike Craft" hidden="false" id="b4de-9c3a-1b3c-f7a9" type="selectionEntryGroup" targetId="5f3c-fc84-9402-3391">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="cfa1-929a-a6fe-61ff"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="e4c5-baa9-5578-a019"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Commander" hidden="false" id="3717-6e72-f965-65fc" type="selectionEntry" targetId="df1f-937a-7be9-2333">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="ebad-04a2-70f7-302c"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5bda-05cd-6b11-4084"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <categoryLinks>
         <categoryLink name="Capital" hidden="false" id="3e42-fb6e-2291-fab3" targetId="ddf0-e667-c5bb-bfd0" primary="true"/>
         <categoryLink name="Empire of the Rising Sun" hidden="false" id="03f3-f67f-478a-4d7a" targetId="bc3f-594d-c6f9-be13" primary="false"/>
         <categoryLink name="Ship" hidden="false" id="ee33-46e4-fe47-3a2e" targetId="2db9-9828-2b94-e476" primary="false"/>
       </categoryLinks>
+      <profiles>
+        <profile name="Light Cruiser" typeId="fd62-daee-6b9c-c612" typeName="Ship Stats" hidden="false" id="798c-4dbc-4c6d-1976">
+          <characteristics>
+            <characteristic name="Shield Strength" typeId="face-6a39-0cf0-eebe">5</characteristic>
+            <characteristic name="Max Thrust" typeId="0351-9250-0a32-4131">4</characteristic>
+            <characteristic name="Hull Points" typeId="b78c-8434-3b73-3728">3</characteristic>
+            <characteristic name="Crew Size" typeId="ba69-5c5c-fbb2-ee8f">4</characteristic>
+            <characteristic name="Strike Bay" typeId="6951-636f-b7cf-dff3">2</characteristic>
+            <characteristic name="Assault bay" typeId="5064-520e-c582-fc1a"/>
+            <characteristic name="Traits" typeId="7875-4af0-5837-6dcb">ADS</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="ADS X" id="db35-502e-d294-eea0" hidden="false" type="rule" targetId="7b47-f592-16a4-f8f4"/>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="+2 Assault Bays" hidden="false" id="87d4-2edd-fad7-e590">
+          <costs>
+            <cost name="Points" typeId="dd57-09ff-340f-8e48" value="3"/>
+          </costs>
+          <entryLinks>
+            <entryLink import="true" name="CQB Companies" hidden="false" id="2c49-5ff6-efb2-0c32" type="selectionEntryGroup" targetId="9556-4f83-34e0-cf85">
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="aebb-0c6f-bd81-50cb"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="c3f3-ec24-0340-5536"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="dcd8-8a35-6885-c1af"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1cba-697f-be57-993e"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -251,6 +297,18 @@
           </profiles>
         </selectionEntry>
       </selectionEntries>
+      <profiles>
+        <profile name="CQB Companies" typeId="8562-1ee2-d80c-e753" typeName="Strike Craft Stats" hidden="false" id="1fa2-ab58-1a7b-f00d">
+          <characteristics>
+            <characteristic name="Speed" typeId="b7a0-b9fb-4295-87bf">9&quot;</characteristic>
+            <characteristic name="Anti SC" typeId="a1d2-240a-d9fa-1712">8+</characteristic>
+            <characteristic name="Anti-Ship" typeId="bc6e-037f-58a9-1faf">8+</characteristic>
+            <characteristic name="Attack against ships" typeId="f633-6e0a-1576-0f9c">1</characteristic>
+            <characteristic name="Save" typeId="d415-0e55-c4dd-d7b7">9+</characteristic>
+            <characteristic name="Traits" typeId="3875-2795-81d2-a053"/>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <rules>

@@ -717,7 +717,11 @@
     </forceEntry>
   </forceEntries>
   <sharedSelectionEntries>
-    <selectionEntry id="df1f-937a-7be9-2333" name="Commander" hidden="false" collective="false" import="true" type="upgrade"/>
+    <selectionEntry id="df1f-937a-7be9-2333" name="Commander" hidden="false" collective="false" import="true" type="upgrade">
+      <entryLinks>
+        <entryLink import="true" name="Commander" hidden="false" id="9625-d449-7307-efa9" type="selectionEntryGroup" targetId="f514-1193-a474-711f"/>
+      </entryLinks>
+    </selectionEntry>
     <selectionEntry type="unit" import="true" name="Admiral Meng Xinyi" hidden="false" id="557b-ef0e-38da-b485" publicationId="3942-1ba6-967b-c9ed" page="15">
       <costs>
         <cost name="Points" typeId="dd57-09ff-340f-8e48" value="32"/>
